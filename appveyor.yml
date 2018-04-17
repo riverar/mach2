@@ -1,0 +1,17 @@
+version: 0.3.{build}
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+configuration: Release
+platform:
+- x86
+- x64
+build:
+  project: mach2.sln
+  parallel: true
+  verbosity: minimal
+after_build:
+- cmd: 7z a mach2-%PLATFORM%-%APPVEYOR_REPO_COMMIT%.zip LICENSE features.txt bin\%PLATFORM%\*.exe bin\%PLATFORM%\*.dll
+artifacts:
+- path: mach2-%PLATFORM%-%APPVEYOR_REPO_COMMIT%.zip
