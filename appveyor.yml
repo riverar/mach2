@@ -1,0 +1,19 @@
+version: 0.0.0.0.1-branch-{branch}-build-{build}
+image: Visual Studio 2017
+
+matrix:
+    fast_finish: true
+
+configuration:
+  - Debug
+  - Release
+
+build:
+  parallel: true
+  project: mach2.sln
+
+after_build:
+  - cd bin
+  - 7z a mach2.zip
+artifacts:
+  - path: bin/mach2.zip
