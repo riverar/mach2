@@ -1,0 +1,84 @@
+--- D:/17650/features_nosymbols.txt	Wed Apr 25 17:39:34 2018
++++ D:/17655/features_nosymbols.txt	Thu Apr 26 00:02:04 2018
+@@ -95,6 +95,7 @@
+ ApplicationViewTabReliability: 15519757
+ AppsFolderTaskbarIconLoading: 10998066
+ AskCortanaContext: 0
++AssignedAccessSettingsAtomicConfiguration: 0
+ AsyncWindowPlacement: 9450204
+ AudioOffloadSize: 8153897
+ AudioSourceTelemetry: 9984760
+@@ -115,6 +116,7 @@
+ AutoFormFillRoaming: 0
+ AutoFormfill_Payments_LocalStorage: 0
+ AutoFormfill_Wallet_Payment: 0
++AutoGameMode: 11015710
+ AutoGameModeProfile: 11650261
+ AutoGamePowerProfile: 14290802
+ AutomaticDisplayAdaptation: 11305375
+@@ -125,6 +127,7 @@
+ Banners: 682246
+ BindFilterAppDataRedirection: 15725851
+ BindFilterPackageVfsRedirection: 14098587
++BitLocker_Encrypt_All_Drives: 0
+ BlackForestShellSupport: 0
+ BlockProviders: 0
+ BlockingFunctionMeasurementInContentProcessCreation: 0
+@@ -133,6 +136,7 @@
+ BluetoothConvergedAvrcp: 0
+ BluetoothConvergedHfp: 0
+ BluetoothCore42: 0
++BluetoothHfpHF: 0
+ BonusBar: 983002
+ BonusBarServiceContent: 8240687
+ BookReader: 0
+@@ -384,7 +388,6 @@
+ DisableTDLCachingNonMobile: 10286718
+ DisableUniqueServiceDisplayNameValidation: 0
+ DismissWhenNotInForegroundDuringRegister: 6190324
+-DisplayEnhancementService: 13263365
+ DisplayHoldBacks: 0
+ DisplayKernelAdvancedColorSupport: 10115143
+ DisplayKeys: 0
+@@ -428,6 +431,7 @@
+ EducationCloudDefaultPins: 10474832
+ EffectSupport: 9448552
+ EffectiveViewport: 11584126
++EfsFekDplProtection: 0
+ EmbeddedPrint: 0
+ EmulateMobilePersonalityOnDesktop: 0
+ EnableAnimationDesigner: 13234095
+@@ -455,7 +459,7 @@
+ EraseGroupInkStroke: 0
+ EvtColomaTelemetry: 0
+ ExciseStubbornApps_TabShell: 16134543
+-ExperimentalAGM: 11015710
++ExperimentalHidSensors: 15950370
+ ExperimentalKGL: 9206638
+ ExperimentationViaEMS: 0
+ ExplorerEdu: 6390483
+@@ -521,7 +525,7 @@
+ ForceWindowlessWebView: 14599978
+ FrameworkScalability: 7328759
+ GIPJPN_Advanced: 0
+-GameConfigStoreGameListEntries: 0
++GameConfigStoreGameListEntries: 11973136
+ GenerateAndCompareAlternates: 0
+ GenericActionAndTrigger: 7960589
+ GenericDataContract: 0
+@@ -529,6 +533,7 @@
+ GenericWebReadOutLoud: 0
+ GetCortanaIdentity: 0
+ GizmoPersonalizationAccount: 0
++H264_DX12_VideoDecode: 13198365
+ HCL_VMGS: 0
+ HTTPConnectionCoalescing: 0
+ HVSIAcceleratedGraphics: 0
+@@ -936,6 +941,7 @@
+ ReplaceTDLWithUTM: 8699883
+ ReportOnRpcssCorruption: 14380956
+ ReportUnhealthyProcessFromRpcss: 14781211
++ResourceManagerLcdCommitSave: 0
+ RgbaSwapChains: 11786145
+ RinnaDS: 0
+ RollingShutterCorrection: 0
