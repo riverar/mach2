@@ -1,0 +1,406 @@
+--- D:/17661/features_nosymbols.txt	Fri May 04 13:24:17 2018
++++ D:/17666/features_nosymbols.txt	Thu May 10 01:10:09 2018
+@@ -74,6 +74,7 @@
+ AppDefaultsDeepLinkRemoval: 14794551
+ AppDefaultsDesktop: 6614904
+ AppDefaultsDomainJoinedAADDevices: 15815625
++AppDefaultsEdgeCampaignTesting: 17049655
+ AppDefaultsEdgeCoinCampaign: 13974053
+ AppDefaultsEnlightenmentDialog: 13651267
+ AppDefaultsMDM: 8348195
+@@ -98,7 +99,6 @@
+ AppsFolderTaskbarIconLoading: 10998066
+ AskCortanaContext: 0
+ AssignedAccessSettingsAtomicConfiguration: 0
+-AsyncWindowPlacement: 9450204
+ AudioOffloadSize: 8153897
+ AudioSourceTelemetry: 9984760
+ Audio_Capture_EndpointType: 0
+@@ -142,6 +142,7 @@
+ BonusBar: 983002
+ BonusBarServiceContent: 8240687
+ BookReader: 0
++BookReader_AnnotationsPanelFilters: 0
+ BooksMockTesting: 0
+ Brightness3LegacyAPIReroute: 16417871
+ Brightness3dxgkrnl: 12732606
+@@ -188,6 +189,8 @@
+ CarouselTabSetsOnTimeline: 14467192
+ CastServerDefaultValue: 6997058
+ CdplAppDataProtection: 0
++CdplSupport: 0
++CdplUnistoreProtection: 0
+ CentennialBanners: 13294624
+ CentennialCloudFilesRegistration: 8481732
+ CentennialCloudFilesUninstallCleanup: 13381010
+@@ -259,7 +262,6 @@
+ ConciergeUSBConfig: 0
+ ConnectUXSearch: 5678281
+ ConsentUXOwnerViewHeuristicFallback: 11870473
+-ConsoleWindowTabGrouping: 16556360
+ ContainerDCOM: 12551329
+ ContainerDiagnosticService: 0
+ ContentDeliveryManagerRS3Scalability: 11171023
+@@ -297,7 +299,9 @@
+ CortanaOnLockOutProcModel: 9223629
+ CortanaOnSpotlight: 11545976
+ CortanaOpenKnownFolder: 11861797
++CortanaPersonainActionCenter: 0
+ CortanaSetDesktopWallpaper: 12276201
++CortanaSetQuietHours: 16533547
+ CortanaSpaXamlHeader: 8549523
+ CortanaVolumeIntentsOnDesktop: 8719605
+ CreativeExpressionEvaluation: 0
+@@ -309,6 +313,7 @@
+ CtfmonAsCiceroServerHost: 11954839
+ CurrentVmVersionIsDefault: 0
+ D3D11On12Multithreading: 0
++D3D12AutoBreadcrumbs: 0
+ D3D12BreadcrumbMarkers: 0
+ D3D12ContentProtection: 0
+ D3D12DeviceRemovedExtendedData: 0
+@@ -321,6 +326,7 @@
+ D3D12PassExperiment: 0
+ D3D12PeerToPeerAtomics: 0
+ D3D12RaytracingPrototype: 0
++D3D12SRVOnlyTiledResourceTier3: 0
+ D3D12TiledResourceTier4: 0
+ D3D12TrackedWorkload: 0
+ D3D12Video: 0
+@@ -352,8 +358,10 @@
+ DeliverAllAppsViaFod: 14727948
+ DeliveryOptimization_ActivitySettings: 0
+ DeliveryOptimization_AdvancedSettings: 0
++DeployCentennialAppsOnWCOSWithVAILProxy: 16238427
+ DeprecateRX: 6478855
+ DepthSorting: 13818272
++DesktopControlCenter: 0
+ DesktopDisplayBroker: 12773644
+ DesktopGazeXAMLKeyboard: 13050423
+ DesktopIconLayoutLinkWithShift: 10971873
+@@ -371,6 +379,7 @@
+ DestListMigration: 13989214
+ DevModeInternal: 0
+ DeviceDelete: 0
++DeviceFamilyOverride: 0
+ DeviceManagementOutprocCSPs: 0
+ DeviceManagementOutprocDPUs: 0
+ DevicesCollection: 5348245
+@@ -393,9 +402,9 @@
+ DoNotActivateLockAppWithScreenOff: 7250255
+ DockingServiceConnectionManager: 8661952
+ DocumentFocus: 3731051
+-DocumentsCollection: 13929376
+-DocumentsCollection_Routines: 14599071
+ DownloadsStorageSense: 0
++DplAppKeyCaching: 0
++DragBetweenViewModes: 16240952
+ DragDrop: 0
+ DragDropContinuation: 0
+ DragDropWithComponentUI: 9386173
+@@ -420,7 +429,9 @@
+ EPUB_ComprehensionTools: 0
+ EPUB_DisableSecurityChecks: 0
+ EPUB_GoToPage: 0
++EPUB_HostExtension: 0
+ EPUB_MediaOverlays: 0
++EPUB_Scripts: 0
+ EZSettingDownloadSpeechTelemetry: 10273247
+ EZSettings: 6189964
+ EZSettingsReliability: 8311456
+@@ -435,6 +446,7 @@
+ EfsFekDplProtection: 0
+ EmbeddedPrint: 0
+ EmulateMobilePersonalityOnDesktop: 0
++EnableAcrylicHostBackdropWin32: 16155686
+ EnableAnimationDesigner: 13234095
+ EnableAtmosSpeakersTechAllowed: 0
+ EnableCalendarViewFeedback: 5882766
+@@ -460,7 +472,6 @@
+ Environments_UseStoreApp: 14308215
+ EraseGroupInkStroke: 0
+ EvtColomaTelemetry: 0
+-ExciseStubbornApps_TabShell: 16134543
+ Experiment_PoC: 0
+ ExperimentalHidSensors: 15950370
+ ExperimentalKGL: 9206638
+@@ -530,12 +541,15 @@
+ ForceSpriteVisuals: 8512080
+ ForceWindowlessWebView: 14599978
+ FrameworkScalability: 7328759
++FullScreenAnimation: 13133713
++FullScreenLightweightDefault: 16862609
+ GIPJPN: 0
+ GameConfigStoreGameListEntries: 11973136
+ GenerateAndCompareAlternates: 0
+ GenericActionAndTrigger: 7960589
+ GenericDataContract: 0
+ GenericInputProcessor: 0
++GenericText_DataMigration: 0
+ GenericWebReadOutLoud: 0
+ GetCortanaIdentity: 0
+ GizmoPersonalizationAccount: 0
+@@ -569,6 +583,7 @@
+ HmdsNotificationBackgroundTask: 5892332
+ HnsMirroredNetworking: 0
+ HnsServiceMonitor: 0
++HolographicCameraCaptureUI: 16892996
+ HolographicCoreShellOnDesktop: 12067452
+ HolographicDesktopHotkeyFunctionalityHiding: 9318657
+ HolographicDesktopMultitaskingUXHiding: 9270423
+@@ -596,7 +611,6 @@
+ Hub_CapturePicker_TestHooks_ForceAllDisplays_Development: 15532395
+ Hub_CompanionInput: 13987354
+ Hub_ComposableShell: 11153301
+-Hub_CustomStartLayout: 11450399
+ Hub_DemoQuirks: 17033430
+ Hub_DiagnosticMode: 10946770
+ Hub_EmulationMode: 11424614
+@@ -679,6 +693,7 @@
+ InterruptionControl: 8675162
+ InterruptionControlUploadRawNotification: 9846421
+ Interruption_Control: 0
++InvalidateCache: 0
+ InvokeUIUpdatesViaTryRunAsync: 1495890
+ IsDecodingHDR: 11868821
+ IsResponsiveToOcclusions: 14086919
+@@ -699,6 +714,8 @@
+ LegacyCandidateWindowRefinement: 0
+ LegacyCandidateWindow_PerMonitorDpi: 0
+ Library: 0
++Library_OOBExperience: 0
++Library_Samples: 0
+ LightingWhenLidClosed: 16487091
+ LightweightWindows: 16095113
+ LimitedAccessFeatures: 15442981
+@@ -751,6 +768,7 @@
+ MixedRealitySharing: 0
+ MobilityExperience: 11824828
+ ModalWindowHelper_CUIHostLookup: 9850522
++MopriaConfig: 0
+ MopriaDiscovery: 0
+ MotionControllerBatteryLevel: 11448781
+ MoveApp: 6478350
+@@ -765,7 +783,6 @@
+ MultiScreenAssignedAccess: 7557783
+ MultiSelectTreeView: 0
+ MultilingualTextIntelligence: 12990221
+-MultipleSourceDeviceMirroringUX: 13934626
+ MultispectrumUsage: 0
+ MusicRecoForChinaMarket: 9456144
+ NTLMLIE: 0
+@@ -781,11 +798,14 @@
+ NgcInVsmKeyType: 0
+ NgcIsoEverywhere: 0
+ NgcLogonUIUpsell: 0
++NoNvramThrottling: 0
+ NoRoamingLogonWait: 9444784
++NormalizeTitlebarHeight: 16460108
+ NotifGatekeeperShellInsiders: 13275870
+ NotificationDemuxerForMua: 0
+ NotificationGatekeeper: 12617765
+ NotificationImageFlipViewSupport: 0
++NotificationMuaAttribution: 0
+ NotificationUniversalActions: 13944909
+ NtpSoftLanding: 16503679
+ OASISAppFrameCustomization: 8395554
+@@ -838,6 +858,7 @@
+ PasswordLessWin10: 0
+ PasswordLessWin10S: 0
+ PausePersona: 7722583
++PdfTileCache: 0
+ Pdf_AnnotationsPanel: 0
+ Pdf_ReadOutLoud: 0
+ PenBackwardForwardNavigation: 13085732
+@@ -874,13 +895,14 @@
+ PinToTaskbar: 0
+ PinToTaskbarBadges: 0
+ PinWebsiteAction: 11790758
++PinWebsiteActionV2: 0
+ PinnableFavBar: 0
+ PlayReady_DrmModeUsage: 11972769
+ PointErase: 9416013
+-PositionerDrivenTabShell: 13448007
+ PowerBISpeechPayloadViaBing: 6365129
+ PreLoadProcessModel: 0
+ PreReleaseBackstopAndSuspensionCurtain: 6429916
++Preclassification: 0
+ Preconnect: 0
+ PredictionEngine: 0
+ Prelaunch: 0
+@@ -894,6 +916,7 @@
+ Print: 0
+ PristineShellTaskbarSettingsUI: 8605498
+ Private_AnimationDebugging: 8278107
++ProactiveEndpointOverride: 16975013
+ Profile_Service_Address_Temporary_Profile: 0
+ Profile_Service_DebugBreak_OnLoadUnload_Development: 0
+ Profile_Service_ForceMountHive_BeforeLoad_Development: 0
+@@ -903,6 +926,7 @@
+ PromptOnOpenWorkFiles: 7699712
+ ProximityConnectAutoReconnect: 0
+ PwiloAdaptiveToast: 16070919
++PwiloInNonCortanaMarkets: 16071259
+ QualityBenchmark: 11828014
+ QueryAdapterInfoIntegrated2: 12859558
+ QuickActionTemplates: 0
+@@ -944,6 +968,7 @@
+ RefactorSapi: 8603355
+ RegisterInboxAppsToDSMAOnly: 12849049
+ Registration_Free_MBM: 6330661
++RelatedQueries: 0
+ ReliableRfcomm: 0
+ ReminderBGTaskTelemetry: 11683427
+ ReminderCloudUx: 11639875
+@@ -952,7 +977,6 @@
+ ReminderRecurrenceV2: 6178089
+ ReminderTriggerless: 6118301
+ ReminderUniversalActions: 11592835
+-RemoveAcrylicWin32: 16155686
+ RemoveIEEntryPoints: 0
+ RenameFavoritesToBookmarks: 0
+ RenderPolicy: 0
+@@ -961,6 +985,8 @@
+ ReportOnRpcssCorruption: 14380956
+ ReportUnhealthyProcessFromRpcss: 14781211
+ ResourceManagerLcdCommitSave: 0
++RespectEdgeAllowFullScreenPolicy: 15865888
++RestrictSyncingOfCollectionsMigratedToCds: 0
+ RgbaSwapChains: 11786145
+ RinnaDS: 0
+ RollingShutterCorrection: 0
+@@ -969,6 +995,7 @@
+ RulerAngleSnap: 9139633
+ RulerSubPixel: 9139648
+ SAR_MoveSampleProcessing: 14294122
++SBCModelValidation: 0
+ SMBXAMLFileExplorer: 0
+ SRUM_CVSM_Tracing: 0
+ SSFRoaming: 0
+@@ -978,6 +1005,7 @@
+ SaveStrokeRenderingInfoInISF: 8134511
+ Scan3D: 0
+ ScheduleDrivenRendering: 0
++ScoobeActivitySyncConsent: 16176534
+ ScoobeCortana: 16243024
+ ScoobeMSA: 16242998
+ ScoobeMSAHello: 16316980
+@@ -1016,6 +1044,7 @@
+ SettingsAccountsInfoProgrammablePromoCard: 12908183
+ SettingsExtensibility: 4859458
+ SettingsHomeProgrammableMultiPromoCard: 16892364
++SettingsIndexingImprovements: 15521103
+ SettingsPhoneL2: 0
+ ShareOnPdf: 0
+ ShareToDevices: 8253193
+@@ -1028,6 +1057,7 @@
+ ShellSuspension: 11275454
+ ShoulderTap: 9146043
+ ShowBubbleHeadUI: 0
++ShowEdgeTabsInAltTab: 17170166
+ ShowNotificationWithImagePull: 11574775
+ ShowUserInfo: 0
+ SideNavAB: 0
+@@ -1104,10 +1134,8 @@
+ TSF3InputMethodAPI: 13217526
+ TSF3OnGIP: 0
+ TSF3TableTextIME: 16052211
+-TabCategoryA: 15481955
+ TabCategoryBC: 1470244
+ TabClose: 0
+-TabCommitSync: 14899272
+ TabCompanions: 12190812
+ TabCompanionsConfidenceLevel: 13636156
+ TabCompanionsPWILOHotkey: 16029513
+@@ -1120,9 +1148,9 @@
+ TabPreloading: 0
+ TabPreviewBarSoftlandingEvent: 0
+ TabShell: 10727725
++TabShellAutoTabbingPreference: 17057765
+ TabShellSearch: 12223789
+ TabShellTracelogRecording: 12549751
+-TabShellUIAIntegration: 13558302
+ TabShellVisibility: 13849566
+ TabShellVisibilityOverrideToOnForGates: 14291807
+ TabShellWinRtApi: 11895592
+@@ -1193,6 +1221,7 @@
+ UWPGameBar: 13602588
+ UWPScalingOnHMD: 8495373
+ UWPSizingOnHMD: 9032972
++UefiExposeAcpiTable: 0
+ UiaEndpoint: 0
+ UnifiedEnrollmentLandingPage: 5993168
+ UnifiedEnrollment_HandlerStrings: 12570428
+@@ -1206,8 +1235,8 @@
+ UseAcrylicForBlur: 10698574
+ UseComThreadingInAccessibilityView: 0
+ UseConvergedNpsmMtcModel: 5399495
++UseCortanaDeviceSdk: 15914046
+ UseGoldilocksNeighborhoodSelector: 0
+-UseNewTabPlaceholder: 16299392
+ UsePackagedFolderAssetXAMLFileExplorer: 0
+ UsePeopleAppRelevance: 14398136
+ UsePopupIslandSiteForXamlWindowedPopups: 13816458
+@@ -1216,6 +1245,7 @@
+ UseSebInUserPresence: 9827804
+ UseSystemBackButtonEdge: 0
+ UseTDLOnHolo: 11992383
++UseTabAdminBadge: 16958527
+ UserActionTracking_v3: 0
+ UserActivitiesPlatformOptIn: 0
+ UserActivityGroupSync: 0
+@@ -1232,25 +1262,28 @@
+ ViewClosingAPIs_TryConsolidate_Desktop: 8454932
+ ViewPresentationMode: 9304764
+ VirtualMachineHibernateSupport: 0
+-VirtualTabDrag: 14209681
+ VisionProactive: 10980028
+ VisionProactiveEnticement: 11341021
+ VisionReactive_Camera: 10980058
+ VisionReactive_OnScreen: 10980073
+ VisitsEngine_GroundtruthTimerOn: 0
+ VmChipsetLoadFirmwareFromFile: 0
++VmChipsetLoadStagingFirmware: 0
++VmChipsetPackageStagingFirmware: 0
+ VolumeFlyoutEndpointSelection: 6678327
+ WCGDefaultProvisioning: 0
+ WCGTestMode: 12077848
+ WDICheckOverride: 6931045
+ WFD_FirewallPreConfiguration: 0
+ WFD_XboxConnected: 0
++WFDiagnosticTracing: 0
+ WIWHotkeyForScreenSketch: 9679557
+ WSL_Interop_Pseudo_Consoles: 0
+ WSL_VM_Mode: 0
+-WSL_VNet: 0
++WSL_WslFs: 0
+ WUXCPreviewTypes: 15557756
+ WabConvergenceMobile: 8001631
++WarpSimplifiedDispatcher: 0
+ WcosHandwritingSettings: 16137811
+ WebViewAlwaysOnSeparateThread: 13058606
+ WebViewOOP: 0
+@@ -1296,23 +1329,14 @@
+ XAMLLanguageBar: 13618171
+ XAML_700msTimer: 10091034
+ XCloseDialog: 0
+-XDeviceAssets: 12631159
+ XDeviceBatteryNotification: 6233262
+ XDeviceFindMyPhone: 6368266
+-XDeviceFindPhoneCDP: 8340687
+-XDeviceIncomingCall: 11659550
+-XDeviceLowBatteryCDP: 8340398
+-XDeviceMessageRobustness: 12944044
+ XDeviceMessagingHistory: 13528824
+ XDeviceMigration: 16386905
+-XDeviceMissedCallCDP: 8340509
+ XDeviceMobileNotification: 6235127
+ XDevicePublicToastCollectionAPI: 9970812
+ XDeviceRingPhone: 9358856
+-XDeviceRingPhoneCDP: 8340587
+ XDeviceSendSms: 9358792
+-XDeviceSendSmsCDP: 8340322
+-XDeviceToastCollectionAPI: 8572594
+ XDeviceWPNotification: 6644079
+ Xaml2018: 13247025
+ XamlAllUpView: 7923987
