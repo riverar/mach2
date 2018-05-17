@@ -1,0 +1,201 @@
+--- D:/17666/features_nosymbols.txt	Thu May 10 01:10:09 2018
++++ D:/17672/features_nosymbols.txt	Wed May 16 16:18:25 2018
+@@ -66,7 +66,6 @@
+ AnAADJ: 12370422
+ AndromedaStore: 0
+ AnimationFailFast: 8510537
+-AnimationRedirectionAPI: 11703296
+ Annotations: 0
+ App2AppLaunchWork: 14939489
+ AppDefaultsAreRestricted: 14795313
+@@ -99,6 +98,7 @@
+ AppsFolderTaskbarIconLoading: 10998066
+ AskCortanaContext: 0
+ AssignedAccessSettingsAtomicConfiguration: 0
++AsyncKeyRoutingUWP: 16462895
+ AudioOffloadSize: 8153897
+ AudioSourceTelemetry: 9984760
+ Audio_Capture_EndpointType: 0
+@@ -181,6 +181,7 @@
+ CHTLanguageBar: 0
+ CRdpUseURCP: 0
+ CSIPLatform: 8423642
++CSSUseTracker: 0
+ CUIPopupHelper: 8664332
+ CacheSpotlightLockScreenImage: 6869861
+ CameraRollCapability: 11341037
+@@ -205,7 +206,7 @@
+ CentennialUseURL: 8182961
+ ChangeNotifyInterruptSourceUpdate: 9359829
+ ChangjieQuickOnGIP: 0
+-ChildDebugChannelIdForHclVtl: 0
++ChargeAndUpdate: 0
+ ChsIMECWPerfSelfhostMeasure: 0
+ ChtChangjieQuick_ExtensionAB_HKSCS: 0
+ ChtChangjie_SupportAlternativeCandidates: 0
+@@ -311,6 +312,7 @@
+ CredUI_NoUI_TESTHOOK: 11990129
+ CrossMachineUia: 0
+ CtfmonAsCiceroServerHost: 11954839
++CtfmonWatchDog: 16424680
+ CurrentVmVersionIsDefault: 0
+ D3D11On12Multithreading: 0
+ D3D12AutoBreadcrumbs: 0
+@@ -340,6 +342,7 @@
+ D3D9_WindowAndDisplayMismatchShim: 0
+ D3DShaderCache: 0
+ DHPNTPExperiment: 0
++DMDeclaredConfiguration: 0
+ DSSRemoval: 8315009
+ DUIChineseLineModeHandwriting: 8857961
+ DUIHandwritingKeyEvent: 11450709
+@@ -552,6 +555,7 @@
+ GenericText_DataMigration: 0
+ GenericWebReadOutLoud: 0
+ GetCortanaIdentity: 0
++GetMixFormatForVSS: 0
+ GizmoPersonalizationAccount: 0
+ GroupPolicyToForceImeVersion: 0
+ H264_DX12_VideoDecode: 13198365
+@@ -560,6 +564,7 @@
+ HVSIAcceleratedGraphics: 0
+ HVSIContainerForOffice: 0
+ HVSIGpuMirrorAll: 0
++HVSIHnsMirroredNetworking: 0
+ HVSILicensing: 0
+ HackAroundMouseVelocityBug: 0
+ HamDependencyGraph: 0
+@@ -578,6 +583,7 @@
+ Hcl: 0
+ HcsGpuRequireDevice: 0
+ HcsSecurityMitigation: 0
++HeapBackedPool: 0
+ HelloSettingsImprovements: 5832397
+ HeyCortanaOOBEWoV: 11516923
+ HmdsNotificationBackgroundTask: 5892332
+@@ -597,7 +603,9 @@
+ HolographicSpaceUserPresenceApi: 14577032
+ HolographicUserExperiences: 8933771
+ HolographicVisualsSettings: 0
+-HolographicWin32: 10497787
++HolographicWin32Exclusives: 10497787
++HolographicWin32MixedRealityTiles: 17035810
++HolographicWin32Slates: 15520941
+ HomeGroupMigrationDisabled: 0
+ HomeHub: 0
+ HoverUX: 0
+@@ -663,6 +671,7 @@
+ InclusiveZDPOobePage: 8874270
+ IncreasedUWPScalingOnHMD: 11738550
+ IndexAllFiles: 0
++InfracastMovementDetection: 0
+ InfracastPinSupport: 0
+ InitializeStartLayoutFromLogonFramework: 6094603
+ InkDataTelemetry: 11547331
+@@ -675,7 +684,6 @@
+ InkStrokeGrouping: 0
+ InputModalityTrackingByCicero: 15105853
+ InputServiceLogon: 13068691
+-InputServiceLogon_StopCtfmon: 16424680
+ InputServiceProfiles: 8469804
+ Input_DesktopNavigationGamepad: 11382642
+ Input_HeatInputStitching: 12134802
+@@ -743,9 +751,18 @@
+ LogonUI_ForceConsoleMode_Development: 8402217
+ LowAnimationsOnBatterySaver: 8027970
+ LowLevelWindowingEnvironmentAPIs: 0
++MDMEvaluate: 0
+ MMXOptInThroughSettings: 0
+ MMXOptOut: 0
+ MSRC36712: 0
++MSRC43381_15739186: 0
++MSRC43385_15740328: 0
++MSRC43643_16200548: 0
++MSRC43701_16255084: 0
++MSRC43727_16255109: 0
++MSRC43811_16127340: 0
++MSRC44097_16267608: 0
++MSRC44220_16364993: 0
+ MakePowershellTheDefaultConsole: 6527944
+ MarshalByValue: 5195825
+ MaterialPropertiesAPI: 15826297
+@@ -754,6 +771,7 @@
+ MediaControlsOnLock: 6084483
+ MergeStartGroupsForJapaneseAndKorean: 14612182
+ MergeStartPinyinGroups: 14520754
++MicrocodeAbTesting: 0
+ MicrosoftAccountWAMExtensionWorker: 0
+ MicrosoftAccount_SSPR: 0
+ MigrateAppDefaults: 8348618
+@@ -795,7 +813,6 @@
+ NewTabPageHostComponent: 0
+ NextWordPrediction: 11912704
+ NgcFirst: 0
+-NgcInVsmKeyType: 0
+ NgcIsoEverywhere: 0
+ NgcLogonUIUpsell: 0
+ NoNvramThrottling: 0
+@@ -917,7 +934,6 @@
+ PristineShellTaskbarSettingsUI: 8605498
+ Private_AnimationDebugging: 8278107
+ ProactiveEndpointOverride: 16975013
+-Profile_Service_Address_Temporary_Profile: 0
+ Profile_Service_DebugBreak_OnLoadUnload_Development: 0
+ Profile_Service_ForceMountHive_BeforeLoad_Development: 0
+ ProjectedShadow: 10769683
+@@ -989,13 +1005,13 @@
+ RestrictSyncingOfCollectionsMigratedToCds: 0
+ RgbaSwapChains: 11786145
+ RinnaDS: 0
++RnR_MBB: 0
+ RollingShutterCorrection: 0
+ RuleBasedAutocorrectionOnA: 14674288
+ RuleBasedNPSMCurrentSession: 6100785
+ RulerAngleSnap: 9139633
+ RulerSubPixel: 9139648
+ SAR_MoveSampleProcessing: 14294122
+-SBCModelValidation: 0
+ SMBXAMLFileExplorer: 0
+ SRUM_CVSM_Tracing: 0
+ SSFRoaming: 0
+@@ -1029,6 +1045,7 @@
+ SeeItSayItOnDesktop: 0
+ SeeItSayItOnXbox: 0
+ SelfLearnV2: 0
++SelfhostSecureBio: 0
+ SendSevereMisconversionReport: 0
+ SendTextInputToSpa: 10652181
+ SensorReserved: 7983914
+@@ -1080,6 +1097,7 @@
+ SketchpadLaunched: 12038065
+ SkipAddPageOnOnlyOneProvider: 0
+ SkipBackstackProcessingForAboveLockViews: 9677249
++SmartBusyCheckWithSmartScheduler: 0
+ SmartPrint: 0
+ SmartShadow: 13187976
+ SmartStandby: 0
+@@ -1267,12 +1285,16 @@
+ VisionReactive_Camera: 10980058
+ VisionReactive_OnScreen: 10980073
+ VisitsEngine_GroundtruthTimerOn: 0
++VisualCapture: 16458144
++VisualCaptureAPI: 16976519
+ VmChipsetLoadFirmwareFromFile: 0
+ VmChipsetLoadStagingFirmware: 0
+ VmChipsetPackageStagingFirmware: 0
+ VolumeFlyoutEndpointSelection: 6678327
++WAM_MuaSupport: 0
+ WCGDefaultProvisioning: 0
+ WCGTestMode: 12077848
++WDAG: 0
+ WDICheckOverride: 6931045
+ WFD_FirewallPreConfiguration: 0
+ WFD_XboxConnected: 0
+@@ -1317,6 +1339,7 @@
+ WirelessDisplayConnectCancel: 6313394
+ WirelessDockDafWfdDiscovery: 0
+ WlanSync: 0
++WldpDeveloperMode: 0
+ WnsMirroringAccountSwitcher: 9578772
+ WorkFilesAsPersonalToUsb: 8117523
+ WpnDEHReplacement: 8249692
