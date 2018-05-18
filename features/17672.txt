@@ -583,7 +583,7 @@ HashtagPrediction: 0
 Hcl: 0
 HcsGpuRequireDevice: 0
 HcsSecurityMitigation: 0
-HeapBackedPool: 0
+HeapBackedPool: 14470041
 HelloSettingsImprovements: 5832397
 HeyCortanaOOBEWoV: 11516923
 HmdsNotificationBackgroundTask: 5892332
