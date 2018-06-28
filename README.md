@@ -24,6 +24,14 @@ Installation is not required, however *Mach2* utilizes registration-free COM act
 ## Usage
 *Mach2* relies on [CLI11](https://github.com/CLIUtils/CLI11) to provide a canonical command line argument-driven interface. It's recommended you run the tool with `--help` for details on how to use the tool.
 
+## Testimonials
+
+### Microsoft
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Please never use this tool. The ways in which it can hose your system (and also defeat the purpose of WIP) are myriad.</p>&mdash; Brandon Paddock (@BrandonLive) <a href="https://twitter.com/BrandonLive/status/1012145159104954368?ref_src=twsrc%5Etfw">June 28, 2018</a> <a href="https://web.archive.org/web/20180628053245/https://twitter.com/BrandonLive/status/1012145159104954368">(archived)</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">You can cite me saying this. Hacking around in internal system state you don’t understand is very risky, and creates an inconsistent state that shouldn’t normally be possible. Plus mucks up data and wastes people’s time.</p>&mdash; Brandon Paddock (@BrandonLive) <a href="https://twitter.com/BrandonLive/status/1012163763204583425?ref_src=twsrc%5Etfw">June 28, 2018</a> <a href="https://web.archive.org/web/20180628051527/https://twitter.com/BrandonLive/status/1012163763204583425">(archived)</a></blockquote>
+
 ## Contributions
 Contributions are greatly appreciated. Keep the license in mind (GPLv3).
 
