@@ -19,5 +19,5 @@ skip_commits:
   files:
     - features/*
     - gfx/*
-    - **/*.md
-    - appveyor.yml
+    - '**/*.md'
+ 
