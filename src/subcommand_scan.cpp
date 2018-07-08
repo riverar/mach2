@@ -46,6 +46,66 @@ void ClearConsoleProgress()
     }
 }
 
+void WriteFeatureMapToScreen(const mach2::Scanner::Features& features, bool omit_symbol_hits)
+{
+    std::vector<std::wstring> stage_strings{ L"Unknown", L"Always Disabled", L"Disabled By Default", L"Enabled By Default", L"Always Enabled" };
+    for(const auto & stage : mach2::Scanner::FeatureStages)
+    {
+        std::wcout << L"## " << stage_strings[static_cast<int>(stage)] << L":" << std::endl << std::endl;
+
+        if (features.FeaturesByStage.count(stage) > 0)
+        {
+            for each (auto& kvp in features.FeaturesByStage.at(stage))
+            {
+                auto feature = kvp.second;
+                if (omit_symbol_hits)
+                {
+                    std::wcout << L"  " << feature->Name << L": " << feature->Id;
+                }
+                else
+                {
+                    std::wcout << L"  " << feature->Name << L": " << feature->Id << std::endl;
+                    for (auto& symbol_path : feature->SymbolPaths)
+                        std::wcout << L"  # " << symbol_path << std::endl;
+                }
+                std::wcout << std::endl;
+            }
+        }
+
+        std::wcout << std::endl;
+    }
+}
+
+void WriteFeatureMapToFile(const mach2::Scanner::Features& features, const std::wstring& output_path, bool omit_symbol_hits)
+{
+    std::vector<std::wstring> stage_strings{ L"Unknown", L"Always Disabled", L"Disabled By Default", L"Enabled By Default", L"Always Enabled" };
+
+    std::wofstream wide_output_stream(output_path);
+    for (const auto & stage : mach2::Scanner::FeatureStages)
+    {
+        wide_output_stream << L"## " << stage_strings[static_cast<int>(stage)] << L":" << std::endl << std::endl;
+
+        if (features.FeaturesByStage.count(stage) > 0)
+        {
+            for (auto& kvp : features.FeaturesByStage.at(stage))
+            {
+                auto feature = kvp.second;
+                wide_output_stream << L"  " << feature->Name << L": " << feature->Id;
+                if (!omit_symbol_hits)
+                {
+                    wide_output_stream << std::endl;
+                    for (auto& symbol_path : feature->SymbolPaths)
+                        wide_output_stream << L"  # " << symbol_path << std::endl;
+                }
+                wide_output_stream << std::endl;
+            }
+        }
+
+        wide_output_stream << std::endl;
+    }
+    wide_output_stream.close();
+}
+
 void ScanSubcommand(const std::string& symbols_path, const std::string& output_path, bool omit_symbol_hits)
 {
     try
@@ -67,39 +127,11 @@ void ScanSubcommand(const std::string& symbols_path, const std::string& output_p
 
         if (writing_to_file)
         {
-            std::wofstream wide_output_stream(wide_output_path);
-            for (auto& value : feature_map)
-            {
-                auto feature = value.second;
-                wide_output_stream << feature.Name;
-                wide_output_stream << L": " << feature.Id;
-                if (!omit_symbol_hits)
-                {
-                    wide_output_stream << std::endl;
-                    for (auto& symbol_path : feature.SymbolPaths)
-                        wide_output_stream << L"# " << symbol_path << std::endl;
-                }
-                wide_output_stream << std::endl;
-            }
-            wide_output_stream.close();
+            WriteFeatureMapToFile(feature_map, wide_output_path, omit_symbol_hits);
         }
         else
         {
-            for each (auto& value in feature_map)
-            {
-                auto feature = value.second;
-                if (omit_symbol_hits)
-                {
-                    std::wcout << feature.Name << L": " << feature.Id;
-                }
-                else
-                {
-                    std::wcout << feature.Name << L": " << feature.Id << std::endl;
-                    for (auto& symbol_path : feature.SymbolPaths)
-                        std::wcout << L"# " << symbol_path << std::endl;
-                }
-                std::wcout << std::endl;
-            }
+            WriteFeatureMapToScreen(feature_map, omit_symbol_hits);
         }
     }
     catch (...)

@@ -22,26 +22,50 @@ namespace mach2
     class Scanner
     {
     public:
+        enum class FeatureStage
+        {
+            Unknown = 0,
+            AlwaysDisabled,
+            DisabledByDefault,
+            EnabledByDefault,
+            AlwaysEnabled,
+        };
+
+        enum class SymbolHitType
+        {
+            Feature,
+            Stage,
+            Id
+        };
+
         class Feature
         {
         public:
-            std::int32_t Id;
+            std::int32_t Id = 0;
             std::wstring Name;
-            std::vector<std::wstring> SymbolPaths;
+            mach2::Scanner::FeatureStage Stage = mach2::Scanner::FeatureStage::Unknown;
+            std::unordered_set<std::wstring> SymbolPaths;
         };
 
-        typedef std::map<std::wstring, mach2::Scanner::Feature> FeatureMap;
+        class Features
+        {
+        public:
+            std::unordered_map<std::wstring, mach2::Scanner::Feature> FeaturesByName;
+            std::unordered_map<mach2::Scanner::FeatureStage, std::map<std::wstring, mach2::Scanner::Feature*>> FeaturesByStage;
+        };
+
+        static const std::vector<FeatureStage> FeatureStages;
         typedef std::function<void(std::wstring const &)> Callback;
-        
-        FeatureMap GetFeaturesFromSymbolsAtPath(std::wstring const &path);
+
+        Features GetFeaturesFromSymbolsAtPath(std::wstring const &path);
         void SetCallback(Callback const &callback);
     private:
         std::function<void(std::wstring const &)> _callback;
-        
-        void InitializeDia();
+
         void ExecuteCallback(std::wstring const &pdb_path);
         std::wstring GetFeatureNameFromSymbolName(std::wstring const &symbolName);
-        void GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::FeatureMap &feature_map);
-        void InternalGetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path, mach2::Scanner::FeatureMap &feature_map);
+        void GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::Features &features);
+        void InternalGetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path, mach2::Scanner::Features &features);
+        SymbolHitType GetSymbolHitTypeFromSymbolName(std::wstring const &symbolName);
     };
 }

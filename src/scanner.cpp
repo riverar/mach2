@@ -21,6 +21,15 @@
 #include <dia2.h>
 #include <diacreate.h>
 
+const std::vector<mach2::Scanner::FeatureStage> mach2::Scanner::FeatureStages
+{
+    mach2::Scanner::FeatureStage::Unknown,
+    mach2::Scanner::FeatureStage::AlwaysEnabled,
+    mach2::Scanner::FeatureStage::EnabledByDefault,
+    mach2::Scanner::FeatureStage::DisabledByDefault,
+    mach2::Scanner::FeatureStage::AlwaysDisabled
+};
+
 void mach2::Scanner::SetCallback(Callback const &callback)
 {
     _callback = callback;
@@ -34,7 +43,7 @@ void mach2::Scanner::ExecuteCallback(std::wstring const &pdb_path)
     }
 }
 
-void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &symbol_path_root, mach2::Scanner::FeatureMap &feature_map)
+void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &symbol_path_root, mach2::Scanner::Features &features)
 {
     WIN32_FIND_DATA find_data = {};
     auto find_handle = FindFirstFileEx((symbol_path_root + L"\\*.*").c_str(), FindExInfoBasic, &find_data, FindExSearchNameMatch, nullptr, FIND_FIRST_EX_LARGE_FETCH);
@@ -50,7 +59,7 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
                     std::experimental::filesystem::path symbols_path(symbol_path_root);
                     symbols_path /= find_data.cFileName;
 
-                    InternalGetFeaturesFromSymbolsAtPath(symbols_path, feature_map);
+                    InternalGetFeaturesFromSymbolsAtPath(symbols_path, features);
                 }
                 else
                 {
@@ -60,7 +69,7 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
                         pdb_path /= find_data.cFileName;
 
                         ExecuteCallback(pdb_path);
-                        GetFeaturesFromSymbolAtPath(pdb_path, feature_map);
+                        GetFeaturesFromSymbolAtPath(pdb_path, features);
                     }
                 }
             }
@@ -70,11 +79,27 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
     }
 }
 
-mach2::Scanner::FeatureMap mach2::Scanner::GetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path)
+mach2::Scanner::SymbolHitType mach2::Scanner::GetSymbolHitTypeFromSymbolName(std::wstring const & symbolName)
 {
-    FeatureMap feature_map;
-    InternalGetFeaturesFromSymbolsAtPath(symbols_path, feature_map);
-    return feature_map;
+    if (symbolName.find(L"::id") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::Id;
+    }
+    else if (symbolName.find(L"::stage") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::Stage;
+    }
+    else
+    {
+        return mach2::Scanner::SymbolHitType::Feature;
+    }
+}
+
+mach2::Scanner::Features mach2::Scanner::GetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path)
+{
+    Features features;
+    InternalGetFeaturesFromSymbolsAtPath(symbols_path, features);
+    return features;
 }
 
 std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &symbol_name)
@@ -92,16 +117,8 @@ std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &sy
     return match.str(1);
 }
 
-void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::FeatureMap &feature_map)
+void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::Features &features)
 {
-    auto feature_search_str = L"*WilFeatureTraits_Feature_*";
-
-    std::vector<std::wstring> feature_id_search_templates
-    {
-        L"*WilFeatureTraits_Feature_$s::id",
-        L"*wil::Feature<__WilFeatureTraits_Feature_$s>::id",
-    };
-
     CComPtr<IDiaDataSource> data_source;
     ThrowIfFailed(NoRegCoCreate(L"msdia140.dll", CLSID_DiaSource, IID_PPV_ARGS(&data_source)));
     ThrowIfFailed(data_source->loadDataFromPdb(path.c_str()));
@@ -112,51 +129,74 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
     CComPtr<IDiaSymbol> root_symbol;
     ThrowIfFailed(session->get_globalScope(&root_symbol));
 
-    CComPtr<IDiaEnumSymbols> symbols;
-    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, feature_search_str, NameSearchOptions::nsfRegularExpression, &symbols));
+    CComPtr<IDiaEnumSymbols> feature_symbols;
+    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*WilFeatureTraits_Feature_*",
+        NameSearchOptions::nsfRegularExpression, &feature_symbols));
 
-    CComPtr<IDiaSymbol> symbol;
     unsigned long results_retrieved = 0;
-    while (SUCCEEDED(symbols->Next(1, &symbol, &results_retrieved)) && results_retrieved == 1)
+    CComPtr<IDiaSymbol> feature_symbol;
+    while (SUCCEEDED(feature_symbols->Next(1, &feature_symbol, &results_retrieved)) && results_retrieved == 1)
     {
-        CComPtr<IDiaSymbol> dia_symbol;
-        dia_symbol.Attach(symbol.Detach());
+        CComPtr<IDiaSymbol> feature_symbol_hit;
+        feature_symbol_hit.Attach(feature_symbol.Detach());
 
         CComBSTR raw_symbol_name;
-        ThrowIfFailed(dia_symbol->get_name(&raw_symbol_name));
+        ThrowIfFailed(feature_symbol_hit->get_name(&raw_symbol_name));
         auto feature_name = GetFeatureNameFromSymbolName(raw_symbol_name.m_str);
-        auto& feature = feature_map[feature_name];
+        auto& feature = features.FeaturesByName[feature_name];
 
-        feature.SymbolPaths.push_back(path);
-
-        if (feature.Id > 0)
-            continue;
-
-        feature.Name = feature_name;
-
-        for (auto feature_id_search_template : feature_id_search_templates)
+        if (feature.Name.empty())
         {
-            auto feature_id_search_str = feature_id_search_template;
-            feature_id_search_str.replace(feature_id_search_template.find(L"$s"), std::wstring(L"$s").size(), feature.Name);
+            feature.Name = feature_name;
+        }
 
-            CComPtr<IDiaEnumSymbols> results;
-            ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagData, feature_id_search_str.c_str(),
-                NameSearchOptions::nsfRegularExpression | NameSearchOptions::nsfUndecoratedName, &results));
+        auto hit_type = GetSymbolHitTypeFromSymbolName(raw_symbol_name.m_str);
+        if (!feature.Id && hit_type == Scanner::SymbolHitType::Id)
+        {
+            CComVariant id_value;
+            ThrowIfFailed(feature_symbol_hit->get_value(&id_value));
+            feature.Id = id_value.lVal;
+        }
 
-            long ids_found = 0;
-            ThrowIfFailed(results->get_Count(&ids_found));
+        if (feature.Stage == FeatureStage::Unknown)
+        {
+            features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
 
-            if (ids_found > 0)
+            if (hit_type == Scanner::SymbolHitType::Stage)
             {
-                CComPtr<IDiaSymbol> id_symbol;
-                ThrowIfFailed(results->Next(1, &id_symbol, &results_retrieved));
+                CComVariant feature_stage_value;
+                ThrowIfFailed(feature_symbol_hit->get_value(&feature_stage_value));
 
-                CComVariant id_value;
-                ThrowIfFailed(id_symbol->get_value(&id_value));
-                feature.Id = id_value.lVal;
+                if (feature_stage_value.iVal >= 0 && feature_stage_value.iVal <= 4)
+                {
+                    feature.Stage = static_cast<FeatureStage>(feature_stage_value.iVal + 1);
 
-                break;
+                    auto & unknown_features = features.FeaturesByStage[FeatureStage::Unknown];
+                    if (unknown_features.count(feature.Name) > 0)
+                    {
+                        auto feature_to_move = unknown_features.at(feature.Name);
+                        unknown_features.erase(feature.Name);
+                        features.FeaturesByStage[feature.Stage][feature_to_move->Name] = feature_to_move;
+                    }
+                    else // First time FeaturesByStage has seen this feature
+                    {
+                        features.FeaturesByStage[feature.Stage][feature.Name] = &feature;
+                    }
+                }
+                else // Stage value is out of range or new to the ByStage map
+                {
+                    features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
+                }
             }
         }
+
+        feature.SymbolPaths.insert(path);
     }
+
+    assert(features.FeaturesByName.size() == (
+        features.FeaturesByStage[FeatureStage::Unknown].size() +
+        features.FeaturesByStage[FeatureStage::AlwaysDisabled].size() +
+        features.FeaturesByStage[FeatureStage::AlwaysEnabled].size() +
+        features.FeaturesByStage[FeatureStage::DisabledByDefault].size() +
+        features.FeaturesByStage[FeatureStage::EnabledByDefault].size()));
 }
