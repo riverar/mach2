@@ -1,0 +1,261 @@
+--- D:/17704/features_nosymbols.txt	Sat Jul 07 20:54:58 2018
++++ D:/17711/features_nosymbols.txt	Sat Jul 07 21:00:24 2018
+@@ -49,2 +48,0 @@
+-  AutoFormFill: 0
+-  AutoFormFillRoaming: 0
+@@ -52,2 +49,0 @@
+-  AutoFormfill_Payments_LocalStorage: 0
+-  AutoFormfill_Wallet_Payment: 0
+@@ -90 +85,0 @@
+-  CSSUseTracker: 0
+@@ -93 +87,0 @@
+-  CdplSupport: 0
+@@ -95 +88,0 @@
+-  CdplUnistoreProtection: 0
+@@ -193,2 +185,0 @@
+-  EPUB_AnnotationsPanel: 0
+-  EPUB_BookSharing: 0
+@@ -198 +188,0 @@
+-  EPUB_GoToPage: 0
+@@ -201 +190,0 @@
+-  EPUB_MediaOverlays: 0
+@@ -213 +201,0 @@
+-  EnablePeek: 0
+@@ -245 +232,0 @@
+-  FavoritesLinkInActionMenu: 0
+@@ -256 +243 @@
+-  ForceNgcIso: 0
++  GIPIND: 0
+@@ -257,0 +245,2 @@
++  GIPKOR: 0
++  GIPVIE: 0
+@@ -271 +260 @@
+-  HVSIHnsV2Api: 0
++  HW_Personalization: 0
+@@ -310 +298,0 @@
+-  KorVieIndOnGIP: 0
+@@ -379,0 +368 @@
++  PdfAlwaysMultiInstancing: 0
+@@ -471 +459,0 @@
+-  ShellSetsRoaming: 0
+@@ -548,0 +537 @@
++  VaultCDSSync: 0
+@@ -594,0 +584,3 @@
++  AOobeCortanaPage: 14169887
++  AOobeHelloPages: 12364733
++  AcrylicForEveryone: 15343832
+@@ -599,0 +592 @@
++  ActivityHistorySettingsOnAND: 15685752
+@@ -610,0 +604 @@
++  AnAADJ: 12370422
+@@ -612,0 +607,2 @@
++  AppDefaultsDomainJoinedAADDevices: 15815625
++  AppDefaultsEdgeCoinCampaign: 13974053
+@@ -624,0 +621 @@
++  AudioSourceTelemetry: 9984760
+@@ -634,0 +632 @@
++  Brightness3dxgkrnl: 12732606
+@@ -670,0 +669 @@
++  CloseWin32ExclusivesOnHide: 17707192
+@@ -697 +695,0 @@
+-  ConnectedAnimationConfigurations: 16173747
+@@ -714,0 +713 @@
++  CortanaSetQuietHours: 16533547
+@@ -761,0 +761 @@
++  EdgePinnedSecondaryTiles: 15920779
+@@ -766,0 +767 @@
++  EnableStartBackupRestoreOnWCOS: 9416438
+@@ -776,0 +778 @@
++  FileExplorerDarkTheme: 10397285
+@@ -781,0 +784 @@
++  FullScreenAnimation: 13133713
+@@ -792,0 +796 @@
++  HolographicCameraCaptureUI: 16892996
+@@ -803,0 +808 @@
++  HolographicWin32MixedRealityTiles: 17035810
+@@ -850,0 +856 @@
++  LanguageGenerationWhenLidClosed: 16487099
+@@ -852,0 +859 @@
++  LightingWhenLidClosed: 16487091
+@@ -891,0 +899 @@
++  OemPanelDriverSupport: 8395569
+@@ -902,0 +911 @@
++  OobeNetworkLossAversionPage: 15168593
+@@ -905,0 +915 @@
++  PDPCloudConsent: 14292780
+@@ -939,0 +950 @@
++  PwiloInNonCortanaMarkets: 16071259
+@@ -968,0 +980,2 @@
++  RespectEdgeAllowFullScreenPolicy: 15865888
++  ResponsiveAppViewPolicy: 17649909
+@@ -989,0 +1003,2 @@
++  SettingsHomeProgrammableMultiPromoCard: 16892364
++  SettingsIndexingImprovements: 15521103
+@@ -996,0 +1012 @@
++  SignoutInSettings: 12947221
+@@ -1000,0 +1017 @@
++  SmoothWindowDrag: 16398156
+@@ -1005,0 +1023 @@
++  StartNamedTileFolders: 16579928
+@@ -1017,3 +1034,0 @@
+-  TabShellAutoTabbingPreference: 17057765
+-  TabShellVisibility: 13849566
+-  TabShellWinRtApi: 11895592
+@@ -1023,0 +1039 @@
++  TaskFlowCloudFilesSupport: 13384821
+@@ -1059,0 +1076,2 @@
++  UserActivitySearch: 16484547
++  ViewAffinity: 7983929
+@@ -1067,0 +1086 @@
++  WebViewAlwaysOnSeparateThread: 13058606
+@@ -1073,0 +1093,2 @@
++  WindowingEnvironmentsDesktop: 15441787
++  WindowingEnvironmentsWCOS: 15727114
+@@ -1102 +1122,0 @@
+-  AOobeCortanaPage: 14169887
+@@ -1105,8 +1124,0 @@
+-  AcrylicForEveryone: 15343832
+-  AcrylicTaskViewTimeline: 12520383
+-  ActivityHistorySettingsOnAND: 15685752
+-  AppDefaultsDomainJoinedAADDevices: 15815625
+-  AppDefaultsEdgeCoinCampaign: 13974053
+-  AudioSourceTelemetry: 9984760
+-  Brightness3dxgkrnl: 12732606
+-  CaptureExplorerHydrationCallStacks: 14166282
+@@ -1117 +1128,0 @@
+-  CortanaSetQuietHours: 16533547
+@@ -1125,2 +1135,0 @@
+-  EdgePinnedSecondaryTiles: 15920779
+-  EnableStartBackupRestoreOnWCOS: 9416438
+@@ -1129,2 +1137,0 @@
+-  FileExplorerDarkTheme: 10397285
+-  FileExplorerFallbackProvider: 16388736
+@@ -1135 +1141,0 @@
+-  FullScreenAnimation: 13133713
+@@ -1137,2 +1143 @@
+-  HolographicCameraCaptureUI: 16892996
+-  HolographicWin32MixedRealityTiles: 17035810
++  HubOSOobeEulaPage: 11868187
+@@ -1143,2 +1147,0 @@
+-  LanguageGenerationWhenLidClosed: 16487099
+-  LightingWhenLidClosed: 16487091
+@@ -1146,5 +1148,0 @@
+-  NormalizeTitlebarHeight: 16460108
+-  OemPanelDriverSupport: 8395569
+-  OobeNetworkLossAversionPage: 15168593
+-  PDPCloudConsent: 14292780
+-  PwiloInNonCortanaMarkets: 16071259
+@@ -1153,2 +1151,4 @@
+-  RespectEdgeAllowFullScreenPolicy: 15865888
+-  ResponsiveAppViewPolicy: 17649909
++  ScoobeAccountState: 17008849
++  ScoobeMSA: 16242998
++  ScoobeMSAHello: 16316980
++  ScoobeNGCEnroll: 16261848
+@@ -1161,3 +1160,0 @@
+-  SettingsHomeProgrammableMultiPromoCard: 16892364
+-  SettingsIndexingImprovements: 15521103
+-  SignoutInSettings: 12947221
+@@ -1165 +1162 @@
+-  StartNamedTileFolders: 16579928
++  SmartShadowImplementation: 17664181
+@@ -1167,2 +1163,0 @@
+-  TaskFlowCloudFilesSupport: 13384821
+-  TaskbarAddOfficePins: 13536959
+@@ -1170 +1164,0 @@
+-  UserActivitySearch: 16484547
+@@ -1173,3 +1166,0 @@
+-  WebViewAlwaysOnSeparateThread: 13058606
+-  WindowingEnvironmentsDesktop: 15441787
+-  WindowingEnvironmentsWCOS: 15727114
+@@ -1195 +1185,0 @@
+-  CloseWin32ExclusivesOnHide: 17707192
+@@ -1199,2 +1188,0 @@
+-  CoreApplicationShutdown: 11449154
+-  DP_AUX_V1: 13688880
+@@ -1217 +1204,0 @@
+-  HandwritingCHS_InputHistory: 14885967
+@@ -1221 +1207,0 @@
+-  HubOSOobeEulaPage: 11868187
+@@ -1223 +1208,0 @@
+-  Hub_CapturePicker_TestHooks_ForceAllDisplays_Development: 15532395
+@@ -1228 +1212,0 @@
+-  LogonUI_BreakOnStart_Development: 8402194
+@@ -1234 +1217,0 @@
+-  PublicCUI: 14187099
+@@ -1238,3 +1220,0 @@
+-  ScoobeMSA: 16242998
+-  ScoobeMSAHello: 16316980
+-  ScoobeNGCEnroll: 16261848
+@@ -1243 +1222,0 @@
+-  SharedSuggestionsView: 13707781
+@@ -1245 +1223,0 @@
+-  SmoothWindowDrag: 16398156
+@@ -1248 +1225,0 @@
+-  TSF3TableTextIME: 16052211
+@@ -1250 +1226,0 @@
+-  TabSettingStateRepoIntegration: 17093654
+@@ -1252 +1227,0 @@
+-  TabShellSearch: 12223789
+@@ -1256 +1230,0 @@
+-  TaskbarEdgeTabBlowout: 12575415
+@@ -1260 +1234 @@
+-  XamlAltTabView: 7923995
++  ThumbnailTabs: 17317009
+@@ -1264 +1237,0 @@
+-  AOobeHelloPages: 12364733
+@@ -1269,0 +1243 @@
++  AcrylicTaskViewTimeline: 12520383
+@@ -1278 +1251,0 @@
+-  AnAADJ: 12370422
+@@ -1290,0 +1264 @@
++  AutopilotNetwork: 17630618
+@@ -1305,0 +1280 @@
++  CaptureExplorerHydrationCallStacks: 14166282
+@@ -1307,0 +1283 @@
++  CheckLoadedUnloadedEventSequence: 3662038
+@@ -1315,0 +1292 @@
++  CoreApplicationShutdown: 11449154
+@@ -1324 +1301 @@
+-  DataSourceReaderAPI: 14195815
++  DP_AUX_V1: 13688880
+@@ -1372 +1349 @@
+-  FuzzyInputOnXamlKeyboard: 9550325
++  FuzzyInputOnXamlKeyboard: 17605765
+@@ -1376,0 +1354 @@
++  HandwritingCHS_InputHistory: 14885967
+@@ -1381 +1358,0 @@
+-  Hub_CapturePicker: 15424656
+@@ -1400,0 +1378 @@
++  LazyApplyWindowGroupTemplate: 13167773
+@@ -1410,0 +1389 @@
++  LogonUI_BreakOnStart_Development: 8402194
+@@ -1414,0 +1394 @@
++  NormalizeTitlebarHeight: 16460108
+@@ -1442,0 +1423 @@
++  PublicCUI: 14187099
+@@ -1448 +1428,0 @@
+-  RedirectVisualAPI: 14661974
+@@ -1457 +1436,0 @@
+-  ScoobeAccountState: 17008849
+@@ -1459,0 +1439 @@
++  SharedSuggestionsView: 13707781
+@@ -1463 +1442,0 @@
+-  SmartShadowImplementation: 17664181
+@@ -1470 +1448,0 @@
+-  StartHubFrame: 11346121
+@@ -1478,0 +1457 @@
++  TSF3TableTextIME: 16052211
+@@ -1479,0 +1459,5 @@
++  TabSettingStateRepoIntegration: 17093654
++  TabShellAutoTabbingPreference: 17057765
++  TabShellSearch: 12223789
++  TabShellVisibility: 13849566
++  TabShellWinRtApi: 11895592
+@@ -1481,0 +1466,2 @@
++  TaskbarAddOfficePins: 13536959
++  TaskbarEdgeTabBlowout: 12575415
+@@ -1498 +1483,0 @@
+-  ViewAffinity: 7983929
+@@ -1521,0 +1507 @@
++  XamlAltTabView: 7923995
