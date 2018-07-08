@@ -15,3 +15,9 @@ after_build:
 - cmd: 7z a mach2-%PLATFORM%-%APPVEYOR_REPO_COMMIT%.zip LICENSE features.txt bin\%PLATFORM%\*.exe bin\%PLATFORM%\*.dll
 artifacts:
 - path: mach2-%PLATFORM%-%APPVEYOR_REPO_COMMIT%.zip
+skip_commits:
+  files:
+    - features/*
+    - gfx/*
+    - **/*.md
+    - appveyor.yml
