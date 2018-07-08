@@ -74,29 +74,29 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
     <LibraryPath>$(VSInstallDir)DIA SDK\lib\;$(LibraryPath)</LibraryPath>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int</IntDir>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
     <LibraryPath>$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int</IntDir>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
     <LibraryPath>$(VSInstallDir)DIA SDK\lib\;$(LibraryPath)</LibraryPath>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int</IntDir>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
     <LibraryPath>$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int</IntDir>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
