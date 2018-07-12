@@ -1,0 +1,102 @@
+--- D:/17711/features_nosymbols.txt	Sat Jul 07 21:00:24 2018
++++ D:/17713/features_nosymbols.txt	Thu Jul 12 01:14:01 2018
+@@ -52 +51,0 @@
+-  AzureSecurityMitigations: 0
+@@ -122,0 +122 @@
++  CriticalMemorySuspend: 0
+@@ -162,0 +163 @@
++  DeclarativeIsolation: 0
+@@ -175,0 +177 @@
++  Dictionary_Service_Debug: 0
+@@ -213,0 +216 @@
++  ExtensionsDedicatedThread: 0
+@@ -222 +224,0 @@
+-  FaceEngineEnrollmentExperience: 0
+@@ -278,0 +281 @@
++  HresultsInSyncML: 0
+@@ -289 +291,0 @@
+-  InlineLayoutBuilder: 0
+@@ -386 +387,0 @@
+-  PreLoadProcessModel: 0
+@@ -542,2 +542,0 @@
+-  VmChipsetLoadStagingFirmware: 0
+-  VmChipsetPackageStagingFirmware: 0
+@@ -705,0 +705 @@
++  CortanaHandwritingPanel: 15716560
+@@ -756 +756,3 @@
+-  EICForCHS: 14932557
++  EICAppendNewContent: 17059661
++  EICDelayedInkToTextConversion: 16539293
++  EICLogging: 15990572
+@@ -775,0 +778 @@
++  FaceClientEnrollmentExperience: 14218496
+@@ -781,0 +785,3 @@
++  FluencyHybrid: 16426302
++  FluencySettings: 16486102
++  FluencySettingsWCOS: 16843937
+@@ -872,0 +879 @@
++  MarshalByValue: 5195825
+@@ -1016 +1022,0 @@
+-  SmartShadow: 13187976
+@@ -1076,0 +1083 @@
++  VblankInkPrediction: 16404897
+@@ -1128 +1134,0 @@
+-  CortanaHandwritingPanel: 15716560
+@@ -1133,3 +1138,0 @@
+-  EICAppendNewContent: 17059661
+-  EICDelayedInkToTextConversion: 16539293
+-  EICLogging: 15990572
+@@ -1137,4 +1139,0 @@
+-  FaceClientEnrollmentExperience: 14218496
+-  FluencyHybrid: 16426302
+-  FluencySettings: 16486102
+-  FluencySettingsWCOS: 16843937
+@@ -1147,2 +1145,0 @@
+-  ImprovedStraightLineInkPrediction: 16404893
+-  MarshalByValue: 5195825
+@@ -1165 +1161,0 @@
+-  VblankInkPrediction: 16404897
+@@ -1191 +1186,0 @@
+-  DisableCoreDispatcherInWin32: 17479072
+@@ -1193,2 +1187,0 @@
+-  EICForJapanese: 17063631
+-  EICForKorean: 17261077
+@@ -1197 +1189,0 @@
+-  EnableDesktopAppxInAppContainer: 15955149
+@@ -1200,0 +1193 @@
++  EnableVolumeButtonsOnIdle: 15969073
+@@ -1211 +1203,0 @@
+-  InputValidation: 15989249
+@@ -1213 +1204,0 @@
+-  MarshalRestrictedErrorFromRpcss: 17468649
+@@ -1216,2 +1206,0 @@
+-  PackagedServices: 17172731
+-  PreventSUALaunchAsDSMA: 15953702
+@@ -1233 +1221,0 @@
+-  TextIntelligenceExperiments: 11383559
+@@ -1286 +1273,0 @@
+-  CommandBarFlyout: 15918174
+@@ -1289,0 +1277 @@
++  CompositionSwapchain: 10111032
+@@ -1311,0 +1300 @@
++  DisableCoreDispatcherInWin32: 17479072
+@@ -1314,0 +1304 @@
++  DpiInfoLeakCatcher: 15091662
+@@ -1316,0 +1307,3 @@
++  EICForCHS: 14932557
++  EICForJapanese: 17063631
++  EICForKorean: 17261077
+@@ -1362,0 +1356 @@
++  ImprovedStraightLineInkPrediction: 16404893
+@@ -1370,0 +1365 @@
++  InputValidation: 15989249
+@@ -1392,0 +1388 @@
++  MarshalRestrictedErrorFromRpcss: 17468649
+@@ -1409,0 +1406 @@
++  PackagedServices: 17172731
+@@ -1416 +1412,0 @@
+-  PointerWheelSourceModifiersAPI: 17579492
+@@ -1418,0 +1415 @@
++  PreventSUALaunchAsDSMA: 15953702
+@@ -1469,0 +1467 @@
++  TextIntelligenceExperiments: 11383559
