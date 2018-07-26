@@ -1,0 +1,442 @@
+--- D:/17713/features_nosymbols.txt	Thu Jul 12 01:14:01 2018
++++ D:/18204/features_nosymbols.txt	Wed Jul 25 18:53:31 2018
+@@ -5,2 +4,0 @@
+-  APODiagnostics: 0
+-  AccountsControl_AccountShareApproval: 0
+@@ -8,2 +5,0 @@
+-  AccountsGroup_AddAccountNameSetting: 0
+-  AccountsGroup_FirstPartySilentEnumSecondarySSO: 0
+@@ -21,0 +18 @@
++  AdvancedColorCamera: 0
+@@ -26,2 +22,0 @@
+-  AlphaPinOption: 0
+-  AltTabBlowout: 0
+@@ -31 +25,0 @@
+-  AppQuickActions: 0
+@@ -39,10 +33 @@
+-  Audio_Capture_EndpointType: 0
+-  Audio_Capture_StreamCategory: 0
+-  Audio_MultiChannelRenderAttempted: 0
+-  Audio_Render_ChannelConfig: 0
+-  Audio_Render_EndpointType: 0
+-  Audio_Render_StreamCategory: 0
+-  Audio_Spatial_Render_EndpointType: 0
+-  Audio_Spatial_Render_SpatialMode: 0
+-  Audio_Spatial_Render_StreamCategory: 0
+-  Audio_Spatial_VSSPlayed: 0
++  Audio_Mixer: 0
+@@ -52,0 +38 @@
++  BarcelonaAppContainerLaunch: 0
+@@ -55 +40,0 @@
+-  BlackForestShellSupport: 0
+@@ -61,2 +45,0 @@
+-  BluetoothAttBearerImprovements: 0
+-  BluetoothAvdtpDelayReport: 0
+@@ -66,2 +49 @@
+-  BluetoothGattRobustCaching: 0
+-  BluetoothHfpHF: 0
++  BlurDepthBuffers: 0
+@@ -80 +61,0 @@
+-  CHSLinguisticFundamentalImprovements: 0
+@@ -82,2 +62,0 @@
+-  CRdpDynamicDownsampling: 0
+-  CRdpRemoteAppDownsampling: 0
+@@ -90 +68,0 @@
+-  ChargeAndUpdate: 0
+@@ -92,5 +69,0 @@
+-  ChtChangjieQuick_ExtensionAB_HKSCS: 0
+-  ChtChangjie_SupportAlternativeCandidates: 0
+-  ChtChangjie_Win7CompatibleWildcardInput: 0
+-  ChtIme_AssociatedPhrase: 0
+-  ChtIme_BeepOnTypingError: 0
+@@ -99 +71,0 @@
+-  ChtIme_ControlAltCommaToInputSymbol: 0
+@@ -101,2 +72,0 @@
+-  ChtIme_SupportDefaultInputMode: 0
+-  ChtIme_SupportLeadingKeyCodeInput: 0
+@@ -109 +79,2 @@
+-  ConciergeUSBConfig: 0
++  CompositorAdaptiveQuality: 0
++  ConsumerASR: 0
+@@ -114 +84,0 @@
+-  CoreUefiSecVolumeLocation: 0
+@@ -119 +88,0 @@
+-  CortanaNotificationPromotion: 0
+@@ -121 +89,0 @@
+-  CreativeExpressionEvaluation: 0
+@@ -123 +90,0 @@
+-  CrossMachineUia: 0
+@@ -125 +91,0 @@
+-  CurrentVmVersionIsDefault: 0
+@@ -177,0 +144 @@
++  DirectManipulationEvents: 0
+@@ -180 +146,0 @@
+-  DisableUniqueServiceDisplayNameValidation: 0
+@@ -187 +152,0 @@
+-  DynamicExperiencePolicyEnforcement: 0
+@@ -195 +159,0 @@
+-  EarlyAdopterContentRing: 0
+@@ -204,2 +167,0 @@
+-  EnergySaver_OpportunisticDS: 0
+-  EnforceWIPForTokenBroker: 0
+@@ -211,4 +172,0 @@
+-  ExcludeCorrelationId: 0
+-  Experiment_PoC: 0
+-  ExperimentationViaEMS: 0
+-  ExtendDozeS4: 0
+@@ -215,0 +174 @@
++  ExtensionAlarmsManager: 0
+@@ -236,6 +194,0 @@
+-  FeatureConfigurationAadOnDesktop: 0
+-  FeatureConfigurationChannel: 0
+-  FeatureConfigurationMessageV2: 0
+-  FeatureReporting: 0
+-  FeatureReportingInternal: 0
+-  FileIOtoBackgroundThreads: 0
+@@ -248,0 +202 @@
++  GNSChannel: 0
+@@ -250 +203,0 @@
+-  GenericDataContract: 0
+@@ -254 +206,0 @@
+-  GetMixFormatForVSS: 0
+@@ -256,2 +207,0 @@
+-  HCL_VMGS: 0
+-  HTTPConnectionCoalescing: 0
+@@ -266 +215,0 @@
+-  HangDetectionThresholdTweaking: 0
+@@ -268 +216,0 @@
+-  Hcl: 0
+@@ -271 +218,0 @@
+-  HeapBackedPool: 0
+@@ -273,2 +220 @@
+-  HnsMirroredNetworking: 0
+-  HnsV2Api: 0
++  HolographicCameraCaptureUI: 0
+@@ -279 +224,0 @@
+-  HotPatchSimulation: 0
+@@ -294,2 +238,0 @@
+-  IntelHwpBamPpm: 0
+-  IntelNonHwpBamPpm: 0
+@@ -300,0 +244 @@
++  KnobsStateSeparation: 0
+@@ -314,0 +259 @@
++  ManipulationWithGripButton: 0
+@@ -316 +260,0 @@
+-  MicPrivacyAccessDenied: 0
+@@ -320,0 +265 @@
++  MiracastReceiver_EnableDropLateData: 0
+@@ -331 +275,0 @@
+-  NTLMLIE: 0
+@@ -335 +278,0 @@
+-  NetPerfCounters: 0
+@@ -340 +282,0 @@
+-  NgcFirst: 0
+@@ -342,5 +283,0 @@
+-  NgcLogonUIUpsell: 0
+-  NoNvramThrottling: 0
+-  NoTabbarMMX: 0
+-  NotificationDemuxerForMua: 0
+-  NotificationImageFlipViewSupport: 0
+@@ -349 +285,0 @@
+-  OctagonProdAttestationUrl: 0
+@@ -354,3 +289,0 @@
+-  OneSettingsClientFlightSettings: 0
+-  OneSettingsClientRefreshCacheTask: 0
+-  OneSettingsEnvironment: 0
+@@ -357,0 +291 @@
++  OutsideMode_Toggle_VideoSettings: 0
+@@ -366 +299,0 @@
+-  PasswordLessLsaEnforcement: 0
+@@ -375 +307,0 @@
+-  PersistentMemoryTest: 0
+@@ -377 +308,0 @@
+-  PhoneAppRecommendations: 0
+@@ -388,3 +318,0 @@
+-  Preclassification: 0
+-  PreclassificationWithThirdPartySoftware: 0
+-  Preconnect: 0
+@@ -393 +320,0 @@
+-  PrereleaseVmVersions: 0
+@@ -396,2 +322,0 @@
+-  Profile_Service_DebugBreak_OnLoadUnload_Development: 0
+-  Profile_Service_ForceMountHive_BeforeLoad_Development: 0
+@@ -404 +328,0 @@
+-  QuietMomentSummaryToast: 0
+@@ -420 +343,0 @@
+-  RelatedQueries: 0
+@@ -424 +346,0 @@
+-  RenderPolicy: 0
+@@ -426 +347,0 @@
+-  ResourceManagerLcdCommitSave: 0
+@@ -427,0 +349 @@
++  ReturnToValidLocation: 0
+@@ -436 +357,0 @@
+-  SMBXAMLFileExplorer: 0
+@@ -441 +362 @@
+-  SavePersistentMemory: 0
++  ScaleWithCollision: 0
+@@ -443 +363,0 @@
+-  ScheduleDrivenRendering: 0
+@@ -445 +364,0 @@
+-  SearchTheWebContextMenu: 0
+@@ -452 +370,0 @@
+-  SelfLearnV2: 0
+@@ -455 +372,0 @@
+-  ServiceMemHardCap: 0
+@@ -462 +378,0 @@
+-  ShowUserInfo: 0
+@@ -472 +387,0 @@
+-  SignalQueryAPI: 0
+@@ -476,0 +392 @@
++  SlateStreaming: 0
+@@ -479 +394,0 @@
+-  SmoooothEduSharedPCOOBE: 0
+@@ -488,2 +402,0 @@
+-  StorageServiceFolderSuggestions: 0
+-  StorageServiceFolderSuggestionsWriteRegistry: 0
+@@ -491,2 +403,0 @@
+-  SupportCDMInDefaultUser: 0
+-  SuppressLaunchUriWarningForTrustedPackagedApps: 0
+@@ -496,2 +406,0 @@
+-  SvchostMitigationPolicies: 0
+-  SvchostSplit: 0
+@@ -506,3 +415,2 @@
+-  TargetingSessionContextV6: 0
+-  TaskManagerExperiment: 0
+-  TaskManagerFeatureExperiment: 0
++  TeleportationBounce: 0
++  TeleportationStrafe: 0
+@@ -515 +422,0 @@
+-  UDPProbe: 0
+@@ -520,2 +426,0 @@
+-  UefiExposeAcpiTable: 0
+-  UefiForceEnableDebugging: 0
+@@ -526 +430,0 @@
+-  Usage_Tracking_FaceAuthentication: 0
+@@ -530 +433,0 @@
+-  UsePackagedFolderAssetXAMLFileExplorer: 0
+@@ -533,7 +435,0 @@
+-  UserModeVMBusPipeIO: 0
+-  VPNPerfCounters: 0
+-  VSmbTestHooks: 0
+-  VSmbUserModeVmbus: 0
+-  VacOcclusion: 0
+-  VaultCDSSync: 0
+-  VelocityEligibilityUsingFlightingApi: 0
+@@ -542 +438 @@
+-  VmChipsetLoadFirmwareFromFile: 0
++  VmmsVirtualMachineAppContainerLaunch: 0
+@@ -544,0 +441 @@
++  WCOSDeveloperMode: 0
+@@ -550,3 +446,0 @@
+-  WFDiagnosticTracing: 0
+-  WSL_VM_Mode: 0
+-  WSL_WslFs: 0
+@@ -562 +455,0 @@
+-  WininetNetworkCache: 0
+@@ -566,0 +460,2 @@
++  Workspace: 0
++  Workspace_LeashingBasedCarry: 0
+@@ -570,3 +464,0 @@
+-  XAMLFileExplorerDragAndDrop: 0
+-  XAMLFileExplorerPickerNamespaceRestrictions: 0
+-  XAMLFileExplorerSetWallpaperImage: 0
+@@ -577 +469 @@
+-  xBindXAMLFileExplorer: 0
++  XenonAppContainerLaunch: 0
+@@ -621 +512,0 @@
+-  Audio_Mixer: 12740182
+@@ -626,0 +518,2 @@
++  AutopilotESTS: 15705023
++  AutopilotNetwork: 17630618
+@@ -628,0 +522 @@
++  BindFilterPackageVfsRedirection: 14098587
+@@ -632,0 +527 @@
++  BrokeredDisplays_EnforceWcosCapability: 15007298
+@@ -637,0 +533 @@
++  CDPAFSFilteredSync: 16035139
+@@ -646,0 +543 @@
++  CDPUseEncryptionKeyActivity: 17065971
+@@ -667,0 +565 @@
++  ClipboardUserServiceBroker: 16034436
+@@ -695,0 +594 @@
++  ContainerDCOM: 12551329
+@@ -723 +621,0 @@
+-  Decoder_MediaUsage: 11886338
+@@ -730,0 +629 @@
++  DesktopSecondChanceOobe: 16198872
+@@ -737,0 +637 @@
++  DictationOnAndromeda: 13301897
+@@ -740 +639,0 @@
+-  Direct3D12HolographicRenderingAPI: 10700160
+@@ -751,5 +649,0 @@
+-  EDR_CalibrationPageVisited: 15143985
+-  EDR_EnabledOnBatteryWithoutBacklight: 14601494
+-  EDR_EnabledOnUnprovisionedDevice: 14442588
+-  EDR_QualityMode: 13271434
+-  EDR_UseOverlay: 12840423
+@@ -775,0 +670 @@
++  ExtraDictationLanguagesOnAndromeda: 14190647
+@@ -787,0 +683 @@
++  ForceUpdateFromAnyVersion: 16277541
+@@ -802 +697,0 @@
+-  HolographicCameraCaptureUI: 16892996
+@@ -808,0 +704 @@
++  HolographicHardwareContentProtection: 14496729
+@@ -859 +754,0 @@
+-  IsDecodingHDR: 11868821
+@@ -876,0 +772 @@
++  LowConfPWILOSoftLanding: 17059189
+@@ -887 +782,0 @@
+-  MiracastReceiver_EnableDropLateData: 14687075
+@@ -912 +806,0 @@
+-  OggBrowserUsage: 12023326
+@@ -920 +813,0 @@
+-  OutsideMode_Toggle_VideoSettings: 13133210
+@@ -926 +818,0 @@
+-  PartialTopology_SelectedCodecNotFound: 12149134
+@@ -950 +841,0 @@
+-  PlayReady_DrmModeUsage: 11972769
+@@ -985,0 +877 @@
++  RemoveGdiModePruning: 17015447
+@@ -992,2 +883,0 @@
+-  SAR_MoveSampleProcessing: 14294122
+-  SVR_VideoPlayback: 12038004
+@@ -994,0 +885 @@
++  ScoobeAccountState: 17008849
+@@ -995,0 +887,4 @@
++  ScoobeMSA: 16242998
++  ScoobeMSAHello: 16316980
++  ScoobeNGCEnroll: 16261848
++  ScoobeNetwork: 16242964
+@@ -996,0 +892,5 @@
++  ScoobeOnedrive: 16243018
++  ScoobeOutro: 16243039
++  ScoobePhonePairing: 16243009
++  ScoobeSuggestions: 15709403
++  ScoobeWelcome: 16243035
+@@ -1020,0 +921 @@
++  SimulationDriver: 14363547
+@@ -1022,0 +924 @@
++  SmartShadowImplementation: 17664181
+@@ -1038 +939,0 @@
+-  SystemTray: 16666485
+@@ -1102 +1002,0 @@
+-  WindowingSaveAndRestore: 15881232
+@@ -1126,0 +1027,2 @@
++  YourPhoneDesktopShortcut: 15932089
++  YourPhoneTaskbarIcon: 16257538
+@@ -1132,2 +1034 @@
+-  ClipboardUserServiceBroker: 16034436
+-  ContainerDCOM: 12551329
++  Brightness3UncalibratedFallback: 17376988
+@@ -1136,2 +1037 @@
+-  DesktopSecondChanceOobe: 16198872
+-  DictationOnAndromeda: 13301897
++  Dwm_Ownership_Leak_Bugchek: 11029914
+@@ -1139,3 +1038,0 @@
+-  ExtraDictationLanguagesOnAndromeda: 14190647
+-  ForceUpdateFromAnyVersion: 16277541
+-  HardwareDRMMultithreadedKeyExchange: 15488212
+@@ -1146 +1042,0 @@
+-  RemoveGdiModePruning: 17015447
+@@ -1148,12 +1044 @@
+-  ScoobeAccountState: 17008849
+-  ScoobeMSA: 16242998
+-  ScoobeMSAHello: 16316980
+-  ScoobeNGCEnroll: 16261848
+-  ScoobeNetwork: 16242964
+-  ScoobeOnedrive: 16243018
+-  ScoobeOutro: 16243039
+-  ScoobePhonePairing: 16243009
+-  ScoobeSuggestions: 15709403
+-  ScoobeWelcome: 16243035
+-  SimulationDriver: 14363547
+-  SmartShadowImplementation: 17664181
++  TabIdStability: 16075729
+@@ -1162,4 +1046,0 @@
+-  WatsonizeActivationFailures: 17031106
+-  XVP_SW_LUT: 12840328
+-  YourPhoneDesktopShortcut: 15932089
+-  YourPhoneTaskbarIcon: 16257538
+@@ -1173,4 +1053,0 @@
+-  AppDefaultsWordPadSafelist: 15519531
+-  AutopilotESTS: 15705023
+-  BindFilterAppDataRedirection: 15725851
+-  BindFilterPackageVfsRedirection: 14098587
+@@ -1178,4 +1054,0 @@
+-  Brightness3UncalibratedFallback: 17376988
+-  BrokeredDisplays_EnforceWcosCapability: 15007298
+-  CDPAFSFilteredSync: 16035139
+-  CDPUseEncryptionKeyActivity: 17065971
+@@ -1183,0 +1057 @@
++  ContainerDCOMRundown: 15421807
+@@ -1185 +1058,0 @@
+-  DX12_Forced_Playback: 17516455
+@@ -1186,0 +1060 @@
++  DisableCoreDispatcherInWin32: 17479072
+@@ -1193 +1066,0 @@
+-  EnableVolumeButtonsOnIdle: 15969073
+@@ -1199 +1071,0 @@
+-  HolographicHardwareContentProtection: 14496729
+@@ -1203,0 +1076 @@
++  Hub_PrelaunchTeams: 17952771
+@@ -1207 +1079,0 @@
+-  RemoteAppLifetimeManager: 14098732
+@@ -1209,2 +1080,0 @@
+-  SVR_DX12_Rendering: 11537650
+-  SeparateAppAndShellRendering: 14306049
+@@ -1212,0 +1083 @@
++  SingleTabVisuals: 17608042
+@@ -1215 +1085,0 @@
+-  TSSource_DolbyVisionSupport: 16598050
+@@ -1217 +1086,0 @@
+-  TabShellTracelogRecording: 12549751
+@@ -1222,0 +1092 @@
++  WatsonizeActivationFailures: 17031106
+@@ -1235 +1104,0 @@
+-  AdvancedColorCamera: 10696544
+@@ -1244,0 +1114 @@
++  AppDefaultsWordPadSafelist: 15519531
+@@ -1247 +1116,0 @@
+-  AudioOffloadSize: 8153897
+@@ -1252 +1121 @@
+-  AutopilotNetwork: 17630618
++  BindFilterAppDataRedirection: 15725851
+@@ -1255,0 +1125,2 @@
++  Bug_UseCommitTimerOnStart: 18031186
++  Bug_UseCommitTimerOnStart_OnAND: 17898813
+@@ -1257 +1127,0 @@
+-  CBCSHardwareDRM: 17546121
+@@ -1296,0 +1167 @@
++  Direct3D12HolographicRenderingAPI: 10700160
+@@ -1300 +1170,0 @@
+-  DisableCoreDispatcherInWin32: 17479072
+@@ -1319 +1188,0 @@
+-  EnableUWPActivationContractsForCentennialApplications: 15848997
+@@ -1343,2 +1211,0 @@
+-  H264_DX12_VideoDecode: 13198365
+-  H265_DX12_VideoDecode: 12790342
+@@ -1348 +1214,0 @@
+-  HardwareDRMOptinEME: 6940972
+@@ -1372 +1237,0 @@
+-  LaunchAsResource: 11477490
+@@ -1376 +1240,0 @@
+-  LiveDASHPlayback_NumberBased: 9443998
+@@ -1427,0 +1292 @@
++  RemoteAppLifetimeManager: 14098732
+@@ -1428,0 +1294 @@
++  RenderThreadWatchdog: 16107080
+@@ -1433 +1299 @@
+-  SVR_GetPresentStats_Rotation: 17716364
++  RunawayTextureList: 17486965
+@@ -1434,0 +1301 @@
++  SeparateAppAndShellRendering: 14306049
+@@ -1441,0 +1309 @@
++  SpatialInputNewAPIPreview: 17756709
+@@ -1449,0 +1318 @@
++  SystemTray: 16666485
+@@ -1493 +1361,0 @@
+-  Win32AppViewsCreatedDuringShowWindow: 14994387
+@@ -1496,0 +1365 @@
++  WindowingSaveAndRestore: 15881232
