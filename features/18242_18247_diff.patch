@@ -1,0 +1,168 @@
+--- V:/temp/18242/features_nosymbols.txt	Wed Sep 19 09:45:45 2018
++++ V:/temp/18247/features_nosymbols.txt	Wed Sep 26 16:58:42 2018
+@@ -167,6 +167,7 @@
+   DeliveryOptimization_ActivitySettings: 0
+   DeliveryOptimization_AdvancedSettings: 0
+   DesktopControlCenter: 0
++  DevEnableValueBannerForMSFTInternal: 0
+   DevModeInternal: 0
+   DeviceDelete: 0
+   DeviceFamilyOverride: 0
+@@ -200,6 +201,7 @@
+   EmulateMobilePersonalityOnDesktop: 0
+   EnableINFProvisioningOfWCGOnByDefault: 0
+   EnableNarrowChsLayoutsOnDesktop: 0
++  EnableValueBanner: 0
+   EnergySaver_OpportunisticDS: 0
+   EnforceWIPForTokenBroker: 0
+   EnrollOnFailure: 0
+@@ -341,6 +343,7 @@
+   NewJapaneseImeSetting: 0
+   NewShell: 0
+   NewTabPageHostComponent: 0
++  NewWindowsAIK: 0
+   NgcFirst: 0
+   NgcIsoEverywhere: 0
+   NgcLogonUIUpsell: 0
+@@ -349,6 +352,7 @@
+   NotificationImageFlipViewSupport: 0
+   NotificationMuaAttribution: 0
+   NotificationsFailFast: 0
++  OctagonBrokerEtw: 0
+   OctagonClientBase: 0
+   OctagonProdAttestationUrl: 0
+   OctagonServiceIntegration: 0
+@@ -429,6 +433,7 @@
+   ResourceManagerLcdCommitSave: 0
+   RestrictSyncingOfCollectionsMigratedToCds: 0
+   RetpolineByDefaultVelocity: 0
++  Retpoline_Import_Linking: 0
+   Retpoline_Support: 0
+   ReturnToValidLocation: 0
+   RinnaDS: 0
+@@ -449,6 +454,7 @@
+   ScaleWithCollision: 0
+   Scan3D: 0
+   ScheduleDrivenRendering: 0
++  SearchAndCortanaSplitInSettings: 0
+   SearchProvidersFor10S: 0
+   SecureBio: 0
+   SecureUSBSecurityChecks: 0
+@@ -495,7 +501,6 @@
+   SpellerToCDSUserDataMigration: 0
+   SpotlightPersonalization: 0
+   SpotlightPersonalizationRequest: 0
+-  StartSplitViewInMenuMode: 0
+   StopAutomaticAugmentEnrollment: 0
+   StorageItemPrivacyChecks: 0
+   StorageServiceFolderSuggestions: 0
+@@ -1056,6 +1061,7 @@
+   SpeechGrammarReliabilityFixes: 8212930
+   SpotlightHotspotExtensions: 13867745
+   StartNamedTileFolders: 16579928
++  StartSplitViewInMenuMode: 6395189
+   StartUsePlatformExtensionUserSelection: 12803863
+   StorageLibraryFolderSuggestions: 9004739
+   StorageLibraryFolderSuggestionsUX: 10079435
+@@ -1105,6 +1111,7 @@
+   UpdatedPeopleSuggestions: 12034886
+   UploadUserActivity: 14860313
+   UseAcrylicForBlur: 10698574
++  UseNewHolographicCompositionDisplayInterface: 16871387
+   UsePeopleAppRelevance: 14398136
+   UserActivityOnDemandRetrieval: 11767906
+   UserActivitySearch: 16484547
+@@ -1175,6 +1182,7 @@
+   MSRC46861_18388632: 18388632
+   MSRC46863_18388604: 18388604
+   MSRC47072_18544034: 18544034
++  MSRC47193_18666348: 18666348
+   MSRC47284_18736032: 18736032
+   MarshalRestrictedErrorFromRpcss: 17468649
+   PackagedServices: 17172731
+@@ -1185,7 +1193,6 @@
+   TabShellVisibilityOverrideToOnForGates: 14291807
+   TestMultiUserCxhTestPackageInclusion: 14080617
+   TimestampFromScantime: 18474644
+-  UseNewHolographicCompositionDisplayInterface: 16871387
+ 
+ ## Disabled By Default:
+ 
+@@ -1214,6 +1221,7 @@
+   EnableExclusiveAppTransportOnHoloLens: 18263814
+   EnableMultiInstance: 6115766
+   EnableStartOnAFC: 15940751
++  ExpressiveInput_SymbolPicker: 18248137
+   ExpressiveInput_TipText: 18248172
+   FailFastOnGroupLayoutChangeWithOpenFolder: 15008037
+   FailFastOnUnrealizeDraggingTile: 14549398
+@@ -1231,16 +1239,19 @@
+   InitialClipboardHistoryItem: 18150311
+   LockApp_TestHooks_ShowWatermark_Development: 12340236
+   OobePrivacySettingsHtmlLearnMore: 14660184
+-  PasteAsPlainText: 15221520
+   ReportUnhealthyProcessFromRpcss: 14781211
+   SVR_DX12_Rendering: 11537650
+   ScreenClipping_On_HubOS: 15488948
++  SearchInAllMarkets: 17937263
+   SetLockScreenImageAsDesktopBackground: 5458669
+   SideloadStoreApps: 14908564
+   SimulationDriverHoloLens: 16705262
+   SingleTabVisuals: 17608042
+   SmartInsights: 18474194
++  SnippingToolParity: 17645912
++  StartInSeparateUWP: 18493822
+   StartUITracelogRecording: 10402319
++  StickyNotesNewWindowingAPI: 18741302
+   SupportInfoTipInNotificationCenter: 6082203
+   TSSource_DolbyVisionSupport: 16598050
+   TabShell: 10727725
+@@ -1262,6 +1273,8 @@
+   AOobeZdpPage: 12076160
+   AcrylicTaskViewTimeline: 12520383
+   ActivitiesInShell: 10494629
++  ActivitySuggestionsAPI: 18425764
++  ActivitySuggestionsAPI_Source: 18810100
+   AdaptiveUIOfficeMRU: 11114359
+   AdditionalComDebugOutput: 14468475
+   AdvancedColorCamera: 10696544
+@@ -1362,7 +1375,6 @@
+   ExpressiveInput_FlagsFontPackage: 15380572
+   ExpressiveInput_OnlineSticker: 12994636
+   ExpressiveInput_Sticker: 12994626
+-  ExpressiveInput_SymbolPicker: 18248137
+   FaceClientEnrollmentExperience: 14218496
+   FailFastOnIncorrectServiceRefCounting: 18505660
+   FailFastOnRecoverableUnifiedTileModelFailures: 10011417
+@@ -1409,6 +1421,7 @@
+   InternalSelfhostHooks: 8625295
+   InterruptionControl: 8675162
+   InterruptionControlUploadRawNotification: 9846421
++  JumpListV3: 18358360
+   KsrDisplay: 12075496
+   LazyApplyWindowGroupTemplate: 13167773
+   LegacyHPDFiltering: 15689327
+@@ -1457,6 +1470,7 @@
+   PWILOUploadForMSALinkedAccounts: 6982808
+   PackagedAppGraveyarding: 16110057
+   ParticlesCompositionAPI: 16381921
++  PasteAsPlainText: 15221520
+   PenPressAndHold: 11871415
+   PenSettingsPenPressure: 13760102
+   PeopleToastNotifications: 8540639
+@@ -1489,6 +1503,7 @@
+   SeparateAppAndShellRendering: 14306049
+   SetEnableExposeXUidRegKey: 14969026
+   SharedSuggestionsView: 13707781
++  ShellSuggestionsInTimeline: 18546370
+   ShowNotificationWithImagePull: 11574775
+   SignalDebugMode: 7033373
+   SmartShadow: 13187976
+@@ -1551,6 +1566,7 @@
+   WUCShapes: 11832104
+   WUXCPreviewTypes: 15557756
+   WcosHandwritingSettings: 16137811
++  WebTimeline: 18824324
+   WebViewOOPByDefault: 13886809
+   WelcomeScreenEnabled: 6502920
+   WindowManagement: 11144977
