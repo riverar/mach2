@@ -1,0 +1,170 @@
+--- V:/18845/features_nosymbols.txt	Sat Mar 02 22:55:30 2019
++++ V:/18850/features_nosymbols.txt	Wed Mar 06 16:28:01 2019
+@@ -31,6 +31,7 @@
+   AgeBasedAppBlocking: 0
+   AllowNotificationSound: 0
+   AllowRecommendedTroubleshooting: 0
++  AllowShellScalingCacheFallback: 0
+   AlphaPinOption: 0
+   AndromedaStore: 0
+   Annotations: 0
+@@ -317,7 +318,6 @@
+   HcsGpuRequireDevice: 0
+   HcsSecurityMitigation: 0
+   HealthPillarUIRevamp: 0
+-  HeapBackedPool: 0
+   HistoryTreeView: 0
+   HnsEncryption: 0
+   HnsMirroredNetworking: 0
+@@ -375,6 +375,7 @@
+   LineEndings: 0
+   LineNumbersWordWrap: 0
+   LinuxDirectBootFakeEFI: 0
++  LiteCWOnWCOS: 0
+   LiteOobeEulaPage: 0
+   LiteOobeMSA: 0
+   LiteOobePinSetup: 0
+@@ -420,6 +421,7 @@
+   NetPerfCounters: 0
+   NewAutoPlayGlobalSetting: 0
+   NewAutoPlayPerSiteSetting: 0
++  NewBopomofoImeSetting: 0
+   NewShell: 0
+   NewTabPageHostComponent: 0
+   NewWindowsAIK: 0
+@@ -529,6 +531,7 @@
+   ReportWddm2_6ToDriver_Intel: 0
+   ReportWddm2_6ToDriver_Nvidia: 0
+   ResourceManagerLcdCommitSave: 0
++  RestartManager: 0
+   RestrictSyncingOfCollectionsMigratedToCds: 0
+   RnR_APMToggling: 0
+   RnR_FLDR: 0
+@@ -563,6 +566,7 @@
+   SettingsPhoneL2: 0
+   ShareOnPdf: 0
+   ShellLauncherRepository: 0
++  ShellScalingCacheOCTValidation: 0
+   ShortWatchdogTimer: 0
+   ShowBubbleHeadUI: 0
+   ShowUserInfo: 0
+@@ -588,6 +592,7 @@
+   StorageServiceFolderSuggestions: 0
+   StorageServiceFolderSuggestionsWriteRegistry: 0
+   StoreFormsTelemetry: 0
++  SuggestionsML: 0
+   SupportCDMInDefaultUser: 0
+   SurfaceHubProximalAppLaunch: 0
+   SurfaceHubRemoveSidebars_Shell: 0
+@@ -647,6 +652,7 @@
+   VSmbTestHooks: 0
+   VSmbUserModeVmbus: 0
+   VacOcclusion: 0
++  ValidateScalingWithShellScalingCache: 0
+   ValueBannerEnableOneDrive: 0
+   ValueBannerEnableRewards: 0
+   ValueBannerIrisCDMIntegration: 0
+@@ -669,7 +675,7 @@
+   WFDiagnosticTracing: 0
+   WPRContainerIntegration: 0
+   WSL_VM_Mode: 0
+-  WSL_WslFs: 0
++  WamXboxGuestAccountSupport: 0
+   WarpDisableJITOOP: 0
+   WarpEnableJITCacheOptimizations: 0
+   WarpForceJITOOP: 0
+@@ -1002,13 +1008,10 @@
+   MSRC41449_14282720: 14282720
+   MSRC44924_18756591: 18756591
+   MSRC44924_19931362: 19931362
+-  MSRC45295_19123462: 19123462
+   MSRC46459_18951682: 18951682
+   MSRC46479_18517844: 18517844
+-  MSRC46486_18240367: 18240367
+   MSRC46745_18312782: 18312782
+   MSRC46866_19016884: 19016884
+-  MSRC46881_18391601: 18391601
+   MSRC47461_18851231: 18851231
+   MSRC47497_19067730: 19067730
+   MSRC47518_18904931: 18904931
+@@ -1028,11 +1031,9 @@
+   MSRC48347_19551692: 19551692
+   MSRC48361_19557102: 19557102
+   MSRC48362_19557131: 19557131
+-  MSRC48370_19562665: 19562665
+   MSRC48387_19571335: 19571335
+   MSRC48411_19595147: 19595147
+   MSRC48413_19595155: 19595155
+-  MSRC48417_19595230: 19595230
+   MSRC48421_19595330: 19595330
+   MSRC48528_19673058: 19673058
+   MSRC48530_19673067: 19673067
+@@ -1363,14 +1364,17 @@
+   MSRC47682_20355746: 20355746
+   MSRC47913_19209709: 19209709
+   MSRC47914_19209874: 19209874
++  MSRC48150_19390331: 19390331
+   MSRC48243_19452220: 19452220
+   MSRC48243_19580219: 19580219
++  MSRC48244_19452206: 19452206
+   MSRC48300_19498182: 19498182
+   MSRC48312_19694005: 19694005
+   MSRC48313_19476707: 19476707
+   MSRC48328_19499934: 19499934
+   MSRC48331_19547522: 19547522
+   MSRC48525_19673113: 19673113
++  MSRC48535_19673157: 19673157
+   MSRC48616_19724732: 19724732
+   MSRC48625_19770843: 19770843
+   MSRC48665_19770871: 19770871
+@@ -1391,6 +1395,7 @@
+   MSRC49489_20107494: 20107494
+   MSRC49547_20126942: 20126942
+   MSRC49569_19925605: 19925605
++  MSRC49611_20185972: 20185972
+   MSRC49617_20190144: 20190144
+   MSRC49661_20224862: 20224862
+   MSRC50097_20441275: 20441275
+@@ -1460,7 +1465,6 @@
+   TaskbarAddPinnedItemFailureTelemetry: 10658343
+   TaskbarEdgeFavicon: 17154140
+   TaskbarTabbedOneClick: 17154245
+-  TestMultiUserCxhFastFailExempt: 14200798
+   ThumbnailTabs: 17317009
+   WatsonizeActivationFailures: 17031106
+   XamlAltTabWin32: 17826155
+@@ -1649,6 +1653,7 @@
+   MSRC47580_18971426: 18971426
+   MSRC47940_19236528: 19236528
+   MSRC48068_20355857: 20355857
++  MSRC48382_19571396: 19571396
+   MSRC48424_19595486: 19595486
+   MSRC48449_19641876: 19641876
+   MSRC48689_19771260: 19771260
+@@ -1667,8 +1672,10 @@
+   MSRC49355_20029807: 20029807
+   MSRC49492_20108028: 20108028
+   MSRC49548_20127547: 20127547
++  MSRC49624_20176081: 20176081
+   MSRC49989_20387883: 20387883
+   MSRC50138_20505477: 20505477
++  MSRC50139_20420840: 20420840
+   MaterialPropertiesAPI: 15826297
+   MsixFlexibleContainers: 19164517
+   MyPeopleDeprecationTip: 19651320
+@@ -1733,6 +1740,7 @@
+   ShellSuggestionsInTimeline: 18546370
+   ShowNotificationWithImagePull: 11574775
+   SignalDebugMode: 7033373
++  SingleUserCxhAlternatePackageInclusion: 19685298
+   SmartInsights: 18474194
+   SpeechFailureDebugMode: 7056038
+   SpellerToCDS: 13622180
+@@ -1780,6 +1788,7 @@
+   UseRoutedAcceleratorKeyActivated: 15522294
+   UseSebInUserPresence: 9827804
+   UseTDLOnHolo: 11992383
++  UseWebStartOfflineFallback: 19909080
+   UserActivitySearch: 16484547
+   VailSuperWetInk: 18368047
+   VisionProactive: 10980028
