@@ -1,0 +1,226 @@
+--- V:/18855/features_nosymbols.txt	Thu Mar 28 15:43:16 2019
++++ V:/18860/features_nosymbols.txt	Thu Mar 28 13:22:50 2019
+@@ -83,6 +83,7 @@
+   BluetoothHfpHF: 0
+   BluetoothLooselyCoupledPens: 0
+   BluetoothProximityPlatform: 0
++  BluetoothQualification: 0
+   BookReader: 0
+   BookReader_AnnotationsPanelFilters: 0
+   Book_Classroom_Annotations_Sharing: 0
+@@ -189,7 +190,6 @@
+   DXGI_eFSE_Enablement_Policy: 0
+   DXGI_eFSE_OnByDefaultWithPromotion: 0
+   DeclarativeIsolation: 0
+-  DecoupledLanguageAndKeyboardSettings: 0
+   DecreaseTabSuspensionDelay: 0
+   DeepInferno: 0
+   DefaultEncoding: 0
+@@ -207,6 +207,7 @@
+   DeviceManagementOutprocDPUs: 0
+   DictationLangExpansion: 0
+   Dictionary_Service_Debug: 0
++  DigitsSubstitutionSetting: 0
+   DirectMLPublicApi: 0
+   DirectManipulationEvents: 0
+   DisableAppcontainerFixups: 0
+@@ -296,7 +297,6 @@
+   GenericInputProcessor: 0
+   GenericText_DataMigration: 0
+   GenericWebReadOutLoud: 0
+-  GetMeUpToDate: 0
+   GetMixFormatForVSS: 0
+   GipVerticalCandidateWindowExperience: 0
+   HMDPresenceSensorSetting: 0
+@@ -385,7 +385,6 @@
+   MMXOptOut: 0
+   MPSSupport: 0
+   MRCExperiencePriority: 0
+-  MRTLanguageChangeNotification_CorrectBehavior: 0
+   MagnifierNoJitter: 0
+   ManageCI: 0
+   MicrocodeAbTesting: 0
+@@ -559,6 +558,7 @@
+   ServiceUIContentExperimentA: 0
+   ServiceUIContentExperimentB: 0
+   ServiceUITabContextShellAPI: 0
++  SettingSyncRemovalDisableUploadsAndDownloadOnceOnly: 0
+   SettingsPhoneL2: 0
+   ShareOnPdf: 0
+   ShellLauncherRepository: 0
+@@ -639,6 +639,7 @@
+   UsePackagedFolderAssetXAMLFileExplorer: 0
+   UseRefactoredDictation: 0
+   UseUILanguageForVES: 0
++  UserActivity19H1Subscription: 0
+   UserActivityOnDemandRetrieval: 0
+   UserModeVMBusPipeIO: 0
+   UserSwitchTokenSwap: 0
+@@ -663,7 +664,6 @@
+   WAM_MuaSupport: 0
+   WCGDefaultProvisioning: 0
+   WCOSDeveloperMode: 0
+-  WCOS_OOBE_NoRestartDisplayLanguageChange: 0
+   WFD_FirewallPreConfiguration: 0
+   WFD_ForceFirstTimePairing: 0
+   WFD_TransportSelection: 0
+@@ -912,7 +912,6 @@
+   Fluency: 13634392
+   FluencyHybrid: 16426302
+   FluencyPersonalization: 18983264
+-  FluencySettings: 16486102
+   FluencySettingsWCOS: 16843937
+   ForceUpdateFromAnyVersion: 16277541
+   ForceWindowlessWebView: 14599978
+@@ -921,6 +920,7 @@
+   GameConfigStoreGameListEntries: 11973136
+   GameCoreCP: 18977415
+   GenericActionAndTrigger: 7960589
++  GlobalizationMuaSupport: 16708951
+   HandWritingPanelUseGestures: 11968958
+   HandwritingPanel: 13126689
+   HandwritingPanelAutoGrow: 9893835
+@@ -1007,9 +1007,7 @@
+   MSRC44924_19931362: 19931362
+   MSRC46243_18814768: 18814768
+   MSRC46244_18811894: 18811894
+-  MSRC46459_18951682: 18951682
+   MSRC46479_18517844: 18517844
+-  MSRC46745_18312782: 18312782
+   MSRC46866_19016884: 19016884
+   MSRC47316_18711374: 18711374
+   MSRC47331_19124809: 19124809
+@@ -1022,6 +1020,7 @@
+   MSRC47914_19209874: 19209874
+   MSRC48033_19302682: 19302682
+   MSRC48034_19302747: 19302747
++  MSRC48043_19307454: 19307454
+   MSRC48052_19314176: 19314176
+   MSRC48103_19356432: 19356432
+   MSRC48150_19390331: 19390331
+@@ -1031,7 +1030,6 @@
+   MSRC48244_19452206: 19452206
+   MSRC48248_19452351: 19452351
+   MSRC48268_19472794: 19472794
+-  MSRC48298_19496485: 19496485
+   MSRC48320_19537142: 19537142
+   MSRC48325_19541321: 19541321
+   MSRC48331_19547522: 19547522
+@@ -1052,7 +1050,6 @@
+   MSRC48543_19672897: 19672897
+   MSRC48548_19673415: 19673415
+   MSRC48550_19673423: 19673423
+-  MSRC48591_19690917: 19690917
+   MSRC48614_19770961: 19770961
+   MSRC48625_19770843: 19770843
+   MSRC48665_19770871: 19770871
+@@ -1385,6 +1382,7 @@
+ ## Enabled By Default:
+ 
+   CBCSHardwareDRM: 17546121
++  CentennialUIAccess: 19447269
+   CustomActionsForMSIX: 19797523
+   DxgkrnlPrereleaseDiagnostic: 9011807
+   EnableMultiViewSupportForWCOSInputHosting: 18483192
+@@ -1404,16 +1402,24 @@
+   MSRC48312_19694005: 19694005
+   MSRC48313_19476707: 19476707
+   MSRC48328_19499934: 19499934
++  MSRC48542_19672954: 19672954
+   MSRC48616_19724732: 19724732
+   MSRC48779_19856718: 19856718
++  MSRC48792_20586247: 20586247
+   MSRC48826_19892535: 19892535
+   MSRC48834_19897948: 19897948
+   MSRC48944_19921043: 19921043
+   MSRC49018_20358028: 20358028
++  MSRC49358_20037391: 20037391
++  MSRC49546_20126908: 20126908
+   MSRC49547_20126942: 20126942
+   MSRC49569_19925605: 19925605
++  MSRC49590_20163569: 20163569
++  MSRC49908_20311175: 20311175
++  MSRC49933_20369702: 20369702
+   MSRC50000_20397450: 20397450
+   MSRC50097_20441275: 20441275
++  MSRC50483_20620577: 20620577
+   ReportActivationTokenInfoForPackage: 10778748
+   ReportEdgeActivationFailure: 10121720
+   ReportOpenClassesRootFailure: 14501286
+@@ -1429,6 +1435,7 @@
+   AlwaysFailFastOnXamlFailure: 6487760
+   AppDefaultsCloudFileContentUri: 19305262
+   Brightness3LegacyAPIReroute: 16417871
++  BypassPingSetsForMachineLocalOids: 15769422
+   CaptureExplorerHydrationCallStacks: 14166282
+   CloudStoreDiagnostics: 6624442
+   CoalesceAACAudioSamples: 19285947
+@@ -1447,6 +1454,7 @@
+   FailFastOnUnrealizeDraggingTile: 14549398
+   FileExplorerPWILO: 15709118
+   FindMyStuffTip: 15342655
++  FluencySettings: 16486102
+   FriendlyDates: 13705666
+   Hub_AutoGuests: 18763065
+   Hub_CleanupReset: 15835765
+@@ -1552,6 +1560,7 @@
+   DMPointerHitTest: 18604230
+   DP_AUX_V1: 13688880
+   DcomContainerProtocol: 15421572
++  DecoupledLanguageAndKeyboardSettings: 19642854
+   DeployCentennialAppsOnWCOSWithVAILProxy: 16238427
+   DeprecatingEraseAllClicked: 9657363
+   DepthSorting: 13818272
+@@ -1663,15 +1672,26 @@
+   LogonUI_ForceConsoleMode_Development: 8402217
+   LowAnimationsOnBatterySaver: 8027970
+   LowConfPWILOSoftLanding: 17059189
++  MRTLanguageChangeNotification_CorrectBehavior: 19554133
+   MSRC47459_18671508: 18671508
+   MSRC47940_19236528: 19236528
+   MSRC48068_20355857: 20355857
++  MSRC48589_19690949: 19690949
+   MSRC48975_20358382: 20358382
+   MSRC49018_19944898: 19944898
+   MSRC49355_20029807: 20029807
++  MSRC49598_20165272: 20165272
+   MSRC49624_20176081: 20176081
++  MSRC49890_20309196: 20309196
++  MSRC49893_20309898: 20309898
++  MSRC49894_20310019: 20310019
++  MSRC49895_20310073: 20310073
++  MSRC49896_20310121: 20310121
++  MSRC49897_20310146: 20310146
+   MSRC49934_20369695: 20369695
++  MSRC49960_20370815: 20370815
+   MSRC49989_20387883: 20387883
++  MSRC50126_20461088: 20461088
+   MSRC50138_20505477: 20505477
+   MSRC50139_20420840: 20420840
+   MSRC50219_20522141: 20522141
+@@ -1783,6 +1803,9 @@
+   TimestampFromScantime: 18474644
+   ToggleTextInputCanvasBar: 1279509
+   TreeDumping: 19090634
++  TryUpdatePosition_AllowActiveCustomScaleAnimationAPI: 18919184
++  UTF8AsImageACP: 14727284
++  UTF8LocaleDefaults: 11739924
+   UWPSizingOnHMD: 9032972
+   UseConvergedNpsmMtcModel: 5399495
+   UseDirectManipulationHitTestEvent: 18862552
+@@ -1798,6 +1821,7 @@
+   VisionReactive_Camera: 10980058
+   VisionReactive_OnScreen: 10980073
+   VoiceTypingOverlayUX: 18326278
++  WCOS_OOBE_NoRestartDisplayLanguageChange: 12135189
+   WIWHotkeyForScreenSketch: 9679557
+   WNS_ChannelRevoke_Event: 19755180
+   WUCShapes: 11832104
+@@ -1810,6 +1834,7 @@
+   WebViewOOPByDefault: 13886809
+   WelcomeScreenEnabled: 6502920
+   WhiteboardAppInIWS: 19980867
++  WinGlob_ICUForTimeZones: 4048317
+   WindowManagement: 11144977
+   WindowsAnywhere: 8508009
+   WpnAdaptiveCards: 13709532

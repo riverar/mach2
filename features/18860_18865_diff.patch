@@ -1,0 +1,178 @@
+--- V:/18860/features_nosymbols.txt	Thu Mar 28 13:22:50 2019
++++ V:/18865/features_nosymbols.txt	Thu Mar 28 13:04:06 2019
+@@ -1074,10 +1074,8 @@
+   MSRC48996_19936385: 19936385
+   MSRC48998_19936411: 19936411
+   MSRC49006_19936924: 19936924
+-  MSRC49114_19967469: 19967469
+   MSRC49220_19997642: 19997642
+   MSRC49267_20020188: 20020188
+-  MSRC49339_20027747: 20027747
+   MSRC49348_20029638: 20029638
+   MSRC49392_20066163: 20066163
+   MSRC49437_20073140: 20073140
+@@ -1114,7 +1112,6 @@
+   NextWordPrediction: 11912704
+   NoRoamingLogonWait: 9444784
+   NotificationUniversalActions: 13944909
+-  NtpSoftLanding: 16503679
+   OOBEAntiTheft: 15376230
+   OemPanelDriverSupport: 8395569
+   OffThreadInputMethod: 13883232
+@@ -1285,7 +1282,6 @@
+   SystemLightTheme: 18422749
+   SystemTray: 16666485
+   TSF3inWin32: 15453717
+-  TabDragSoftLanding: 16484603
+   TabNavigationHotKey: 12002250
+   TargetedContentAPI: 8299381
+   TargetedContentCacheExpiration: 11946054
+@@ -1408,8 +1404,11 @@
+   MSRC48792_20586247: 20586247
+   MSRC48826_19892535: 19892535
+   MSRC48834_19897948: 19897948
++  MSRC48868_19908122: 19908122
+   MSRC48944_19921043: 19921043
+   MSRC49018_20358028: 20358028
++  MSRC49024_20752363: 20752363
++  MSRC49166_20827085: 20827085
+   MSRC49358_20037391: 20037391
+   MSRC49546_20126908: 20126908
+   MSRC49547_20126942: 20126942
+@@ -1417,15 +1416,16 @@
+   MSRC49590_20163569: 20163569
+   MSRC49908_20311175: 20311175
+   MSRC49933_20369702: 20369702
++  MSRC49988_20387640: 20387640
+   MSRC50000_20397450: 20397450
++  MSRC50055_20424347: 20424347
+   MSRC50097_20441275: 20441275
++  MSRC50366_20583610: 20583610
+   MSRC50483_20620577: 20620577
+   ReportActivationTokenInfoForPackage: 10778748
+   ReportEdgeActivationFailure: 10121720
+   ReportOpenClassesRootFailure: 14501286
+   ScreenClipping_On_HubOS: 15488948
+-  TabIdStability: 16075729
+-  TabShellVisibilityOverrideToOnForGates: 14291807
+   TestMultiUserCxhTestPackageInclusion: 14080617
+   VP9_DX12_VideoDecode: 17322281
+ 
+@@ -1439,15 +1439,12 @@
+   CaptureExplorerHydrationCallStacks: 14166282
+   CloudStoreDiagnostics: 6624442
+   CoalesceAACAudioSamples: 19285947
+-  ConvergedWindowDrag: 15046403
+   DX12_Forced_Playback: 17516455
+   DesktopSplashScreenSuppression_AllApps: 11955489
+   DisableCanPlayTypeCodecPackPresenceCaching: 18193454
+   DisableCoreDispatcherInWin32: 17479072
+-  DragBetweenViewModes: 16240952
+   Dwm_Ownership_Leak_Bugchek: 11029914
+   EnableAAMEarlyReturn: 16789844
+-  EnableAcrylicHostBackdropWin32: 16155686
+   EnableMultiInstance: 6115766
+   ExplorerLogonTasksBlackBox: 19400436
+   FailFastOnGroupLayoutChangeWithOpenFolder: 15008037
+@@ -1477,19 +1474,18 @@
+   SVR_DX12_Rendering: 11537650
+   ScoobeFrequencyControl: 19326370
+   ScreenClippingConvergence: 19061946
++  SelfHostWebStart: 19908852
+   SetLockScreenImageAsDesktopBackground: 5458669
+   SetNumberOfDaysDisplayedInTimeline: 18917037
+   SideloadStoreApps: 14908564
+-  SingleTabVisuals: 17608042
+   StartUITracelogRecording: 10402319
+   SupportInfoTipInNotificationCenter: 6082203
+   TSSource_DolbyVisionSupport: 16598050
+-  TabShell: 10727725
+   TaskbarAddPinnedItemFailureTelemetry: 10658343
+   TaskbarEdgeFavicon: 17154140
+   TaskbarTabbedOneClick: 17154245
+-  ThumbnailTabs: 17317009
+   WatsonizeActivationFailures: 17031106
++  WebStartLocalDev: 19989628
+   XamlAltTabWin32: 17826155
+ 
+ ## Always Disabled:
+@@ -1552,6 +1548,7 @@
+   ContainerToHostActivation: 19386280
+   ContentHub_PeoplePillar: 18327379
+   ConvergedDisplayEnhancementService: 16884851
++  ConvergedWindowDrag: 15046403
+   CredUI_AlwaysBroker: 15049203
+   CredUI_EnableTestHooks_Development: 8393558
+   CredUI_ForceConsoleMode_Development: 8344745
+@@ -1577,6 +1574,7 @@
+   DisplayInformation_UseNavClientScaleInfo: 19060191
+   DoNotActivateLockAppWithScreenOff: 7250255
+   DragAndDropSearch: 16533548
++  DragBetweenViewModes: 16240952
+   EDR_GPUClocking: 16281086
+   EICForCHT: 18854692
+   EICForJapanese: 17063631
+@@ -1586,6 +1584,7 @@
+   EICWithTouch: 18784576
+   EICinIslands: 38547058
+   EICinTIC: 16404873
++  EnableAcrylicHostBackdropWin32: 16155686
+   EnableAnimationDesigner: 13234095
+   EnableCalendarViewFeedback: 5882766
+   EnableEdgeMultiInstance: 15848284
+@@ -1703,6 +1702,7 @@
+   NormalizeTitlebarHeight: 16460108
+   NotifGatekeeperShellInsiders: 13275870
+   NotificationGatekeeper: 12617765
++  NtpSoftLanding: 16503679
+   OASISAppFrameCustomization: 8395554
+   OneCoreTransformsTransformContent: 13013972
+   OneCoreTransforms_BannedAPIs: 16465130
+@@ -1752,7 +1752,6 @@
+   SearchInExplorer: 11646741
+   SearchSuggestions: 18755234
+   SelfHostConsumerLayout: 19617417
+-  SelfHostWebStart: 19908852
+   SeparateAppAndShellRendering: 14306049
+   SetEnableExposeXUidRegKey: 14969026
+   SettingsHomeProgrammableMultiPromoCard: 16892364
+@@ -1761,6 +1760,7 @@
+   ShellSuggestionsInTimeline: 18546370
+   ShowNotificationWithImagePull: 11574775
+   SignalDebugMode: 7033373
++  SingleTabVisuals: 17608042
+   SingleUserCxhAlternatePackageInclusion: 19685298
+   SmartInsights: 18474194
+   SpeechFailureDebugMode: 7056038
+@@ -1784,11 +1784,15 @@
+   TDLFailFast: 11689171
+   TSF3InputMethodAPI: 13217526
+   TabCategoryBC: 1470244
++  TabDragSoftLanding: 16484603
++  TabIdStability: 16075729
+   TabSettingStateRepoIntegration: 17093654
++  TabShell: 10727725
+   TabShellAppToAppLinks: 14648958
+   TabShellAutoTabbingPreference: 17057765
+   TabShellSearch: 12223789
+   TabShellVisibility: 13849566
++  TabShellVisibilityOverrideToOnForGates: 14291807
+   TabShellWinRtApi: 11895592
+   TaskFlowDataEngineOnAND: 7844660
+   TaskFlowLocationActivitySupport: 13843340
+@@ -1800,6 +1804,7 @@
+   TextIntelligenceExperiments: 11383559
+   TextPrimitive: 15813634
+   TextPrimitiveAPI: 15813635
++  ThumbnailTabs: 17317009
+   TimestampFromScantime: 18474644
+   ToggleTextInputCanvasBar: 1279509
+   TreeDumping: 19090634
+@@ -1829,7 +1834,6 @@
+   WcosHandwritingSettings: 16137811
+   WdfDirectedPowerTransition_DefaultOptIn: 20107317
+   WdfDirectedPowerTransition_DefaultOptIn_ARM: 2231386
+-  WebStartLocalDev: 19989628
+   WebTimeline: 18824324
+   WebViewOOPByDefault: 13886809
+   WelcomeScreenEnabled: 6502920
