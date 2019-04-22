@@ -1,0 +1,227 @@
+--- V:/18865/features_nosymbols.txt	Thu Mar 28 13:04:06 2019
++++ V:/18875/features_nosymbols.txt	Mon Apr 22 11:08:22 2019
+@@ -34,0 +35 @@
++  AllowTiptsfExceptions: 0
+@@ -83,0 +85,2 @@
++  BluetoothLEAlternativePhySupport_Api: 0
++  BluetoothLEExtendedAdvertising_Api: 0
+@@ -216,0 +220 @@
++  DocumentFocus: 0
+@@ -221,0 +226 @@
++  DuiTicImprovements: 0
+@@ -282,0 +288 @@
++  FloatingModeDefaultForDuiTic: 0
+@@ -297 +302,0 @@
+-  GenericInputProcessor: 0
+@@ -306 +310,0 @@
+-  HVSIHnsMirroredNetworking: 0
+@@ -312,0 +317 @@
++  HardwareKeyboardInlinePrediction: 0
+@@ -324 +328,0 @@
+-  HnsMirroredNetworking: 0
+@@ -344,0 +349 @@
++  ImplicitLearning: 0
+@@ -353 +357,0 @@
+-  InputHistryToCDS: 0
+@@ -422 +425,0 @@
+-  NewWindowsAIK: 0
+@@ -426,0 +430 @@
++  NoSMUAWorkaround: 0
+@@ -441,0 +446 @@
++  OneSettingsClient_MSRootCert: 0
+@@ -484 +488,0 @@
+-  PowerActionWatchdog: 0
+@@ -527,0 +532 @@
++  ResilientToCloudFileCalculatedProperties: 0
+@@ -546,0 +552 @@
++  SearchApp: 0
+@@ -578 +583,0 @@
+-  SleepReliabilityDetailedDiagnostics: 0
+@@ -599,0 +605 @@
++  TPMCommandTelemetry: 0
+@@ -613,0 +620 @@
++  TaskManagerHealthTelemetry: 0
+@@ -615,0 +623 @@
++  ToggleTextInputCanvasBar: 0
+@@ -689,0 +698 @@
++  Win32KeyRouting: 0
+@@ -871 +879,0 @@
+-  DocumentFocus: 3731051
+@@ -873 +880,0 @@
+-  DuiTicImprovements: 9043033
+@@ -903 +909,0 @@
+-  ExpressiveInput_SymbolPicker: 18248137
+@@ -919 +924,0 @@
+-  FuzzyInputOnXamlKeyboard: 17605765
+@@ -1003,0 +1009 @@
++  MPEG4EditListWrite: 18916110
+@@ -1032,0 +1039 @@
++  MSRC48300_19498182: 19498182
+@@ -1049,0 +1057 @@
++  MSRC48542_19672954: 19672954
+@@ -1058 +1065,0 @@
+-  MSRC48691_19771231: 19771231
+@@ -1070,0 +1078,3 @@
++  MSRC48779_19856718: 19856718
++  MSRC48792_20586247: 20586247
++  MSRC48826_19892535: 19892535
+@@ -1071,0 +1082 @@
++  MSRC48868_19908122: 19908122
+@@ -1072,0 +1084 @@
++  MSRC48944_19921043: 19921043
+@@ -1076,0 +1089 @@
++  MSRC49166_20827085: 20827085
+@@ -1077,0 +1091 @@
++  MSRC49225_20861227: 20861227
+@@ -1079,0 +1094,2 @@
++  MSRC49355_20029807: 20029807
++  MSRC49358_20037391: 20037391
+@@ -1081,0 +1098 @@
++  MSRC49449_20076324: 20076324
+@@ -1083,0 +1101 @@
++  MSRC49490_20107963: 20107963
+@@ -1084,0 +1103,2 @@
++  MSRC49546_20126908: 20126908
++  MSRC49547_20126942: 20126942
+@@ -1085,0 +1106 @@
++  MSRC49569_19925605: 19925605
+@@ -1086,0 +1108,2 @@
++  MSRC49590_20163569: 20163569
++  MSRC49598_20165272: 20165272
+@@ -1089,0 +1113,23 @@
++  MSRC49890_20309196: 20309196
++  MSRC49893_20309898: 20309898
++  MSRC49894_20310019: 20310019
++  MSRC49895_20310073: 20310073
++  MSRC49896_20310121: 20310121
++  MSRC49897_20310146: 20310146
++  MSRC49908_20311175: 20311175
++  MSRC49933_20369702: 20369702
++  MSRC49934_20369695: 20369695
++  MSRC49960_20370815: 20370815
++  MSRC49983_20385962: 20385962
++  MSRC49988_20387640: 20387640
++  MSRC49989_20387883: 20387883
++  MSRC50000_20397450: 20397450
++  MSRC50097_20441275: 20441275
++  MSRC50126_20461088: 20461088
++  MSRC50219_20522141: 20522141
++  MSRC50221_20522190: 20522190
++  MSRC50237_20529188: 20529188
++  MSRC50241_20529513: 20529513
++  MSRC50366_20583610: 20583610
++  MSRC50483_20620577: 20620577
++  MSRC50851_20873218: 20873218
+@@ -1264,2 +1309,0 @@
+-  StabilizeInputAppActivation: 17720945
+-  StartInSeparateUWP: 18493822
+@@ -1343 +1386,0 @@
+-  Win32KeyRouting: 3775609
+@@ -1392,0 +1436 @@
++  ImprovedStraightLineInkPrediction: 16404893
+@@ -1394 +1437,0 @@
+-  MPEG4EditListWrite: 18916110
+@@ -1397 +1439,0 @@
+-  MSRC48300_19498182: 19498182
+@@ -1401 +1442,0 @@
+-  MSRC48542_19672954: 19672954
+@@ -1403,3 +1443,0 @@
+-  MSRC48779_19856718: 19856718
+-  MSRC48792_20586247: 20586247
+-  MSRC48826_19892535: 19892535
+@@ -1407,2 +1444,0 @@
+-  MSRC48868_19908122: 19908122
+-  MSRC48944_19921043: 19921043
+@@ -1411,10 +1446,0 @@
+-  MSRC49166_20827085: 20827085
+-  MSRC49358_20037391: 20037391
+-  MSRC49546_20126908: 20126908
+-  MSRC49547_20126942: 20126942
+-  MSRC49569_19925605: 19925605
+-  MSRC49590_20163569: 20163569
+-  MSRC49908_20311175: 20311175
+-  MSRC49933_20369702: 20369702
+-  MSRC49988_20387640: 20387640
+-  MSRC50000_20397450: 20397450
+@@ -1422,3 +1448 @@
+-  MSRC50097_20441275: 20441275
+-  MSRC50366_20583610: 20583610
+-  MSRC50483_20620577: 20620577
++  MSRC50630_20723528: 20723528
+@@ -1435,0 +1460 @@
++  AlwaysLaunchExplorerInSeparateProcess: 18780676
+@@ -1441 +1466 @@
+-  CoalesceAACAudioSamples: 19285947
++  CoalesceAACAudioSamples: 20457348
+@@ -1449,0 +1475,4 @@
++  EyeControlToolkit: 19098229
++  EyeTracking_AdvancedMouseMode: 18096054
++  EyeTracking_EcappSettingsUpdates: 19051580
++  EyeTracking_LaunchpadHide: 16371697
+@@ -1455,0 +1485,2 @@
++  GifSuggestionOnDesktop: 20965193
++  H264_Multithread_DXVA: 20820388
+@@ -1473,0 +1505 @@
++  SARContainerPooling: 12242988
+@@ -1476,0 +1509 @@
++  SearchSuggestions: 18755234
+@@ -1482,0 +1516 @@
++  SuspendStandAloneFileExplorerDuringDAMPhase: 19207979
+@@ -1486,0 +1521 @@
++  TimestampFromScantime: 18474644
+@@ -1493 +1527,0 @@
+-  3rdPartyAacSpeech: 19040803
+@@ -1506,0 +1541 @@
++  AllowScoobeDeferralByUser: 18973123
+@@ -1508 +1542,0 @@
+-  AllowTiptsfExceptions: 9014903
+@@ -1510 +1543,0 @@
+-  AlwaysLaunchExplorerInSeparateProcess: 18780676
+@@ -1521 +1553,0 @@
+-  AsyncSAR: 17347511
+@@ -1604,0 +1637 @@
++  EyeTracking_3rdPartyAacSpeech: 19040803
+@@ -1614 +1646,0 @@
+-  FloatingModeDefaultForDuiTic: 9226226
+@@ -1620,0 +1653 @@
++  GifSuggestionOnWCOS: 19440349
+@@ -1643,2 +1675,0 @@
+-  ImplicitLearning: 8324755
+-  ImprovedStraightLineInkPrediction: 16404893
+@@ -1650,0 +1682 @@
++  InputForegroundManager: 18988150
+@@ -1681,2 +1712,0 @@
+-  MSRC49355_20029807: 20029807
+-  MSRC49598_20165272: 20165272
+@@ -1684,10 +1713,0 @@
+-  MSRC49890_20309196: 20309196
+-  MSRC49893_20309898: 20309898
+-  MSRC49894_20310019: 20310019
+-  MSRC49895_20310073: 20310073
+-  MSRC49896_20310121: 20310121
+-  MSRC49897_20310146: 20310146
+-  MSRC49934_20369695: 20369695
+-  MSRC49960_20370815: 20370815
+-  MSRC49989_20387883: 20387883
+-  MSRC50126_20461088: 20461088
+@@ -1696,3 +1715,0 @@
+-  MSRC50219_20522141: 20522141
+-  MSRC50221_20522190: 20522190
+-  MSRC50241_20529513: 20529513
+@@ -1714 +1730,0 @@
+-  OverlayHandWritingPanel: 11217568
+@@ -1748 +1763,0 @@
+-  SARContainerPooling: 12242988
+@@ -1753 +1767,0 @@
+-  SearchSuggestions: 18755234
+@@ -1755,0 +1770 @@
++  SeparateOfficeFromOneDrive: 20516042
+@@ -1779,0 +1795 @@
++  SuggestionUIWAVE3OnWCOS: 20553178
+@@ -1781 +1796,0 @@
+-  SuspendStandAloneFileExplorerDuringDAMPhase: 19207979
+@@ -1808,2 +1822,0 @@
+-  TimestampFromScantime: 18474644
+-  ToggleTextInputCanvasBar: 1279509
+@@ -1822,0 +1836 @@
++  VAILInitialPositioning: 19319140
