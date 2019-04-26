@@ -1,0 +1,176 @@
+--- V:/18875/features_nosymbols.txt	Mon Apr 22 11:08:22 2019
++++ V:/18885/features_nosymbols.txt	Fri Apr 26 14:51:19 2019
+@@ -79 +78,0 @@
+-  BluetoothAvdtpDelayReport: 0
+@@ -238,0 +238 @@
++  EdgeSpartanDesktopAppOnWCOS: 0
+@@ -311 +310,0 @@
+-  HVSIIsolatedEdgeProcessLauncher: 0
+@@ -317,0 +317,2 @@
++  HardwareKeyboardInlinePredictionForWin32: 0
++  HardwareKeyboardInlinePredictionForXAML: 0
+@@ -369 +369,0 @@
+-  KeyboardSettingsDesktop: 0
+@@ -370,0 +371 @@
++  KryptonSoftLargePages: 0
+@@ -382,0 +384 @@
++  LiteOobeLanguagePage: 0
+@@ -384,0 +387 @@
++  LiteOobeReboot: 0
+@@ -392 +395 @@
+-  MagnifierNoJitter: 0
++  MagnifierWithinEdgesNoJitter: 0
+@@ -428,0 +432 @@
++  NightLightOnWCOS: 0
+@@ -561 +564,0 @@
+-  SelfHealingRepairScenarios: 0
+@@ -633,0 +637 @@
++  UefiEnableLowPowerS0: 0
+@@ -636,0 +641 @@
++  UndockedSettingsExtensions: 0
+@@ -646,0 +652 @@
++  UseMLModelForToastTiming: 0
+@@ -652 +657,0 @@
+-  UserModeVMBusPipeIO: 0
+@@ -658 +662,0 @@
+-  VSmbUserModeVmbus: 0
+@@ -659,0 +664 @@
++  VailContainerPause: 0
+@@ -674,0 +680 @@
++  WCOSTIPersonalization: 0
+@@ -695 +700,0 @@
+-  WhpUserModeDispatch: 0
+@@ -1015 +1019,0 @@
+-  MSRC46244_18811894: 18811894
+@@ -1033 +1036,0 @@
+-  MSRC48185_19396060: 19396060
+@@ -1041 +1043,0 @@
+-  MSRC48325_19541321: 19541321
+@@ -1043 +1044,0 @@
+-  MSRC48347_19551692: 19551692
+@@ -1047,3 +1047,0 @@
+-  MSRC48387_19571335: 19571335
+-  MSRC48411_19595147: 19595147
+-  MSRC48413_19595155: 19595155
+@@ -1054,2 +1051,0 @@
+-  MSRC48528_19673058: 19673058
+-  MSRC48530_19673067: 19673067
+@@ -1058,3 +1053,0 @@
+-  MSRC48543_19672897: 19672897
+-  MSRC48548_19673415: 19673415
+-  MSRC48550_19673423: 19673423
+@@ -1066 +1058,0 @@
+-  MSRC48697_19778584: 19778584
+@@ -1073,2 +1064,0 @@
+-  MSRC48731_19828162: 19828162
+-  MSRC48733_19828218: 19828218
+@@ -1077 +1066,0 @@
+-  MSRC48754_19843227: 19843227
+@@ -1085,2 +1073,0 @@
+-  MSRC48994_19936342: 19936342
+-  MSRC48996_19936385: 19936385
+@@ -1092 +1078,0 @@
+-  MSRC49267_20020188: 20020188
+@@ -1212,0 +1199 @@
++  PresentationAPI: 10111032
+@@ -1387,0 +1375 @@
++  WinGlob_ICUForTimeZones: 4048317
+@@ -1424,0 +1413 @@
++  CoalesceAACAudioSamples: 20457348
+@@ -1428,0 +1418 @@
++  H264_Multithread_DXVA: 20820388
+@@ -1429,0 +1420 @@
++  HW_Personalization: 17524868
+@@ -1436,0 +1428 @@
++  KeepRateForPersonalizedWords: 20806905
+@@ -1437,0 +1430 @@
++  LockBugFix_LockAppInstantlyDismisses: 20191093
+@@ -1446,0 +1440,2 @@
++  MSRC49630_20695512: 20695512
++  MSRC50027_20402253: 20402253
+@@ -1447,0 +1443,7 @@
++  MSRC50139_21073296: 21073296
++  MSRC50327_20565616: 20565616
++  MSRC50547_20696044: 20696044
++  MSRC50592_20696450: 20696450
++  MSRC50610_20702855: 20702855
++  MSRC50612_20702871: 20702871
++  MSRC50614_20702928: 20702928
+@@ -1448,0 +1451,4 @@
++  MSRC50655_20737736: 20737736
++  MSRC50657_20737867: 20737867
++  MSRC50683_20752271: 20752271
++  MSRC50971_20924927: 20924927
+@@ -1452,0 +1459 @@
++  SuggestionUIOnWCOS: 19439263
+@@ -1466 +1472,0 @@
+-  CoalesceAACAudioSamples: 20457348
+@@ -1470,0 +1477 @@
++  DisableSecondaryTilePinPrompt: 20695874
+@@ -1475,0 +1483 @@
++  EyeTracking_3rdPartyAacSpeech: 19040803
+@@ -1478,0 +1487 @@
++  EyeTracking_SwitchMode: 19450352
+@@ -1486 +1494,0 @@
+-  H264_Multithread_DXVA: 20820388
+@@ -1495,0 +1504,2 @@
++  ImageComparerV2: 19599498
++  InputForegroundManager: 18988150
+@@ -1500,0 +1511 @@
++  OfflineBitAsSlow: 20442768
+@@ -1501,0 +1513 @@
++  ParticlesCompositionAPI: 16381921
+@@ -1502,0 +1515 @@
++  RedesignedOobeDesktop: 19652439
+@@ -1513,0 +1527,2 @@
++  SpatialCompositionLabel: 14546809
++  StartSearchSuggestions: 18741303
+@@ -1521,0 +1537 @@
++  UseStoreECApp: 20577377
+@@ -1552,0 +1569 @@
++  ApplicationWindows_SupplementalPane: 20722116
+@@ -1577 +1593,0 @@
+-  CompositionSwapchain: 10111032
+@@ -1583,0 +1600 @@
++  CoreMessaging_DeferReleaseUserApiCall: 20516394
+@@ -1637 +1653,0 @@
+-  EyeTracking_3rdPartyAacSpeech: 19040803
+@@ -1654 +1669,0 @@
+-  GlyphRunPrimitiveAPI: 3251313
+@@ -1656 +1670,0 @@
+-  HW_Personalization: 17524868
+@@ -1682 +1695,0 @@
+-  InputForegroundManager: 18988150
+@@ -1706,0 +1720,2 @@
++  MSRC44803_20829456: 20829456
++  MSRC46856_19616319: 19616319
+@@ -1713,0 +1729,2 @@
++  MSRC49971_20373540: 20373540
++  MSRC50028_20402261: 20402261
+@@ -1715,0 +1733,5 @@
++  MSRC50251_20529870: 20529870
++  MSRC50459_20606762: 20606762
++  MSRC50491_20638631: 20638631
++  MSRC50723_20824178: 20824178
++  MSRC50733_20943515: 20943515
+@@ -1733 +1754,0 @@
+-  ParticlesCompositionAPI: 16381921
+@@ -1738,0 +1760 @@
++  PeripheralDockInputProcessing: 20299456
+@@ -1754,0 +1777 @@
++  RedesignedOobeModernPC: 20224288
+@@ -1789 +1811,0 @@
+-  StartSearchSuggestions: 18741303
+@@ -1794 +1815,0 @@
+-  SuggestionUIOnWCOS: 19439263
+@@ -1812,0 +1834 @@
++  TaskFlowDataEngineOnSantorini: 19570081
+@@ -1815 +1836,0 @@
+-  TaskbarSwitcherControl: 19099940
+@@ -1820,2 +1841,2 @@
+-  TextPrimitive: 15813634
+-  TextPrimitiveAPI: 15813635
++  TextPrimitive: 18813244
++  TextPrimitiveAPI: 3251313
+@@ -1855 +1875,0 @@
+-  WinGlob_ICUForTimeZones: 4048317
