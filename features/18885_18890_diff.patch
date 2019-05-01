@@ -1,0 +1,42 @@
+--- V:/18885/features_nosymbols.txt	Fri Apr 26 14:51:19 2019
++++ V:/18890/features_nosymbols.txt	Wed May 01 14:17:45 2019
+@@ -97,0 +98 @@
++  CAMETWLogging: 0
+@@ -215,0 +217 @@
++  DisableCRC32: 0
+@@ -241,0 +244 @@
++  EmptyFiles: 0
+@@ -344,0 +348 @@
++  HvciCancelScan: 0
+@@ -1042 +1045,0 @@
+-  MSRC48300_19498182: 19498182
+@@ -1073 +1075,0 @@
+-  MSRC48944_19921043: 19921043
+@@ -1443,0 +1446 @@
++  MSRC50304_20585205: 20585205
+@@ -1444,0 +1448 @@
++  MSRC50462_20607628: 20607628
+@@ -1454,0 +1459,2 @@
++  MSRC51181_21045850: 21045850
++  ProvideFlightDataToWebapps: 17557290
+@@ -1513,0 +1520,2 @@
++  PenDetachFRE: 20430727
++  PenDetachIWS: 20430744
+@@ -1525,0 +1534 @@
++  SettingsInCDS: 18616153
+@@ -1526,0 +1536 @@
++  SimpleParseOnDesktopIcons: 20670392
+@@ -1582,0 +1593 @@
++  CalendarQuickCompose: 21088047
+@@ -1614,0 +1626 @@
++  DesktopTouchImprovementForTabletPosture: 21154937
+@@ -1695,0 +1708 @@
++  InputAppConsumesUdk: 20652073
+@@ -1728,0 +1742,3 @@
++  MSRC49834_20287874: 20287874
++  MSRC49835_20287918: 20287918
++  MSRC49948_20370281: 20370281
+@@ -1737,0 +1754 @@
++  MSRC51034_20960573: 20960573
+@@ -1771 +1787,0 @@
+-  ProvideFlightDataToWebapps: 17557290
