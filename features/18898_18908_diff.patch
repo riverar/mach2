@@ -1,0 +1,176 @@
+--- V:/18898/features_nosymbols.txt	Wed May 15 20:07:53 2019
++++ V:/18908/features_nosymbols.txt	Wed May 29 13:33:23 2019
+@@ -2,0 +3 @@
++  AADAccountUPNNameChange: 0
+@@ -16,0 +18 @@
++  AddFamilyPage: 0
+@@ -46,0 +49 @@
++  ArsoForDesktopDJ: 0
+@@ -77,0 +81 @@
++  BluetoothAvrcpAsUserService: 0
+@@ -81,0 +86 @@
++  BluetoothHfpAppleAccessory: 0
+@@ -132 +136,0 @@
+-  ContainerDiagnosticService: 0
+@@ -208,0 +213 @@
++  DeviceManagementContainer: 0
+@@ -237,0 +243 @@
++  EapTeap: 0
+@@ -270,0 +277 @@
++  FL1_0_Core_Release: 0
+@@ -281,0 +289 @@
++  FamilySyncOnLogon: 0
+@@ -290,0 +299 @@
++  FlexibleNotificationItemView: 0
+@@ -310 +319 @@
+-  GipVerticalCandidateWindowExperience: 0
++  GpuHardwareSchedulingUi: 0
+@@ -322,0 +332 @@
++  HardwareKeyboardInlinePredictionOneKeyReversion: 0
+@@ -351,0 +362 @@
++  HvciIncompatibleDrivers: 0
+@@ -358,0 +370 @@
++  InContextNotificationSettings: 0
+@@ -369 +380,0 @@
+-  InstallPinnedSitesAsProgressiveWebApps: 0
+@@ -370,0 +382 @@
++  InternalUsersReportingCadence: 0
+@@ -410,0 +423 @@
++  MitigateCandidateFinalization: 0
+@@ -426 +438,0 @@
+-  NGenHistory: 0
+@@ -442,0 +455 @@
++  NotificationFrequencyImprovements: 0
+@@ -475 +487,0 @@
+-  PasswordLessWCOS: 0
+@@ -562,0 +575 @@
++  SceSetupOptimization: 0
+@@ -576,0 +590,2 @@
++  SettingSyncRemovalAllowEdgeToContinueSyncing: 0
++  SettingSyncRemovalAllowInternetExplorerToContinueSyncing: 0
+@@ -651,0 +667 @@
++  UsageReportingViaFCON: 0
+@@ -663,0 +680 @@
++  UserActivityGroupSync: 0
+@@ -666,0 +684,2 @@
++  VMComputeBrokerProcess: 0
++  VMVersion5Deprecation: 0
+@@ -676 +694,0 @@
+-  VdiSignatureUpdate: 0
+@@ -848 +865,0 @@
+-  CoreHostedApplication: 11449421
+@@ -913 +929,0 @@
+-  EnableMultiViewSupportForWCOSInputHosting: 18483192
+@@ -941 +956,0 @@
+-  GlobalizationMuaSupport: 16708951
+@@ -1024 +1038,0 @@
+-  MSRC39574_14396442: 14396442
+@@ -1026,3 +1039,0 @@
+-  MSRC44924_18756591: 18756591
+-  MSRC44924_19931362: 19931362
+-  MSRC46243_18814768: 18814768
+@@ -1054,3 +1064,0 @@
+-  MSRC48449_19641876: 19641876
+-  MSRC48535_19673157: 19673157
+-  MSRC48542_19672954: 19672954
+@@ -1060 +1067,0 @@
+-  MSRC48665_19770871: 19770871
+@@ -1067 +1073,0 @@
+-  MSRC48864_19907252: 19907252
+@@ -1073 +1078,0 @@
+-  MSRC49225_20861227: 20861227
+@@ -1077 +1081,0 @@
+-  MSRC49490_20107963: 20107963
+@@ -1079,4 +1083 @@
+-  MSRC49546_20126908: 20126908
+-  MSRC49547_20126942: 20126942
+-  MSRC49569_19925605: 19925605
+-  MSRC49579_20158996: 20158996
++  MSRC49535_21204384: 21204384
+@@ -1085 +1085,0 @@
+-  MSRC49611_20185972: 20185972
+@@ -1099 +1098,0 @@
+-  MSRC49934_20369695: 20369695
+@@ -1105 +1103,0 @@
+-  MSRC50000_20397450: 20397450
+@@ -1114 +1111,0 @@
+-  MSRC50366_20583610: 20583610
+@@ -1128 +1125 @@
+-  MSRC50733_20943515: 20943515
++  MSRC50733_20824419: 20824419
+@@ -1371 +1367,0 @@
+-  VblankInkPrediction: 16404897
+@@ -1382,0 +1379 @@
++  WebStartEndpointSelection: 20802801
+@@ -1425,0 +1423 @@
++  DisableDynamicContent: 19675651
+@@ -1450,0 +1449 @@
++  MSRC50197_20513963: 20513963
+@@ -1452,0 +1452,3 @@
++  MSRC50711_20781178: 20781178
++  MSRC50713_21260348: 21260348
++  MSRC50714_20781930: 20781930
+@@ -1453,0 +1456,4 @@
++  MSRC50729_20824324: 20824324
++  MSRC50732_20824399: 20824399
++  MSRC50735_20824484: 20824484
++  MSRC50931_20893357: 20893357
+@@ -1457,0 +1464,5 @@
++  MSRC51466_21232779: 21232779
++  MSRC51510_21266309: 21266309
++  MSRC51691_21400765: 21400765
++  MSRC51813_21509331: 21509331
++  OobePrivacySettingsHtmlLearnMore: 14660184
+@@ -1462,0 +1474 @@
++  SingleUserCxhAlternatePackageInclusion: 19685298
+@@ -1464 +1475,0 @@
+-  TestMultiUserCxhTestPackageInclusion: 14080617
+@@ -1465,0 +1477 @@
++  VblankInkPrediction: 16404897
+@@ -1468,0 +1481 @@
++  19H2SettingsSearchUpdates: 19879176
+@@ -1518 +1530,0 @@
+-  OobePrivacySettingsHtmlLearnMore: 14660184
+@@ -1522,0 +1535 @@
++  QueueOobeTelemetryForUpload: 21307089
+@@ -1527,0 +1541 @@
++  SVR_PresentAt_PresentationHandler: 15518219
+@@ -1533,0 +1548 @@
++  SettingsSearchCFR: 20974195
+@@ -1546,0 +1562 @@
++  TestMultiUserCxhTestPackageInclusion: 14080617
+@@ -1589 +1605 @@
+-  BingSearchLockscreen: 14486956
++  BingSearchLockscreen: 17917466
+@@ -1623,0 +1640 @@
++  DataPathOptimization: 18100194
+@@ -1631 +1648,2 @@
+-  DesktopTouchImprovementForTabletPosture: 21154937
++  DesktopTouchImprovementForTabletPosture: 21228112
++  DesktopTouchImprovementMaxWindow: 21154990
+@@ -1637 +1654,0 @@
+-  DisableDynamicContent: 19675651
+@@ -1724 +1740,0 @@
+-  LaunchSignalsForActivies: 19349732
+@@ -1745,0 +1762 @@
++  MSRC49985_20387224: 20387224
+@@ -1748,0 +1766,2 @@
++  MSRC50715_20798455: 20798455
++  MSRC50767_20827725: 20827725
+@@ -1751,0 +1771 @@
++  MSRC50956_21295729: 21295729
+@@ -1755,0 +1776 @@
++  MSRC51188_21053630: 21053630
+@@ -1758,0 +1780,2 @@
++  MSRC51686_21399329: 21399329
++  MSRC51696_21408811: 21408811
+@@ -1782,0 +1806 @@
++  PinMigration: 21157932
+@@ -1823 +1846,0 @@
+-  SingleUserCxhAlternatePackageInclusion: 19685298
+@@ -1854 +1876,0 @@
+-  TaskFlowDataEngineOnAND: 7844660
+@@ -1878,0 +1901 @@
++  UserActivityEngagementFlags: 19349732
+@@ -1895,0 +1919 @@
++  WebStartObviousFallback: 21254489
