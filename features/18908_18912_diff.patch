@@ -1,0 +1,77 @@
+--- V:/18908/features_nosymbols.txt	Wed May 29 13:33:23 2019
++++ V:/18912/features_nosymbols.txt	Wed Jun 05 17:04:47 2019
+@@ -66,0 +67 @@
++  AutopilotHybridConnectivityCheck: 0
+@@ -204,2 +205 @@
+-  DeliveryOptimization_ActivitySettings: 0
+-  DeliveryOptimization_AdvancedSettings: 0
++  DeliveryOptimization_Vibranium_UISettings: 0
+@@ -215,0 +216 @@
++  DeviceManagementRunCspInContainer: 0
+@@ -416,0 +418 @@
++  MbbCx_DeviceInterface_Support: 0
+@@ -442,0 +445 @@
++  NarratorScripting: 0
+@@ -512,0 +516 @@
++  PolicyManagerADMXIngestionUpdater: 0
+@@ -652,0 +657 @@
++  TouchInContextNotificationSettings: 0
+@@ -700,0 +706 @@
++  WAM_BI_RE_ARCH: 0
+@@ -1043 +1048,0 @@
+-  MSRC47316_18711374: 18711374
+@@ -1056 +1060,0 @@
+-  MSRC48244_19452206: 19452206
+@@ -1061 +1064,0 @@
+-  MSRC48361_19557102: 19557102
+@@ -1070 +1072,0 @@
+-  MSRC48738_19831616: 19831616
+@@ -1072 +1073,0 @@
+-  MSRC48779_19856718: 19856718
+@@ -1076 +1076,0 @@
+-  MSRC49024_20752363: 20752363
+@@ -1079,0 +1080 @@
++  MSRC49432_20068892: 20068892
+@@ -1090 +1090,0 @@
+-  MSRC49835_20287918: 20287918
+@@ -1099 +1098,0 @@
+-  MSRC49948_20370281: 20370281
+@@ -1113 +1111,0 @@
+-  MSRC50477_20611129: 20611129
+@@ -1120 +1117,0 @@
+-  MSRC50630_20723528: 20723528
+@@ -1247,0 +1245 @@
++  RetainFilesOnFailure: 19099921
+@@ -1451,0 +1450,2 @@
++  MSRC50523_20696371: 20696371
++  MSRC50703_20772209: 20772209
+@@ -1458,0 +1459,3 @@
++  MSRC50786_20829030: 20829030
++  MSRC50787_20829145: 20829145
++  MSRC50825_20846922: 20846922
+@@ -1467,0 +1471 @@
++  MSRC52104_21687179: 21687179
+@@ -1487,0 +1492 @@
++  CalendarQuickCompose: 21088047
+@@ -1524,0 +1530 @@
++  InputSiteTree: 20840737
+@@ -1532 +1537,0 @@
+-  PenDetachFRE: 20430727
+@@ -1538 +1542,0 @@
+-  RetainFilesOnFailure: 19099921
+@@ -1548,0 +1553 @@
++  ShellOcclusionHandling: 21082956
+@@ -1565,0 +1571 @@
++  VAIL_Monitor_Projection: 21414360
+@@ -1614 +1619,0 @@
+-  CalendarQuickCompose: 21088047
+@@ -1764,0 +1770 @@
++  MSRC50319_20560823: 20560823
+@@ -1766,0 +1773 @@
++  MSRC50746_20826724: 20826724
+@@ -1771,0 +1779 @@
++  MSRC51030_20957765: 20957765
+@@ -1776,0 +1785 @@
++  MSRC51219_21070842: 21070842
+@@ -1833,0 +1843 @@
++  ScoobeToastTriggers: 19864035
