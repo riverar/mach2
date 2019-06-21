@@ -1,0 +1,77 @@
+--- V:/18917/features_nosymbols.txt	Thu Jun 13 13:29:04 2019
++++ V:/18922/features_nosymbols.txt	Wed Jun 19 15:02:26 2019
+@@ -3,0 +4,2 @@
++  AADClientSideThrottling: 0
++  AADCloudAPPluginAlwaysEnabled: 0
+@@ -5,0 +8 @@
++  AADServerSideInitiatedThrottling: 0
+@@ -175,0 +179 @@
++  D3D12VideoAllowListDevMode: 0
+@@ -186,0 +191 @@
++  DESEnableBrightnessHotkeysWithoutPowerGuids: 0
+@@ -237,0 +243 @@
++  DraggableThumbnailAfterSnip: 0
+@@ -263,0 +270 @@
++  EncryptAuthIdentityForSystem: 0
+@@ -291,0 +299 @@
++  FailFastOnSuspend: 0
+@@ -349,0 +358 @@
++  HnsFlowSteeringEngine: 0
+@@ -392,0 +402 @@
++  KerbAsRepCredsHybrid: 0
+@@ -455,0 +466 @@
++  NewOutputPresenter: 0
+@@ -457,0 +469 @@
++  NewViewSearchApp: 0
+@@ -467,0 +480 @@
++  NvIo: 0
+@@ -535,0 +549 @@
++  ProvisionSteps: 0
+@@ -557 +570,0 @@
+-  RegistryStore: 0
+@@ -614,0 +628 @@
++  ShowUndockedSelfhostingText: 0
+@@ -689 +702,0 @@
+-  UseDefaultVswitchForAllClientScenarios: 0
+@@ -698 +710,0 @@
+-  UsoPolicyDisable: 0
+@@ -904,0 +917 @@
++  DataPathOptimization: 18100194
+@@ -974,0 +988 @@
++  H264_Multithread_DXVA: 20820388
+@@ -1039,0 +1054 @@
++  LaunchScoobeWhenInternetFirstAvailable: 19560808
+@@ -1081,2 +1095,0 @@
+-  MSRC48424_19595486: 19595486
+-  MSRC48589_19690949: 19690949
+@@ -1480,0 +1494 @@
++  DesktopStartDefaultWebView: 21302095
+@@ -1484 +1497,0 @@
+-  H264_Multithread_DXVA: 20820388
+@@ -1495 +1507,0 @@
+-  LaunchScoobeWhenInternetFirstAvailable: 19560808
+@@ -1513,0 +1526 @@
++  MSRC51883_21830762: 21830762
+@@ -1521,0 +1535 @@
++  SARContainerPooling: 12242988
+@@ -1588,0 +1603 @@
++  PenTailDockEvents: 20840718
+@@ -1592 +1606,0 @@
+-  RedesignedOobeDesktop: 19652439
+@@ -1595 +1608,0 @@
+-  SARContainerPooling: 12242988
+@@ -1623 +1636 @@
+-  UpdateShellOnLogon: 21253411
++  UseNewSearchAndCortanaApps: 19263623
+@@ -1625,0 +1639 @@
++  VirtualDesktopCustomNames: 19412047
+@@ -1700 +1713,0 @@
+-  DataPathOptimization: 18100194
+@@ -1816,0 +1830 @@
++  MSRC50055_20429541: 20429541
+@@ -1845 +1858,0 @@
+-  PenTailDockEvents: 20840718
+@@ -1864 +1876,0 @@
+-  RedesignedOobeModernPC: 20224288
+@@ -1937 +1948,0 @@
+-  UseNewSearchAndCortanaApps: 19263623
