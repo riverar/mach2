@@ -1,0 +1,308 @@
+--- V:/18362/features_nosymbols.txt	Tue Jul 02 09:35:30 2019
++++ V:/18362.10000/features_nosymbols.txt	Tue Jul 02 00:14:36 2019
+@@ -2,0 +3,2 @@
++  19H2_Enablement: 0
++  19H2_Rollback: 0
+@@ -10 +11,0 @@
+-  AccountsControl_AccountShareApproval: 0
+@@ -16 +16,0 @@
+-  ActionCenterConvergedAudioPlayer: 0
+@@ -22,4 +21,0 @@
+-  AddToReadingList: 0
+-  AddUpdateFavorite: 0
+-  AddressBoxNavigate: 0
+-  AddressBoxSearch: 0
+@@ -36 +31,0 @@
+-  Annotations: 0
+@@ -48 +42,0 @@
+-  AskCortanaContext: 0
+@@ -50 +43,0 @@
+-  AssistGlyphIcon: 0
+@@ -61 +53,0 @@
+-  AutoFormfill_Consent_Icon: 0
+@@ -63,2 +54,0 @@
+-  AutoplayGlobalSettingSoftlandingEvent: 0
+-  AutoplaySiteSettingSoftlandingEvent: 0
+@@ -68 +57,0 @@
+-  BingImageSearch: 0
+@@ -70 +58,0 @@
+-  BlackForestShellSupport: 0
+@@ -81,0 +70 @@
++  BluetoothLooselyCoupledPens: 0
+@@ -83,4 +71,0 @@
+-  BookReader: 0
+-  BookReader_AnnotationsPanelFilters: 0
+-  Book_Classroom_Annotations_Sharing: 0
+-  BooksMockTesting: 0
+@@ -89 +73,0 @@
+-  BrowserFramePerfAnalysisImprovements: 0
+@@ -102 +85,0 @@
+-  CDSRoaming: 0
+@@ -132,4 +114,0 @@
+-  CorrectiveGesture: 0
+-  CortanaAssistLyrics: 0
+-  CortanaAssistShopping: 0
+-  CortanaAvatarOnActionCenter: 0
+@@ -137,3 +115,0 @@
+-  CortanaPersonainActionCenter: 0
+-  CreativeExpressionEvaluation: 0
+-  CriticalMemorySuspend: 0
+@@ -176 +151,0 @@
+-  DHPNTPExperiment: 0
+@@ -197 +171,0 @@
+-  DevEnableValueBannerForMSFTInternal: 0
+@@ -204 +177,0 @@
+-  Dictionary_Service_Debug: 0
+@@ -207 +179,0 @@
+-  DisableAppcontainerFixups: 0
+@@ -209 +180,0 @@
+-  DisplayHoldBacks: 0
+@@ -217,11 +187,0 @@
+-  DynamicExperiencePolicyEnforcement: 0
+-  EPUB_ComprehensionTools: 0
+-  EPUB_Dictionary: 0
+-  EPUB_DisableSecurityChecks: 0
+-  EPUB_HostExtension: 0
+-  EPUB_IrlenTheme: 0
+-  EPUB_NewControls: 0
+-  EPUB_Scripts: 0
+-  EarlyAdopterContentRing: 0
+-  EdgeHandwritingPanel: 0
+-  EdgeLaunch: 0
+@@ -231 +190,0 @@
+-  EmulateMobilePersonalityOnDesktop: 0
+@@ -236,2 +194,0 @@
+-  EnableNarrowChsLayoutsOnDesktop: 0
+-  EnableValueBanner: 0
+@@ -247 +203,0 @@
+-  ExperimentationViaEMS: 0
+@@ -250,7 +205,0 @@
+-  ExtensionAlarmsManager: 0
+-  ExtensionsEntryPoint: 0
+-  ExtensionsInPrivate: 0
+-  ExtensionsInventory: 0
+-  ExtensionsPageAction: 0
+-  ExtensionsPreInstall: 0
+-  ExtensionsSuggestions: 0
+@@ -265,2 +213,0 @@
+-  FailFastOnSharingViolation: 0
+-  FailFastTreeParent: 0
+@@ -268,8 +214,0 @@
+-  FastNewTabCreation: 0
+-  FavoriteItems: 0
+-  FavoritesToWSI: 0
+-  FeatureConfigurationAadOnDesktop: 0
+-  FeatureConfigurationChannel: 0
+-  FeatureConfigurationMessageV2: 0
+-  FeatureReporting: 0
+-  FeatureReportingInternal: 0
+@@ -284,2 +222,0 @@
+-  ForceDisableSideBanner: 0
+-  ForceEnableSideBannerForMSFTInternal: 0
+@@ -291 +227,0 @@
+-  GenericDataContract: 0
+@@ -293,2 +228,0 @@
+-  GenericText_DataMigration: 0
+-  GenericWebReadOutLoud: 0
+@@ -304 +237,0 @@
+-  HackAroundMouseVelocityBug: 0
+@@ -307 +239,0 @@
+-  HandleLaunchDocumentFailure: 0
+@@ -319 +250,0 @@
+-  HistoryTreeView: 0
+@@ -331 +261,0 @@
+-  HoverUX: 0
+@@ -365,7 +294,0 @@
+-  LearningTools_PartsOfSpeechColor: 0
+-  LearningTools_PartsOfSpeechLineMarkers: 0
+-  Library: 0
+-  Library_LiveTile: 0
+-  Library_OOBExperience: 0
+-  Library_Samples: 0
+-  Library_Samples_Sync: 0
+@@ -392 +314,0 @@
+-  MiniSerp_ScaleAdjustment: 0
+@@ -400 +321,0 @@
+-  MoveStaticBrowserActions: 0
+@@ -404 +324,0 @@
+-  MultiLayerDHD: 0
+@@ -406 +325,0 @@
+-  MultiSelectTreeView: 0
+@@ -416,2 +334,0 @@
+-  NewAutoPlayGlobalSetting: 0
+-  NewAutoPlayPerSiteSetting: 0
+@@ -424,0 +342 @@
++  NotificationFrequencyImprovements: 0
+@@ -426 +343,0 @@
+-  NotificationMuaAttribution: 0
+@@ -433,3 +349,0 @@
+-  OfflineCompassPage: 0
+-  OneAddressBarControl: 0
+-  OneBoxAnimationDuration: 0
+@@ -446,3 +359,0 @@
+-  PDF_AnnotationBar: 0
+-  PDF_AnnotationBar_TouchWriting: 0
+-  PDF_Dictionary: 0
+@@ -454 +364,0 @@
+-  PasswordAutofill: 0
+@@ -461 +370,0 @@
+-  PdfFriendlyAddressBar: 0
+@@ -463,2 +371,0 @@
+-  Pdf_AnnotationsPanel: 0
+-  Pdf_ReadOutLoud: 0
+@@ -472 +378,0 @@
+-  PinButton_PdfReadingBar: 0
+@@ -474,3 +379,0 @@
+-  PinToTaskbar: 0
+-  PinToTaskbarBadges: 0
+-  PinToTaskbarConsentDialog: 0
+@@ -478,3 +380,0 @@
+-  PinnableFavBar: 0
+-  PinnedSitesUserGroups: 0
+-  PinningHostExtension: 0
+@@ -486 +385,0 @@
+-  Prelaunch: 0
+@@ -489,2 +387,0 @@
+-  Print: 0
+-  Private_Network_Fallback_For_Files: 0
+@@ -492 +388,0 @@
+-  PromoteBrowserAction: 0
+@@ -502,13 +397,0 @@
+-  ReadingBarLayoutChange: 0
+-  ReadingListItems: 0
+-  ReadingMode: 0
+-  ReadingView_ComprehensionTools: 0
+-  ReadingView_Dictionary: 0
+-  ReadingView_Discoverability_EDUSku: 0
+-  ReadingView_IrlenTheme: 0
+-  ReadingView_LineFocus: 0
+-  ReadingView_ReadOutLoud: 0
+-  ReadingView_TextSpacing: 0
+-  Reading_FullScreenButton: 0
+-  RecoverCompanionFrames: 0
+-  RecoveryStore_Logging: 0
+@@ -516 +398,0 @@
+-  RelatedQueries: 0
+@@ -519,4 +400,0 @@
+-  RemoveIEEntryPoints: 0
+-  RenameFavoritesToBookmarks: 0
+-  RenderPolicy: 0
+-  ReportScriptErrors: 0
+@@ -534 +411,0 @@
+-  RollingShutterCorrection: 0
+@@ -540,2 +416,0 @@
+-  SSFRoaming: 0
+-  SavePasswordSoftlandingEvent: 0
+@@ -543,2 +417,0 @@
+-  ScheduleDrivenRendering: 0
+-  SearchProvidersFor10S: 0
+@@ -555,3 +427,0 @@
+-  ServiceUIContentExperimentA: 0
+-  ServiceUIContentExperimentB: 0
+-  ServiceUITabContextShellAPI: 0
+@@ -563 +432,0 @@
+-  ShowUserInfo: 0
+@@ -570 +438,0 @@
+-  SiteInfoBadgeAlternateStyle: 0
+@@ -576 +443,0 @@
+-  SmartPrint: 0
+@@ -585,2 +451,0 @@
+-  StoreFormsTelemetry: 0
+-  SupportCDMInDefaultUser: 0
+@@ -598,5 +462,0 @@
+-  TabClose: 0
+-  TabModal: 0
+-  TabPreloading: 0
+-  TabPreviewBarSoftlandingEvent: 0
+-  TabSweepSoftlandingEvent: 0
+@@ -604 +463,0 @@
+-  TargetingSessionContextV6: 0
+@@ -611 +469,0 @@
+-  TopSitesContextMenu: 0
+@@ -624 +481,0 @@
+-  UrlHistoryInESE: 0
+@@ -626 +482,0 @@
+-  UseComThreadingInAccessibilityView: 0
+@@ -644,3 +499,0 @@
+-  ValueBannerEnableOneDrive: 0
+-  ValueBannerEnableRewards: 0
+-  ValueBannerIrisCDMIntegration: 0
+@@ -649 +501,0 @@
+-  VelocityEligibilityUsingFlightingApi: 0
+@@ -672 +523,0 @@
+-  WebRuntimeManager: 0
+@@ -677,3 +527,0 @@
+-  Web_ReadOutLoud: 0
+-  WebnotesPLM: 0
+-  WebsitePermissions: 0
+@@ -693 +540,0 @@
+-  XCloseDialog: 0
+@@ -1069,0 +917,3 @@
++  MSRC48779_19856718: 19856718
++  MSRC48792_20586247: 20586247
++  MSRC48826_19892535: 19892535
+@@ -1070,0 +921 @@
++  MSRC48868_19908122: 19908122
+@@ -1075,0 +927 @@
++  MSRC49166_20827085: 20827085
+@@ -1078,0 +931 @@
++  MSRC49355_20029807: 20029807
+@@ -1083,0 +937 @@
++  MSRC49547_20126942: 20126942
+@@ -1085,0 +940,2 @@
++  MSRC49590_20163569: 20163569
++  MSRC49598_20165272: 20165272
+@@ -1088,0 +945,17 @@
++  MSRC49890_20309196: 20309196
++  MSRC49893_20309898: 20309898
++  MSRC49894_20310019: 20310019
++  MSRC49895_20310073: 20310073
++  MSRC49896_20310121: 20310121
++  MSRC49897_20310146: 20310146
++  MSRC49908_20311175: 20311175
++  MSRC49933_20369702: 20369702
++  MSRC49960_20370815: 20370815
++  MSRC49988_20387640: 20387640
++  MSRC49989_20387883: 20387883
++  MSRC50097_20441275: 20441275
++  MSRC50126_20461088: 20461088
++  MSRC50219_20522141: 20522141
++  MSRC50221_20522190: 20522190
++  MSRC50241_20529513: 20529513
++  MSRC50366_20583610: 20583610
+@@ -1402,3 +1274,0 @@
+-  MSRC48779_19856718: 19856718
+-  MSRC48792_20586247: 20586247
+-  MSRC48826_19892535: 19892535
+@@ -1406 +1275,0 @@
+-  MSRC48868_19908122: 19908122
+@@ -1409 +1277,0 @@
+-  MSRC49166_20827085: 20827085
+@@ -1412 +1279,0 @@
+-  MSRC49547_20126942: 20126942
+@@ -1414,4 +1280,0 @@
+-  MSRC49590_20163569: 20163569
+-  MSRC49908_20311175: 20311175
+-  MSRC49933_20369702: 20369702
+-  MSRC49988_20387640: 20387640
+@@ -1419,2 +1281,0 @@
+-  MSRC50097_20441275: 20441275
+-  MSRC50366_20583610: 20583610
+@@ -1671,2 +1531,0 @@
+-  MSRC49355_20029807: 20029807
+-  MSRC49598_20165272: 20165272
+@@ -1674,6 +1532,0 @@
+-  MSRC49890_20309196: 20309196
+-  MSRC49893_20309898: 20309898
+-  MSRC49894_20310019: 20310019
+-  MSRC49895_20310073: 20310073
+-  MSRC49896_20310121: 20310121
+-  MSRC49897_20310146: 20310146
+@@ -1681,3 +1533,0 @@
+-  MSRC49960_20370815: 20370815
+-  MSRC49989_20387883: 20387883
+-  MSRC50126_20461088: 20461088
+@@ -1686,3 +1535,0 @@
+-  MSRC50219_20522141: 20522141
+-  MSRC50221_20522190: 20522190
+-  MSRC50241_20529513: 20529513
