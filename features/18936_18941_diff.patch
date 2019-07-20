@@ -1,0 +1,39 @@
+--- V:/18936.1000/features_nosymbols.txt	Thu Jul 11 11:04:54 2019
++++ V:/18941.1001/features_nosymbols.txt	Fri Jul 19 22:00:36 2019
+@@ -113,0 +114 @@
++  BthCoreCx: 0
+@@ -277,0 +279 @@
++  EnableLockTracing: 0
+@@ -492,0 +495 @@
++  NPToastUX: 0
+@@ -509,0 +513 @@
++  NoCreateFamilyDisabledUsers: 0
+@@ -1399,0 +1404 @@
++  SeparateOfficeFromOneDrive: 20516042
+@@ -1584 +1588,0 @@
+-  MSRC50139_21073296: 21073296
+@@ -1592,0 +1597 @@
++  MSRC52361_20531572: 20531572
+@@ -1593,0 +1599,2 @@
++  MSRC52363_20531509: 20531509
++  MSRC52365_21395503: 21395503
+@@ -1602 +1608,0 @@
+-  SeparateOfficeFromOneDrive: 20516042
+@@ -1616 +1621,0 @@
+-  AlwaysLaunchExplorerInSeparateProcess: 18780676
+@@ -1648 +1652,0 @@
+-  FriendlyDates: 13705666
+@@ -1689,0 +1694 @@
++  SensorThresholding: 22066884
+@@ -1700 +1704,0 @@
+-  SuspendStandAloneFileExplorerDuringDAMPhase: 19207979
+@@ -1743,0 +1748 @@
++  AlwaysLaunchExplorerInSeparateProcess: 18780676
+@@ -1850,0 +1856 @@
++  FriendlyDates: 13705666
+@@ -1917,0 +1924 @@
++  MSRC52364_21073296: 21073296
+@@ -1930,0 +1938 @@
++  OobeExperimentationPages: 21988631
+@@ -1995,0 +2004 @@
++  SuspendStandAloneFileExplorerDuringDAMPhase: 19207979
