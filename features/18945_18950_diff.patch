@@ -1,0 +1,43 @@
+--- V:/18945/features_nosymbols.txt	Wed Jul 31 14:14:45 2019
++++ V:/18950/features_nosymbols.txt	Wed Jul 31 13:00:48 2019
+@@ -95,0 +96 @@
++  BluetoothFlyout: 0
+@@ -99,0 +101 @@
++  BluetoothLEAdvertisingV2: 0
+@@ -115 +116,0 @@
+-  BthCoreCx: 0
+@@ -232 +232,0 @@
+-  DictationLangExpansion: 0
+@@ -458,0 +459 @@
++  LoadAlternateHcl: 0
+@@ -505,0 +507 @@
++  NewDevicesFlowConnectUI: 0
+@@ -795,0 +798 @@
++  WSL_VirtIO_9p: 0
+@@ -868 +870,0 @@
+-  AppDefaultsMSEdgeProtocol: 13653604
+@@ -1194,2 +1195,0 @@
+-  MSRC50729_20824324: 20824324
+-  MSRC50732_20824399: 20824399
+@@ -1208 +1207,0 @@
+-  MSRC51022_20952820: 20952820
+@@ -1227 +1225,0 @@
+-  MSRC51466_21232779: 21232779
+@@ -1244,0 +1243 @@
++  MSRC52172_21804317: 21804317
+@@ -1547,0 +1547 @@
++  ColorfulUnplatedLogos: 21894296
+@@ -1668,0 +1669 @@
++  HtmlStartPackageFeed: 21510368
+@@ -1690,0 +1692 @@
++  OneCoreTransforms_BannedAPIs: 16465130
+@@ -1878,0 +1881 @@
++  HtmlStartDevTools: 21510418
+@@ -1926,0 +1930 @@
++  MSRC51022_20952820: 20952820
+@@ -1930,0 +1935 @@
++  MSRC51906_21586727: 21586727
+@@ -1934 +1938,0 @@
+-  MSRC52172_21804317: 21804317
+@@ -1952 +1955,0 @@
+-  OneCoreTransforms_BannedAPIs: 16465130

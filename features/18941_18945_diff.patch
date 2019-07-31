@@ -1,0 +1,200 @@
+--- V:/18941/features_nosymbols.txt	Fri Jul 19 22:00:36 2019
++++ V:/18945/features_nosymbols.txt	Wed Jul 31 14:14:45 2019
+@@ -47,0 +48 @@
++  ApiLogging: 0
+@@ -162 +162,0 @@
+-  Cross_VM_Events: 0
+@@ -274,0 +275 @@
++  EnableBackgroundTasks: 0
+@@ -329,0 +331 @@
++  FlipHandleActiveInputProfile: 0
+@@ -363,4 +364,0 @@
+-  HardwareKeyboardInlinePredictionForWin32: 0
+-  HardwareKeyboardInlinePredictionForXAML: 0
+-  HardwareKeyboardInlinePredictionMaxCumulativeScoreExperiments: 0
+-  HardwareKeyboardInlinePredictionMaxWordCountExperiments: 0
+@@ -433,0 +432,2 @@
++  KPMSetScalingFactor: 0
++  KPMUseRealTouchPoints: 0
+@@ -459,0 +460 @@
++  LowPriorityPrelaunchContainerPolicy: 0
+@@ -542,0 +544 @@
++  Optional_Features_Page_V2: 0
+@@ -555,0 +558 @@
++  PcpKspWilLogging: 0
+@@ -596 +598,0 @@
+-  QuickPair: 0
+@@ -614,0 +617 @@
++  RegFileEncapsulationLogging: 0
+@@ -620,0 +624 @@
++  ReportLoggedOnCompleted: 0
+@@ -671,2 +674,0 @@
+-  ShellPackageOption: 0
+-  ShellPackageUpdate: 0
+@@ -701,0 +704 @@
++  SupportCompressedVHDs: 0
+@@ -704,0 +708 @@
++  SuspendContainersOnCsEntry: 0
+@@ -1133 +1136,0 @@
+-  MSRC47913_19209709: 19209709
+@@ -1164,3 +1166,0 @@
+-  MSRC49590_20163569: 20163569
+-  MSRC49598_20165272: 20165272
+-  MSRC49624_20176081: 20176081
+@@ -1178,2 +1177,0 @@
+-  MSRC49971_20373540: 20373540
+-  MSRC49983_20385962: 20385962
+@@ -1190 +1187,0 @@
+-  MSRC50523_20696371: 20696371
+@@ -1192 +1188,0 @@
+-  MSRC50592_20696450: 20696450
+@@ -1197 +1192,0 @@
+-  MSRC50715_20798455: 20798455
+@@ -1201,2 +1195,0 @@
+-  MSRC50735_20824484: 20824484
+-  MSRC50746_20826724: 20826724
+@@ -1204 +1196,0 @@
+-  MSRC50767_20827725: 20827725
+@@ -1208,2 +1199,0 @@
+-  MSRC50825_20846922: 20846922
+-  MSRC50845_20860685: 20860685
+@@ -1211 +1200,0 @@
+-  MSRC50931_20893357: 20893357
+@@ -1218,0 +1208 @@
++  MSRC51022_20952820: 20952820
+@@ -1227 +1216,0 @@
+-  MSRC51188_21053630: 21053630
+@@ -1234,0 +1224 @@
++  MSRC51287_21144410: 21144410
+@@ -1239 +1228,0 @@
+-  MSRC51510_21266309: 21266309
+@@ -1340 +1328,0 @@
+-  ProjectedShadowAPI: 12024197
+@@ -1378,0 +1367 @@
++  SARContainerPooling: 12242988
+@@ -1549,0 +1539,3 @@
++  AppDefaultsSetAppAsDefault: 21154688
++  BrowserReplacement: 21167812
++  BrowserReplacementAssocHandlers: 21667666
+@@ -1553,0 +1546 @@
++  CloudStoreOnWindowsUdk: 20357897
+@@ -1558,0 +1552 @@
++  DockInputProcessing: 20299456
+@@ -1560,0 +1555 @@
++  EnableTestModeForFileExplorerSSFtoCDSConversion: 20681411
+@@ -1566,0 +1562 @@
++  FileExplorerClassicSettingsInCDS: 18616153
+@@ -1571,0 +1568 @@
++  HideUwpEdgeFromAppListIfWin32EdgePresent: 21743510
+@@ -1577,0 +1575 @@
++  InputSiteTree: 20840737
+@@ -1578,0 +1577 @@
++  KeyboardInputInMinQueue: 21087082
+@@ -1590,0 +1590 @@
++  MSRC51554_21312673: 21312673
+@@ -1592,0 +1593 @@
++  MSRC51792_21506819: 21506819
+@@ -1596,0 +1598 @@
++  MSRC52187_21838922: 21838922
+@@ -1600,0 +1603,6 @@
++  MSRC52366_21270652: 21270652
++  MSRC52396_22067323: 22067323
++  MSRC52453_22126870: 22126870
++  MSRC52601_22225821: 22225821
++  MSRC52607_22226803: 22226803
++  MSRC52760_22425605: 22425605
+@@ -1602,0 +1611,2 @@
++  PinMigration: 21157932
++  PreventSUALaunchAsDSMA: 15953702
+@@ -1603,0 +1614 @@
++  RedirectBrowserActivations: 21166711
+@@ -1607 +1617,0 @@
+-  SARContainerPooling: 12242988
+@@ -1611,0 +1622 @@
++  SkipBrowserInAppEnumerations: 20429476
+@@ -1612,0 +1624,2 @@
++  TaskbarPinMigration: 20421490
++  UpdatePinnedTaskbarIcons: 21938197
+@@ -1614,0 +1628 @@
++  WindowManager_ActivationWatcher: 21360375
+@@ -1629 +1642,0 @@
+-  BrowserReplacement: 21167812
+@@ -1633,0 +1647 @@
++  CoreWindowAsyncKeyState: 22118908
+@@ -1634,0 +1649 @@
++  DcomContainerProtocol: 15421572
+@@ -1639,0 +1655 @@
++  DockTestMode: 21593258
+@@ -1644 +1659,0 @@
+-  EnableTestModeForFileExplorerSSFtoCDSConversion: 20681411
+@@ -1649 +1663,0 @@
+-  FileExplorerClassicSettingsInCDS: 18616153
+@@ -1666 +1680 @@
+-  InputSiteTree: 20840737
++  InputForegroundManagerForUWP: 22164006
+@@ -1668 +1681,0 @@
+-  KeyboardInputInMinQueue: 21087082
+@@ -1670,0 +1684,3 @@
++  MigrateVRegHivesBack: 21309366
++  MinGetKeyState: 21237886
++  MinQMouseAndMiP: 22100935
+@@ -1672,0 +1689 @@
++  MsixAppCompatSupport: 21878278
+@@ -1673,0 +1691 @@
++  OobeExperimentationPages: 21988631
+@@ -1677 +1694,0 @@
+-  PeripheralDockTestMode: 21593258
+@@ -1680 +1696,0 @@
+-  PinMigration: 21157932
+@@ -1682 +1697,0 @@
+-  RedirectBrowserActivations: 21166711
+@@ -1697,0 +1713,2 @@
++  ShellPackageOption: 20401470
++  ShellPackageUpdate: 21253981
+@@ -1699 +1716 @@
+-  SkipBrowserInAppEnumerations: 20429476
++  SkipMsixManifestValidation: 18554648
+@@ -1710 +1726,0 @@
+-  TaskbarPinMigration: 20421490
+@@ -1715 +1731 @@
+-  UpdatePinnedTaskbarIcons: 21938197
++  UninstallBrowserReplacementFixups: 21966201
+@@ -1727 +1742,0 @@
+-  WindowManager_ActivationWatcher: 21360375
+@@ -1755 +1770 @@
+-  AppDefaultsSetAppAsDefault: 21154688
++  AppDefaultsPagePerformance: 19400313
+@@ -1771 +1785,0 @@
+-  BrowserReplacementAssocHandlers: 21667666
+@@ -1780 +1793,0 @@
+-  CloudStoreOnWindowsUdk: 20357897
+@@ -1799 +1811,0 @@
+-  DcomContainerProtocol: 15421572
+@@ -1866 +1877,0 @@
+-  HideUwpEdgeFromAppListIfWin32EdgePresent: 21743510
+@@ -1915 +1925,0 @@
+-  MSRC50139_21270652: 21270652
+@@ -1917 +1927 @@
+-  MSRC51022_20952820: 20952820
++  MSRC51509_21265351: 21265351
+@@ -1921,0 +1932 @@
++  MSRC51955_21614046: 21614046
+@@ -1923,0 +1935,3 @@
++  MSRC52192_21842263: 21842263
++  MSRC52231_21891500: 21891500
++  MSRC52330_21984554: 21984554
+@@ -1924,0 +1939,2 @@
++  MSRC52427_22089106: 22089106
++  MSRC52448_22112946: 22112946
+@@ -1938 +1953,0 @@
+-  OobeExperimentationPages: 21988631
+@@ -1950 +1964,0 @@
+-  PeripheralDockInputProcessing: 20299456
+@@ -1956 +1969,0 @@
+-  PreventSUALaunchAsDSMA: 15953702
+@@ -2008,0 +2022 @@
++  TSF3UseVisualRelativePixels: 19957419
+@@ -2044,0 +2059 @@
++  VAILContainerOverride: 22220719
+@@ -2073 +2087,0 @@
+-  XAMLIslandTextInput: 18862389
