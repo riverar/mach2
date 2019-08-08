@@ -1,0 +1,175 @@
+--- V:/18950/features_nosymbols.txt	Wed Jul 31 13:00:48 2019
++++ V:/18956/features_nosymbols.txt	Thu Aug 08 13:03:57 2019
+@@ -144,0 +145 @@
++  CloudAPAsyncAcceptCredentials: 0
+@@ -146,0 +148 @@
++  CombinedDataUsageStatusPage: 0
+@@ -170,2 +171,0 @@
+-  D3D11TrackedWorkload: 0
+-  D3D12BreadcrumbMarkers: 0
+@@ -187 +186,0 @@
+-  D3D12TrackedWorkload: 0
+@@ -214,0 +214 @@
++  DecoupledLanguageAndKeyboardSettings: 0
+@@ -244,0 +245 @@
++  DisplayUserExperienceInfo: 0
+@@ -255,0 +257 @@
++  DynamicLockImprovements: 0
+@@ -276,0 +279 @@
++  EnableDevMode: 0
+@@ -391 +393,0 @@
+-  HolographicSecureDesktop: 0
+@@ -409,0 +412 @@
++  IE_SETTINGSYNCMIGRATION: 0
+@@ -469,0 +473 @@
++  MRTLanguageChangeNotification_CorrectBehavior: 0
+@@ -676,0 +681 @@
++  ShellOneHandedSystemGesture: 0
+@@ -695,0 +701 @@
++  SmartScreenForAnaheim: 0
+@@ -738,0 +745 @@
++  TrackedWorkload: 0
+@@ -740,0 +748 @@
++  UDKFunctionsNotYetConverged: 0
+@@ -776,0 +785 @@
++  ValueBannerShowOneItemTemplate: 0
+@@ -788,0 +798 @@
++  WCOS_OOBE_NoRestartDisplayLanguageChange: 0
+@@ -919,0 +930 @@
++  CertInstall: 7985748
+@@ -972,0 +984 @@
++  DcomContainerProtocol: 15421572
+@@ -974,0 +987 @@
++  DefaultVolume: 8533467
+@@ -1043 +1055,0 @@
+-  GameCoreCP: 18977415
+@@ -1071,0 +1084 @@
++  ImageComparerV2: 19599498
+@@ -1111,0 +1125 @@
++  LaunchTeamsOrSkypeBasedOnMeetingType: 11849830
+@@ -1129 +1143 @@
+-  MRTLanguageChangeNotification_CorrectBehavior: 19554133
++  MPEG4MultiSampleDescription: 20167551
+@@ -1187 +1200,0 @@
+-  MSRC50328_20565628: 20565628
+@@ -1199 +1211,0 @@
+-  MSRC50786_20829030: 20829030
+@@ -1208 +1219,0 @@
+-  MSRC51034_20960573: 20960573
+@@ -1214 +1224,0 @@
+-  MSRC51170_21041741: 21041741
+@@ -1265,0 +1276,2 @@
++  MyStuff: 7786612
++  MyStuffWelcomeApp: 9644060
+@@ -1285,0 +1298 @@
++  OpenConnectAutomatically: 8657155
+@@ -1407,0 +1421 @@
++  SimplifiedOOBE: 8665246
+@@ -1410 +1423,0 @@
+-  SingleUserGlobalizationSettings: 21657128
+@@ -1437,0 +1451,5 @@
++  SurfaceHubFeedback: 7718271
++  SurfaceHubProxyCredInjection: 8157104
++  SurfaceHubRemoveSidebars: 8507901
++  SurfaceHubResetToRTMSetting: 7975777
++  SurfaceHubSleep: 8241513
+@@ -1502 +1519,0 @@
+-  WinGlob_ICUForTimeZones: 4048317
+@@ -1542,0 +1560 @@
++  CacheHighContrastStateInDwm: 220937958
+@@ -1554,0 +1573 @@
++  EICinTIConWCOS: 21268963
+@@ -1587,0 +1607 @@
++  MSRC50608_21151885: 21151885
+@@ -1592,0 +1613,3 @@
++  MSRC51710_21413205: 21413205
++  MSRC51713_21414201: 21414201
++  MSRC51714_21414356: 21414356
+@@ -1594,0 +1618 @@
++  MSRC51898_21561079: 21561079
+@@ -1597,0 +1622,4 @@
++  MSRC52131_21746847: 21746847
++  MSRC52132_21746959: 21746959
++  MSRC52133_21747001: 21747001
++  MSRC52135_21747147: 21747147
+@@ -1607,0 +1636,2 @@
++  MSRC52616_22234818: 22234818
++  MSRC52693_22314652: 22314652
+@@ -1608,0 +1639 @@
++  MSRC58295_22664550: 22664550
+@@ -1618,0 +1650,2 @@
++  SearchSuggestions: 18755234
++  SettingsSearchCFR: 20974195
+@@ -1623,0 +1657 @@
++  TaskbarNoBlurBehindOnSoftwareRenderer: 21868935
+@@ -1649 +1683 @@
+-  DcomContainerProtocol: 15421572
++  DecoupleScoobeFromUpgradeOnLogon: 21004556
+@@ -1657 +1690,0 @@
+-  EICinTIConWCOS: 21268963
+@@ -1659,0 +1693 @@
++  ExpandReparsePoints: 20842212
+@@ -1679 +1713 @@
+-  ImageComparerV2: 19599498
++  IngestInputApp: 22929203
+@@ -1684 +1717,0 @@
+-  MPEG4MultiSampleDescription: 20167551
+@@ -1698,0 +1732 @@
++  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -1709 +1742,0 @@
+-  SearchSuggestions: 18755234
+@@ -1714 +1746,0 @@
+-  SettingsSearchCFR: 20974195
+@@ -1735,0 +1768 @@
++  UserActivityEngagementFlags: 19349732
+@@ -1742,0 +1776 @@
++  VoiceAssistantPositioner: 20484887
+@@ -1763,0 +1798 @@
++  AltimeterThresholding: 22967847
+@@ -1814 +1848,0 @@
+-  DecoupledLanguageAndKeyboardSettings: 19642854
+@@ -1880,0 +1915 @@
++  HolographicSecureDesktop: 19276410
+@@ -1886,0 +1922 @@
++  Hub_InternalDevTools: 22667775
+@@ -1888,0 +1925 @@
++  Hub_PPIDesktopHybrid: 22698057
+@@ -1929,0 +1967 @@
++  MSRC50960_20920684: 20920684
+@@ -1934,0 +1973,5 @@
++  MSRC51708_21412909: 21412909
++  MSRC51764_21458820: 21458820
++  MSRC51836_21522210: 21522210
++  MSRC51892_21559193: 21559193
++  MSRC51900_21562307: 21562307
+@@ -1937,0 +1981,2 @@
++  MSRC51957_21614277: 21614277
++  MSRC52136_21747193: 21747193
+@@ -1939,0 +1985 @@
++  MSRC52196_21852825: 21852825
+@@ -1940,0 +1987 @@
++  MSRC52284_21966625: 21966625
+@@ -1944,0 +1992 @@
++  MSRC52815_22452455: 22452455
+@@ -1948 +1995,0 @@
+-  MultiUserGlobalizationSettings: 20897186
+@@ -1976,0 +2024 @@
++  ProximalStart: 8957657
+@@ -1978 +2025,0 @@
+-  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -1981,0 +2029 @@
++  ReauthOnResume: 8253585
+@@ -2000,0 +2049,2 @@
++  ShellFODAquisition: 22460213
++  ShellFODRemoval: 22460125
+@@ -2018,0 +2069 @@
++  SurfaceHubLooseDBH: 9112063
+@@ -2049,2 +2099,0 @@
+-  UTF8AsImageACP: 14727284
+-  UTF8LocaleDefaults: 11739924
+@@ -2060 +2108,0 @@
+-  UserActivityEngagementFlags: 19349732
+@@ -2069 +2116,0 @@
+-  VoiceAssistantPositioner: 20484887
+@@ -2071 +2117,0 @@
+-  WCOS_OOBE_NoRestartDisplayLanguageChange: 12135189
