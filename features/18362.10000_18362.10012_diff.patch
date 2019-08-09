@@ -1,0 +1,123 @@
+--- V:/18362.10000/features_nosymbols.txt	Tue Jul 02 00:14:36 2019
++++ V:/18362.10012/features_nosymbols.txt	Thu Aug 08 16:59:14 2019
+@@ -3,2 +2,0 @@
+-  19H2_Enablement: 0
+-  19H2_Rollback: 0
+@@ -7 +4,0 @@
+-  AADShowErrorInUI: 0
+@@ -19,3 +15,0 @@
+-  AddSourceWindowFromViewNavigationRequested: 0
+-  AddSwitchAsyncContextToPositionerActivations: 0
+-  AddTextToSpeechPackages: 0
+@@ -25,2 +18,0 @@
+-  AdvancedGestureRecognition: 0
+-  AdvancedGraphicsSettings: 0
+@@ -27,0 +20 @@
++  AgentActivationRuntimeAPI_AboveLock: 0
+@@ -32 +24,0 @@
+-  AntiTampering: 0
+@@ -38 +29,0 @@
+-  ApplicationGuardDownloadToHost: 0
+@@ -43 +33,0 @@
+-  AssignedAccessSettingsAtomicConfiguration: 0
+@@ -58,0 +49 @@
++  BitLocker_RP_AAD_Backup_Check: 0
+@@ -109 +99,0 @@
+-  ConsumerASR: 0
+@@ -158 +148 @@
+-  DXGI_FullscreenProxyWindowPromotion: 0
++  DXGI_DxDb_Reparenting_Custom: 0
+@@ -168,2 +157,0 @@
+-  DeliveryOptimization_ActivitySettings: 0
+-  DeliveryOptimization_AdvancedSettings: 0
+@@ -182,0 +171 @@
++  DownlevelArgonContainers: 0
+@@ -215 +203,0 @@
+-  FixZBandChangeRaceCondition: 0
+@@ -222 +209,0 @@
+-  FontsPreview: 0
+@@ -232 +218,0 @@
+-  HMDPresenceSensorSetting: 0
+@@ -249 +234,0 @@
+-  HealthPillarUIRevamp: 0
+@@ -272,0 +258 @@
++  InContextNotificationSettings: 0
+@@ -293,2 +278,0 @@
+-  KeyboardSettingsDesktop: 0
+-  KioskPositioner: 0
+@@ -316 +299,0 @@
+-  MixedRealityCameraAppLaunchXAMLFilePicker: 0
+@@ -328 +310,0 @@
+-  NGenHistory: 0
+@@ -331,2 +312,0 @@
+-  NarratorKeyboardRemap: 0
+-  NarratorQuickStart: 0
+@@ -343,0 +324 @@
++  NotificationSenderRecency: 0
+@@ -359 +339,0 @@
+-  PDCShellPhaseUseWNF: 0
+@@ -362,2 +341,0 @@
+-  PUA: 0
+-  PagePrivacyVoiceActivation: 0
+@@ -374,2 +351,0 @@
+-  PersonControl: 0
+-  PhoneAppRecommendationList: 0
+@@ -392 +367,0 @@
+-  QuickActionsV2: 0
+@@ -415 +389,0 @@
+-  SMBXAMLFileExplorer: 0
+@@ -433 +406,0 @@
+-  SiHostLessExplorer: 0
+@@ -436,2 +408,0 @@
+-  SignalManager: 0
+-  SignalQueryAPI: 0
+@@ -447,2 +417,0 @@
+-  SpotlightPersonalization: 0
+-  SpotlightPersonalizationRequest: 0
+@@ -452,3 +420,0 @@
+-  SurfaceHubProximalAppLaunch: 0
+-  SurfaceHubRemoveSidebars_Shell: 0
+-  SurfaceHub_RemoveSidebars: 0
+@@ -468 +433,0 @@
+-  TitleBar_QuickSnapping: 0
+@@ -488 +452,0 @@
+-  UsePackagedFolderAssetXAMLFileExplorer: 0
+@@ -539,3 +502,0 @@
+-  XAMLFileExplorerDragAndDrop: 0
+-  XAMLFileExplorerSetWallpaperImage: 0
+-  XamlShowHideAnimations: 0
+@@ -546 +506,0 @@
+-  xBindXAMLFileExplorer: 0
+@@ -830,0 +791 @@
++  LaunchScoobeWhenInternetFirstAvailable: 19560808
+@@ -1255,0 +1217,6 @@
++  19H2_Enablement: 20455539
++  19H2_Rollback: 20442546
++  AppDefaultsSetAppAsDefault: 21154688
++  BrowserReplacement: 21167812
++  BrowserReplacementAssocHandlers: 21667666
++  CalendarQuickCompose: 21088047
+@@ -1260,0 +1228 @@
++  HideUwpEdgeFromAppListIfWin32EdgePresent: 21743510
+@@ -1265,0 +1234 @@
++  LockBugFix_LockAppInstantlyDismisses: 20191093
+@@ -1282,0 +1252,4 @@
++  NavigationPaneExpandOnHover19h2: 18715789
++  PenDetachIWS: 20430744
++  PinMigration: 21157932
++  RedirectBrowserActivations: 21166711
+@@ -1286,0 +1260,3 @@
++  SeparateOfficeFromOneDrive: 20516042
++  Servicing_F001: 21185430
++  SkipBrowserInAppEnumerations: 20429476
+@@ -1288,0 +1265,2 @@
++  TaskbarAutoHideServicingBugFix: 20424193
++  TaskbarPinMigration: 20421490
+@@ -1289,0 +1268 @@
++  UpdatePinnedTaskbarIcons: 21938197
+@@ -1331,0 +1311 @@
++  SearchSuggestions: 18755234
+@@ -1511 +1490,0 @@
+-  LaunchScoobeWhenInternetFirstAvailable: 19560808
+@@ -1591 +1569,0 @@
+-  SearchSuggestions: 18755234
