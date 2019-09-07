@@ -1,0 +1,228 @@
+--- V:/18970/features_nosymbols.txt	Thu Aug 29 16:10:22 2019
++++ V:/18975/features_nosymbols.txt	Sat Sep 07 13:24:06 2019
+@@ -42,0 +43 @@
++  AllowModalParentZero: 0
+@@ -132,0 +134 @@
++  CShellOnLaunchConsentPrompt: 0
+@@ -158,0 +161 @@
++  CoreShellOnDesktop: 0
+@@ -253,0 +257 @@
++  DragDrop: 0
+@@ -255,0 +260 @@
++  DraggableThumbnailAfterSnip: 0
+@@ -284,0 +290 @@
++  EnableNarrowChsLayoutsOnDesktop: 0
+@@ -285,0 +292 @@
++  EnableVpciUefiBoot: 0
+@@ -449,0 +457 @@
++  LiteCWCommentOnWCOS: 0
+@@ -477,0 +486 @@
++  MiniSerp_ScaleAdjustment: 0
+@@ -661 +669,0 @@
+-  ServiceMemHardCap: 0
+@@ -673,0 +682 @@
++  ShellScalingCacheOCTValidation: 0
+@@ -740 +748,0 @@
+-  UDPProbe: 0
+@@ -755,0 +764 @@
++  UseGraphicsCaptureAPI: 0
+@@ -784,0 +794 @@
++  VoiceTypingEntryPoint: 0
+@@ -909,0 +920 @@
++  CBCSHardwareDRM: 17546121
+@@ -912,0 +924 @@
++  CalendarQuickCompose: 21088047
+@@ -979,0 +992 @@
++  DP_AUX_V2: 21034614
+@@ -990 +1002,0 @@
+-  DeployCentennialAppsOnWCOSWithVAILProxy: 16238427
+@@ -1005,0 +1018 @@
++  DisableDynamicContent: 19675651
+@@ -1020,0 +1034 @@
++  EICVelocityPressureBrush: 21710064
+@@ -1057,0 +1072 @@
++  GifSuggestionOnWCOS: 19440349
+@@ -1060,0 +1076 @@
++  HardwareDRMMultithreadedKeyExchange: 15488212
+@@ -1089,0 +1106 @@
++  ImprovedStraightLineInkPrediction: 20455339
+@@ -1211 +1227,0 @@
+-  MSRC50722_20819916: 20819916
+@@ -1214 +1229,0 @@
+-  MSRC50973_20925124: 20925124
+@@ -1216 +1230,0 @@
+-  MSRC51058_20979546: 20979546
+@@ -1219 +1232,0 @@
+-  MSRC51213_21069137: 21069137
+@@ -1223 +1235,0 @@
+-  MSRC51511_21266515: 21266515
+@@ -1234,3 +1245,0 @@
+-  MSRC51710_21413205: 21413205
+-  MSRC51713_21414201: 21414201
+-  MSRC51714_21414356: 21414356
+@@ -1246 +1254,0 @@
+-  MSRC51906_21586727: 21586727
+@@ -1258 +1265,0 @@
+-  MSRC52132_21746959: 21746959
+@@ -1260,2 +1266,0 @@
+-  MSRC52135_21747147: 21747147
+-  MSRC52136_21747193: 21747193
+@@ -1288,0 +1294 @@
++  MinGetKeyState: 21237886
+@@ -1309,0 +1316 @@
++  OfflineBitAsSlow: 20442768
+@@ -1321,0 +1329 @@
++  OobePrivacySettingsHtmlLearnMore: 14660184
+@@ -1368,0 +1377 @@
++  ProvideFlightDataToWebapps: 17557290
+@@ -1385 +1393,0 @@
+-  RadialGradientAPI: 19373258
+@@ -1423,0 +1432 @@
++  ScreenClippingConvergence: 19061946
+@@ -1426,0 +1436 @@
++  SearchSuggestions: 18755234
+@@ -1443,0 +1454 @@
++  ShellOcclusionHandling: 21082956
+@@ -1448,0 +1460 @@
++  SimpleParseOnDesktopIcons: 20670392
+@@ -1451,0 +1464 @@
++  SingleUserCxhAlternatePackageInclusion: 19685298
+@@ -1459 +1471,0 @@
+-  SpatialCompositionAPI: 14546807
+@@ -1466 +1477,0 @@
+-  StartSplitViewInMenuMode: 6395189
+@@ -1474,0 +1486,2 @@
++  SuggestionUIOnWCOS: 19439263
++  SuggestionUIWAVE3OnWCOS: 20553178
+@@ -1532,0 +1546,2 @@
++  UseStoreECApp: 20577377
++  UserActivityEngagementFlags: 19349732
+@@ -1533,0 +1549,2 @@
++  VP9_DX12_VideoDecode: 17322281
++  VblankInkPrediction: 20455341
+@@ -1541 +1557,0 @@
+-  VisualSurfaceAPI: 19122257
+@@ -1542,0 +1559,2 @@
++  WNS_CTA_Polling: 22953751
++  WNS_ChannelRevoke_Event: 19755180
+@@ -1588 +1605,0 @@
+-  CBCSHardwareDRM: 17546121
+@@ -1590 +1606,0 @@
+-  CalendarQuickCompose: 21088047
+@@ -1596 +1611,0 @@
+-  DP_AUX_V2: 21034614
+@@ -1598 +1612,0 @@
+-  DisableDynamicContent: 19675651
+@@ -1600,0 +1615,3 @@
++  DraggableThumbnailWCOS: 19375840
++  DriverBlackboxData: 20758515
++  DriverWhiteboxData: 20758545
+@@ -1602 +1618,0 @@
+-  EICVelocityPressureBrush: 21710064
+@@ -1612 +1627,0 @@
+-  GifSuggestionOnWCOS: 19440349
+@@ -1615,2 +1629,0 @@
+-  HW_Personalization: 17524868
+-  HardwareDRMMultithreadedKeyExchange: 15488212
+@@ -1624,2 +1636,0 @@
+-  ImprovedStraightLineInkPrediction: 20455339
+-  KeepRateForPersonalizedWords: 20806905
+@@ -1638,0 +1650 @@
++  MSRC52560_22211101: 22211101
+@@ -1648,0 +1661 @@
++  MSRC53056_22871482: 22871482
+@@ -1653 +1666 @@
+-  MinGetKeyState: 21237886
++  MinQMouseAndMiP: 22100935
+@@ -1655,2 +1667,0 @@
+-  OfflineBitAsSlow: 20442768
+-  OobePrivacySettingsHtmlLearnMore: 14660184
+@@ -1661 +1671,0 @@
+-  ProvideFlightDataToWebapps: 17557290
+@@ -1671 +1680,0 @@
+-  SearchSuggestions: 18755234
+@@ -1673,3 +1682 @@
+-  ShellOcclusionHandling: 21082956
+-  SimpleParseOnDesktopIcons: 20670392
+-  SingleUserCxhAlternatePackageInclusion: 19685298
++  ShellUpdateAgentShipping: 23264643
+@@ -1677,2 +1683,0 @@
+-  SuggestionUIOnWCOS: 19439263
+-  SuggestionUIWAVE3OnWCOS: 20553178
+@@ -1682,3 +1686,0 @@
+-  UseStoreECApp: 20577377
+-  VP9_DX12_VideoDecode: 17322281
+-  VblankInkPrediction: 20455341
+@@ -1693,2 +1694,0 @@
+-  AppDefaultsCloudFileLaunchContentUri: 21261388
+-  AppDefaultsCloudFileLaunchContentUriWCOS: 22608641
+@@ -1709 +1708,0 @@
+-  DisableSecondaryTilePinPrompt: 20695874
+@@ -1712 +1710,0 @@
+-  DraggableThumbnailAfterSnip: 20684469
+@@ -1740 +1737,0 @@
+-  MinQMouseAndMiP: 22100935
+@@ -1746,2 +1742,0 @@
+-  ParticlesCompositionAPI: 16381921
+-  PersonalizedWelcome: 18583105
+@@ -1750,2 +1744,0 @@
+-  QueueOobeTelemetryForUpload: 21307089
+-  Rendering_SharpMagShader: 20238036
+@@ -1756,0 +1750 @@
++  SVR_DX12_Rendering: 11537650
+@@ -1761 +1754,0 @@
+-  ScreenClippingConvergence: 19061946
+@@ -1769 +1761,0 @@
+-  SpatialCompositionLabel: 14546809
+@@ -1771,0 +1764 @@
++  SuggestionUIPackageDownload: 20611323
+@@ -1779,2 +1771,0 @@
+-  TimestampFromScantime: 18474644
+-  TouchKeyboardAutoSwitchToAlphaAfterSymbolSpace: 21036042
+@@ -1784 +1774,0 @@
+-  UserActivityEngagementFlags: 19349732
+@@ -1792 +1781,0 @@
+-  WNS_ChannelRevoke_Event: 19755180
+@@ -1820,0 +1810,2 @@
++  AppDefaultsCloudFileLaunchContentUri: 21261388
++  AppDefaultsCloudFileLaunchContentUriWCOS: 22608641
+@@ -1872,0 +1864 @@
++  DisableLowQosTimerResolution: 20638285
+@@ -1897,0 +1890 @@
++  ExcludeFromCaptureAPI: 23097642
+@@ -1922,0 +1916 @@
++  HW_Personalization: 17524868
+@@ -1961,0 +1956 @@
++  KeepRateForPersonalizedWords: 20806905
+@@ -1985,0 +1981,2 @@
++  MSRC51974_21633115: 21633115
++  MSRC52048_21648483: 21648483
+@@ -1988,0 +1986,2 @@
++  MSRC52251_21902764: 21902764
++  MSRC52252_21902812: 21902812
+@@ -1990,0 +1990 @@
++  MSRC52304_21974818: 21974818
+@@ -1993,0 +1994 @@
++  MSRC52413_22071284: 22071284
+@@ -2000,0 +2002,2 @@
++  MSRC52898_22669517: 22669517
++  MSRC52937_22751035: 22751035
+@@ -2018,0 +2022 @@
++  ParticlesCompositionAPI: 16381921
+@@ -2023,0 +2028 @@
++  PersonalizedWelcome: 18583105
+@@ -2035,0 +2041 @@
++  QueueOobeTelemetryForUpload: 21307089
+@@ -2044,0 +2051 @@
++  Rendering_SharpMagShader: 20238036
+@@ -2049 +2055,0 @@
+-  SVR_DX12_Rendering: 11537650
+@@ -2053,0 +2060 @@
++  SearchUndockExperiment: 22162129
+@@ -2066,0 +2074 @@
++  SpatialCompositionLabel: 14546809
+@@ -2109,0 +2118,2 @@
++  TimestampFromScantime: 18474644
++  TouchKeyboardAutoSwitchToAlphaAfterSymbolSpace: 21036042
+@@ -2134,0 +2145 @@
++  WcosFileDialogsForAnaheim: 20913705
