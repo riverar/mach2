@@ -1,0 +1,402 @@
+--- V:/18975/features_nosymbols.txt	Sat Sep 07 13:24:06 2019
++++ V:/18980.1/features_nosymbols.txt	Wed Sep 11 16:38:23 2019
+@@ -48,0 +49 @@
++  AnaheimEdgeVersionSessionContext: 0
+@@ -103 +103,0 @@
+-  BluetoothHfpAppleAccessory: 0
+@@ -226,0 +227,6 @@
++  DesktopFidoAadOobe: 0
++  DesktopFidoAadPinReset: 0
++  DesktopFidoAadWebSignIn: 0
++  DesktopFidoMsaOobe: 0
++  DesktopFidoMsaPinReset: 0
++  DesktopFidoMsaWebSignIn: 0
+@@ -284 +289,0 @@
+-  EnableCommonSchema4: 0
+@@ -292 +296,0 @@
+-  EnableVpciUefiBoot: 0
+@@ -365 +368,0 @@
+-  HVSIAcceleratedGraphics: 0
+@@ -489 +491,0 @@
+-  MoStack: 0
+@@ -535,0 +538 @@
++  OctagonRebootlessScriptUpdate: 0
+@@ -679,0 +683 @@
++  ShareTargetDisplayName: 0
+@@ -849,0 +854 @@
++  19H2SettingsSearchUpdates: 19879176
+@@ -869,0 +875 @@
++  AdditionalComDebugOutput: 14468475
+@@ -884,0 +891 @@
++  AppDefaultsOpenWithAny: 14482024
+@@ -886,0 +894 @@
++  AppDefaultsSetAppAsDefault: 21154688
+@@ -914,0 +923,2 @@
++  BrowserReplacement: 21167812
++  BrowserReplacementAssocHandlers: 21667666
+@@ -919,0 +930 @@
++  BypassPingSetsForMachineLocalOids: 15769422
+@@ -936,0 +948 @@
++  CentennialUIAccess: 19447269
+@@ -942,0 +955 @@
++  CloudExperienceHostLaunchTask: 19581552
+@@ -1019,0 +1033 @@
++  DisplayHdr_Inf_Certification: 20832431
+@@ -1021,0 +1036 @@
++  DolbyVision_Default_On: 20832424
+@@ -1022,0 +1038,2 @@
++  DriverBlackboxData: 20758515
++  DriverWhiteboxData: 20758545
+@@ -1035,0 +1053 @@
++  EICinTIConWCOS: 21268963
+@@ -1046,0 +1065 @@
++  EnableTestModeForFileExplorerSSFtoCDSConversion: 20681411
+@@ -1053,0 +1073 @@
++  EyeControlToolkit: 19098229
+@@ -1055,0 +1076,4 @@
++  EyeTracking_3rdPartyAacSpeech: 19040803
++  EyeTracking_AdvancedMouseMode: 18096054
++  EyeTracking_EcappSettingsUpdates: 19051580
++  EyeTracking_SwitchMode: 19450352
+@@ -1058,0 +1083 @@
++  FileExplorerClassicSettingsInCDS: 18616153
+@@ -1071,0 +1097 @@
++  GifSuggestionOnDesktop: 19775411
+@@ -1078,0 +1105 @@
++  HideUwpEdgeFromAppListIfWin32EdgePresent: 23035442
+@@ -1113,0 +1141 @@
++  IngestInputApp: 22929203
+@@ -1139,0 +1168 @@
++  KeyboardInputInMinQueue: 21087082
+@@ -1217,0 +1247,2 @@
++  MSRC50138_20505477: 20505477
++  MSRC50139_20420840: 20420840
+@@ -1223,0 +1255 @@
++  MSRC50608_21151885: 21151885
+@@ -1230,0 +1263 @@
++  MSRC51022_20952820: 20952820
+@@ -1235,0 +1269 @@
++  MSRC51509_21265351: 21265351
+@@ -1252 +1286 @@
+-  MSRC51883_21830762: 21830762
++  MSRC51861_21540325: 21540325
+@@ -1254,0 +1289 @@
++  MSRC51900_21562307: 21562307
+@@ -1257 +1291,0 @@
+-  MSRC51957_21614277: 21614277
+@@ -1258,0 +1293 @@
++  MSRC51974_21633115: 21633115
+@@ -1260,0 +1296 @@
++  MSRC52048_21648483: 21648483
+@@ -1264,0 +1301,2 @@
++  MSRC52116_21722660: 21722660
++  MSRC52124_21736133: 21736133
+@@ -1267,0 +1306,2 @@
++  MSRC52148_21758880: 21758880
++  MSRC52157_21768474: 21768474
+@@ -1273,0 +1314,6 @@
++  MSRC52231_21891500: 21891500
++  MSRC52251_21902764: 21902764
++  MSRC52252_21902812: 21902812
++  MSRC52277_21964537: 21964537
++  MSRC52284_21966625: 21966625
++  MSRC52304_21974818: 21974818
+@@ -1275 +1321 @@
+-  MSRC52361_20531572: 20531572
++  MSRC52362_21616617: 21616617
+@@ -1277 +1323,2 @@
+-  MSRC52366_21270652: 21270652
++  MSRC52364_21073296: 21073296
++  MSRC52385_22030089: 22030089
+@@ -1279,0 +1327,2 @@
++  MSRC52412_22069949: 22069949
++  MSRC52413_22071284: 22071284
+@@ -1283 +1332,20 @@
+-  MSRC52760_22425605: 22425605
++  MSRC52558_22168926: 22168926
++  MSRC52601_22225821: 22225821
++  MSRC52605_22226625: 22226625
++  MSRC52607_22226803: 22226803
++  MSRC52616_22234818: 22234818
++  MSRC52636_22250303: 22250303
++  MSRC52638_22250657: 22250657
++  MSRC52674_22291254: 22291254
++  MSRC52687_22309615: 22309615
++  MSRC52688_22309679: 22309679
++  MSRC52689_22309730: 22309730
++  MSRC52693_22314652: 22314652
++  MSRC52752_23194607: 23194607
++  MSRC52815_22452455: 22452455
++  MSRC52837_22487612: 22487612
++  MSRC52929_22725296: 22725296
++  MSRC52934_22749442: 22749442
++  MSRC52937_22751035: 22751035
++  MSRC52943_22753775: 22753775
++  MSRC53056_22871482: 22871482
+@@ -1294,0 +1363 @@
++  MinQMouseAndMiP: 22100935
+@@ -1326,0 +1396 @@
++  OobeExperimentationPages: 21988631
+@@ -1343,0 +1414 @@
++  PenDetachIWS: 20430744
+@@ -1364,0 +1436 @@
++  PhotosAppLiveTileClippingBugFix: 21879587
+@@ -1365,0 +1438 @@
++  PinMigration: 21157932
+@@ -1371 +1443,0 @@
+-  PresentationAPI: 10111032
+@@ -1373,0 +1446,2 @@
++  PreventSUALaunchAsDSMA: 15953702
++  ProductizeSpecializedDisplays: 23038916
+@@ -1394,0 +1469 @@
++  RedirectBrowserActivations: 21166711
+@@ -1398,0 +1474 @@
++  ReduceTimerWakes: 20638280
+@@ -1414,0 +1491,3 @@
++  SL_ImageMarginSoftLandingMetadata: 22163109
++  SL_IsImageQualifiedForLightThemeSoftLandingMetadata: 21938149
++  SL_IsUserInteractionRequiredForDismissalSoftLandingMetadata: 22136797
+@@ -1427,0 +1507 @@
++  ScoobeSettingsToggle: 20720716
+@@ -1449,0 +1530 @@
++  SettingsSearchCFR: 20974195
+@@ -1466,0 +1548 @@
++  SkipBrowserInAppEnumerations: 20429476
+@@ -1491 +1573 @@
+-  SuppressMail: 18687362
++  SuppressStore: 18710562
+@@ -1508,0 +1591,2 @@
++  TaskbarNoBlurBehindOnSoftwareRenderer: 21868935
++  TaskbarPinMigration: 20421490
+@@ -1540,0 +1625 @@
++  UpdatePinnedTaskbarIcons: 21938197
+@@ -1544,0 +1630 @@
++  UseNewSearchAndCortanaApps: 19263623
+@@ -1546 +1631,0 @@
+-  UseStoreECApp: 20577377
+@@ -1548,0 +1634,2 @@
++  VAIL_Monitor_Projection: 21414360
++  VAIL_Vsync_Projection: 21742760
+@@ -1554,0 +1642 @@
++  VirtualDesktopCustomNames: 19412047
+@@ -1602,4 +1689,0 @@
+-  AppDefaultsSetAppAsDefault: 21154688
+-  BrowserReplacement: 21167812
+-  BrowserReplacementAssocHandlers: 21667666
+-  BypassPingSetsForMachineLocalOids: 15769422
+@@ -1607,2 +1690,0 @@
+-  CentennialUIAccess: 19447269
+-  CloudExperienceHostLaunchTask: 19581552
+@@ -1613,2 +1695 @@
+-  DisplayHdr_Inf_Certification: 20832431
+-  DolbyVision_Default_On: 20832424
++  DesktopTouchImprovementForTabletPosture: 21228112
+@@ -1616,2 +1696,0 @@
+-  DriverBlackboxData: 20758515
+-  DriverWhiteboxData: 20758545
+@@ -1619,9 +1697,0 @@
+-  EICinTIConWCOS: 21268963
+-  EnableTestModeForFileExplorerSSFtoCDSConversion: 20681411
+-  EyeControlToolkit: 19098229
+-  EyeTracking_3rdPartyAacSpeech: 19040803
+-  EyeTracking_AdvancedMouseMode: 18096054
+-  EyeTracking_EcappSettingsUpdates: 19051580
+-  EyeTracking_SwitchMode: 19450352
+-  FileExplorerClassicSettingsInCDS: 18616153
+-  GifSuggestionOnDesktop: 19775411
+@@ -1631,2 +1700,0 @@
+-  HideUwpEdgeFromAppListIfWin32EdgePresent: 23035442
+-  HostAILPositionerInImmersiveShell: 20952834
+@@ -1637 +1704,0 @@
+-  KeyboardInputInMinQueue: 21087082
+@@ -1642 +1708,0 @@
+-  MSRC50608_21151885: 21151885
+@@ -1646,3 +1711,0 @@
+-  MSRC52116_21722660: 21722660
+-  MSRC52124_21736133: 21736133
+-  MSRC52362_21616617: 21616617
+@@ -1649,0 +1713 @@
++  MSRC52429_22089775: 22089775
+@@ -1651,6 +1714,0 @@
+-  MSRC52601_22225821: 22225821
+-  MSRC52605_22226625: 22226625
+-  MSRC52607_22226803: 22226803
+-  MSRC52616_22234818: 22234818
+-  MSRC52674_22291254: 22291254
+-  MSRC52693_22314652: 22314652
+@@ -1658 +1716 @@
+-  MSRC52752_23194607: 23194607
++  MSRC52828_22460159: 22460159
+@@ -1661 +1719 @@
+-  MSRC53056_22871482: 22871482
++  MSRC53045_22846699: 22846699
+@@ -1662,0 +1721 @@
++  MSRC53073_22878576: 22878576
+@@ -1663,0 +1723 @@
++  MSRC53075_22878718: 22878718
+@@ -1664,0 +1725,2 @@
++  MSRC53225_23056967: 23056967
++  MSRC53227_23057105: 23057105
+@@ -1666,8 +1727,0 @@
+-  MinQMouseAndMiP: 22100935
+-  MonitorDevice_OverrideDriverWithDolbyVisionColorimetry: 23036359
+-  PenDetachIWS: 20430744
+-  PinMigration: 21157932
+-  PreventSUALaunchAsDSMA: 15953702
+-  ProductizeSpecializedDisplays: 23038916
+-  RedirectBrowserActivations: 21166711
+-  ReduceTimerWakes: 20638280
+@@ -1677,3 +1730,0 @@
+-  SL_ImageMarginSoftLandingMetadata: 22163109
+-  SL_IsImageQualifiedForLightThemeSoftLandingMetadata: 21938149
+-  SL_IsUserInteractionRequiredForDismissalSoftLandingMetadata: 22136797
+@@ -1681 +1731,0 @@
+-  SettingsSearchCFR: 20974195
+@@ -1683,4 +1732,0 @@
+-  SkipBrowserInAppEnumerations: 20429476
+-  TaskbarNoBlurBehindOnSoftwareRenderer: 21868935
+-  TaskbarPinMigration: 20421490
+-  UpdatePinnedTaskbarIcons: 21938197
+@@ -1690 +1735,0 @@
+-  19H2SettingsSearchUpdates: 19879176
+@@ -1694 +1738,0 @@
+-  AnaheimPromotionPreInstallPostUnlockDelayedTriggerEvent: 22984746
+@@ -1696,2 +1739,0 @@
+-  BingSearchLockscreen: 17917466
+-  BoostPriorityAlwaysOnViewCreation: 22078216
+@@ -1704 +1745,0 @@
+-  DeliverViaSendMessage: 21629918
+@@ -1706 +1746,0 @@
+-  DesktopTouchImprovementForTabletPosture: 21228112
+@@ -1708,2 +1747,0 @@
+-  DisableCoreDispatcherInWin32: 17479072
+-  DisplayInformation_DisplayRegionSupport: 19060196
+@@ -1715 +1752,0 @@
+-  ExpandReparsePoints: 20842212
+@@ -1717 +1753,0 @@
+-  EyeTracking_LaunchpadHide: 16371697
+@@ -1722,0 +1759 @@
++  ForceShellFODAcquisition: 22460213
+@@ -1734 +1770,0 @@
+-  IngestInputApp: 22929203
+@@ -1742,3 +1777,0 @@
+-  OobeExperimentationPages: 21988631
+-  PhotosAppLiveTileClippingBugFix: 21879587
+-  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -1749,2 +1781,0 @@
+-  SL_LargeImageTwoButtonTemplateSupport: 22984807
+-  SVR_DX12_Rendering: 11537650
+@@ -1753,3 +1783,0 @@
+-  ScoobeSettingsToggle: 20720716
+-  ScoobeToastTriggers: 19864035
+-  ScreenClippingUndockedWCOS: 20782456
+@@ -1758 +1786 @@
+-  SetNumberOfDaysDisplayedInTimeline: 18917037
++  ShellFODRemoval: 22460125
+@@ -1760,2 +1787,0 @@
+-  ShellUndockedPackage: 19603540
+-  SlideWindowAnimationRectCheck: 21209145
+@@ -1766 +1791,0 @@
+-  SuppressStore: 18710562
+@@ -1773,2 +1797,0 @@
+-  UninstallBrowserReplacementFixups: 21966201
+-  UseNewSearchAndCortanaApps: 19263623
+@@ -1776,2 +1798,0 @@
+-  VAIL_Fake_Monitor_Projection: 21415082
+-  VAIL_Monitor_Projection: 21414360
+@@ -1779,2 +1799,0 @@
+-  VAIL_Vsync_Projection: 21742760
+-  VirtualDesktopCustomNames: 19412047
+@@ -1798 +1816,0 @@
+-  AdditionalComDebugOutput: 14468475
+@@ -1806,0 +1825,2 @@
++  AnaheimPromotionPreInstallPostUnlockDelayedTriggerEventForAnaheimInsiders: 23078286
++  AnaheimPromotionPreInstallPostUnlockDelayedTriggerEventForNonAnaheimInsiders: 22984746
+@@ -1814 +1833,0 @@
+-  AppDefaultsOpenWithAny: 14482024
+@@ -1815,0 +1835 @@
++  AppDefaultsRecommendNewEdge: 20432194
+@@ -1827,0 +1848,2 @@
++  BingSearchLockscreen: 17917466
++  BoostPriorityAlwaysOnViewCreation: 22078216
+@@ -1854,0 +1877 @@
++  DeliverViaSendMessage: 21629918
+@@ -1863,0 +1887 @@
++  DisableCoreDispatcherInWin32: 17479072
+@@ -1865,0 +1890 @@
++  DisplayInformation_DisplayRegionSupport: 19060196
+@@ -1890,0 +1916 @@
++  ExpandReparsePoints: 20842212
+@@ -1896,0 +1923 @@
++  EyeTracking_LaunchpadHide: 16371697
+@@ -1910 +1936,0 @@
+-  ForceShellFODAcquisition: 22460213
+@@ -1956,0 +1983,2 @@
++  LaunchAnaheimDownloadPageAtLoginForAnaheimInsiders: 23220630
++  LaunchAnaheimDownloadPageAtLoginForNonAnaheimInsiders: 22984827
+@@ -1972,2 +1999,0 @@
+-  MSRC50138_20505477: 20505477
+-  MSRC50139_20420840: 20420840
+@@ -1975,2 +2001 @@
+-  MSRC51022_20952820: 20952820
+-  MSRC51509_21265351: 21265351
++  MSRC51205_21058145: 21058145
+@@ -1979,13 +2003,0 @@
+-  MSRC51861_21540325: 21540325
+-  MSRC51900_21562307: 21562307
+-  MSRC51974_21633115: 21633115
+-  MSRC52048_21648483: 21648483
+-  MSRC52148_21758880: 21758880
+-  MSRC52157_21768474: 21768474
+-  MSRC52231_21891500: 21891500
+-  MSRC52251_21902764: 21902764
+-  MSRC52252_21902812: 21902812
+-  MSRC52277_21964537: 21964537
+-  MSRC52284_21966625: 21966625
+-  MSRC52304_21974818: 21974818
+-  MSRC52364_21073296: 21073296
+@@ -1993,2 +2004,0 @@
+-  MSRC52412_22069949: 22069949
+-  MSRC52413_22071284: 22071284
+@@ -1996 +2005,0 @@
+-  MSRC52638_22250657: 22250657
+@@ -1998,3 +2007 @@
+-  MSRC52687_22309615: 22309615
+-  MSRC52815_22452455: 22452455
+-  MSRC52837_22487612: 22487612
++  MSRC52824_22459399: 22459399
+@@ -2003 +2010 @@
+-  MSRC52937_22751035: 22751035
++  MSRC53128_23296237: 23296237
+@@ -2004,0 +2012,3 @@
++  MSRC53262_23078028: 23078028
++  MSRC53416_23155882: 23155882
++  MSRC53489_23203375: 23203375
+@@ -2033,0 +2044 @@
++  PresentationAPI: 10111032
+@@ -2040,0 +2052 @@
++  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -2055,0 +2068,2 @@
++  SL_LargeImageTwoButtonTemplateSupport: 22984807
++  SVR_DX12_Rendering: 11537650
+@@ -2057,0 +2072,2 @@
++  ScoobeToastTriggers: 19864035
++  ScreenClippingUndockedWCOS: 20782456
+@@ -2063,0 +2080 @@
++  SetNumberOfDaysDisplayedInTimeline: 18917037
+@@ -2067 +2083,0 @@
+-  ShellFODRemoval: 22460125
+@@ -2068,0 +2085 @@
++  ShellUndockedPackage: 19603540
+@@ -2072,0 +2090 @@
++  SlideWindowAnimationRectCheck: 21209145
+@@ -2086,0 +2105 @@
++  SuppressMail: 18687362
+@@ -2122 +2140,0 @@
+-  UndockedSearch: 21127843
+@@ -2123,0 +2142 @@
++  UninstallBrowserReplacementFixups: 21966201
+@@ -2127,0 +2147 @@
++  UseStoreECApp: 20577377
+@@ -2132,0 +2153 @@
++  VAIL_Fake_Monitor_Projection: 21415082
