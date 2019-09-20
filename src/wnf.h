@@ -142,6 +142,7 @@ namespace mach2
         Default = 0,
         Disabled = 1,
         Enabled = 2,
+		HasVariantConfiguration = 64,
         HasNotification = 128
     };
 
