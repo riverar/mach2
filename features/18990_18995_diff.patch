@@ -1,0 +1,48 @@
+--- V:/18990/features_nosymbols.txt	Wed Sep 25 15:14:42 2019
++++ V:/18995/features_nosymbols.txt	Thu Oct 03 11:51:00 2019
+@@ -85,0 +86 @@
++  AzureFeaturesAndPolicies: 0
+@@ -289 +289,0 @@
+-  EnableDevMode: 0
+@@ -294 +293,0 @@
+-  EnableNarrowChsLayoutsOnDesktop: 0
+@@ -334 +332,0 @@
+-  FconWritesToRTL: 0
+@@ -351,0 +350 @@
++  ForceColorGDIRampsUse: 0
+@@ -416 +414,0 @@
+-  IE_SETTINGSYNCMIGRATION: 0
+@@ -458,2 +455,0 @@
+-  LiteCWCommentOnWCOS: 0
+-  LiteCWOnWCOS: 0
+@@ -487 +482,0 @@
+-  MiniSerp_ScaleAdjustment: 0
+@@ -674,0 +670 @@
++  Servicing_IE_SETTINGSYNCMIGRATION_20400004: 0
+@@ -1242 +1237,0 @@
+-  MSRC49998_20696500: 20696500
+@@ -1289 +1283,0 @@
+-  MSRC52024_21635939: 21635939
+@@ -1296 +1289,0 @@
+-  MSRC52116_21722660: 21722660
+@@ -1302 +1294,0 @@
+-  MSRC52172_21804317: 21804317
+@@ -1315 +1306,0 @@
+-  MSRC52364_21073296: 21073296
+@@ -1330 +1320,0 @@
+-  MSRC52638_22250657: 22250657
+@@ -1332 +1321,0 @@
+-  MSRC52687_22309615: 22309615
+@@ -1503 +1491,0 @@
+-  ScreenClippingConvergence: 19061946
+@@ -2002,0 +1991 @@
++  MSRC51625_21348672: 21348672
+@@ -2009,0 +1999 @@
++  MSRC52847_22507124: 22507124
+@@ -2011,0 +2002,2 @@
++  MSRC52914_22706240: 22706240
++  MSRC52916_22706326: 22706326
+@@ -2018,0 +2011 @@
++  MSRC53516_23219456: 23219456
+@@ -2081,0 +2075 @@
++  SearchUndockTestMocks: 22984368
