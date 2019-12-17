@@ -1,0 +1,592 @@
+--- V:/19037/features_nosymbols.txt	Fri Dec 06 12:41:58 2019
++++ V:/19536/features_nosymbols.txt	Mon Dec 16 16:52:08 2019
+@@ -23 +22,0 @@
+-  ActionCenterConvergedAudioPlayer: 0
+@@ -25 +23,0 @@
+-  AddFamilyPage: 0
+@@ -45 +42,0 @@
+-  AllowNotificationSound: 0
+@@ -55 +51,0 @@
+-  AppQuickActions: 0
+@@ -102 +98,2 @@
+-  BluetoothFlyout: 0
++  BluetoothFlyout_Desktop: 0
++  BluetoothFlyout_WCOSCDG: 0
+@@ -104 +100,0 @@
+-  BluetoothGattServiceData_Api: 0
+@@ -107 +102,0 @@
+-  BluetoothLEExtendedAdvertising_Api: 0
+@@ -117,0 +113 @@
++  BreakOnIDDTimeout: 0
+@@ -136,0 +133,3 @@
++  CShellOnWindowManagerIDK: 0
++  CShellSettingsSearchbox: 0
++  CallerContextImpersonateCallerRefactor: 0
+@@ -158,0 +158 @@
++  ContainerCrash_UseInternalBranchPolicy: 0
+@@ -164 +163,0 @@
+-  CorrectiveGesture: 0
+@@ -167,2 +165,0 @@
+-  CortanaAvatarOnActionCenter: 0
+-  CortanaNotificationPromotion: 0
+@@ -176 +172,0 @@
+-  D3D11On12DecodeArrayOfTexture: 0
+@@ -178 +174,2 @@
+-  D3D11On12Multithreading: 0
++  D3D11_BlockCryptoSessions: 0
++  D3D11_BlockIHVAuthenticatedChannels: 0
+@@ -185,0 +183 @@
++  D3D12LegacyAPICompatibility: 0
+@@ -212,0 +211 @@
++  DXCore_SystemFileMappings_LegacyDriverSupport: 0
+@@ -218,0 +218 @@
++  DXGI_VailMPO: 0
+@@ -220 +219,0 @@
+-  DXGI_eFSE_Enablement_Policy: 0
+@@ -225,0 +225 @@
++  DefaultBrowserSettings: 0
+@@ -230 +229,0 @@
+-  DesktopControlCenter: 0
+@@ -244,0 +244 @@
++  DeviceManagementDeclaredConfigurationContainerSupport: 0
+@@ -253,0 +254 @@
++  DisableHologramPersistence: 0
+@@ -261,0 +263 @@
++  DockedFamilySettingsPage: 0
+@@ -271 +272,0 @@
+-  DraggableThumbnailAfterSnip: 0
+@@ -286 +286,0 @@
+-  EasyNotificationsSettingsL2: 0
+@@ -290,0 +291 @@
++  EfsFekDplProtection: 0
+@@ -294 +294,0 @@
+-  EmulateMobilePersonalityOnDesktop: 0
+@@ -310 +309,0 @@
+-  ExperimentationViaEMS: 0
+@@ -319,0 +319 @@
++  ExternalDisplayMirroringUX: 0
+@@ -334,2 +334 @@
+-  FamilyDeviceToggle: 0
+-  FamilySyncOnLogon: 0
++  FamilySettingsAwareness: 0
+@@ -338,0 +338 @@
++  FconWritesToRTL: 0
+@@ -342,2 +341,0 @@
+-  FeatureConfigurationMessageV2: 0
+-  FeatureReporting: 0
+@@ -344,0 +343 @@
++  FingerprintImprovement: 0
+@@ -346 +344,0 @@
+-  FlexibleNotificationItemView: 0
+@@ -350 +347,0 @@
+-  FlowQuickActions: 0
+@@ -373 +369,0 @@
+-  HackAroundMouseVelocityBug: 0
+@@ -379,0 +376,4 @@
++  HardwareKeyboardInlinePredictionForWin32: 0
++  HardwareKeyboardInlinePredictionForXAML: 0
++  HardwareKeyboardInlinePredictionMaxCumulativeScoreExperiments: 0
++  HardwareKeyboardInlinePredictionMaxWordCountExperiments: 0
+@@ -388,0 +389,2 @@
++  HardwareKeyboardLayoutAware_Desktop: 0
++  HardwareKeyboardLayoutAware_WCOS: 0
+@@ -389,0 +392 @@
++  HardwareKeyboardTipC: 0
+@@ -401,2 +404 @@
+-  HolographicKeyboardAndCursorPlacement: 0
+-  HolographicNotifications: 0
++  HnsLeakedActivities: 0
+@@ -405 +406,0 @@
+-  HostGuestCorrelation: 0
+@@ -426 +426,0 @@
+-  InContextNotificationSettings: 0
+@@ -433,0 +434 @@
++  InputAppPerfOptimizationUndocked: 0
+@@ -437 +437,0 @@
+-  Interruption_Control: 0
+@@ -449 +448,0 @@
+-  KernelModeVpciBus: 0
+@@ -464,7 +462,0 @@
+-  LiteOobeEulaPage: 0
+-  LiteOobeLanguagePage: 0
+-  LiteOobeMSA: 0
+-  LiteOobePinSetup: 0
+-  LiteOobeReboot: 0
+-  LiteOobeRegionPage: 0
+-  LoadAlternateHcl: 0
+@@ -493,0 +486,2 @@
++  MmpcRedirect: 0
++  ModernAppBlocking: 0
+@@ -509,0 +504 @@
++  NarratorBackgroundHighlight: 0
+@@ -512,0 +508 @@
++  NarratorRemoteOperationsPhase1: 0
+@@ -518 +514,2 @@
+-  NewDevicesFlowConnectUI: 0
++  NewDevicesFlowConnectUI_Desktop: 0
++  NewDevicesFlowConnectUI_WCOSCDG: 0
+@@ -527 +523,0 @@
+-  NoCreateFamilyDisabledUsers: 0
+@@ -529 +524,0 @@
+-  NoSMUAWorkaround: 0
+@@ -533,5 +528 @@
+-  NotificationImageFlipViewSupport: 0
+-  NotificationMuaAttribution: 0
+-  NotificationSenderRecency: 0
+-  NotificationsFailFast: 0
+-  NvIo: 0
++  NvIo_Experimental: 0
+@@ -554 +544,0 @@
+-  OneSettingsClient_FeatureConfiguration: 0
+@@ -560 +549,0 @@
+-  Optional_Features_Page_V2: 0
+@@ -562 +550,0 @@
+-  PDCShellPhaseUseWNF: 0
+@@ -605,0 +594 @@
++  ProductExperienceManager: 0
+@@ -613,5 +601,0 @@
+-  QuickActionTemplates: 0
+-  QuickActionsV2: 0
+-  QuietHours: 0
+-  QuietMomentFullScreen: 0
+-  QuietMomentSummaryToast: 0
+@@ -691 +674,0 @@
+-  SettingsEntryPointInAC: 0
+@@ -694,0 +678 @@
++  ShellExecuteRedirection: 0
+@@ -700,0 +685 @@
++  ShowBrowserOnValueBanner: 0
+@@ -705 +690 @@
+-  SiHostLessExplorer: 0
++  Sideloading: 0
+@@ -728 +712,0 @@
+-  SuggestionsML: 0
+@@ -734 +717,0 @@
+-  SuspendContainersOnCsEntry: 0
+@@ -754,0 +738 @@
++  TipCSamplingOverride: 0
+@@ -760 +744 @@
+-  TouchInContextNotificationSettings: 0
++  TouchKeyboardAutoSwitchToAlphaAfterSymbolSpace: 0
+@@ -765 +748,0 @@
+-  UDKFunctionsNotYetConverged: 0
+@@ -767,0 +751 @@
++  USNBackoffDetection: 0
+@@ -770,0 +755,3 @@
++  UiaCrossMachineArtificialDelay: 0
++  UiaCrossMachineHwndInfoCache: 0
++  UiaCrossMachineWinEventPruning: 0
+@@ -771,0 +759,4 @@
++  UiaGenericCrossMachine: 0
++  UiaOverRail: 0
++  UiaSendVersionNumber: 0
++  UniformDPI: 0
+@@ -775 +765,0 @@
+-  UsageReportingViaFCON: 0
+@@ -782 +771,0 @@
+-  UseFastPathForArticulatedHand: 0
+@@ -788,0 +778 @@
++  UseWinML: 0
+@@ -798,0 +789 @@
++  VailStorageSpace: 0
+@@ -800,0 +792 @@
++  Validate_Heap: 0
+@@ -805,0 +798 @@
++  VelGatesTestControl: 0
+@@ -813,0 +807,2 @@
++  VoiceTypingInFlowConsent: 0
++  VoiceTypingModernUX: 0
+@@ -818,0 +814,2 @@
++  WCOSNewKeyboardSettings: 0
++  WCOSUserModelForIME: 0
+@@ -851,0 +849 @@
++  WindowsSandbox_Internal: 0
+@@ -857 +854,0 @@
+-  XAMLAppResolver: 0
+@@ -861 +857,0 @@
+-  XamlShowHideAnimations: 0
+@@ -882,0 +879,2 @@
++  ActionCenterAcrylicBackground: 11532176
++  ActionCenterConvergedAudioPlayer: 8867227
+@@ -883,0 +882,2 @@
++  ActionCenterSaveNotificationDrafts: 13725162
++  ActionCenterVisualUpdates: 11225892
+@@ -890 +889,0 @@
+-  AddActivationValueSetToHintsSystem: 18950387
+@@ -892 +890,0 @@
+-  AdditionalComDebugOutput: 14468475
+@@ -921,0 +920 @@
++  AutoExpandNotificationItem: 8466218
+@@ -932,4 +930,0 @@
+-  BindFilterAppDataRedirection: 15725851
+-  BindFilterOptionalPackageVfsRedirection: 18741304
+-  BindFilterSinglePackageVfsRedirection: 14098587
+-  BonusBar: 983002
+@@ -937 +931,0 @@
+-  Brightness3dxgkrnl: 12732606
+@@ -947 +940,0 @@
+-  BypassPingSetsForMachineLocalOids: 15769422
+@@ -1002 +994,0 @@
+-  CoreMessaging_DeferReleaseUserApiCall: 20516394
+@@ -1070 +1061,0 @@
+-  EICinTIConWCOS: 21268963
+@@ -1077 +1067,0 @@
+-  EnableControlOfShowWindowBehavior: 18697867
+@@ -1132,0 +1123 @@
++  HolographicNotifications: 9666698
+@@ -1138,0 +1130 @@
++  HtmlStartPackageFeed: 21510368
+@@ -1158 +1149,0 @@
+-  IngestInputApp: 22929203
+@@ -1170 +1160,0 @@
+-  InputAppConsumesUdk: 20652073
+@@ -1179 +1168,0 @@
+-  Input_HeatSensorContext: 13399803
+@@ -1225 +1213,0 @@
+-  MSRC48313_19476707: 19476707
+@@ -1234 +1221,0 @@
+-  MSRC49432_20068892: 20068892
+@@ -1238 +1224,0 @@
+-  MSRC49535_21204384: 21204384
+@@ -1252,3 +1237,0 @@
+-  MSRC50197_20513963: 20513963
+-  MSRC50554_20696117: 20696117
+-  MSRC50678_20751883: 20751883
+@@ -1259 +1241,0 @@
+-  MSRC51099_20999292: 20999292
+@@ -1263 +1244,0 @@
+-  MSRC51562_21325980: 21325980
+@@ -1265,2 +1245,0 @@
+-  MSRC51645_21361950: 21361950
+-  MSRC51686_21399329: 21399329
+@@ -1272,2 +1250,0 @@
+-  MSRC51861_21540325: 21540325
+-  MSRC51959_21614878: 21614878
+@@ -1275,3 +1251,0 @@
+-  MSRC52046_21638631: 21638631
+-  MSRC52048_21648483: 21648483
+-  MSRC52065_21666170: 21666170
+@@ -1280,2 +1253,0 @@
+-  MSRC52146_21758773: 21758773
+-  MSRC52187_21838922: 21838922
+@@ -1283,2 +1255 @@
+-  MSRC52209_21870609: 21870609
+-  MSRC52231_21891500: 21891500
++  MSRC52365_21395503: 21395503
+@@ -1287,6 +1258 @@
+-  MSRC52396_22067323: 22067323
+-  MSRC52423_22079850: 22079850
+-  MSRC52427_22089106: 22089106
+-  MSRC52448_22112946: 22112946
+-  MSRC52453_22126870: 22126870
+-  MSRC52636_22250303: 22250303
++  MSRC52443_22097612: 22097612
+@@ -1294,2 +1260 @@
+-  MSRC52688_22309679: 22309679
+-  MSRC52689_22309730: 22309730
++  MSRC52686_22308606: 22308606
+@@ -1297,2 +1261,0 @@
+-  MSRC52752_23194607: 23194607
+-  MSRC52828_22460159: 22460159
+@@ -1301,3 +1264,2 @@
+-  MSRC52929_22725296: 22725296
+-  MSRC52934_22749442: 22749442
+-  MSRC52943_22753775: 22753775
++  MSRC52889_22661402: 22661402
++  MSRC52933_22880811: 22880811
+@@ -1305 +1266,0 @@
+-  MSRC53071_22878449: 22878449
+@@ -1307 +1267,0 @@
+-  MSRC53076_22878733: 22878733
+@@ -1312,0 +1273 @@
++  MSRC53249_23061662: 23061662
+@@ -1314 +1274,0 @@
+-  MSRC53259_23078002: 23078002
+@@ -1319 +1279 @@
+-  MSRC53397_23138890: 23138890
++  MSRC53392_23133967: 23133967
+@@ -1324,0 +1285 @@
++  MSRC53501_23896796: 23896796
+@@ -1325,0 +1287,2 @@
++  MSRC53519_23381156: 23381156
++  MSRC53528_23229617: 23229617
+@@ -1327,3 +1290,3 @@
+-  MSRC53631_23253071: 23253071
+-  MSRC53681_23282442: 23282442
+-  MSRC53752_23339251: 23339251
++  MSRC53553_23251489: 23251489
++  MSRC53676_23281017: 23281017
++  MSRC53756_23340089: 23340089
+@@ -1331 +1294,8 @@
+-  MSRC54033_23477373: 23477373
++  MSRC53768_23958431: 23958431
++  MSRC53791_23356856: 23356856
++  MSRC53822_23896795: 23896795
++  MSRC53838_23896790: 23896790
++  MSRC53861_23391480: 23391480
++  MSRC53869_23397316: 23397316
++  MSRC53980_23437121: 23437121
++  MSRC53990_23896786: 23896786
+@@ -1333 +1303,2 @@
+-  MSRC54070_23487583: 23487583
++  MSRC54092_23896783: 23896783
++  MSRC54182_3972357: 3972357
+@@ -1345 +1315,0 @@
+-  MinQMouseAndMiP: 22100935
+@@ -1364 +1333,0 @@
+-  OemPanelDriverSupport: 8395569
+@@ -1425,0 +1395 @@
++  PresentationAPI: 10111032
+@@ -1436,0 +1407,2 @@
++  QuickActionTemplates: 1195122
++  QuickActionsV2: 19016392
+@@ -1437,0 +1410,3 @@
++  QuietHours: 10896550
++  QuietMomentFullScreen: 18792193
++  QuietMomentSummaryToast: 14350508
+@@ -1617,0 +1593 @@
++  VailSuperWetInk: 18368047
+@@ -1637 +1612,0 @@
+-  WindowManagerDesktop: 13976955
+@@ -1640 +1614,0 @@
+-  WindowingEnvironmentsDesktop: 15441787
+@@ -1671,0 +1646,3 @@
++  AppDefaultsRecommendNewEdge: 20432194
++  AtomicCheckFailure: 18815308
++  Brightness3LegacyAPIReroute: 16417871
+@@ -1673,0 +1651 @@
++  ColorfulUnplatedLogos: 21894296
+@@ -1674,0 +1653 @@
++  DefaultAppUpdates: 23109802
+@@ -1676 +1655 @@
+-  DraggableThumbnailWCOS: 19375840
++  DockTestMode: 21593258
+@@ -1677,0 +1657,2 @@
++  EICinTIConWCOS: 21268963
++  EaseOfAccessQuickSettings: 20782259
+@@ -1680 +1661 @@
+-  HiddenWebViewInStart: 18765106
++  HtmlStartIncludeUdkProjections: 20994335
+@@ -1684,0 +1666,2 @@
++  Hub_QuietOOBECortana: 23820713
++  InjectionRawInputProvider: 23072667
+@@ -1687,2 +1669,0 @@
+-  MSRC52365_21395503: 21395503
+-  MSRC52933_22880811: 22880811
+@@ -1692 +1672,0 @@
+-  MSRC53528_23229617: 23229617
+@@ -1695,5 +1674,0 @@
+-  MSRC53791_23356856: 23356856
+-  MSRC53838_23381472: 23381472
+-  MSRC53861_23391480: 23391480
+-  MSRC53869_23397316: 23397316
+-  MSRC54092_23505322: 23505322
+@@ -1706,0 +1682 @@
++  MSRC54277_23623430: 23623430
+@@ -1715,0 +1692,2 @@
++  MSRC54524_23792275: 23792275
++  MSRC54548_23934674: 23934674
+@@ -1719,0 +1698,2 @@
++  NotificationsFailFast: 18195458
++  ProductActivationInSettings: 22220550
+@@ -1722,0 +1703 @@
++  SIPInvocationByTapOnWCOS: 20809722
+@@ -1724,0 +1706,3 @@
++  VAILRemoteAppIdWindowAssignment: 21003492
++  WatsonizeVAILFailures: 23352930
++  WcosFileDialogsForAnaheim: 20913705
+@@ -1727,0 +1712 @@
++  ActionCenterFlyoutHeight: 23203980
+@@ -1732 +1717,2 @@
+-  Brightness3LegacyAPIReroute: 16417871
++  AppointmentsInStart: 23360964
++  BTInboundPairingUI: 23402385
+@@ -1733,0 +1720 @@
++  CloudFileSyncStatusAPI: 22094302
+@@ -1737,0 +1725,2 @@
++  DesktopActionCenterMTC: 23403403
++  DesktopControlCenter: 10971239
+@@ -1740 +1729,2 @@
+-  DockTestMode: 21593258
++  DisableCoreDispatcherInWin32: 17479072
++  DraggableThumbnailWCOS: 19375840
+@@ -1742,0 +1733 @@
++  EdgeDevToolsWcosBroker_HookEnumOnDesktop: 23603367
+@@ -1748 +1738,0 @@
+-  FakeCrossContainerCallerIdentity: 21527221
+@@ -1750,0 +1741 @@
++  FlexibleNotificationItemView: 21127659
+@@ -1751,0 +1743,2 @@
++  FridgeMagnetsPPI: 23902811
++  FullNarrowLayoutOnModernUX: 19680156
+@@ -1753 +1746 @@
+-  HtmlStartPackageFeed: 21510368
++  HtmlLauncher: 19908852
+@@ -1762,0 +1756 @@
++  InputServiceHostedCoreInputViewManager: 22111930
+@@ -1766,0 +1761 @@
++  NoPlatformScaling: 23458767
+@@ -1768,0 +1764,4 @@
++  PenButtonCustomizationOnWCOS: 23339593
++  ProximityPairing: 87954621
++  PublishFileActivitiesForUnassociatedViews: 19349712
++  RecycleNotificationContainers: 22964139
+@@ -1770 +1768,0 @@
+-  RequestFromAppModelWatcherOnDesktop: 20819441
+@@ -1772,0 +1771 @@
++  SIPInvocationPolicySetting: 22085787
+@@ -1773,0 +1773 @@
++  SVR_DX12_Rendering: 11537650
+@@ -1774,0 +1775,2 @@
++  ScoobeEligibilityBasedOnML: 23059000
++  ScoobeOnCleanInstallNoNetwork: 23865426
+@@ -1776 +1778 @@
+-  SelfHostWebStart: 19908852
++  ScreenClippingUndockedWCOS: 20782456
+@@ -1777,0 +1780 @@
++  SetNumberOfDaysDisplayedInTimeline: 18917037
+@@ -1779,0 +1783 @@
++  ShowBrowserOnScoobe: 23563673
+@@ -1781 +1784,0 @@
+-  SuggestionUIPackageDownload: 20611323
+@@ -1787,0 +1791 @@
++  TryShellActivateApplicationFallback: 23674478
+@@ -1789,0 +1794,2 @@
++  VAILWin32AppUninstall: 20352905
++  VAIL_Fake_Monitor_Projection: 21415082
+@@ -1790,0 +1797,3 @@
++  VoiceTypingEntryPointOnWCOS: 23991426
++  VoiceTypingInFlowConsentOnWCOS: 23991419
++  VoiceTypingModernUXOnWCOS: 23722665
+@@ -1803,0 +1813,2 @@
++  ActionCenterWelcomeMessage: 7920879
++  ActionCenterXamlExperience: 6364345
+@@ -1806,0 +1818 @@
++  AdditionalComDebugOutput: 14468475
+@@ -1814,0 +1827 @@
++  AnaheimPromotionPostInstallPostUnlockDelayedTriggerEvent: 23422232
+@@ -1825 +1837,0 @@
+-  AppDefaultsRecommendNewEdge: 20432194
+@@ -1827,0 +1840 @@
++  AppQuickActions: 5410762
+@@ -1830,0 +1844 @@
++  ApplicationWindows_TryShowAsync: 23361023
+@@ -1832 +1845,0 @@
+-  AtomicCheckFailure: 18815308
+@@ -1852 +1864,0 @@
+-  ColorfulUnplatedLogos: 21894296
+@@ -1861,0 +1874,3 @@
++  CorrectiveGesture: 8644914
++  CortanaAvatarOnActionCenter: 11532590
++  CortanaNotificationPromotion: 10998643
+@@ -1872,0 +1888,2 @@
++  DesktopStartHtmlLauncher: 23351471
++  DesktopStartHtmlLauncher_IncludeAppxFragment: 23510120
+@@ -1879 +1895,0 @@
+-  DisableCoreDispatcherInWin32: 17479072
+@@ -1896,0 +1913 @@
++  EdgeDevToolsWcosBroker: 23554896
+@@ -1903,0 +1921 @@
++  EnableRuntimeDebugBreakForIdd: 23533199
+@@ -1921,0 +1940 @@
++  FailfastOnHstringOverrelease: 11285106
+@@ -1925,0 +1945,2 @@
++  FlexibleToastView: 21256886
++  FlowQuickActions: 19337899
+@@ -1929,0 +1951 @@
++  ForceRestrictToOutputBlack: 23783914
+@@ -1934,0 +1957,4 @@
++  HTMLStartPerfNoAcrylic: 23850988
++  HTMLStartPerfNoRoundedCorners: 23851001
++  HTMLStartPerfNoShadow: 23850997
++  HTMLStartPerfNoWebView: 23850978
+@@ -1935,0 +1962 @@
++  HackAroundMouseVelocityBug: 8021938
+@@ -1939,0 +1967 @@
++  HelloSplitViewAcrossDisplays: 20770583
+@@ -1943 +1970,0 @@
+-  HostAILPositionerInRDPInit: 20975359
+@@ -1945,0 +1973 @@
++  Hub_AppCloseButton: 23590089
+@@ -1965,0 +1994 @@
++  InputInjectionAPI: 22974022
+@@ -1973,0 +2003,2 @@
++  InterruptionControlUseCortanaResponse: 9747660
++  Interruption_Control: 7450444
+@@ -1988,0 +2020 @@
++  LogonTaskHangAutomaticWatson: 23489040
+@@ -1994,9 +2026,3 @@
+-  MSRC52686_22308606: 22308606
+-  MSRC53501_23209920: 23209920
+-  MSRC53519_23381156: 23381156
+-  MSRC53553_23251489: 23251489
+-  MSRC53756_23340089: 23340089
+-  MSRC53768_23347267: 23347267
+-  MSRC53822_23380235: 23380235
+-  MSRC53980_23437121: 23437121
+-  MSRC53990_23896786: 23896786
++  MSRC53981_21313761: 21313761
++  MSRC53992_23444169: 23444169
++  MSRC54094_23934473: 23934473
+@@ -2005,3 +2031,8 @@
+-  MSRC54682_23852463: 23852463
+-  MSRC54683_23820639: 23820639
+-  MSRC54892_24051729: 24051729
++  MSRC54554_23810758: 23810758
++  MSRC54597_23934664: 23934664
++  MSRC54600_23934667: 23934667
++  MSRC54621_23934446: 23934446
++  MSRC54682_23916411: 23916411
++  MSRC54683_23916406: 23916406
++  MSRC54711_23921505: 23921505
++  MSRC54892_24002009: 24002009
+@@ -2011,0 +2043 @@
++  NarrowLayoutOnModernUX: 23881043
+@@ -2014,0 +2047 @@
++  NotificationImageFlipViewSupport: 8290988
+@@ -2037 +2069,0 @@
+-  PresentationAPI: 10111032
+@@ -2045 +2076,0 @@
+-  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -2046,0 +2078 @@
++  QuickActionLock: 23632643
+@@ -2054 +2085,0 @@
+-  RemoteAppLifetimeManagerOverTcp: 16624148
+@@ -2058,0 +2090 @@
++  RequestFromAppModelWatcher: 20819441
+@@ -2060,0 +2093 @@
++  SL_AllowAnchorQueryRegExMatchingForId: 23464348
+@@ -2062 +2094,0 @@
+-  SVR_DX12_Rendering: 11537650
+@@ -2064,0 +2097 @@
++  ScoobeExperimentationPages: 23895822
+@@ -2066 +2098,0 @@
+-  ScreenClippingUndockedWCOS: 20782456
+@@ -2068,0 +2101 @@
++  SearchPerfOptimizations: 23755289
+@@ -2074 +2106,0 @@
+-  SetNumberOfDaysDisplayedInTimeline: 18917037
+@@ -2089,0 +2122 @@
++  SplitLayoutOnModernUX: 23881110
+@@ -2097,0 +2131 @@
++  StickyKeysConfirmation: 21443757
+@@ -2124,2 +2157,0 @@
+-  TestInprocDelegation: 19059664
+-  TestMultiUserCxhTestPackageInclusion: 14080617
+@@ -2130,0 +2163 @@
++  Threadpool_Hang_Report: 24070885
+@@ -2133 +2166,2 @@
+-  TouchKeyboardAutoSwitchToAlphaAfterSymbolSpace: 21036042
++  ToastsOnWCOS: 17696471
++  TouchInContextNotificationSettings: 21769444
+@@ -2147,2 +2180,0 @@
+-  VAIL_Fake_Monitor_Projection: 21415082
+-  VailSuperWetInk: 18368047
+@@ -2156,0 +2189 @@
++  WNS_Periodic_Update_Manager2: 23945364
+@@ -2159 +2191,0 @@
+-  WcosFileDialogsForAnaheim: 20913705
+@@ -2169,0 +2202 @@
++  WindowTabManagerApi: 20065762
+@@ -2182,0 +2216 @@
++  XamlShowHideAnimations: 8591635
