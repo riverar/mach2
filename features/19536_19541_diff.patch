@@ -1,0 +1,62 @@
+--- V:/temp/19536/features_nosymbols.txt	Mon Dec 16 16:52:08 2019
++++ V:/temp/19541/features_nosymbols.txt	Wed Jan 08 12:49:26 2020
+@@ -97,0 +98 @@
++  BluetoothEattPdus: 0
+@@ -136,0 +138 @@
++  CarbonDictation: 0
+@@ -146 +147,0 @@
+-  ClipboardHistoryBuffer: 0
+@@ -163 +163,0 @@
+-  CoreShellOnDesktop: 0
+@@ -209,0 +210 @@
++  DTraceDiagTrack: 0
+@@ -448,0 +450 @@
++  KernelModeVpciBus: 0
+@@ -462,0 +465 @@
++  LoadAlternateHcl: 0
+@@ -574 +576,0 @@
+-  PinClipboardHistoryItems: 0
+@@ -584,0 +587 @@
++  PowerEventProcessorSystemIdle: 0
+@@ -633,0 +637 @@
++  RiskyOptimizationUndocked: 0
+@@ -675,0 +680 @@
++  SettingsStoreChange: 0
+@@ -747,0 +753 @@
++  TriggerStartMpssvc: 0
+@@ -1130 +1135,0 @@
+-  HtmlStartPackageFeed: 21510368
+@@ -1287 +1291,0 @@
+-  MSRC53519_23381156: 23381156
+@@ -1291 +1294,0 @@
+-  MSRC53676_23281017: 23281017
+@@ -1683,0 +1687,3 @@
++  MSRC54331_23896782: 23896782
++  MSRC54359_23934702: 23934702
++  MSRC54426_23934693: 23934693
+@@ -1697,0 +1704 @@
++  MSRC54933_24036398: 24036398
+@@ -1744 +1750,0 @@
+-  FullNarrowLayoutOnModernUX: 19680156
+@@ -1764,0 +1771 @@
++  PropertyStoreForHwnd: 23956599
+@@ -1801 +1807,0 @@
+-  WebStartLocalDev: 19989628
+@@ -1960,0 +1967 @@
++  HTMLStartPerfSolidTopBorder: 24266391
+@@ -2028,0 +2036 @@
++  MSRC54124_23934715: 23934715
+@@ -2029,0 +2038,2 @@
++  MSRC54337_23934700: 23934700
++  MSRC54428_23934689: 23934689
+@@ -2030,0 +2041 @@
++  MSRC54553_23934675: 23934675
+@@ -2034,0 +2046 @@
++  MSRC54643_23866277: 23866277
+@@ -2038,0 +2051 @@
++  MSRC55170_24236990: 24236990
+@@ -2040,0 +2054,2 @@
++  ModernPC_SearchF5ComposerUnblock: 20383965
++  ModernPC_Search_ComposerBgTasks: 21206249
+@@ -2131 +2145,0 @@
+-  StickyKeysConfirmation: 21443757
