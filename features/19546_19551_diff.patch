@@ -1,0 +1,175 @@
+--- V:/19546/features_nosymbols.txt	Mon Jan 20 15:18:41 2020
++++ V:/19551/features_nosymbols.txt	Thu Jan 23 15:51:40 2020
+@@ -42,0 +43 @@
++  AllowScoobeDeferralByUser: 0
+@@ -149 +149,0 @@
+-  ClipboardShellUI: 0
+@@ -152,0 +153 @@
++  CloudExperienceHostLaunchTask: 0
+@@ -154,0 +156 @@
++  ComingSoon: 0
+@@ -223,0 +226 @@
++  DecoupleScoobeFromUpgradeOnLogon: 0
+@@ -279,0 +283 @@
++  DynamicClipboard: 0
+@@ -281,0 +286 @@
++  EOS: 0
+@@ -295 +299,0 @@
+-  EfsFekDplProtection: 0
+@@ -360,0 +365 @@
++  FullereneRDP: 0
+@@ -407,0 +413 @@
++  HoloLensOOBEDarkTheme: 0
+@@ -452,0 +459 @@
++  KeyDropShadow: 0
+@@ -455,0 +463,2 @@
++  LSA_SynchronousProfileLoaded: 0
++  LaunchScoobeWhenInternetFirstAvailable: 0
+@@ -526,0 +536,2 @@
++  NicVdev_NewPreallocatedResourcesSchema: 0
++  NicVdev_VMMS_ConvertToPreallocations: 0
+@@ -527,0 +539 @@
++  NightsWatchEnablement: 0
+@@ -574,0 +587 @@
++  PhonePairingExperimentation: 0
+@@ -637 +649,0 @@
+-  RiskyOptimizationUndocked: 0
+@@ -654,0 +667,17 @@
++  ScoobeAccountState: 0
++  ScoobeActivitySyncConsent: 0
++  ScoobeEligibilityBasedOnML: 0
++  ScoobeExperimentationPages: 0
++  ScoobeMSA: 0
++  ScoobeMSAHello: 0
++  ScoobeNGCEnroll: 0
++  ScoobeNetwork: 0
++  ScoobeOfficeRegistryAccess: 0
++  ScoobeOnCleanInstallNoNetwork: 0
++  ScoobeOnLogonForUpgradedDevices: 0
++  ScoobeOnedrive: 0
++  ScoobeOutro: 0
++  ScoobePhonePairing: 0
++  ScoobeSettingsToggle: 0
++  ScoobeToastTriggers: 0
++  ScoobeWelcome: 0
+@@ -681,0 +711 @@
++  ShellEyeCursor: 0
+@@ -687,0 +718 @@
++  ShowBrowserOnScoobe: 0
+@@ -711,0 +743 @@
++  StorageRecommendations: 0
+@@ -752,0 +785 @@
++  UART_Refactor: 0
+@@ -777,0 +811 @@
++  UseLocalSettingsFallback: 0
+@@ -793 +826,0 @@
+-  VailStorageSpace: 0
+@@ -827 +859,0 @@
+-  WSL_VM_Mode: 0
+@@ -967 +998,0 @@
+-  CloudExperienceHostLaunchTask: 19581552
+@@ -1032 +1062,0 @@
+-  DesktopSecondChanceOobe: 16198872
+@@ -1201 +1230,0 @@
+-  MSRC44803_20829456: 20829456
+@@ -1248 +1276,0 @@
+-  MSRC51696_21408811: 21408811
+@@ -1254 +1281,0 @@
+-  MSRC52104_21687179: 21687179
+@@ -1266 +1292,0 @@
+-  MSRC52933_22880811: 22880811
+@@ -1268 +1293,0 @@
+-  MSRC53074_22878621: 22878621
+@@ -1287,4 +1312 @@
+-  MSRC53513_23218261: 23218261
+-  MSRC53528_23229617: 23229617
+-  MSRC53547_23250133: 23250133
+-  MSRC53553_23251489: 23251489
++  MSRC53525_22425219: 22425219
+@@ -1297 +1318,0 @@
+-  MSRC53838_23896790: 23896790
+@@ -1300 +1320,0 @@
+-  MSRC53980_23437121: 23437121
+@@ -1305 +1325 @@
+-  MSRC54092_23896783: 23896783
++  MSRC54084_23934471: 23934471
+@@ -1315,0 +1336,2 @@
++  MSRC54253_23934712: 23934712
++  MSRC54255_23934710: 23934710
+@@ -1318,0 +1341 @@
++  MSRC54316_23934706: 23934706
+@@ -1476,14 +1498,0 @@
+-  ScoobeAccountState: 17008849
+-  ScoobeActivitySyncConsent: 16176534
+-  ScoobeMSA: 16242998
+-  ScoobeMSAHello: 16316980
+-  ScoobeMinuteZeroOverride: 19581537
+-  ScoobeNGCEnroll: 16261848
+-  ScoobeNetwork: 16242964
+-  ScoobeOfficeRegistryAccess: 17725168
+-  ScoobeOnedrive: 16243018
+-  ScoobeOutro: 16243039
+-  ScoobePhonePairing: 16243009
+-  ScoobeSettingsToggle: 20720716
+-  ScoobeSuggestions: 15709403
+-  ScoobeWelcome: 16243035
+@@ -1674 +1682,0 @@
+-  ColorfulUnplatedLogos: 21894296
+@@ -1683,0 +1692 @@
++  HTMLStartPerfNoAcrylic: 23850988
+@@ -1695 +1703,0 @@
+-  MSRC53525_22425219: 22425219
+@@ -1703,0 +1712 @@
++  MSRC54459_23934460: 23934460
+@@ -1712,0 +1722,3 @@
++  MSRC54749_23930455: 23930455
++  MSRC54929_24036146: 24036146
++  MSRC55021_24090759: 24090759
+@@ -1713,0 +1726,2 @@
++  MSRC55118_24188022: 24188022
++  NoPlatformScaling: 23458767
+@@ -1730 +1743,0 @@
+-  AllowScoobeDeferralByUser: 18973123
+@@ -1740 +1752,0 @@
+-  DecoupleScoobeFromUpgradeOnLogon: 21004556
+@@ -1745 +1756,0 @@
+-  DisableCoreDispatcherInWin32: 17479072
+@@ -1776 +1786,0 @@
+-  NoPlatformScaling: 23458767
+@@ -1791,3 +1800,0 @@
+-  ScoobeEligibilityBasedOnML: 23059000
+-  ScoobeOnCleanInstallNoNetwork: 23865426
+-  ScoobeOnLogonForUpgradedDevices: 23877894
+@@ -1799 +1805,0 @@
+-  ShowBrowserOnScoobe: 23563673
+@@ -1806,0 +1813 @@
++  TemporarilyPopulateIdentityMap: 24291095
+@@ -1814,0 +1822 @@
++  VoiceTypingPlatformChange: 24205841
+@@ -1846,0 +1855 @@
++  AppDefaultVersionForPolicy: 23954010
+@@ -1852,0 +1862 @@
++  AppDefaultsSearch: 19400537
+@@ -1879,0 +1890 @@
++  ColorfulUnplatedLogos: 21894296
+@@ -1911,0 +1923 @@
++  DisableCoreDispatcherInWin32: 17479072
+@@ -1973 +1984,0 @@
+-  HTMLStartPerfNoAcrylic: 23850988
+@@ -2027 +2037,0 @@
+-  LaunchScoobeWhenInternetFirstAvailable: 19560808
+@@ -2045,0 +2056 @@
++  MSRC54460_23934462: 23934462
+@@ -2048,0 +2060 @@
++  MSRC54555_23934679: 23934679
+@@ -2050,0 +2063,2 @@
++  MSRC54602_23934451: 23934451
++  MSRC54607_23934453: 23934453
+@@ -2056,0 +2071 @@
++  MSRC54985_24089790: 24089790
+@@ -2117,3 +2131,0 @@
+-  ScoobeCortana: 16243024
+-  ScoobeExperimentationPages: 23895822
+-  ScoobeToastTriggers: 19864035
+@@ -2198,0 +2211 @@
++  UwpWindowLifecycleManager: 22782356
