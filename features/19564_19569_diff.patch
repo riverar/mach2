@@ -1,0 +1,371 @@
+--- V:/19564/features_nosymbols.txt	Wed Feb 12 11:35:13 2020
++++ V:/19569/features_nosymbols.txt	Thu Feb 20 13:30:16 2020
+@@ -3,0 +4 @@
++  AADAccounts: 0
+@@ -23,0 +25 @@
++  ActivatonValueSetHints: 0
+@@ -41 +42,0 @@
+-  AllowModalParentZero: 0
+@@ -43 +43,0 @@
+-  AllowShellScalingCacheFallback: 0
+@@ -45,0 +46,2 @@
++  AlwaysShowImmersiveCortanaOnVoiceActivation: 0
++  AmbientMode: 0
+@@ -51,0 +54 @@
++  AppProviderVCDExamples: 0
+@@ -62,0 +66 @@
++  AssetDownloaderProcessing: 0
+@@ -112,0 +117 @@
++  BoostPriorityAlwaysOnViewCreation: 0
+@@ -134,0 +140 @@
++  CSIPLatform: 0
+@@ -153,0 +160 @@
++  CloudHelp: 0
+@@ -166,0 +174 @@
++  CoreShellHostedInSiHost: 0
+@@ -168,0 +177,5 @@
++  CortanaChangeSettingValue: 0
++  CortanaEmptyRecycleBin: 0
++  CortanaOnLockOutProcModel: 0
++  CortanaOnSpotlight: 0
++  CortanaOpenKnownFolder: 0
+@@ -169,0 +183,3 @@
++  CortanaSetDesktopWallpaper: 0
++  CortanaSetQuietHours: 0
++  CortanaWindowsSearchSettings: 0
+@@ -233,0 +250 @@
++  DeprecateRX: 0
+@@ -240,0 +258 @@
++  DesktopLocationTriggering: 0
+@@ -277,2 +295 @@
+-  DragDrop: 0
+-  DragDropContinuation: 0
++  DragAndDropSearch: 0
+@@ -349,0 +367 @@
++  FeedbackEtwLogging: 0
+@@ -358,0 +377 @@
++  FluencyKPMInitOpt: 0
+@@ -363,0 +383 @@
++  ForceReactiveAudioOnlyMode: 0
+@@ -409,0 +430 @@
++  HmdsNotificationBackgroundTask: 0
+@@ -473,0 +495 @@
++  LightingWhenLidClosed: 0
+@@ -503,0 +526 @@
++  Modern_Disk_Management_Link: 0
+@@ -610,0 +634 @@
++  ProactiveEndpointOverride: 0
+@@ -633,0 +658 @@
++  RealtimeEnticement: 0
+@@ -639,0 +665,5 @@
++  ReminderCloudUx: 0
++  ReminderNotificationTemplate: 0
++  ReminderPhoto: 0
++  ReminderRecurrenceV2: 0
++  ReminderTriggerless: 0
+@@ -687,0 +718,2 @@
++  SearchAndCortanaSplit: 0
++  SearchInAllMarkets: 0
+@@ -705,0 +738 @@
++  Servicing_IMENeverReady_24031835: 0
+@@ -709,0 +743 @@
++  SettingsIndexingImprovements: 0
+@@ -711,0 +746 @@
++  SevSnp: 0
+@@ -732,0 +768 @@
++  SignalDebugMode: 0
+@@ -741,0 +778 @@
++  SpaDialog: 0
+@@ -742,0 +780 @@
++  SpeechFailureDebugMode: 0
+@@ -767,0 +806 @@
++  TabShellSearch: 0
+@@ -775,0 +815 @@
++  TaskbarTeaseAndToast: 0
+@@ -777,0 +818 @@
++  ToggleSettingProjectedAPI: 0
+@@ -786,0 +828 @@
++  TurnOffXDevice: 0
+@@ -828,0 +871 @@
++  VailRemovableDriveMapping: 0
+@@ -839,0 +883 @@
++  VisionReactive_OnScreen: 0
+@@ -860,0 +905 @@
++  WPA3Validation: 0
+@@ -863 +907,0 @@
+-  WSL_VM_Mode_Debug_Console: 0
+@@ -894,0 +939,3 @@
++  XDeviceFindMyPhone: 0
++  XDeviceRingPhone: 0
++  XDeviceSendSms: 0
+@@ -905 +951,0 @@
+-  AADAccounts: 3728205
+@@ -916,2 +961,0 @@
+-  ActionCenterAcrylicBackground: 11532176
+-  ActionCenterConvergedAudioPlayer: 8867227
+@@ -919,2 +962,0 @@
+-  ActionCenterSaveNotificationDrafts: 13725162
+-  ActionCenterVisualUpdates: 11225892
+@@ -926 +967,0 @@
+-  AdaptiveImmersiveCortanaOnDesktop: 8958140
+@@ -933,4 +973,0 @@
+-  AlwaysShowImmersiveCortanaOnVoiceActivation: 8584952
+-  AmbientMode: 6482515
+-  AmbientWidescreen: 8602428
+-  AmbientWidescreenDynamic: 8980808
+@@ -949 +985,0 @@
+-  AppProviderVCDExamples: 8306460
+@@ -955 +990,0 @@
+-  AudioSourceTelemetry: 9984760
+@@ -958 +992,0 @@
+-  AutoExpandNotificationItem: 8466218
+@@ -974 +1007,0 @@
+-  BrowsingHistoryProvider: 6234165
+@@ -977 +1009,0 @@
+-  BugXDeviceClickSMS: 11974112
+@@ -980 +1011,0 @@
+-  CSIPLatform: 8423642
+@@ -1012,2 +1042,0 @@
+-  CloudHelp: 6833833
+-  CloudMusic3rdPartyProviders: 9014976
+@@ -1035,13 +1063,0 @@
+-  CortanaAcc: 8345948
+-  CortanaActivationPerf: 8345977
+-  CortanaChangeSettingValue: 12515934
+-  CortanaEmptyRecycleBin: 13517592
+-  CortanaEngagementEvents: 11839132
+-  CortanaHandwritingPanel: 15716560
+-  CortanaOnLockOutProcModel: 9223629
+-  CortanaOnSpotlight: 11545976
+-  CortanaOpenKnownFolder: 11861797
+-  CortanaSetDesktopWallpaper: 12276201
+-  CortanaSetQuietHours: 16533547
+-  CortanaSpaXamlHeader: 8549523
+-  CortanaWindowsSearchSettings: 12716999
+@@ -1054 +1069,0 @@
+-  DSSRemoval: 8315009
+@@ -1064 +1078,0 @@
+-  DeprecateRX: 6478855
+@@ -1067 +1080,0 @@
+-  DesktopLocationTriggering: 13909636
+@@ -1127 +1139,0 @@
+-  FeedbackEtwLogging: 6099184
+@@ -1151 +1162,0 @@
+-  HmdsNotificationBackgroundTask: 5892332
+@@ -1168 +1178,0 @@
+-  HttpClientUpload: 9265136
+@@ -1176 +1185,0 @@
+-  ImageSnipSearch: 19105504
+@@ -1178 +1186,0 @@
+-  ImmersiveSearch: 11646739
+@@ -1216 +1223,0 @@
+-  LanguageGenerationWhenLidClosed: 16487099
+@@ -1220 +1226,0 @@
+-  LightingWhenLidClosed: 16487091
+@@ -1315 +1320,0 @@
+-  MSRC53990_23896786: 23896786
+@@ -1346,0 +1352 @@
++  MSRC54476_23934690: 23934690
+@@ -1383,0 +1390 @@
++  MSRC54712_23921584: 23921584
+@@ -1414 +1420,0 @@
+-  MergedSearchZeroInput: 17983826
+@@ -1428 +1433,0 @@
+-  MusicRecoForChinaMarket: 9456144
+@@ -1433 +1437,0 @@
+-  NotificationUniversalActions: 13944909
+@@ -1457 +1460,0 @@
+-  PDPCloudConsent: 14292780
+@@ -1459,2 +1461,0 @@
+-  PWILOInterruptiveToasts: 13181366
+-  PWILOTimelineActivitiesOnUnLock: 10963017
+@@ -1463 +1463,0 @@
+-  PausePersona: 7722583
+@@ -1481,2 +1480,0 @@
+-  PersonaAnimationDownload: 8362257
+-  PersonaDownloadAllApps: 13545060
+@@ -1486 +1483,0 @@
+-  PhoneEnticements: 8324974
+@@ -1505 +1501,0 @@
+-  PwiloInNonCortanaMarkets: 16071259
+@@ -1508 +1503,0 @@
+-  QuickActionsV2: 19016392
+@@ -1511,2 +1505,0 @@
+-  QuietMomentFullScreen: 18792193
+-  QuietMomentSummaryToast: 14350508
+@@ -1521 +1513,0 @@
+-  RS4PersonaLayout: 13253432
+@@ -1525 +1516,0 @@
+-  RealtimeEnticement: 9982909
+@@ -1532,7 +1522,0 @@
+-  RefactorSapi: 8603355
+-  ReminderCloudUx: 11639875
+-  ReminderNotificationTemplate: 13790818
+-  ReminderPhoto: 6178093
+-  ReminderRecurrenceV2: 6178089
+-  ReminderTriggerless: 6118301
+-  ReminderUniversalActions: 11592835
+@@ -1556,2 +1539,0 @@
+-  SearchAndCortanaSplit: 17983783
+-  SearchInAllMarkets: 17937263
+@@ -1561 +1542,0 @@
+-  SendTextInputToSpa: 10652181
+@@ -1568 +1548,0 @@
+-  SetToastMirroringAccount: 12673662
+@@ -1571 +1550,0 @@
+-  SettingsIndexingImprovements: 15521103
+@@ -1591 +1569,0 @@
+-  SpaDialog: 6196838
+@@ -1594,2 +1571,0 @@
+-  SpeechGrammarPowerImprovements: 8998121
+-  SpeechGrammarReliabilityFixes: 8212930
+@@ -1605,2 +1580,0 @@
+-  StrongAuth_CDP: 9143042
+-  StrongAuth_Reminder: 9943128
+@@ -1608,0 +1583 @@
++  SuperWetApi: 23721427
+@@ -1635,2 +1609,0 @@
+-  TaskbarTeaseAndToast: 6483462
+-  TelemetryRefactor: 8315128
+@@ -1650 +1622,0 @@
+-  ToggleSettingProjectedAPI: 11673814
+@@ -1655 +1626,0 @@
+-  TurnOffXDevice: 19054569
+@@ -1693 +1663,0 @@
+-  WideQFZero: 11634876
+@@ -1698 +1667,0 @@
+-  WindowingEnvironmentsWCOS: 15727114
+@@ -1705,9 +1673,0 @@
+-  XDeviceBatteryNotification: 6233262
+-  XDeviceFindMyPhone: 6368266
+-  XDeviceMessagingHistory: 13528824
+-  XDeviceMigration: 16386905
+-  XDeviceMobileNotification: 6235127
+-  XDevicePublicToastCollectionAPI: 9970812
+-  XDeviceRingPhone: 9358856
+-  XDeviceSendSms: 9358792
+-  XDeviceWPNotification: 6644079
+@@ -1746,0 +1707,2 @@
++  FlexibleNotificationItemView: 21127659
++  FlexibleToastView: 21256886
+@@ -1751,0 +1714 @@
++  HideUninstallVerbForNonUninstallablePreinstalledAppsOnWcos: 24669091
+@@ -1770,0 +1734,5 @@
++  MSRC54972_24089623: 24089623
++  MSRC54973_24089672: 24089672
++  MSRC54977_24089739: 24089739
++  MSRC54979_24089687: 24089687
++  MSRC54986_24089903: 24089903
+@@ -1775,0 +1744 @@
++  MSRC55181_24240143: 24240143
+@@ -1776,0 +1746,2 @@
++  MSRC55273_24294309: 24294309
++  MSRC55283_24309483: 24309483
+@@ -1782,0 +1754 @@
++  MSRC55608_24474787: 24474787
+@@ -1787,0 +1760,2 @@
++  MSRC55740_24532713: 24532713
++  MSRC56088_24651784: 24651784
+@@ -1789,0 +1764 @@
++  PenButtonCustomizationOnWCOS: 23339593
+@@ -1799,0 +1775 @@
++  ScreenClippingUndockedWCOS: 20782456
+@@ -1803,0 +1780 @@
++  VAILInitialPositioning: 19319140
+@@ -1806,0 +1784 @@
++  XAMLFileExplorerCloudFiles: 21154437
+@@ -1820 +1797,0 @@
+-  DesktopControlCenter: 10971239
+@@ -1829,0 +1807 @@
++  EnablePenInteractionModelOnWCOS: 23448712
+@@ -1836 +1813,0 @@
+-  FlexibleNotificationItemView: 21127659
+@@ -1861 +1837,0 @@
+-  PenButtonCustomizationOnWCOS: 23339593
+@@ -1872 +1847,0 @@
+-  ScreenClippingUndockedWCOS: 20782456
+@@ -1889,0 +1865,4 @@
++  VoiceTypingCorrectionUXCandUI: 24663165
++  VoiceTypingCorrectionUXCandUIWCOS: 24698563
++  VoiceTypingCorrectionUXTextStyling: 24663162
++  VoiceTypingCorrectionUXTextStylingWCOS: 24698548
+@@ -1896 +1874,0 @@
+-  XAMLFileExplorerCloudFiles: 21154437
+@@ -1907,2 +1884,0 @@
+-  ActionCenterWelcomeMessage: 7920879
+-  ActionCenterXamlExperience: 6364345
+@@ -1931 +1906,0 @@
+-  AppKeywords: 8347588
+@@ -1944 +1918,0 @@
+-  BoostPriorityAlwaysOnViewCreation: 22078216
+@@ -1952 +1925,0 @@
+-  CameraRollCapability: 11341037
+@@ -1957 +1929,0 @@
+-  CloudMusicBeta: 9189540
+@@ -1968,2 +1939,0 @@
+-  CortanaAvatarOnActionCenter: 11532590
+-  CortanaNotificationPromotion: 10998643
+@@ -1979,0 +1950 @@
++  DesktopControlCenter: 10971239
+@@ -1995 +1965,0 @@
+-  DragAndDropSearch: 16533548
+@@ -2039 +2008,0 @@
+-  FlexibleToastView: 21256886
+@@ -2044 +2012,0 @@
+-  ForceReactiveAudioOnlyMode: 9031501
+@@ -2056 +2023,0 @@
+-  HandleResponse403: 10007040
+@@ -2094,4 +2060,0 @@
+-  InterruptionControl: 8675162
+-  InterruptionControlUploadRawNotification: 9846421
+-  InterruptionControlUseCortanaResponse: 9747660
+-  Interruption_Control: 7450444
+@@ -2127,0 +2091 @@
++  MSRC54961_24050940: 24050940
+@@ -2128,0 +2093 @@
++  MSRC54974_24090035: 24090035
+@@ -2129,0 +2095 @@
++  MSRC54978_24089935: 24089935
+@@ -2136,0 +2103 @@
++  MSRC55179_24240018: 24240018
+@@ -2139,0 +2107 @@
++  MSRC55321_24316398: 24316398
+@@ -2141,0 +2110 @@
++  MSRC55447_24401487: 24401487
+@@ -2142,0 +2112,2 @@
++  MSRC55579_24462333: 24462333
++  MSRC55629_24476644: 24476644
+@@ -2154,2 +2124,0 @@
+-  NotifGatekeeperShellInsiders: 13275870
+-  NotificationGatekeeper: 12617765
+@@ -2182 +2150,0 @@
+-  ProactiveEndpointOverride: 16975013
+@@ -2189 +2156,0 @@
+-  RealtimeEnticementNoCourtesyIntervalTimeout: 11874744
+@@ -2192 +2158,0 @@
+-  ReminderBGTaskTelemetry: 11683427
+@@ -2202,2 +2167,0 @@
+-  SearchAboveLock: 11646740
+-  SearchInExplorer: 11646741
+@@ -2211 +2174,0 @@
+-  SharedSuggestionsView: 13707781
+@@ -2214,2 +2176,0 @@
+-  ShowNotificationWithImagePull: 11574775
+-  SignalDebugMode: 7033373
+@@ -2221 +2181,0 @@
+-  SpeechFailureDebugMode: 7056038
+@@ -2251 +2210,0 @@
+-  TabShellSearch: 12223789
+@@ -2266 +2224,0 @@
+-  ToastsOnWCOS: 17696471
+@@ -2278 +2236 @@
+-  UserActivitySearch: 16484547
++  UserIntentionPrediction: 24766054
+@@ -2281 +2239 @@
+-  VAILInitialPositioning: 19319140
++  VailUnifiedDpi: 24171364
+@@ -2284,4 +2241,0 @@
+-  VisionProactive: 10980028
+-  VisionProactiveEnticement: 11341021
+-  VisionReactive_Camera: 10980058
+-  VisionReactive_OnScreen: 10980073
