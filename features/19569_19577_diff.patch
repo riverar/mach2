@@ -1,0 +1,267 @@
+--- V:/19569/features_nosymbols.txt	Thu Feb 20 13:30:16 2020
++++ V:/19577/features_nosymbols.txt	Thu Mar 05 15:49:39 2020
+@@ -8,0 +9 @@
++  AADEnableTgtForAllRequests: 0
+@@ -14,0 +16 @@
++  AADWAMDeviceOnlyTokenRequestsSendUnknownParamsToServer: 0
+@@ -43,0 +46 @@
++  AllowSimulatedCameraPassSecureBioSensorCheck: 0
+@@ -54,0 +58 @@
++  AppQuickActions: 0
+@@ -88 +91,0 @@
+-  BackoffOnBatterySaver: 0
+@@ -174,0 +178 @@
++  CorrectiveGesture: 0
+@@ -215,0 +220 @@
++  D3D12VideoEncode: 0
+@@ -237,0 +243 @@
++  DXGI_Hybrid_DList_Support_Update: 0
+@@ -251,0 +258 @@
++  DesktopControlCenter: 0
+@@ -262 +268,0 @@
+-  DeviceDelete: 0
+@@ -267,0 +274 @@
++  DeviceManagementContainerOmaDmClientSyncMlSupport: 0
+@@ -370,0 +378,2 @@
++  FlexibleNotificationItemView: 0
++  FlexibleToastView: 0
+@@ -373,0 +383 @@
++  FlowQuickActions: 0
+@@ -397,0 +408 @@
++  HackAroundMouseVelocityBug: 0
+@@ -435,0 +447 @@
++  HolographicNotifications: 0
+@@ -459,0 +472 @@
++  IndexerVAIL: 0
+@@ -472,0 +486 @@
++  KPMComputeSpaceKey: 0
+@@ -482 +496,3 @@
+-  KeyInteractionAnimation: 0
++  KeyPressAnimation: 0
++  KeyRectForSpace: 0
++  KeyRectForSpaceAndOthers: 0
+@@ -505,0 +522 @@
++  MMPC_EnrollmentLockDown: 0
+@@ -569 +586,2 @@
+-  NotificationFrequencyImprovements: 0
++  NotificationImageFlipViewSupport: 0
++  NotificationsFailFast: 0
+@@ -578,0 +597 @@
++  OmaDmClient429Support: 0
+@@ -623,0 +643 @@
++  PortableCCG: 0
+@@ -644,0 +665,2 @@
++  QuickActionTemplates: 0
++  QuietHours: 0
+@@ -660,0 +683 @@
++  RecycleNotificationContainers: 0
+@@ -664,0 +688 @@
++  ReloadTpmKtkHandle: 0
+@@ -721,0 +746 @@
++  SecureFingerprint: 0
+@@ -776,0 +802 @@
++  SmarterImageLoading: 0
+@@ -815,0 +842,2 @@
++  TestInProductionDynamicAPI: 0
++  TestOnlyDisableNamedPipeScoping: 0
+@@ -822,0 +851 @@
++  TouchInContextNotificationSettings: 0
+@@ -847,0 +877 @@
++  UsageAPI_MultipleInstances: 0
+@@ -856 +885,0 @@
+-  UseLocalSettingsFallback: 0
+@@ -914,0 +944 @@
++  Wcos_Vtp: 0
+@@ -941,0 +972 @@
++  XamlShowHideAnimations: 0
+@@ -1172 +1202,0 @@
+-  HolographicNotifications: 9666698
+@@ -1300 +1329,0 @@
+-  MSRC52847_22507124: 22507124
+@@ -1302 +1330,0 @@
+-  MSRC52951_22764330: 22764330
+@@ -1313 +1340,0 @@
+-  MSRC53491_23204084: 23204084
+@@ -1323 +1349,0 @@
+-  MSRC54084_23934471: 23934471
+@@ -1324,0 +1351 @@
++  MSRC54103_23934472: 23934472
+@@ -1329,3 +1355,0 @@
+-  MSRC54215_23589247: 23589247
+-  MSRC54220_23591141: 23591141
+-  MSRC54222_23591362: 23591362
+@@ -1341,2 +1364,0 @@
+-  MSRC54348_23934698: 23934698
+-  MSRC54349_23934703: 23934703
+@@ -1353,8 +1374,0 @@
+-  MSRC54500_23784622: 23784622
+-  MSRC54501_23784741: 23784741
+-  MSRC54503_23934392: 23934392
+-  MSRC54506_23934393: 23934393
+-  MSRC54519_23934395: 23934395
+-  MSRC54520_23934390: 23934390
+-  MSRC54521_23791752: 23791752
+-  MSRC54522_23791806: 23791806
+@@ -1503 +1516,0 @@
+-  QuickActionTemplates: 1195122
+@@ -1505 +1517,0 @@
+-  QuietHours: 10896550
+@@ -1689 +1700,0 @@
+-  ActionCenterFlyoutHeight: 23203980
+@@ -1693,0 +1705 @@
++  AppDefaultsSetNewEdgeAsDefault: 24724557
+@@ -1694,0 +1707 @@
++  AvoidTimerCallbackAfterDestroy: 24351880
+@@ -1707,2 +1720 @@
+-  FlexibleNotificationItemView: 21127659
+-  FlexibleToastView: 21256886
++  ExperienceHostLogonTaskCustomTimeout: 24771133
+@@ -1724,2 +1735,0 @@
+-  MSRC53409_23059758: 23059758
+-  MSRC53410_23060104: 23060104
+@@ -1730,0 +1741,2 @@
++  MSRC54818_23958446: 23958446
++  MSRC54830_23964663: 23964663
+@@ -1731,0 +1744 @@
++  MSRC54877_23997174: 23997174
+@@ -1737,0 +1751 @@
++  MSRC54980_24089968: 24089968
+@@ -1739,0 +1754,2 @@
++  MSRC54993_24089921: 24089921
++  MSRC55019_24090498: 24090498
+@@ -1742,0 +1759,3 @@
++  MSRC55064_24127732: 24127732
++  MSRC55094_24174017: 24174017
++  MSRC55110_24180340: 24180340
+@@ -1743,0 +1763 @@
++  MSRC55174_24238683: 24238683
+@@ -1745,0 +1766 @@
++  MSRC55246_24273629: 24273629
+@@ -1746,0 +1768 @@
++  MSRC55279_24308429: 24308429
+@@ -1748,0 +1771 @@
++  MSRC55347_24333951: 24333951
+@@ -1752,0 +1776,4 @@
++  MSRC55467_24416264: 24416264
++  MSRC55485_24419982: 24419982
++  MSRC55508_24429800: 24429800
++  MSRC55521_24444648: 24444648
+@@ -1753,0 +1781 @@
++  MSRC55580_24462347: 24462347
+@@ -1760,0 +1789 @@
++  MSRC55742_24532748: 24532748
+@@ -1761,0 +1791,2 @@
++  MSRC56097_24654315: 24654315
++  MSRC56311_24819371: 24819371
+@@ -1763 +1793,0 @@
+-  NotificationsFailFast: 18195458
+@@ -1765,0 +1796 @@
++  PropagateBannerInitFailure: 19747652
+@@ -1767 +1797,0 @@
+-  QuickActionLock: 23632643
+@@ -1776,0 +1807 @@
++  SearchDeleteHistorySuggestions: 24139787
+@@ -1778,0 +1810 @@
++  StatusBarOffOnWCOS: 24826560
+@@ -1779,0 +1812 @@
++  UserCritOpt: 24533020
+@@ -1792,0 +1826 @@
++  BackgroundLifecycleApps: 24268349
+@@ -1797 +1830,0 @@
+-  DesktopActionCenterMTC: 23403403
+@@ -1798,0 +1832,2 @@
++  DesktopTouchImprovementForTabletPosture: 21228112
++  DesktopUVCMTC: 23403403
+@@ -1801,0 +1837 @@
++  DualVAILRegistration: 23868861
+@@ -1807,0 +1844,2 @@
++  EnableTransparentAreaInKeyboard: 24825491
++  ExitWindowsforVAIL: 23830744
+@@ -1827,0 +1866 @@
++  InputForegroundManagerImmediateUsage: 23043246
+@@ -1833 +1871,0 @@
+-  MinimalVAILRegistration: 23868861
+@@ -1835,0 +1874 @@
++  MultiProcessISM: 23310084
+@@ -1837,0 +1877,2 @@
++  ProgrammableTaskbarDefaultPins: 25173983
++  ProgrammableTaskbarTelemetry: 24896077
+@@ -1840 +1880,0 @@
+-  RecycleNotificationContainers: 22964139
+@@ -1852 +1891,0 @@
+-  SmarterImageLoading: 24595158
+@@ -1865,4 +1904,6 @@
+-  VoiceTypingCorrectionUXCandUI: 24663165
+-  VoiceTypingCorrectionUXCandUIWCOS: 24698563
+-  VoiceTypingCorrectionUXTextStyling: 24663162
+-  VoiceTypingCorrectionUXTextStylingWCOS: 24698548
++  VailUnifiedDpi: 24171364
++  VoiceTypingCorrectionUXCandUIOnDesktop: 24663165
++  VoiceTypingCorrectionUXCandUIOnWCOS: 24698563
++  VoiceTypingCorrectionUXTextStylingOnDesktop: 24663162
++  VoiceTypingCorrectionUXTextStylingOnWCOS: 24698548
++  VoiceTypingEntryPointOnDesktop: 24781229
+@@ -1869,0 +1911 @@
++  VoiceTypingInFlowConsentOnDesktop: 24781242
+@@ -1870,0 +1913 @@
++  VoiceTypingModernUXOnDesktop: 24781215
+@@ -1907 +1949,0 @@
+-  AppQuickActions: 5410762
+@@ -1939 +1980,0 @@
+-  CorrectiveGesture: 8644914
+@@ -1950 +1990,0 @@
+-  DesktopControlCenter: 10971239
+@@ -1955 +1994,0 @@
+-  DesktopTouchImprovementForTabletPosture: 21228112
+@@ -1984 +2022,0 @@
+-  EnablePlaybackControlsUX: 18952069
+@@ -2009 +2046,0 @@
+-  FlowQuickActions: 19337899
+@@ -2023 +2059,0 @@
+-  HackAroundMouseVelocityBug: 8021938
+@@ -2079 +2114,0 @@
+-  MSRC53981_21313761: 21313761
+@@ -2081,0 +2117 @@
++  MSRC54652_24585180: 24585180
+@@ -2084,0 +2121,3 @@
++  MSRC54725_23924600: 23924600
++  MSRC54733_23928498: 23928498
++  MSRC54834_23967392: 23967392
+@@ -2086,0 +2126 @@
++  MSRC54896_24012163: 24012163
+@@ -2092,0 +2133 @@
++  MSRC54964_24051308: 24051308
+@@ -2097,0 +2139 @@
++  MSRC55102_24179773: 24179773
+@@ -2105 +2147,3 @@
+-  MSRC55248_24274109: 24274109
++  MSRC55269_24294177: 24294177
++  MSRC55280_24308454: 24308454
++  MSRC55284_24309915: 24309915
+@@ -2106,0 +2151 @@
++  MSRC55298_24313575: 24313575
+@@ -2107,0 +2153 @@
++  MSRC55369_24353400: 24353400
+@@ -2111,0 +2158,4 @@
++  MSRC55518_24430644: 24430644
++  MSRC55529_24445147: 24445147
++  MSRC55530_24445181: 24445181
++  MSRC55549_24447174: 24447174
+@@ -2114,0 +2165 @@
++  MSRC55656_24488865: 24488865
+@@ -2115,0 +2167 @@
++  MSRC55777_24544084: 24544084
+@@ -2116,0 +2169 @@
++  MSRC55823_24581832: 24581832
+@@ -2125 +2177,0 @@
+-  NotificationImageFlipViewSupport: 8290988
+@@ -2194,0 +2247 @@
++  SuperWetClipToCanvas: 24585910
+@@ -2225 +2277,0 @@
+-  TouchInContextNotificationSettings: 21769444
+@@ -2239 +2290,0 @@
+-  VailUnifiedDpi: 24171364
+@@ -2255 +2305,0 @@
+-  WindowTabManagerApi: 20065762
+@@ -2269 +2318,0 @@
+-  XamlShowHideAnimations: 8591635
