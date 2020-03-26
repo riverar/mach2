@@ -1,0 +1,99 @@
+--- V:/19587/features_nosymbols.txt	Thu Mar 19 10:04:16 2020
++++ V:/19592/features_nosymbols.txt	Wed Mar 25 17:01:27 2020
+@@ -155,0 +156 @@
++  ChangeSignatureTrustAnchor: 0
+@@ -159,0 +161 @@
++  ClientSideEventReduction: 0
+@@ -169 +171 @@
+-  ComingSoonWebService: 0
++  ComingSoonPreviewService: 0
+@@ -445 +446,0 @@
+-  HideSystemControlPanel: 0
+@@ -575 +575,0 @@
+-  NetPerfCounters: 0
+@@ -695 +694,0 @@
+-  ReduceEventsForDefender: 0
+@@ -704,0 +704 @@
++  RemoteFindToast: 0
+@@ -845 +845,3 @@
+-  SystemToAboutSettingsSearchRemoval: 0
++  SystemControlPanelNavBarRedirect: 0
++  SystemControlPanelRedirect: 0
++  SystemToAboutSettingsControlRedirect: 0
+@@ -887,0 +890 @@
++  UX_PDCActivator: 0
+@@ -923 +926 @@
+-  VPNPerfCounters: 0
++  VMonitorForWDAGWithvGPU: 0
+@@ -964,0 +968 @@
++  WUClient_AAD_device_ticket: 0
+@@ -970,0 +975 @@
++  WcosRebootWorkflow: 0
+@@ -1047,0 +1053,2 @@
++  Audio_Drivers_Acx_MultiStack_Support: 7189701
++  Audio_Drivers_HdAudBus_Graphics_Power_DDI: 17257248
+@@ -1112 +1118,0 @@
+-  CompositionIslands: 10465906
+@@ -1375 +1380,0 @@
+-  MSRC54140_23540836: 23540836
+@@ -1379 +1383,0 @@
+-  MSRC54293_23934709: 23934709
+@@ -1431 +1434,0 @@
+-  MSRC54929_24036146: 24036146
+@@ -1814,0 +1818,2 @@
++  MSRC54929_24036146: 24036146
++  MSRC54970_24089840: 24089840
+@@ -1815,0 +1821 @@
++  MSRC55215_24254954: 24254954
+@@ -1823,0 +1830,2 @@
++  MSRC55535_24446079: 24446079
++  MSRC55536_24446153: 24446153
+@@ -1828,0 +1837,5 @@
++  MSRC55646_24486128: 24486128
++  MSRC55647_24486207: 24486207
++  MSRC55651_24486313: 24486313
++  MSRC55652_24486340: 24486340
++  MSRC55690_24509093: 24509093
+@@ -1830,0 +1844 @@
++  MSRC56057_24634521: 24634521
+@@ -1831,0 +1846 @@
++  MSRC56238_24775098: 24775098
+@@ -1834,0 +1850,2 @@
++  MSRC56454_24922760: 24922760
++  MSRC56564_25182618: 25182618
+@@ -1837,0 +1855 @@
++  MSRC57037_25504960: 25504960
+@@ -1893 +1910,0 @@
+-  ExitWindowsforVAIL: 23830744
+@@ -1923,0 +1941 @@
++  NonblockingKeyboardProcessing: 23861116
+@@ -1944,0 +1963 @@
++  SystemToAboutSettingsSearchRedirect: 24888244
+@@ -1966,0 +1986 @@
++  WNS_CTA_Push: 24588867
+@@ -1967,0 +1988 @@
++  WcosHardwareCursor: 23897624
+@@ -2003,0 +2025,3 @@
++  Audio_Drivers_Acx_AcxHdAudio: 13939327
++  Audio_Drivers_Acx_AcxHdAudioDisplayAudio: 19341900
++  Audio_Drivers_HdAudBus_Display_Multilink_Support: 17257098
+@@ -2164,0 +2189 @@
++  MSRC54543_23934447: 23934447
+@@ -2173,0 +2199 @@
++  MSRC55409_24385110: 24385110
+@@ -2174,0 +2201 @@
++  MSRC55449_24403939: 24403939
+@@ -2180,0 +2208 @@
++  MSRC55541_24446486: 24446486
+@@ -2182,0 +2211 @@
++  MSRC55648_24486231: 24486231
+@@ -2183,0 +2213,2 @@
++  MSRC55650_24486292: 24486292
++  MSRC55683_24498835: 24498835
+@@ -2185,0 +2217 @@
++  MSRC55942_25254239: 25254239
+@@ -2188,0 +2221,2 @@
++  MSRC57038_25504556: 25504556
++  MSRC57056_25504694: 25504694
+@@ -2299 +2332,0 @@
+-  UsePopupIslandSiteForXamlWindowedPopups: 13816458
