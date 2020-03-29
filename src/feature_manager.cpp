@@ -27,7 +27,7 @@ mach2::FeatureConfig mach2::FeatureManager::GetFeatureConfig()
     WNF_STATE_NAME wnf_machine_store{ 0xA3BC7C75, 0x418A073A };
 
     std::vector<unsigned char> wnf_state_buffer(8192);
-    unsigned long state_buffer_size = wnf_state_buffer.size();
+    unsigned long state_buffer_size = static_cast<unsigned long>(wnf_state_buffer.size());
     WNF_CHANGE_STAMP wnf_change_stamp;
 
     ThrowIfNtFailed(NtQueryWnfStateData(&wnf_machine_store, nullptr, nullptr, &wnf_change_stamp,
@@ -41,7 +41,7 @@ void mach2::FeatureManager::SetFeatureConfig(mach2::FeatureConfig feature_config
     mach2::WNF_STATE_NAME wnf_machine_store{ 0xA3BC7C75, 0x418A073A };
     auto serialized_config = feature_config.serialize();
 
-    ThrowIfNtFailed(NtUpdateWnfStateData(&wnf_machine_store, &serialized_config[0], serialized_config.size(),
+    ThrowIfNtFailed(NtUpdateWnfStateData(&wnf_machine_store, &serialized_config[0], static_cast<unsigned long>(serialized_config.size()),
         nullptr, nullptr, feature_config.stamp(), 1));
 }
 

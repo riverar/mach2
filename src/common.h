@@ -50,6 +50,7 @@
 void ThrowIfFailed(HRESULT hr);
 void ThrowIfNtFailed(NTSTATUS ntstatus);
 void ThrowIfInvalidHandle(HANDLE h);
+std::wstring StringToWideString(const std::string& string);
 
 class CCoInitialize
 {
@@ -68,7 +69,3 @@ class CCoInitialize
         }
     }
 };
-
-const std::codecvt_mode codecvt_mode_le_bom =
-    static_cast<std::codecvt_mode>(std::little_endian | std::generate_header);
-typedef std::codecvt_utf16<wchar_t, 0x10ffff, codecvt_mode_le_bom> codecvt_utf16_le_bom;

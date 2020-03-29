@@ -29,7 +29,7 @@ void SymbolProcessingCallback(const std::wstring& symbol_path)
     CONSOLE_SCREEN_BUFFER_INFO console_info;
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &console_info);
 
-    std::uint32_t max_chars_for_path = console_info.dwSize.X - display_text.length() - sizeof('\r');
+    std::uint32_t max_chars_for_path = console_info.dwSize.X - static_cast<uint32_t>(display_text.length()) - sizeof('\r');
     if (PathCompactPathExW(compact_path, symbol_path.c_str(), max_chars_for_path, /* dwFlags */ 0))
     {
         std::wcout << L"Scanning: " << std::left << std::setw(max_chars_for_path) << compact_path << '\r' << std::flush;
@@ -110,14 +110,13 @@ void ScanSubcommand(const std::string& symbols_path, const std::string& output_p
 {
     try
     {
-        std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> to_wstring;
-        std::wstring wide_symbols_path = to_wstring.from_bytes(symbols_path);
-        std::wstring wide_output_path;
         bool writing_to_file = false;
+        std::wstring wide_symbols_path = StringToWideString(symbols_path);
+        std::wstring wide_output_path;
         if (!output_path.empty())
         {
             writing_to_file = true;
-            wide_output_path = to_wstring.from_bytes(output_path);
+            wide_output_path = StringToWideString(output_path);
         }
 
         mach2::Scanner scanner;

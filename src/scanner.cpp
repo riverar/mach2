@@ -51,12 +51,12 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
     {
         do
         {
-            std::experimental::filesystem::path current_file(find_data.cFileName);
+            std::filesystem::path current_file(find_data.cFileName);
             if (current_file != L"." && current_file != L"..")
             {
                 if (find_data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
                 {
-                    std::experimental::filesystem::path symbols_path(symbol_path_root);
+                    std::filesystem::path symbols_path(symbol_path_root);
                     symbols_path /= find_data.cFileName;
 
                     InternalGetFeaturesFromSymbolsAtPath(symbols_path, features);
@@ -65,7 +65,7 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
                 {
                     if (current_file.extension() == L".pdb")
                     {
-                        std::experimental::filesystem::path pdb_path(symbol_path_root);
+                        std::filesystem::path pdb_path(symbol_path_root);
                         pdb_path /= find_data.cFileName;
 
                         ExecuteCallback(pdb_path);

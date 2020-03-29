@@ -41,3 +41,19 @@ void ThrowIfInvalidHandle(HANDLE h)
         throw std::system_error{ HRESULT_FROM_WIN32(ERROR_INVALID_HANDLE), std::system_category() };
     }
 }
+
+std::wstring StringToWideString(const std::string& string)
+{
+    std::wstring wideString;
+    auto requiredBufferSize = MultiByteToWideChar(CP_ACP, 0, string.c_str(), -1, nullptr, 0);
+    if (requiredBufferSize > 0)
+    {
+        std::unique_ptr<wchar_t[]> rawWideString(new wchar_t[requiredBufferSize]);
+        if (MultiByteToWideChar(CP_ACP, 0, string.c_str(), -1, rawWideString.get(), requiredBufferSize) > 0)
+        {
+            wideString = std::wstring(rawWideString.get());
+        }
+    }
+
+    return wideString;
+}
