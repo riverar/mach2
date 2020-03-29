@@ -97,6 +97,10 @@ int main(int argc, char *argv[], char *)
 
         CLI11_PARSE(app, argc, argv);
     }
+    catch (std::system_error & e)
+    {
+        std::cout << e.what() << ", " << std::hex << e.code() << std::endl;
+    }
     catch (std::exception& e)
     {
         std::cout << e.what() << std::endl;
