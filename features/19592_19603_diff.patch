@@ -1,0 +1,342 @@
+--- V:/19592/features_nosymbols.txt	Wed Mar 25 17:01:27 2020
++++ V:/19603/features_nosymbols.txt	Thu Apr 09 11:20:14 2020
+@@ -21 +20,0 @@
+-  AboutPageLegacyLinks: 0
+@@ -116 +114,0 @@
+-  BonusBarCoherence: 0
+@@ -151 +148,0 @@
+-  CarbonDictation: 0
+@@ -159,0 +157 @@
++  ClearModifierStates: 0
+@@ -181 +178,0 @@
+-  CopyButtonInAboutPage: 0
+@@ -215 +211,0 @@
+-  D3D12MotionEstimation: 0
+@@ -306,0 +303 @@
++  DownloadFromDCAT: 0
+@@ -331,0 +329 @@
++  EdpSeparateSublayer: 0
+@@ -359 +356,0 @@
+-  ExternalDisplayMirroringUX: 0
+@@ -361 +357,0 @@
+-  FaceFeatureConversion: 0
+@@ -399,0 +396 @@
++  ForceLoadTextInputDll: 0
+@@ -406,0 +404,2 @@
++  GPM_LightWeightDxgKrnlETWKeyword: 0
++  GPM_PresentMonETWProviders: 0
+@@ -411 +410 @@
+-  GetMixFormatForVSS: 0
++  GetMixFormatForThirdPartyVSS: 0
+@@ -422,4 +420,0 @@
+-  HardwareKeyboardInlinePredictionForWin32: 0
+-  HardwareKeyboardInlinePredictionForXAML: 0
+-  HardwareKeyboardInlinePredictionMaxCumulativeScoreExperiments: 0
+-  HardwareKeyboardInlinePredictionMaxWordCountExperiments: 0
+@@ -453,0 +449 @@
++  HolographicKeyboardPlacementPublic: 0
+@@ -467 +462,0 @@
+-  HvciEverywhereInsiderOptIn: 0
+@@ -483,0 +479 @@
++  InitializeColorServer: 0
+@@ -524,0 +521 @@
++  LoadInStages: 0
+@@ -544 +540,0 @@
+-  MicrocodeAbTesting: 0
+@@ -590,0 +587 @@
++  NightsWatchInferMotw: 0
+@@ -624,0 +622 @@
++  ParseTokenResponseDataXml: 0
+@@ -666 +663,0 @@
+-  ProductExperienceManager: 0
+@@ -670,0 +668 @@
++  ProtectionHistoryPillar: 0
+@@ -756,0 +755,3 @@
++  ScriptingEngines_AMSI: 0
++  ScriptingEngines_CollectLegacyTelemetryData: 0
++  ScriptingEngines_CollectModernTelemetryData: 0
+@@ -826,0 +828 @@
++  SpellerScoreExperiments: 0
+@@ -843,5 +845 @@
+-  SystemControlPanelFileExplorerRedirect: 0
+-  SystemControlPanelHotkeyRedirect: 0
+-  SystemControlPanelNavBarRedirect: 0
+-  SystemControlPanelRedirect: 0
+-  SystemToAboutSettingsControlRedirect: 0
++  SystemModalDialog_Toast: 0
+@@ -870,0 +869 @@
++  TipKernelBaseABI: 0
+@@ -881 +879,0 @@
+-  TriggerIngestionForFlip: 0
+@@ -898,0 +897 @@
++  UiaNonBlockingRequests: 0
+@@ -901 +900 @@
+-  UniformDPI: 0
++  UiaWindowManager: 0
+@@ -925 +923,0 @@
+-  VMVersion5Deprecation: 0
+@@ -931,0 +930 @@
++  ValidateAMPPLonWCOS: 0
+@@ -947,0 +947 @@
++  VoiceTypingDataCollectionUI: 0
+@@ -1029,0 +1030 @@
++  AdaptiveColor: 19091481
+@@ -1160,0 +1162 @@
++  DriveBasedNamespaceRestrictions: 24750601
+@@ -1192 +1193,0 @@
+-  ExpressionKeyframePerFrameSampling: 13728070
+@@ -1222,0 +1224 @@
++  HeadsetSleepTimeoutSettings: 25466307
+@@ -1275,2 +1276,0 @@
+-  Input_HeatMultiDevice: 11369402
+-  Input_HeatSystemContext: 11752492
+@@ -1286,0 +1287 @@
++  LauncherAcrylicMask: 25617528
+@@ -1287,0 +1289 @@
++  LauncherSmoke: 25617521
+@@ -1318 +1319,0 @@
+-  MSRC48740_19838111: 19838111
+@@ -1355 +1355,0 @@
+-  MSRC52370_22005497: 22005497
+@@ -1368 +1367,0 @@
+-  MSRC53389_23133785: 23133785
+@@ -1370 +1368,0 @@
+-  MSRC53416_23155882: 23155882
+@@ -1373 +1370,0 @@
+-  MSRC53869_23397316: 23397316
+@@ -1377 +1373,0 @@
+-  MSRC54103_23934472: 23934472
+@@ -1380,3 +1375,0 @@
+-  MSRC54124_23934715: 23934715
+-  MSRC54253_23934712: 23934712
+-  MSRC54255_23934710: 23934710
+@@ -1384,3 +1376,0 @@
+-  MSRC54303_23934707: 23934707
+-  MSRC54316_23934706: 23934706
+-  MSRC54331_23896782: 23896782
+@@ -1388,3 +1377,0 @@
+-  MSRC54359_23934702: 23934702
+-  MSRC54409_23934461: 23934461
+-  MSRC54415_23934688: 23934688
+@@ -1393 +1379,0 @@
+-  MSRC54435_23934465: 23934465
+@@ -1400 +1385,0 @@
+-  MSRC54536_23934458: 23934458
+@@ -1403,4 +1387,0 @@
+-  MSRC54595_23934665: 23934665
+-  MSRC54597_23934664: 23934664
+-  MSRC54600_23934667: 23934667
+-  MSRC54601_23934669: 23934669
+@@ -1412 +1392,0 @@
+-  MSRC54686_23916412: 23916412
+@@ -1416,3 +1395,0 @@
+-  MSRC54690_23916405: 23916405
+-  MSRC54691_23916397: 23916397
+-  MSRC54693_23916400: 23916400
+@@ -1421,2 +1397,0 @@
+-  MSRC54806_23956319: 23956319
+-  MSRC54813_23956728: 23956728
+@@ -1426 +1400,0 @@
+-  MSRC54833_23967159: 23967159
+@@ -1428 +1401,0 @@
+-  MSRC54854_23995095: 23995095
+@@ -1431,7 +1403,0 @@
+-  MSRC54912_24026288: 24026288
+-  MSRC54913_24026366: 24026366
+-  MSRC54916_24026417: 24026417
+-  MSRC54917_24026469: 24026469
+-  MSRC54933_24036398: 24036398
+-  MSRC54935_24036609: 24036609
+-  MSRC54961_24050940: 24050940
+@@ -1440 +1405,0 @@
+-  MSRC54972_24089623: 24089623
+@@ -1442,2 +1406,0 @@
+-  MSRC54974_24090035: 24090035
+-  MSRC54975_24089884: 24089884
+@@ -1445 +1407,0 @@
+-  MSRC54978_24089935: 24089935
+@@ -1451 +1412,0 @@
+-  MSRC54992_24089805: 24089805
+@@ -1454 +1414,0 @@
+-  MSRC55021_24090759: 24090759
+@@ -1456,3 +1415,0 @@
+-  MSRC55032_24100289: 24100289
+-  MSRC55034_24100357: 24100357
+-  MSRC55051_24119290: 24119290
+@@ -1462 +1418,0 @@
+-  MSRC55107_24179935: 24179935
+@@ -1467 +1422,0 @@
+-  MSRC55170_24236990: 24236990
+@@ -1474 +1428,0 @@
+-  MSRC55208_24253489: 24253489
+@@ -1482 +1435,0 @@
+-  MSRC55321_24316398: 24316398
+@@ -1484 +1436,0 @@
+-  MSRC55347_24333951: 24333951
+@@ -1486,2 +1437,0 @@
+-  MSRC55384_24363230: 24363230
+-  MSRC55385_24363357: 24363357
+@@ -1489 +1438,0 @@
+-  MSRC55447_24401487: 24401487
+@@ -1492 +1440,0 @@
+-  MSRC55579_24462333: 24462333
+@@ -1497,6 +1444,0 @@
+-  MSRC55657_24489314: 24489314
+-  MSRC55738_24532643: 24532643
+-  MSRC55740_24532713: 24532713
+-  MSRC55742_24532748: 24532748
+-  MSRC55776_24543630: 24543630
+-  MSRC55818_24579225: 24579225
+@@ -1503,0 +1446 @@
++  MSRC56454_24922760: 24922760
+@@ -1618,0 +1562,2 @@
++  SIPInvocationByTapOnWCOS: 20809722
++  SIPInvocationPolicySetting: 22085787
+@@ -1626,0 +1572 @@
++  ScreenClippingUndockedWCOS: 20782456
+@@ -1731,0 +1678 @@
++  VAILInitialPositioning: 19319140
+@@ -1732,0 +1680 @@
++  VAIL_Opm_Projection: 20754884
+@@ -1766 +1713,0 @@
+-  XamlAppResolverPhone: 7360804
+@@ -1786,0 +1734 @@
++  BackdropVisualImage: 23349657
+@@ -1794,0 +1743 @@
++  Dlp_Error: 25550414
+@@ -1798,0 +1748 @@
++  EnableTransparentAreaInKeyboard: 24825491
+@@ -1801,2 +1751 @@
+-  HTMLStartPerfNoAcrylic: 23850988
+-  HTMLStartPerfNoShadow: 23850997
++  HTMLStartLauncherFrameMediumScreenOrientationResize: 25510327
+@@ -1803,0 +1753,2 @@
++  HandleNoSelectionInRibbonForNamespaceExtensions: 24001174
++  HelloSplitViewAcrossDisplays: 20770583
+@@ -1806,0 +1758 @@
++  Hub_FullDiagnostics: 25329309
+@@ -1819,0 +1772 @@
++  MSRC54976_24089711: 24089711
+@@ -1824,0 +1778 @@
++  MSRC55422_24387949: 24387949
+@@ -1833,0 +1788 @@
++  MSRC55610_24475151: 24475151
+@@ -1845,0 +1801 @@
++  MSRC56147_24705114: 24705114
+@@ -1846,0 +1803 @@
++  MSRC56288_24805201: 24805201
+@@ -1847,0 +1805 @@
++  MSRC56348_24862075: 24862075
+@@ -1850 +1808 @@
+-  MSRC56454_24922760: 24922760
++  MSRC56512_25156254: 25156254
+@@ -1854,0 +1813,3 @@
++  MSRC56623_25201347: 25201347
++  MSRC56793_25324334: 25324334
++  MSRC56874_25360497: 25360497
+@@ -1855,0 +1817,3 @@
++  MSRC57045_25504571: 25504571
++  MSRC57141_25523403: 25523403
++  MSRC57261_25604419: 25604419
+@@ -1857,0 +1822,2 @@
++  NetworkSharePaste: 24752909
++  NoCheckBoxFromWinRT: 24750336
+@@ -1863,0 +1830 @@
++  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -1868 +1834,0 @@
+-  SIPInvocationByTapOnWCOS: 20809722
+@@ -1871 +1836,0 @@
+-  ScreenClippingUndockedWCOS: 20782456
+@@ -1879,2 +1844,2 @@
+-  VAILInitialPositioning: 19319140
+-  VAILRemoteAppIdWindowAssignment: 21003492
++  WCOSUserChoiceUXPolicy: 25350390
++  WNS_CTA_Push: 24588867
+@@ -1892,0 +1858 @@
++  CRM_DS: 24588949
+@@ -1895,0 +1862 @@
++  DES_Monitor_Groups: 23577149
+@@ -1902 +1868,0 @@
+-  DraggableThumbnailWCOS: 19375840
+@@ -1910 +1875,0 @@
+-  EnableTransparentAreaInKeyboard: 24825491
+@@ -1933,0 +1899 @@
++  Input_Heat_EnclosureApi: 25390104
+@@ -1937,0 +1904 @@
++  LogicalDisplayReference: 23350651
+@@ -1947,2 +1914 @@
+-  PublishFileActivitiesForUnassociatedViews: 19349712
+-  RemoveDefenderPillarsFromAbout: 17869667
++  RedirectSystemControlPanel: 25175482
+@@ -1952 +1917,0 @@
+-  SIPInvocationPolicySetting: 22085787
+@@ -1962 +1926,0 @@
+-  SystemStatusAutoArrange: 19905722
+@@ -1972 +1935,0 @@
+-  VAIL_Opm_Projection: 20754884
+@@ -1978,4 +1940,0 @@
+-  VoiceTypingEntryPointOnDesktop: 24781229
+-  VoiceTypingEntryPointOnWCOS: 23991426
+-  VoiceTypingInFlowConsentOnDesktop: 24781242
+-  VoiceTypingInFlowConsentOnWCOS: 23991419
+@@ -1984 +1943 @@
+-  VoiceTypingPlatformChange: 24205841
++  WCOSAppDefaults: 23869232
+@@ -1986 +1944,0 @@
+-  WNS_CTA_Push: 24588867
+@@ -1988 +1946 @@
+-  WcosHardwareCursor: 23897624
++  WcosSingleVisualCursor: 23897624
+@@ -2000,0 +1959 @@
++  AdaptiveColor_BringUp: 18765370
+@@ -2001,0 +1961 @@
++  AdditionalPredictionLogging: 24416856
+@@ -2032 +1991,0 @@
+-  BackdropVisualImage: 23349657
+@@ -2042 +2000,0 @@
+-  CRM_DS: 24588949
+@@ -2054,0 +2013 @@
++  ConvergedDisplayEnhancementService: 16884851
+@@ -2060,0 +2020 @@
++  DESTuningParameters: 18765296
+@@ -2061,0 +2022 @@
++  DWriteRenderingOverride: 25519776
+@@ -2079,0 +2041 @@
++  DraggableThumbnailWCOS: 19375840
+@@ -2129,0 +2092 @@
++  HTMLStartPerfNoAcrylic: 23850988
+@@ -2130,0 +2094 @@
++  HTMLStartPerfNoShadow: 23850997
+@@ -2137 +2100,0 @@
+-  HelloSplitViewAcrossDisplays: 20770583
+@@ -2167 +2129,0 @@
+-  InputVirtualizationDesktopSpecific: 19155918
+@@ -2201,0 +2164 @@
++  MSRC55458_24407558: 24407558
+@@ -2209,0 +2173 @@
++  MSRC55604_24473680: 24473680
+@@ -2216,0 +2181 @@
++  MSRC55930_24596121: 24596121
+@@ -2218 +2183,3 @@
+-  MSRC56313_24821771: 24821771
++  MSRC56148_24705172: 24705172
++  MSRC56326_24836505: 24836505
++  MSRC56353_24864057: 24864057
+@@ -2219,0 +2187 @@
++  MSRC56412_24890354: 24890354
+@@ -2220,0 +2189,2 @@
++  MSRC56854_25353115: 25353115
++  MSRC56855_25353148: 25353148
+@@ -2222,0 +2193,2 @@
++  MSRC57163_25534092: 25534092
++  MSRC57233_25592381: 25592381
+@@ -2223,0 +2196 @@
++  ModernPC_Search_FailFastDebugging: 23585862
+@@ -2280 +2252,0 @@
+-  SkipMsixManifestValidation: 18554648
+@@ -2297 +2268,0 @@
+-  SuperWetClipToCanvas: 24585910
+@@ -2339,0 +2311 @@
++  VAILWin32StartupTask: 21870854
+@@ -2354,0 +2327 @@
++  WindowTabHost: 25292146
