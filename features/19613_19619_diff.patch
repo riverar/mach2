@@ -1,0 +1,187 @@
+--- V:/19613/features_nosymbols.txt	Fri May 01 21:48:57 2020
++++ V:/19619/features_nosymbols.txt	Thu Apr 30 22:14:57 2020
+@@ -57,0 +58 @@
++  ApiLogging_Uploader: 0
+@@ -64 +64,0 @@
+-  AppWindowTryShowAsync: 0
+@@ -100 +100 @@
+-  BlankDocOfficeUpsell: 0
++  BlankDocExperiment: 0
+@@ -218,0 +219 @@
++  D3D12Redist: 0
+@@ -285,0 +287 @@
++  DiagnosticsForMasterSubclassProc: 0
+@@ -325,0 +328 @@
++  EdgeCaseHandlingForSHSetWindowSubclass: 0
+@@ -328 +330,0 @@
+-  EdgeSpartanDesktopAppOnWCOS: 0
+@@ -330 +331,0 @@
+-  EdpSeparateSublayer: 0
+@@ -762 +762,0 @@
+-  ScriptingEngines_DisableLegacyJScript: 0
+@@ -886 +885,0 @@
+-  TouchKeyboardAutoSwitchToAlphaAfterSymbolSpace: 0
+@@ -957,3 +956 @@
+-  VoiceTypingEntryPoint: 0
+-  VoiceTypingInFlowConsent: 0
+-  VoiceTypingModernUX: 0
++  VoiceTypingModernUXOnDesktop: 0
+@@ -1039 +1035,0 @@
+-  AdaptiveColor: 19091481
+@@ -1040,0 +1037 @@
++  AllowOutOfProcIExplorerCommandSetForeground: 25176540
+@@ -1055,0 +1053 @@
++  AppDefaultsRecommendNewEdge: 20432194
+@@ -1057,0 +1056 @@
++  AppDefaultsSetNewEdgeAsDefault: 24724557
+@@ -1075,0 +1075,2 @@
++  AvoidTimerCallbackAfterDestroy: 24351880
++  BackdropVisualImage: 23349657
+@@ -1111,0 +1113 @@
++  CloudFileCopyHook: 23685927
+@@ -1143,0 +1146 @@
++  CurrentFolderAsSelection: 24623699
+@@ -1151,0 +1155 @@
++  DelayInitializeShellTLS: 24087705
+@@ -1231 +1234,0 @@
+-  GifSuggestionOnWCOS: 19440349
+@@ -1232,0 +1236 @@
++  HandleNoSelectionInRibbonForNamespaceExtensions: 24001174
+@@ -1238,0 +1243 @@
++  HideUninstallVerbForNonUninstallablePreinstalledAppsOnWcos: 24669091
+@@ -1255,4 +1260,2 @@
+-  HubOSOobeDeviceTypePage: 16607342
+-  HubOSOobeEulaPage: 11868187
+-  HubOSOobeKeyboardPage: 11868189
+-  HubOSOobeRegionPage: 11868190
++  HtmlLauncher: 19908852
++  Hub_QuietOOBECortana: 23820713
+@@ -1305,0 +1309 @@
++  LocalThumbnailForHydratedFile: 24408380
+@@ -1408 +1411,0 @@
+-  MSRC54687_23916408: 23916408
+@@ -1421 +1423,0 @@
+-  MSRC54980_24089968: 24089968
+@@ -1425 +1426,0 @@
+-  MSRC54993_24089921: 24089921
+@@ -1431 +1431,0 @@
+-  MSRC55140_24228872: 24228872
+@@ -1515,0 +1516,2 @@
++  ModernPC_Search: 20383964
++  ModernPC_Search_ComposerBgTasks: 21206249
+@@ -1519,0 +1522 @@
++  MultiProcessISM: 23310084
+@@ -1523,0 +1527,2 @@
++  NetworkSharePaste: 24752909
++  NoPlatformScaling: 23458767
+@@ -1587,0 +1593 @@
++  PropagateBannerInitFailure: 19747652
+@@ -1611,0 +1618 @@
++  ResetDUI_Reentry: 17513823
+@@ -1631,0 +1639 @@
++  SearchDeleteHistorySuggestions: 24139787
+@@ -1632,0 +1641 @@
++  SearchSuggestionsFallback: 24652212
+@@ -1674,2 +1682,0 @@
+-  SuggestionUIOnWCOS: 19439263
+-  SuggestionUIWAVE3OnWCOS: 20553178
+@@ -1685,0 +1693 @@
++  SyncRootMove: 23585747
+@@ -1758,0 +1767 @@
++  WNS_CTA_Push: 24588867
+@@ -1760,0 +1770,2 @@
++  WcosHardwareCursor: 24697775
++  WcosSingleVisualCursor: 23897624
+@@ -1771,0 +1783 @@
++  XAMLFileExplorerCloudFiles: 21154437
+@@ -1788,6 +1799,0 @@
+-  AllowOutOfProcIExplorerCommandSetForeground: 25176540
+-  AppDefaultsRecommendNewEdge: 20432194
+-  AppDefaultsSetNewEdgeAsDefault: 24724557
+-  AtomicCheckFailure: 18815308
+-  AvoidTimerCallbackAfterDestroy: 24351880
+-  BackdropVisualImage: 23349657
+@@ -1796,0 +1803 @@
++  ColorfulUnplatedLogos: 21894296
+@@ -1799 +1805,0 @@
+-  DelayInitializeShellTLS: 24087705
+@@ -1809 +1814,0 @@
+-  HandleNoSelectionInRibbonForNamespaceExtensions: 24001174
+@@ -1811,2 +1815,0 @@
+-  HideUninstallVerbForNonUninstallablePreinstalledAppsOnWcos: 24669091
+-  HtmlStartIncludeUdkProjections: 20994335
+@@ -1818,2 +1820,0 @@
+-  Hub_QuietOOBECortana: 23820713
+-  LocalThumbnailForHydratedFile: 24408380
+@@ -1887,4 +1887,0 @@
+-  ModernPC_Search: 20383964
+-  ModernPC_Search_ComposerBgTasks: 21206249
+-  MultiProcessISM: 23310084
+-  NetworkSharePaste: 24752909
+@@ -1892 +1888,0 @@
+-  NoPlatformScaling: 23458767
+@@ -1895 +1890,0 @@
+-  PropagateBannerInitFailure: 19747652
+@@ -1902,2 +1896,0 @@
+-  SearchDeleteHistorySuggestions: 24139787
+-  SearchSuggestionsFallback: 24652212
+@@ -1905,0 +1899 @@
++  TryShellActivateApplicationFallback: 23674478
+@@ -1908 +1901,0 @@
+-  WNS_CTA_Push: 24588867
+@@ -1910 +1902,0 @@
+-  XAMLFileExplorerCloudFiles: 21154437
+@@ -1920 +1911,0 @@
+-  CRM_DS: 24588949
+@@ -1929,0 +1921 @@
++  DisableCoreDispatcherInWin32: 17479072
+@@ -1936 +1927,0 @@
+-  EnablePenInteractionModelOnWCOS: 23448712
+@@ -1948 +1938,0 @@
+-  HtmlLauncher: 19908852
+@@ -1959 +1948,0 @@
+-  InputForegroundManagerForUWP: 22164006
+@@ -1966 +1954,0 @@
+-  NonblockingKeyboardProcessing: 23861116
+@@ -1968,0 +1957 @@
++  OobeLimitCortanaVoiceover: 23529034
+@@ -1972,0 +1962 @@
++  RemoveExpansionExperience: 25449285
+@@ -1991 +1980,0 @@
+-  TryShellActivateApplicationFallback: 23674478
+@@ -1995 +1983,0 @@
+-  VoiceTypingCorrectionUXCandUIOnWCOS: 24698563
+@@ -1997,3 +1984,0 @@
+-  VoiceTypingCorrectionUXTextStylingOnWCOS: 24698548
+-  VoiceTypingModernUXOnDesktop: 24781215
+-  VoiceTypingModernUXOnWCOS: 23722665
+@@ -2002,2 +1986,0 @@
+-  WcosHardwareCursor: 24697775
+-  WcosSingleVisualCursor: 23897624
+@@ -2016 +1998,0 @@
+-  AdaptiveColor_BringUp: 18765370
+@@ -2042,0 +2025 @@
++  AtomicCheckFailure: 18815308
+@@ -2058,0 +2042 @@
++  CRM_DS: 24588949
+@@ -2064 +2047,0 @@
+-  ColorfulUnplatedLogos: 21894296
+@@ -2072 +2054,0 @@
+-  ConvergedDisplayEnhancementService: 16884851
+@@ -2079 +2060,0 @@
+-  DESTuningParameters: 18765296
+@@ -2095 +2075,0 @@
+-  DisableCoreDispatcherInWin32: 17479072
+@@ -2165,0 +2146,3 @@
++  HubOSOobeDeviceTypePage: 16607342
++  HubOSOobeEulaPage: 11868187
++  HubOSOobeKeyboardPage: 11868189
+@@ -2166,0 +2150 @@
++  HubOSOobeRegionPage: 11868190
+@@ -2187,0 +2172 @@
++  InputForegroundManagerForUWP: 22164006
+@@ -2298 +2282,0 @@
+-  RemoveExpansionExperience: 25449285
+@@ -2378,0 +2363,2 @@
++  VoiceTypingCorrectionUXCandUIOnWCOS: 24698563
++  VoiceTypingCorrectionUXTextStylingOnWCOS: 24698548
