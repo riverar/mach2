@@ -1,0 +1,162 @@
+--- V:/19619/features_nosymbols.txt	Thu Apr 30 22:14:57 2020
++++ V:/19624/features_nosymbols.txt	Wed May 13 15:18:04 2020
+@@ -76,0 +77 @@
++  AsyncOpFileStartExperienceGetUserFile: 0
+@@ -181,0 +183 @@
++  ConvertToUPNName: 0
+@@ -298,0 +301 @@
++  DisplayAdapterProperties: 0
+@@ -378,0 +382 @@
++  FeatureStagingInfoCapability_FullFCONAccess: 0
+@@ -516,0 +521 @@
++  LicenseParsingErrorLogging: 0
+@@ -587,0 +593 @@
++  NightsWatchAuditByDefault: 0
+@@ -697,0 +704 @@
++  RefreshRateSetting: 0
+@@ -782 +788,0 @@
+-  Servicing_EarlyCtcAccess_25326882: 0
+@@ -793 +798,0 @@
+-  Servicing_ValueBannerUpdate_25271277: 0
+@@ -905 +909,0 @@
+-  UiaOverRail: 0
+@@ -972,0 +977 @@
++  WSL_Device_GPU_WSL1: 0
+@@ -1081,0 +1087 @@
++  Brightness3LegacyAPIReroute: 16417871
+@@ -1129,0 +1136 @@
++  ColorfulUnplatedLogos: 21894296
+@@ -1164,0 +1172 @@
++  DesktopTouchImprovementForTabletPosture: 21228112
+@@ -1173,0 +1182,2 @@
++  Dlp_Error: 25550414
++  Dlp_ErrorSuppression: 25765138
+@@ -1193,0 +1204,2 @@
++  EICinTIConWCOS: 21268963
++  EaseOfAccessQuickSettings: 20782259
+@@ -1204,0 +1217 @@
++  EnableTransparentAreaInKeyboard: 24825491
+@@ -1235,0 +1249 @@
++  HTMLStartScreenSizeWorkaround: 24026435
+@@ -1332 +1345,0 @@
+-  MSRC47940_19236528: 19236528
+@@ -1361 +1373,0 @@
+-  MSRC51022_20952820: 20952820
+@@ -1374 +1385,0 @@
+-  MSRC52686_22308606: 22308606
+@@ -1379,2 +1389,0 @@
+-  MSRC53162_23007569: 23007569
+-  MSRC53208_23934478: 23934478
+@@ -1383 +1391,0 @@
+-  MSRC53251_23078079: 23078079
+@@ -1386,2 +1393,0 @@
+-  MSRC53392_23133967: 23133967
+-  MSRC53756_23340089: 23340089
+@@ -1399,2 +1404,0 @@
+-  MSRC54459_23934460: 23934460
+-  MSRC54460_23934462: 23934462
+@@ -1407 +1410,0 @@
+-  MSRC54602_23934451: 23934451
+@@ -1418 +1420,0 @@
+-  MSRC54877_23997174: 23997174
+@@ -1430 +1431,0 @@
+-  MSRC55102_24179773: 24179773
+@@ -1445 +1445,0 @@
+-  MSRC55288_24310271: 24310271
+@@ -1451 +1450,0 @@
+-  MSRC55449_24403939: 24403939
+@@ -1454,2 +1452,0 @@
+-  MSRC55482_24419419: 24419419
+-  MSRC55485_24419982: 24419982
+@@ -1458 +1454,0 @@
+-  MSRC55525_24444984: 24444984
+@@ -1460 +1455,0 @@
+-  MSRC55527_24445069: 24445069
+@@ -1475 +1469,0 @@
+-  MSRC55633_24573544: 24573544
+@@ -1487 +1480,0 @@
+-  MSRC55704_24514618: 24514618
+@@ -1492,2 +1484,0 @@
+-  MSRC56311_24819371: 24819371
+-  MSRC56326_24836505: 24836505
+@@ -1527,0 +1519 @@
++  NoCheckBoxFromWinRT: 24750336
+@@ -1557,0 +1550 @@
++  PenButtonCustomizationOnWCOS: 23339593
+@@ -1593,0 +1587 @@
++  PropertyStoreForHwnd: 23956599
+@@ -1710,0 +1705 @@
++  TemporarilyPopulateIdentityMap: 24291095
+@@ -1727,0 +1723 @@
++  TryShellActivateApplicationFallback: 23674478
+@@ -1800 +1795,0 @@
+-  Brightness3LegacyAPIReroute: 16417871
+@@ -1803 +1797,0 @@
+-  ColorfulUnplatedLogos: 21894296
+@@ -1807 +1800,0 @@
+-  Dlp_Error: 25550414
+@@ -1809,3 +1801,0 @@
+-  EICinTIConWCOS: 21268963
+-  EaseOfAccessQuickSettings: 20782259
+-  EnableTransparentAreaInKeyboard: 24825491
+@@ -1814 +1803,0 @@
+-  HTMLStartScreenSizeWorkaround: 24026435
+@@ -1832,0 +1822,2 @@
++  MSRC55937_24598753: 24598753
++  MSRC55939_24599394: 24599394
+@@ -1841,0 +1833 @@
++  MSRC56207_24743076: 24743076
+@@ -1871,0 +1864 @@
++  MSRC57032_25505031: 25505031
+@@ -1874,0 +1868 @@
++  MSRC57110_25512304: 25512304
+@@ -1888 +1882 @@
+-  NoCheckBoxFromWinRT: 24750336
++  MSRC57892_25937517: 25937517
+@@ -1890,3 +1883,0 @@
+-  PenButtonCustomizationOnWCOS: 23339593
+-  PropertyStoreForHwnd: 23956599
+-  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -1898,2 +1888,0 @@
+-  TemporarilyPopulateIdentityMap: 24291095
+-  TryShellActivateApplicationFallback: 23674478
+@@ -1901 +1889,0 @@
+-  WCOSUserChoiceUXPolicy: 25350390
+@@ -1910 +1897,0 @@
+-  AutopilotProvisioningPageNavAAD: 25345617
+@@ -1918 +1904,0 @@
+-  DesktopTouchImprovementForTabletPosture: 21228112
+@@ -1922 +1907,0 @@
+-  Dlp_ErrorSuppression: 25765138
+@@ -1949 +1933,0 @@
+-  Input_Heat_EnclosureApi: 25390104
+@@ -1952 +1935,0 @@
+-  LogicalDisplayReference: 23350651
+@@ -1970 +1952,0 @@
+-  SetNumberOfDaysDisplayedInTimeline: 18917037
+@@ -1985 +1966,0 @@
+-  WCOSAppDefaults: 23869232
+@@ -2032,0 +2014 @@
++  AutopilotProvisioningPageNavAAD: 25345617
+@@ -2176,0 +2159 @@
++  Input_Heat_EnclosureApi: 25390104
+@@ -2192,0 +2176 @@
++  LogicalDisplayReference: 23350651
+@@ -2208,0 +2193,2 @@
++  MSRC55797_24548442: 24548442
++  MSRC55840_24587418: 24587418
+@@ -2224,0 +2211,2 @@
++  MSRC56735_25293996: 25293996
++  MSRC56783_25323380: 25323380
+@@ -2225,0 +2214 @@
++  MSRC56815_25327306: 25327306
+@@ -2231,0 +2221 @@
++  MSRC56905_25392340: 25392340
+@@ -2241,0 +2232 @@
++  MSRC57681_25840971: 25840971
+@@ -2276,0 +2268 @@
++  PublishFileActivitiesForUnassociatedViews: 19349712
+@@ -2296,0 +2289 @@
++  SetNumberOfDaysDisplayedInTimeline: 18917037
+@@ -2364,0 +2358 @@
++  WCOSAppDefaults: 23869232
