@@ -1,0 +1,130 @@
+--- V:/20150/features_nosymbols.txt	Wed Jun 24 11:06:54 2020
++++ V:/20152/features_nosymbols.txt	Wed Jun 24 13:15:37 2020
+@@ -19 +18,0 @@
+-  AIKCertEnrollment: 0
+@@ -87,0 +87 @@
++  BarcelonaAppContainerLaunch: 0
+@@ -169,0 +170 @@
++  ContainerCrash_UseInternalBranchPolicy: 0
+@@ -170,0 +172 @@
++  Containers_DynamicDeviceSupport: 0
+@@ -191,0 +194 @@
++  CurrentVmVersionIsDefault: 0
+@@ -287,0 +291,4 @@
++  DisableKryptonColdEnlightenment: 0
++  DisableKryptonDeferredCommit: 0
++  DisableKryptonEnhancedPageFault: 0
++  DisableKryptonHotEnlightenment: 0
+@@ -407,0 +415 @@
++  HVSIGpuMirrorAll: 0
+@@ -431,0 +440,6 @@
++  Hcl: 0
++  HcsFromAppContainers: 0
++  HcsGpuRequireDevice: 0
++  HcsSecurityMitigation: 0
++  HcsSiloReboot: 0
++  HcsTestHooks: 0
+@@ -434,0 +449,4 @@
++  HnsEncryption: 0
++  HnsFlowSteeringEngine: 0
++  HnsLeakedActivities: 0
++  HnsWcosLoopback: 0
+@@ -488,0 +507 @@
++  KernelModeVpciBus: 0
+@@ -495,0 +515 @@
++  KryptonSoftLargePages: 0
+@@ -508,0 +529 @@
++  LinuxDirectBootFakeEFI: 0
+@@ -509,0 +531 @@
++  LoadAlternateHcl: 0
+@@ -511,0 +534 @@
++  LowPriorityPrelaunchContainerPolicy: 0
+@@ -573,0 +597,2 @@
++  NicVdev_NewPreallocatedResourcesSchema: 0
++  NicVdev_VMMS_ConvertToPreallocations: 0
+@@ -577,0 +603,2 @@
++  NoNvramThrottling: 0
++  NoVisibleContainerUiPolicy: 0
+@@ -580,0 +608 @@
++  NvIo_Experimental: 0
+@@ -622,0 +651 @@
++  PersistentMemoryTest: 0
+@@ -632,0 +662 @@
++  PinVmmemBackingPages: 0
+@@ -638,0 +669 @@
++  PortableCCG: 0
+@@ -643,0 +675 @@
++  PrereleaseVmVersions: 0
+@@ -658 +689,0 @@
+-  ProvisionSteps: 0
+@@ -816,0 +848 @@
++  SupportCompressedVHDs: 0
+@@ -862,0 +895,2 @@
++  UACurrentVersionScan: 0
++  UART_Refactor: 0
+@@ -866,0 +901,3 @@
++  UefiEnableLowPowerS0: 0
++  UefiExposeAcpiTable: 0
++  UefiForceEnableDebugging: 0
+@@ -898,0 +936 @@
++  VSmbTestHooks: 0
+@@ -915,0 +954,2 @@
++  VmChipsetLoadFirmwareFromFile: 0
++  VmbusPerVaBackedVmThreads: 0
+@@ -916,0 +957,2 @@
++  VmmsVirtualMachineAppContainerLaunch: 0
++  Vmms_HcsSchema: 0
+@@ -932,0 +975,2 @@
++  WSL_Device_GPU: 0
++  WSL_Device_GPU_WSL1: 0
+@@ -933,0 +978,3 @@
++  WSL_Kernel_Debug: 0
++  WSL_Update: 0
++  WSL_VirtIO_9p: 0
+@@ -935,0 +983 @@
++  WVD_MGMT: 0
+@@ -942,0 +991 @@
++  WdagManganeseAPIs: 0
+@@ -956,0 +1006,2 @@
++  WindowsSandbox_Experimental: 0
++  WindowsSandbox_Internal: 0
+@@ -970,0 +1022 @@
++  XenonAppContainerLaunch: 0
+@@ -1377 +1428,0 @@
+-  MSRC55246_24273629: 24273629
+@@ -1518 +1569 @@
+-  MSRC57151_25531529: 25531529
++  MSRC57151_26340634: 26340634
+@@ -1527,0 +1579 @@
++  MSRC57241_26290984: 26290984
+@@ -1528,0 +1581 @@
++  MSRC57245_26340623: 26340623
+@@ -1541 +1593,0 @@
+-  MSRC57817_25909041: 25909041
+@@ -1832,2 +1883,0 @@
+-  WcosHardwareCursor: 24697775
+-  WcosSingleVisualCursor: 23897624
+@@ -1897,0 +1948 @@
++  MSRC57239_25589367: 25589367
+@@ -1905 +1955,0 @@
+-  MSRC57498_25840500: 25840500
+@@ -1918,0 +1969,2 @@
++  MSRC57874_26529703: 26529703
++  MSRC57877_26529903: 26529903
+@@ -1919,0 +1972 @@
++  MSRC57885_25936441: 25936441
+@@ -1923,0 +1977,2 @@
++  MSRC58214_26121924: 26121924
++  MSRC58736_26421078: 26421078
+@@ -2052,0 +2108 @@
++  ApplicationWindows_Wave3_API: 26292073
+@@ -2236,0 +2293 @@
++  MSRC56896_26193673: 26193673
+@@ -2262,0 +2320,2 @@
++  MSRC57893_26530128: 26530128
++  MSRC57907_26530201: 26530201
+@@ -2264 +2323 @@
+-  MSRC58296_26198550: 26198550
++  MSRC58307_26175684: 26175684
+@@ -2370,0 +2430 @@
++  TilingWindowManager: 26423941
