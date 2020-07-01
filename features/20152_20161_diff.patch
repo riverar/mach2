@@ -1,0 +1,232 @@
+--- V:/20152/features_nosymbols.txt	Wed Jun 24 13:15:37 2020
++++ V:/20161/features_nosymbols.txt	Wed Jul 01 15:05:26 2020
+@@ -338,0 +339 @@
++  EnableSessionTerminateNotification: 0
+@@ -347,0 +349 @@
++  ExpressiveInput_Sticker: 0
+@@ -405,0 +408 @@
++  GPM_BlitModeTracking: 0
+@@ -407,0 +411 @@
++  GeneralIronDesktopKeyboardHostingBugFixes: 0
+@@ -411,0 +416,2 @@
++  GestureCursorMovement: 0
++  GestureCursorMovementUndocked: 0
+@@ -493,0 +500,2 @@
++  InteractiveVolumeIndicatorExperiment: 0
++  IronInputAppActivationImprovement: 0
+@@ -512,0 +521 @@
++  KeyboardButtonAlwaysInvoke: 0
+@@ -532,0 +542 @@
++  LocalUsersAndGroups: 0
+@@ -656 +665,0 @@
+-  PhonePairingExperimentation: 0
+@@ -685,0 +695 @@
++  ProgrammableTaskbarDefaultPins: 0
+@@ -838,0 +849 @@
++  StateRepository_DynamicDependencies: 0
+@@ -849,0 +861 @@
++  SupportJpnGuidanceStringV3: 0
+@@ -892,0 +905,2 @@
++  TryShowApiKeyboardInvocation: 0
++  TurnOffFocusAssistNotificationsByDefault: 0
+@@ -912 +925,0 @@
+-  UnborkParentalControlsOnArm64Fre: 0
+@@ -914,0 +928 @@
++  UpdatedTouchKeyboardSizeScaling: 0
+@@ -1009,0 +1024 @@
++  WorkAreaChangeHandling: 0
+@@ -1067 +1081,0 @@
+-  ApplicationContent: 16095104
+@@ -1101 +1114,0 @@
+-  CaptureCursorAPI: 20957018
+@@ -1139 +1151,0 @@
+-  ColorfulUnplatedLogos: 21894296
+@@ -1159 +1170,0 @@
+-  DWMTouchTargeting: 8348580
+@@ -1223 +1233,0 @@
+-  EnableTransparentAreaInKeyboard: 24825491
+@@ -1289 +1298,0 @@
+-  InMarketAppDefaults: 6989041
+@@ -1328 +1336,0 @@
+-  LightweightWindows: 16095113
+@@ -1403 +1410,0 @@
+-  MSRC53790_25221619: 25221619
+@@ -1417 +1423,0 @@
+-  MSRC54830_23964663: 23964663
+@@ -1420,2 +1425,0 @@
+-  MSRC54929_24036146: 24036146
+-  MSRC54970_24089840: 24089840
+@@ -1427 +1430,0 @@
+-  MSRC55215_24254954: 24254954
+@@ -1438,4 +1440,0 @@
+-  MSRC55458_24407558: 24407558
+-  MSRC55508_24429800: 24429800
+-  MSRC55529_24445147: 24445147
+-  MSRC55530_24445181: 24445181
+@@ -1446 +1444,0 @@
+-  MSRC55549_24447174: 24447174
+@@ -1459 +1456,0 @@
+-  MSRC55797_24548442: 24548442
+@@ -1489 +1485,0 @@
+-  MSRC56353_24864057: 24864057
+@@ -1494,0 +1491 @@
++  MSRC56445_24912059: 24912059
+@@ -1499,4 +1495,0 @@
+-  MSRC56541_25168996: 25168996
+-  MSRC56560_26340682: 26340682
+-  MSRC56568_25183677: 25183677
+-  MSRC56580_25185703: 25185703
+@@ -1507,4 +1499,0 @@
+-  MSRC56590_25186362: 25186362
+-  MSRC56594_25189061: 25189061
+-  MSRC56614_25199894: 25199894
+-  MSRC56616_25200019: 25200019
+@@ -1516 +1504,0 @@
+-  MSRC56657_25249680: 25249680
+@@ -1523 +1510,0 @@
+-  MSRC56701_25288645: 25288645
+@@ -1530 +1516,0 @@
+-  MSRC56811_25326706: 25326706
+@@ -1537 +1522,0 @@
+-  MSRC56855_25353148: 25353148
+@@ -1539 +1523,0 @@
+-  MSRC56865_25991367: 25991367
+@@ -1547 +1530,0 @@
+-  MSRC56912_26340653: 26340653
+@@ -1587 +1569,0 @@
+-  MSRC57390_25679060: 25679060
+@@ -1590 +1571,0 @@
+-  MSRC57626_25825928: 25825928
+@@ -1595 +1575,0 @@
+-  MSRC57966_26340608: 26340608
+@@ -1662,0 +1643 @@
++  PenTipToGlassEvents: 23721420
+@@ -1725 +1705,0 @@
+-  SIPInvocationPolicySetting: 22085787
+@@ -1734,2 +1713,0 @@
+-  ScreenCapture: 14205534
+-  ScreenCaptureAPI: 13976099
+@@ -1777 +1754,0 @@
+-  SingleUserCxhAlternatePackageInclusion: 19685298
+@@ -1872,2 +1848,0 @@
+-  VisualCapture: 16458144
+-  VisualCaptureAPI: 16976519
+@@ -1899 +1873,0 @@
+-  XamlAppResolver: 9196132
+@@ -1941,0 +1916 @@
++  MSRC56992_25443696: 25443696
+@@ -1950,0 +1926 @@
++  MSRC57325_25643425: 25643425
+@@ -1952,0 +1929 @@
++  MSRC57368_26492585: 26492585
+@@ -1954,0 +1932 @@
++  MSRC57476_25705871: 25705871
+@@ -1967,0 +1946 @@
++  MSRC57861_25926863: 25926863
+@@ -1968,0 +1948 @@
++  MSRC57865_25931031: 25931031
+@@ -1972,0 +1953,2 @@
++  MSRC57902_25942005: 25942005
++  MSRC57945_25958686: 25958686
+@@ -1977,0 +1960,3 @@
++  MSRC58225_26125323: 26125323
++  MSRC58314_26176171: 26176171
++  MSRC58622_26366617: 26366617
+@@ -1979,0 +1965 @@
++  OobeExperienceManageQueueWnfCallback: 26243368
+@@ -1980,0 +1967,2 @@
++  RedirectSystemControlPanel: 25175482
++  RemoveHandleDuplicator: 26988359
+@@ -1984,0 +1973 @@
++  Servicing_CortanaStoreOffer_25771992: 25771992
+@@ -1985,0 +1975 @@
++  Servicing_SearchDisableWebSearch_26212727: 26212727
+@@ -1986,0 +1977 @@
++  Servicing_ValueBannerUpdate_25271277: 25271277
+@@ -1987,0 +1979 @@
++  TaskFlowDataEngineOnSantorini: 19570081
+@@ -1989,0 +1982 @@
++  WindowTabHost: 25292146
+@@ -1996,0 +1990 @@
++  AppDefaultsLogonTelemetry: 20859160
+@@ -2003,0 +1998 @@
++  DESACDCOffset: 26883134
+@@ -2007,0 +2003 @@
++  DesktopTouchImprovementDefaultChange: 26469242
+@@ -2013,0 +2010 @@
++  EInkKeyboardPrototype: 26324538
+@@ -2027 +2023,0 @@
+-  GestureCursorMovement: 20274749
+@@ -2037,0 +2034 @@
++  Hub_UndockedSnipping: 24276737
+@@ -2040,0 +2038,2 @@
++  JumpListCentWinRTApiItemActivationFix: 25346146
++  LivePreviewForTabs: 25478404
+@@ -2048,4 +2046,0 @@
+-  ProgrammableTaskbarDefaultPins: 25173983
+-  ProgrammableTaskbarTelemetry: 24896077
+-  ProximityPairing: 87954621
+-  RedirectSystemControlPanel: 25175482
+@@ -2056 +2050,0 @@
+-  SIPSuggestionUIOnDesktop: 20438551
+@@ -2062,0 +2057 @@
++  StartupNotification: 25973782
+@@ -2064 +2058,0 @@
+-  SystemToAboutSettingsSearchRedirect: 24888244
+@@ -2066 +2060 @@
+-  TaskFlowDataEngineOnSantorini: 19570081
++  TabThumbnailsRefreshedOnDemand: 26769179
+@@ -2069,0 +2064 @@
++  ThemeAwareAndFluentTiles: 23615618
+@@ -2075 +2070 @@
+-  WindowTabHost: 25292146
++  WthTaskbarTabs: 25345549
+@@ -2134 +2128,0 @@
+-  CompositionIslandsAPI: 11538375
+@@ -2143,0 +2138,2 @@
++  DCECompareIterativeToRecursive: 26435474
++  DCEUseIterativeHitTest: 26435490
+@@ -2154 +2149,0 @@
+-  DesktopTouchImprovementDefaultChange: 25679355
+@@ -2193 +2187,0 @@
+-  ExpressiveInput_OnlineSticker: 12994636
+@@ -2195 +2188,0 @@
+-  ExpressiveInput_Sticker: 12994626
+@@ -2221 +2213,0 @@
+-  HandwritingCHS_InputHistory: 14885967
+@@ -2263,0 +2256,2 @@
++  IxpFutureApi: 26767995
++  IxpInternalApi: 26847307
+@@ -2264,0 +2259 @@
++  JumpListV4: 26506428
+@@ -2308,0 +2304 @@
++  MSRC57534_25765392: 25765392
+@@ -2312,0 +2309 @@
++  MSRC57612_25822907: 25822907
+@@ -2316,0 +2314 @@
++  MSRC57682_25841016: 25841016
+@@ -2317,0 +2316,3 @@
++  MSRC57750_25880621: 25880621
++  MSRC57754_25880851: 25880851
++  MSRC57758_26531260: 26531260
+@@ -2318,0 +2320,3 @@
++  MSRC57824_25909567: 25909567
++  MSRC57844_26485548: 26485548
++  MSRC57845_25918508: 25918508
+@@ -2323,0 +2328,5 @@
++  MSRC58677_26388848: 26388848
++  MSRC58837_26484125: 26484125
++  MSRC58999_26599509: 26599509
++  MSRC59241_26833254: 26833254
++  MSRC59266_26837350: 26837350
+@@ -2328 +2336,0 @@
+-  NarrowLayoutOnModernUX: 23881043
+@@ -2355 +2362,0 @@
+-  ProjectedShadow2API: 20380650
+@@ -2356,0 +2364 @@
++  ProximityPairing: 87954621
+@@ -2390 +2397,0 @@
+-  SplitLayoutOnModernUX: 23881110
+@@ -2400 +2407 @@
+-  SuggestionUIOnDesktop: 22529690
++  SuggestionUIOnDesktop: 20438551
