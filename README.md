@@ -21,7 +21,18 @@ While the tool can manipulate Feature states, the Feature itself drives state co
 ## Install
 Installation is not required, however *Mach2* utilizes registration-free COM activation to bring in DIA SDK components so `msdia120.dll` must be present.
 
+## Building from source
+
+If you want to have the latest version of *mach2*, you will need to build it from source code. You only need to have Visual Studio 2017 or newer and Windows 10 SDK 10.0.
+
+### Procedure:
+
+1. Open Visual Studio Developer command prompt
+2. Run `msbuild mach2.sln /m /p:Configuration=Release`
+3. Check the `bin` folder
+
 ## Usage
+
 *Mach2* relies on [CLI11](https://github.com/CLIUtils/CLI11) to provide a canonical command line argument-driven interface. It's recommended you run the tool with `--help` for details on how to use the tool.
 
 ## Testimonials
