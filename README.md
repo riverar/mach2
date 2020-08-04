@@ -23,7 +23,7 @@ Installation is not required, however *Mach2* utilizes registration-free COM act
 
 ## Building from source
 
-If you want to have the latest version of *mach2*, you will need to build it from source code. You only need to have Visual Studio 2017 or newer and Windows 10 SDK 10.0.
+If you want to have the latest version of *mach2*, you will need to build it from source code. You only need to have Visual Studio 2017 or newer and Windows 10 SDK.
 
 ### Procedure:
 
