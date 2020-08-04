@@ -1,6 +1,6 @@
-![](./gfx/usage.png)
+# Mach2
 
-# Mach2 [![Build status](https://ci.appveyor.com/api/projects/status/dd5topy6o4se3v9s/branch/master?svg=true)](https://ci.appveyor.com/project/riverar/mach2/branch/master)
+![](./gfx/usage.png)
 
 *Mach2* manages the Windows Feature Store, where Features (and associated on/off state) live. This store lives in the undocumented Windows Notification Facility (WNF), which provides publish-subscribe messaging for kernel components, system services, and user-space applications.
 
