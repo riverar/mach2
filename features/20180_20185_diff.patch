@@ -1,0 +1,324 @@
+--- V:/20180/features_nosymbols.txt	Wed Jul 29 11:25:43 2020
++++ V:/20185/features_nosymbols.txt	Wed Aug 05 11:38:40 2020
+@@ -117,9 +117,10 @@
+   BreakOnIDDTimeout: 0
+   BrokeredCreateFile2: 0
+   BrowserFramePerfAnalysisImprovements: 0
+-  BrowserSearchDefaultOnSettings: 0
+   BthA2dpAbsoluteVolume: 0
+   BufferCommands: 0
++  BugFix27542030: 0
++  BugFix27658893: 0
+   CAADJCSP: 0
+   CAMETWLogging: 0
+   CDPAFSProdDomainUri: 0
+@@ -250,6 +251,7 @@
+   DataCollection: 0
+   DebugIndexingErrors: 0
+   DeclarativeIsolation: 0
++  DecoupleScoobeFromUpgradeOnLogon: 0
+   DecoupledLanguageAndKeyboardSettings: 0
+   DecreaseTabSuspensionDelay: 0
+   DeepInferno: 0
+@@ -270,7 +272,6 @@
+   DesktopLocationTriggering: 0
+   DesktopToastViewAlwaysShowDismiss: 0
+   DesktopToastViewWithAtrribution: 0
+-  DesktopUniversalSymbolView: 0
+   DetailedAppInv: 0
+   DevEnableValueBannerForMSFTInternal: 0
+   DevModeInternal: 0
+@@ -470,7 +471,6 @@
+   HotPatchSimulation: 0
+   HoverUX: 0
+   HresultsInSyncML: 0
+-  Hub_20H2_Licensebug: 0
+   Hub_20H2_Narratorbug: 0
+   Hub_Subscription: 0
+   Hub_Subscription_Bypass: 0
+@@ -569,7 +569,6 @@
+   MixedRealityCameraAppLaunchXAMLFilePicker: 0
+   MmpcRedirect: 0
+   ModernAppBlocking: 0
+-  ModernUXStyleDesktopTouchKeyboard: 0
+   Modern_Disk_Management_Link: 0
+   Modern_Storage_Spaces_Link: 0
+   ModifiedIndicator: 0
+@@ -649,6 +648,7 @@
+   OpenCLOn12_ForceEnable: 0
+   OpenGLOn12: 0
+   OpenGLOn12_ForceEnable: 0
++  OptimizeEdgePrelaunch: 0
+   P0FileDirectoryBrokering: 0
+   PDF_AnnotationBar: 0
+   PDF_AnnotationBar_TouchWriting: 0
+@@ -770,6 +770,12 @@
+   Scan3D: 0
+   SceSetupOptimization: 0
+   ScheduleDrivenRendering: 0
++  ScoobeDooMLSideloadedFeatures: 0
++  ScoobeEligibilityBasedOnML: 0
++  ScoobeOnCleanInstallNoNetwork: 0
++  ScoobeOnLogonForUpgradedDevices: 0
++  ScoobeSettingsToggle: 0
++  ScoobeToastTriggers: 0
+   ScriptingEngines_AMSI: 0
+   SearchAndCortanaSplit: 0
+   SearchInAllMarkets: 0
+@@ -972,6 +978,7 @@
+   WFDHighChannelAvailability: 0
+   WFD_FirewallPreConfiguration: 0
+   WFD_ForceFirstTimePairing: 0
++  WFD_RtspTcpConnectionParametersSupport: 0
+   WFD_TransportSelection: 0
+   WFD_XboxConnected: 0
+   WFDiagnosticTracing: 0
+@@ -1395,6 +1402,7 @@
+   MSRC52192_21842263: 21842263
+   MSRC52365_21395503: 21395503
+   MSRC52443_22097612: 22097612
++  MSRC52567_22217666: 22217666
+   MSRC52712_22363214: 22363214
+   MSRC52839_22488156: 22488156
+   MSRC52889_22661402: 22661402
+@@ -1453,9 +1461,7 @@
+   MSRC55942_25772602: 25772602
+   MSRC55948_24599853: 24599853
+   MSRC56074_24641601: 24641601
+-  MSRC56078_24642392: 24642392
+   MSRC56086_24648513: 24648513
+-  MSRC56120_24672238: 24672238
+   MSRC56121_24672827: 24672827
+   MSRC56125_24673962: 24673962
+   MSRC56135_24702368: 24702368
+@@ -1464,14 +1470,12 @@
+   MSRC56207_24743076: 24743076
+   MSRC56210_26336176: 26336176
+   MSRC56228_24772330: 24772330
+-  MSRC56245_24777556: 24777556
+   MSRC56263_24789939: 24789939
+   MSRC56274_24798929: 24798929
+   MSRC56288_24805201: 24805201
+   MSRC56298_24817310: 24817310
+   MSRC56347_24861818: 24861818
+   MSRC56393_24879021: 24879021
+-  MSRC56412_24890354: 24890354
+   MSRC56442_24910167: 24910167
+   MSRC56443_24910246: 24910246
+   MSRC56445_24912059: 24912059
+@@ -1497,14 +1501,12 @@
+   MSRC56820_25327791: 25327791
+   MSRC56837_25337544: 25337544
+   MSRC56839_25338013: 25338013
+-  MSRC56853_25353086: 25353086
+   MSRC56861_25354684: 25354684
+   MSRC56874_25360497: 25360497
+   MSRC56881_25370303: 25370303
+   MSRC56882_25370622: 25370622
+   MSRC56896_26193673: 26193673
+   MSRC56903_26340646: 26340646
+-  MSRC56929_25414129: 25414129
+   MSRC56932_25414393: 25414393
+   MSRC56933_26340645: 26340645
+   MSRC56947_25418077: 25418077
+@@ -1525,7 +1527,6 @@
+   MSRC57151_26340634: 26340634
+   MSRC57155_25532060: 25532060
+   MSRC57156_25532273: 25532273
+-  MSRC57186_25551121: 25551121
+   MSRC57207_26290682: 26290682
+   MSRC57210_25565529: 25565529
+   MSRC57212_25565658: 25565658
+@@ -1536,7 +1537,6 @@
+   MSRC57245_26340623: 26340623
+   MSRC57261_25604419: 25604419
+   MSRC57273_25611583: 25611583
+-  MSRC57281_25617180: 25617180
+   MSRC57287_25618146: 25618146
+   MSRC57291_25621702: 25621702
+   MSRC57296_25628273: 25628273
+@@ -1585,7 +1585,6 @@
+   MSRC57711_25877383: 25877383
+   MSRC57737_25879872: 25879872
+   MSRC57742_25880304: 25880304
+-  MSRC57750_25880621: 25880621
+   MSRC57754_25880851: 25880851
+   MSRC57758_26531260: 26531260
+   MSRC57763_25881835: 25881835
+@@ -1596,7 +1595,6 @@
+   MSRC57844_26485548: 26485548
+   MSRC57845_25918508: 25918508
+   MSRC57861_25926863: 25926863
+-  MSRC57864_25930644: 25930644
+   MSRC57865_25931031: 25931031
+   MSRC57874_26529703: 26529703
+   MSRC57877_26529903: 26529903
+@@ -1614,7 +1612,6 @@
+   MSRC58244_26150492: 26150492
+   MSRC58296_26173880: 26173880
+   MSRC58307_26175684: 26175684
+-  MSRC58314_26176171: 26176171
+   MSRC58459_26340289: 26340289
+   MSRC58845_26486198: 26486198
+   MakePowershellTheDefaultConsole: 6527944
+@@ -1762,7 +1759,6 @@
+   ScoobeOnedrive: 16243018
+   ScoobeOutro: 16243039
+   ScoobePhonePairing: 16243009
+-  ScoobeSettingsToggle: 20720716
+   ScoobeWelcome: 16243035
+   ScreenClippingUndockedWCOS: 20782456
+   ScreenSketchApp: 15333788
+@@ -1954,9 +1950,9 @@
+   Hub_FullscreenTap: 18582790
+   Hub_InternalOnly: 14064300
+   Hub_PrelaunchTeams: 17952771
++  JumpListCentWinRTApiItemActivationFix: 25346146
+   MSRC46856_19163095: 19163095
+   MSRC50819_21542341: 21542341
+-  MSRC52567_22217666: 22217666
+   MSRC55394_24365876: 24365876
+   MSRC55401_24381967: 24381967
+   MSRC55644_24486065: 24486065
+@@ -1976,6 +1972,7 @@
+   MSRC58076_26503244: 26503244
+   MSRC58101_26075226: 26075226
+   MSRC58188_26105299: 26105299
++  MSRC58201_26116026: 26116026
+   MSRC58214_26121924: 26121924
+   MSRC58267_26154619: 26154619
+   MSRC58283_26165152: 26165152
+@@ -1987,6 +1984,7 @@
+   MSRC58340_26178496: 26178496
+   MSRC58342_26195832: 26195832
+   MSRC58362_26190270: 26190270
++  MSRC58374_26192076: 26192076
+   MSRC58450_26235133: 26235133
+   MSRC58477_26272648: 26272648
+   MSRC58490_26276049: 26276049
+@@ -1995,14 +1993,19 @@
+   MSRC58622_26366617: 26366617
+   MSRC58661_26385679: 26385679
+   MSRC58736_26421078: 26421078
++  MSRC58788_26503282: 26503282
++  MSRC58811_26503293: 26503293
+   MSRC58879_26505247: 26505247
+   MSRC59025_26620618: 26620618
++  MSRC59094_26696618: 26696618
+   MSRC59121_26724942: 26724942
+   MSRC59139_26725482: 26725482
+   MSRC59174_26776217: 26776217
++  MSRC59177_26760843: 26760843
+   MSRC59279_26844027: 26844027
+   MSRC59313_26884496: 26884496
+   MSRC59337_26918363: 26918363
++  MSRC59340_26918833: 26918833
+   MSRC59388_26981858: 26981858
+   MSRC59389_26982820: 26982820
+   MSRC59898_27565828: 27565828
+@@ -2010,13 +2013,13 @@
+   OpenFileDialogDFS: 27291829
+   OverrideOEMALRCurve: 25376649
+   RedirectSystemControlPanel: 25175482
+-  RemoveHandleDuplicator: 26988359
+   ReportActivationTokenInfoForPackage: 10778748
+   ReportEdgeActivationFailure: 10121720
+   ReportOpenClassesRootFailure: 14501286
+   ScreenClipping_On_HubOS: 15488948
+   Servicing_CortanaStoreOffer_25771992: 25771992
+   Servicing_FingerprintSensorOnKeyboardGlyphs_25587932: 25587932
++  Servicing_RegisterDeviceWithManagementUsingAADDeviceCredentials_27687908: 27168760
+   Servicing_SearchDisableWebSearch_26212727: 26212727
+   Servicing_UnplateMicrosoftEdgeTiles_25482738: 25482738
+   Servicing_ValueBannerUpdate_25271277: 25271277
+@@ -2040,6 +2043,7 @@
+   BTInboundPairingUI: 23402385
+   CaptureExplorerHydrationCallStacks: 14166282
+   CloudStoreDiagnostics: 6624442
++  CollapseSingleTileAppListSuites: 27656058
+   ConnectedFilesCache: 20169383
+   CtrlBackspaceInExplorer: 21207738
+   CxhExpandedWebAppContext: 25416289
+@@ -2049,7 +2053,6 @@
+   DESPersonalizedBrightness: 26088835
+   DES_Monitor_Groups: 23577149
+   DX12_Forced_Playback: 17516455
+-  DecoupleScoobeFromUpgradeOnLogon: 21004556
+   DesktopSplashScreenSuppression_AllApps: 11955489
+   DesktopTouchImprovementDefaultChange: 26469242
+   DesktopUVCMTC: 23403403
+@@ -2080,6 +2083,7 @@
+   Hub_DisableHubBypass: 18866389
+   Hub_EmulationMode: 11424614
+   Hub_HideAutoGuests: 18815522
++  Hub_KeyboardAccessibilityImprovements: 26115690
+   Hub_OOPWVMOTD: 15379026
+   Hub_Test_EnableStressLauncher: 19090473
+   Hub_UndockedSnipping: 24276737
+@@ -2087,7 +2091,6 @@
+   IncrementalRecycleBinEnumeration: 24087738
+   JournalingDisabled: 25576270
+   JumpListActivityHistoryIntegration: 18358352
+-  JumpListCentWinRTApiItemActivationFix: 25346146
+   LivePreviewForTabs: 25478404
+   LockApp_TestHooks_ShowWatermark_Development: 12340236
+   MonitorIoctlTesting: 20125790
+@@ -2104,19 +2107,17 @@
+   SVR_DX12_Rendering: 11537650
+   SVR_PresentAt_PresentationHandler: 15518219
+   ScoobeActivitySyncConsent: 16176534
+-  ScoobeDooMLSideloadedFeatures: 24709006
+-  ScoobeEligibilityBasedOnML: 23059000
+   ScoobeExperimentationPages: 23895822
+   ScoobeMSALossAversion: 23432965
+-  ScoobeOnCleanInstallNoNetwork: 23865426
+-  ScoobeOnLogonForUpgradedDevices: 23877894
+   ScribblePPI: 26881888
++  Servicing_SearchTelemetry_26695203: 26695203
+   SetLockScreenImageAsDesktopBackground: 5458669
+   ShellFODRemoval: 22460125
+   ShellPackageUpdate: 21253981
+   ShowBrowserOnScoobe: 23563673
+   StartUITracelogRecording: 10402319
+   StartupNotification: 25973782
++  SuggestionUIOnDesktop: 20438551
+   SupportInfoTipInNotificationCenter: 6082203
+   SwitchAccessUndockedWCOS: 26241275
+   TSSource_DolbyVisionSupport: 16598050
+@@ -2383,9 +2384,11 @@
+   MSRC59241_26833254: 26833254
+   MSRC59266_26837350: 26837350
+   MSRC59283_26854663: 26854663
++  MSRC59339_26918676: 26918676
+   MSRC59454_27050784: 27050784
+   MSRC59691_27302685: 27302685
+   MSRC59924_27617310: 27617310
++  MSRC59949_27651796: 27651796
+   MaterialPropertiesAPI: 15826297
+   ModernPC_Search_FailFastDebugging: 23585862
+   MsixFlexibleContainers: 19164517
+@@ -2436,7 +2439,6 @@
+   RunawayTextureList: 17486965
+   SVR_GetPresentStats_Rotation: 17716364
+   ScoobeBrowserDecluttering: 24672380
+-  ScoobeToastTriggers: 19864035
+   SearchPerfOptimizations: 23755289
+   SearchUndockExperiment: 22162129
+   SearchUndockTestMocks: 22984368
+@@ -2462,7 +2464,6 @@
+   StereoscopicUwp: 13330426
+   StereoscopicUwpAPI: 11239065
+   SuggestionActivityIndexerAndDataModel: 19349660
+-  SuggestionUIOnDesktop: 20438551
+   SuppressMail: 18687362
+   SurfaceHubLooseDBH: 9112063
+   SuspendPerAppBroker: 10164710
+@@ -2491,6 +2492,8 @@
+   TextIntelligenceExperiments: 11383559
+   TextPrimitive: 18813244
+   TextPrimitiveAPI: 3251313
++  ThemeAwareSplashScreens: 25936164
++  ThemesSyncedImagesDownload: 26007905
+   Threadpool_Hang_Report: 24070885
+   ThumbnailTabs: 17317009
+   TilingWindowManager: 26423941
