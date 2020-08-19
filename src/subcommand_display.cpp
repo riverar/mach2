@@ -36,9 +36,9 @@ void DisplaySubcommand()
         }
         else
         {
-            std::wcout << "  \033[93m";
+            std::wcout << "  ";
         }
-        std::wcout << feature.id() << L" \033[0m";
+        std::wcout << feature.id() << L" ";
         if (feature.variant() != 0)
         {
             std::wcout << L" (variant: " << feature.variant() << L")";

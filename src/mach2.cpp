@@ -25,24 +25,13 @@
 #include "scanner.h"
 #include "cli11.h"
 
-void initialize_console()
-{
-    DWORD console_mode;
-    GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &console_mode);
-    console_mode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
-    if (!SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), console_mode))
-    {
-        throw std::system_error{ HRESULT_FROM_WIN32(GetLastError()), std::system_category(), "Failed to ENABLE_VIRTUAL_TERMINAL_PROCESSING" };
-    }
-}
-
 // CLI11 doesn't support wide-character sets yet
 // https://github.com/CLIUtils/CLI11/issues/14
 //
 int main(int argc, char *argv[], char *)
 {
     std::wcout
-        << L"mach2 0.4 - Feature Control Multi-tool" << std::endl
+        << L"mach2 0.5 - Feature Control Multi-tool" << std::endl
         << L"Copyright (c) Rafael Rivera" << std::endl
         << std::endl
         << L"This program comes with ABSOLUTELY NO WARRANTY." << std::endl
@@ -51,7 +40,6 @@ int main(int argc, char *argv[], char *)
 
     try
     {
-        initialize_console();
         CCoInitialize com_init;
 
         CLI::App app;
