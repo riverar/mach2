@@ -1,6 +1,6 @@
-![](./gfx/usage.png)
+# Mach2
 
-# Mach2 [![Build status](https://ci.appveyor.com/api/projects/status/dd5topy6o4se3v9s/branch/master?svg=true)](https://ci.appveyor.com/project/riverar/mach2/branch/master)
+![](./gfx/usage.png)
 
 *Mach2* manages the Windows Feature Store, where Features (and associated on/off state) live. This store lives in the undocumented Windows Notification Facility (WNF), which provides publish-subscribe messaging for kernel components, system services, and user-space applications.
 
@@ -20,6 +20,16 @@ While the tool can manipulate Feature states, the Feature itself drives state co
 
 ## Install
 Installation is not required, however *Mach2* utilizes registration-free COM activation to bring in DIA SDK components so `msdia120.dll` must be present.
+
+## Building from source
+
+If you want to have the latest version of *Mach2*, you will need to build it from source code. You only need to have Visual Studio 2017 or newer and Windows 10 SDK.
+
+### Procedure:
+
+1. Open Visual Studio Developer command prompt
+2. Run `msbuild mach2.sln /m /p:Configuration=Release`
+3. Check the `bin` folder
 
 ## Usage
 *Mach2* relies on [CLI11](https://github.com/CLIUtils/CLI11) to provide a canonical command line argument-driven interface. It's recommended you run the tool with `--help` for details on how to use the tool.
