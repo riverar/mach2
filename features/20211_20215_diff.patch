@@ -1,0 +1,145 @@
+--- V:/Temp/20211/features_nosymbols.txt	Thu Sep 10 20:52:32 2020
++++ V:/Temp/20215/features_nosymbols.txt	Wed Sep 16 12:05:43 2020
+@@ -41,6 +41,7 @@
+   AdvancedGraphicsSettings: 0
+   AgeBasedAppBlocking: 0
+   AgentActivationRuntimeAPI_AboveLock: 0
++  AllowArbitraryParent: 0
+   AllowDelayStartupDebugging: 0
+   AllowSimulatedCameraPassSecureBioSensorCheck: 0
+   AllowTiptsfExceptions: 0
+@@ -67,6 +68,7 @@
+   ArsoForDesktopDJ: 0
+   Arso_CredGuard: 0
+   ArticulatedHand2DInteraction: 0
++  ArticulatedHandData: 0
+   AskCortanaContext: 0
+   AssignedAccessGlobalProfile: 0
+   AssistGlyphIcon: 0
+@@ -102,6 +104,7 @@
+   BluetoothGattRobustCaching: 0
+   BluetoothHfpHF: 0
+   BluetoothLEAlternativePhySupport_Api: 0
++  BluetoothLEAudioMediaControlServer: 0
+   BluetoothLooselyCoupledPens: 0
+   BluetoothProximityPlatform: 0
+   BluetoothQualification: 0
+@@ -110,6 +113,7 @@
+   Book_Classroom_Annotations_Sharing: 0
+   BooksMockTesting: 0
+   BoostPriorityAlwaysOnViewCreation: 0
++  BootShellBeforeAppReadinessComplete: 0
+   BopomofoOnGIP: 0
+   BoundlessMesh: 0
+   BreakOnIDDTimeout: 0
+@@ -299,6 +303,7 @@
+   DeviceMetadata_CombinedQuery: 0
+   DiagnosticAppStateControl: 0
+   DigitsSubstitutionSetting: 0
++  DirectManipulationEvents: 0
+   DisableAppcontainerFixups: 0
+   DisableCRC32: 0
+   DisableHologramPersistence: 0
+@@ -387,6 +392,7 @@
+   FailFastOnSharingViolation: 0
+   FailFastOnSuspend: 0
+   FailFastTreeParent: 0
++  FakeArticulatedHands: 0
+   FamilyAppUsageTracking: 0
+   FamilyAppUsageTrackingAutoStart: 0
+   FamilySettingsAwareness: 0
+@@ -498,6 +504,7 @@
+   HvciIncompatibleApps: 0
+   HvciIncompatibleDrivers: 0
+   HvciRollback: 0
++  IAMAndWECDeadlockMitigation: 0
+   IE_SETTINGSYNCMIGRATION_FAVORITES: 0
+   IFrameLifetimeManagement: 0
+   IPPoverUSB: 0
+@@ -544,6 +551,7 @@
+   KeyRectForSpaceAndOthers: 0
+   KeyRectFromStandardKeyboard: 0
+   KeyboardButtonAlwaysInvoke: 0
++  KeyboardEnhancedTelemetry: 0
+   KioskPositioner: 0
+   KryptonSoftLargePages: 0
+   LSA_SynchronousProfileLoaded: 0
+@@ -833,13 +841,19 @@
+   SettingsPhoneL2: 0
+   SettingsStoreChange: 0
+   SevSnp: 0
++  ShaderModel66Release: 0
+   ShareOnPdf: 0
+   ShareTargetDisplayName: 0
+   SharedPCCSPImprovements: 0
+   SharedPCOneDrive: 0
+   ShellExecuteRedirection: 0
++  ShellEyeCursor: 0
++  ShellEyeTargeting: 0
+   ShellLauncherRepository: 0
++  ShellOneHandedSystemGesture: 0
+   ShellScalingCacheOCTValidation: 0
++  ShellSmoothHandInput: 0
++  ShellTwoHandedSystemGesture: 0
+   ShortWatchdogTimer: 0
+   ShowBrowserOnValueBanner: 0
+   ShowInstallationStatusSettingsApp: 0
+@@ -952,6 +966,7 @@
+   UsageAPI_MultipleInstances: 0
+   Usage_Tracking_FaceAuthentication: 0
+   UseComThreadingInAccessibilityView: 0
++  UseD3D12HologramCompositorPipeline: 0
+   UseDDisplayOutputOnSydney: 0
+   UseDDisplayPlaneInMirage: 0
+   UseEyeGazeForGazeCursor: 0
+@@ -964,6 +979,7 @@
+   UseWinML: 0
+   UserActivityGroupSync: 0
+   UserManagerUserPicture: 0
++  UserMgrBasedWlidsvcProcessLogon: 0
+   UserSwitchTokenSwap: 0
+   UtcHostAgentTransportControl: 0
+   VMComputeBrokerProcess: 0
+@@ -1539,7 +1555,6 @@
+   MSRC57494_25722677: 25722677
+   MSRC57498_25723431: 25723431
+   MSRC57503_25726631: 25726631
+-  MSRC57534_25765392: 25765392
+   MSRC57535_26520534: 26520534
+   MSRC57551_26520533: 26520533
+   MSRC57555_25772095: 25772095
+@@ -1548,8 +1563,6 @@
+   MSRC57585_25806212: 25806212
+   MSRC57619_25825435: 25825435
+   MSRC57632_25826906: 25826906
+-  MSRC57641_25830019: 25830019
+-  MSRC57650_25835300: 25835300
+   MSRC57666_25691464: 25691464
+   MSRC57671_25839967: 25839967
+   MSRC57676_25840548: 25840548
+@@ -2047,6 +2060,9 @@
+   MSRC59780_27456635: 27456635
+   MSRC59898_27565828: 27565828
+   MSRC59961_27659113: 27659113
++  MSRC60274_28511348: 28511348
++  MSRC60531_28416657: 28416657
++  MSRC60582_28507116: 28507116
+   MeetNow_CreateButtonText: 28758888
+   MeetNow_Description: 28622680
+   MeetNow_SkypeLaunchPolicyCheck: 28622690
+@@ -2326,7 +2342,6 @@
+   ExpressiveInput_FlagsFontPackage: 15380572
+   ExpressiveInput_SpaceColon: 18464624
+   EyeTracking_LaunchpadHide: 16371697
+-  FHL2018WebsiteSharing: 19415061
+   FaceClientEnrollmentExperience: 14218496
+   FailFastOnIncorrectServiceRefCounting: 18505660
+   FailFastOnRecoverableUnifiedTileModelFailures: 10011417
+@@ -2430,6 +2445,7 @@
+   MSRC57163_25534092: 25534092
+   MSRC57712_27682885: 27682885
+   MSRC58778_26425742: 26425742
++  MSRC59629_27262365: 27262365
+   MSRC59924_27617310: 27617310
+   MSRC59963_27690723: 27690723
+   MSRC60068_27831791: 27831791
