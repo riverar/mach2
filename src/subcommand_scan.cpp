@@ -21,18 +21,17 @@
 #include "wnf.h"
 #include "scanner.h"
 
-void SymbolProcessingCallback(const std::wstring& symbol_path)
+void SymbolProcessingCallback(const std::wstring& prefix, const std::wstring& path)
 {
-    std::wstring display_text = L"Scanning: ";
     wchar_t compact_path[MAX_PATH];
 
     CONSOLE_SCREEN_BUFFER_INFO console_info;
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &console_info);
 
-    std::uint32_t max_chars_for_path = console_info.dwSize.X - static_cast<uint32_t>(display_text.length()) - sizeof('\r');
-    if (PathCompactPathExW(compact_path, symbol_path.c_str(), max_chars_for_path, /* dwFlags */ 0))
+    std::uint32_t max_chars_for_path = console_info.dwSize.X - static_cast<uint32_t>(prefix.length()) - sizeof('\r');
+    if (PathCompactPathExW(compact_path, path.c_str(), max_chars_for_path, /* dwFlags */ 0))
     {
-        std::wcout << L"Scanning: " << std::left << std::setw(max_chars_for_path) << compact_path << '\r' << std::flush;
+        std::wcout << prefix << std::left << std::setw(max_chars_for_path) << compact_path << '\r' << std::flush;
     }
 }
 
@@ -65,8 +64,8 @@ void WriteFeatureMapToScreen(const mach2::Scanner::Features& features, bool omit
                 else
                 {
                     std::wcout << L"  " << feature->Name << L": " << feature->Id << std::endl;
-                    for (auto& symbol_path : feature->SymbolPaths)
-                        std::wcout << L"  # " << symbol_path << std::endl;
+                    for (auto& symbol : feature->Symbols)
+                        std::wcout << L"  # " << symbol.Path << std::endl;
                 }
                 std::wcout << std::endl;
             }
@@ -94,8 +93,8 @@ void WriteFeatureMapToFile(const mach2::Scanner::Features& features, const std::
                 if (!omit_symbol_hits)
                 {
                     wide_output_stream << std::endl;
-                    for (auto& symbol_path : feature->SymbolPaths)
-                        wide_output_stream << L"  # " << symbol_path << std::endl;
+                    for (auto& symbol : feature->Symbols)
+                        wide_output_stream << L"  # " << symbol.Path << std::endl;
                 }
                 wide_output_stream << std::endl;
             }
@@ -106,22 +105,27 @@ void WriteFeatureMapToFile(const mach2::Scanner::Features& features, const std::
     wide_output_stream.close();
 }
 
-void ScanSubcommand(const std::string& symbols_path, const std::string& output_path, bool omit_symbol_hits)
+void ScanSubcommand(const std::string& symbols_path, const std::string& output_path, const std::string& image_path, bool omit_symbol_hits, bool use_capstone)
 {
     try
     {
         bool writing_to_file = false;
-        std::wstring wide_symbols_path = StringToWideString(symbols_path);
+        std::wstring wide_symbols_path = GetLongAbsolutePath(StringToWideString(symbols_path));
+        std::wstring wide_image_path = GetLongAbsolutePath(StringToWideString(image_path));
         std::wstring wide_output_path;
         if (!output_path.empty())
         {
             writing_to_file = true;
-            wide_output_path = StringToWideString(output_path);
+            wide_output_path = GetLongAbsolutePath(StringToWideString(output_path));
         }
 
         mach2::Scanner scanner;
         scanner.SetCallback(SymbolProcessingCallback);
         auto feature_map = scanner.GetFeaturesFromSymbolsAtPath(wide_symbols_path);
+        if (use_capstone)
+        {
+            scanner.GetMissingFeatureIdsFromImagesAtPath(feature_map, wide_symbols_path, wide_image_path);
+        }
         ClearConsoleProgress();
 
         if (writing_to_file)
