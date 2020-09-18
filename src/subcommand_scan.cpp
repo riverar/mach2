@@ -21,17 +21,18 @@
 #include "wnf.h"
 #include "scanner.h"
 
-void SymbolProcessingCallback(const std::wstring& prefix, const std::wstring& path)
+void SymbolProcessingCallback(const std::wstring& path)
 {
+    std::wstring display_text = L"Scanning: ";
     wchar_t compact_path[MAX_PATH];
 
     CONSOLE_SCREEN_BUFFER_INFO console_info;
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &console_info);
 
-    std::uint32_t max_chars_for_path = console_info.dwSize.X - static_cast<uint32_t>(prefix.length()) - sizeof('\r');
+    std::uint32_t max_chars_for_path = console_info.dwSize.X - static_cast<uint32_t>(display_text.length()) - sizeof('\r');
     if (PathCompactPathExW(compact_path, path.c_str(), max_chars_for_path, /* dwFlags */ 0))
     {
-        std::wcout << prefix << std::left << std::setw(max_chars_for_path) << compact_path << '\r' << std::flush;
+        std::wcout << display_text << std::left << std::setw(max_chars_for_path) << compact_path << '\r' << std::flush;
     }
 }
 

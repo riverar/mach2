@@ -40,11 +40,11 @@ void mach2::Scanner::SetCallback(Callback const &callback)
     _callback = callback;
 }
 
-void mach2::Scanner::ExecuteCallback(std::wstring const& prefix, std::wstring const& path)
+void mach2::Scanner::ExecuteCallback(std::wstring const& path)
 {
     if (_callback)
     {
-        _callback(prefix, path);
+        _callback(path);
     }
 }
 
@@ -64,17 +64,17 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
                     std::filesystem::path symbols_path(symbol_path_root);
                     symbols_path /= find_data.cFileName;
 
-                    ExecuteCallback(L"Scanning: ", symbols_path);
+                    ExecuteCallback(symbols_path);
                     InternalGetFeaturesFromSymbolsAtPath(symbols_path, features);
                 }
                 else
                 {
-                    if (current_file.extension() == L".pdb")
+                    if (_wcsnicmp(current_file.extension().c_str(), L".pdb", 4) == 0)
                     {
                         std::filesystem::path pdb_path(symbol_path_root);
                         pdb_path /= find_data.cFileName;
 
-                        ExecuteCallback(L"Scanning: ", pdb_path);
+                        ExecuteCallback(pdb_path);
                         GetFeaturesFromSymbolAtPath(pdb_path, features);
                     }
                 }
@@ -95,7 +95,12 @@ mach2::Scanner::SymbolHitType mach2::Scanner::GetSymbolHitTypeFromSymbolName(std
     {
         return mach2::Scanner::SymbolHitType::Stage;
     }
-    else if (symbolName.find(L"GetCurrentFeatureEnabledState") != std::wstring::npos || symbolName.find(L"GetCachedFeatureEnabledState") != std::wstring::npos)
+    else if (
+        symbolName.find(L"GetCurrentFeatureEnabledState") != std::wstring::npos ||
+        symbolName.find(L"GetCachedFeatureEnabledState") != std::wstring::npos ||
+        symbolName.find(L"GetCurrentVariantState") != std::wstring::npos ||
+        symbolName.find(L"GetCachedVariantState") != std::wstring::npos ||
+        symbolName.find(L"ReportUsage") != std::wstring::npos)
     {
         return mach2::Scanner::SymbolHitType::FeatureGetter;
     }
@@ -263,17 +268,20 @@ void mach2::Scanner::InternalGetMissingFeatureIdsFromImagesAtPath(mach2::Scanner
                     std::filesystem::path image_subpath(image_path_root);
                     image_subpath /= find_data.cFileName;
                     
-                    ExecuteCallback(L"Scanning: ", image_subpath);
+                    ExecuteCallback(image_subpath);
                     InternalGetMissingFeatureIdsFromImagesAtPath(features, image_subpath);
                 }
                 else
                 {
-                    if (current_file.extension() == L".dll" || current_file.extension() == L".exe")
+                    if ((_wcsnicmp(current_file.extension().c_str(), L".dll", 4) == 0) || 
+                        (_wcsnicmp(current_file.extension().c_str(), L".exe", 4) == 0) ||
+                        (_wcsnicmp(current_file.extension().c_str(), L".cpl", 4) == 0) ||
+                        (_wcsnicmp(current_file.extension().c_str(), L".scr", 4) == 0))
                     {
                         std::filesystem::path image_path(image_path_root);
                         image_path /= find_data.cFileName;
 
-                        ExecuteCallback(L"Scanning: ", image_path);
+                        ExecuteCallback(image_path);
                         GetMissingFeatureIdsFromImageAtPath(image_path, features);
                     }
                 }
@@ -326,7 +334,8 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                     for (auto const& getter_relative_address : feature->GetterRvasBySignature[signature])
                     {
                         auto function_ptr = ImageRvaToVa(headers, file_view, getter_relative_address, nullptr);
-                        constexpr auto CODE_SAMPLE_SIZE = 512;
+                        const auto CODE_SAMPLE_SIZE = 512;
+                        const auto VELOCITY_ID_MINIMUM = 10000;
                         if (function_ptr == nullptr || IsBadReadPtr(function_ptr, CODE_SAMPLE_SIZE))
                         {
                             continue;
@@ -341,7 +350,7 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                             if (std::string(instructions[i].mnemonic) == "mov" && x86.operands[0].reg == X86_REG_ECX && x86.operands[1].type == X86_OP_IMM)
                             {
                                 auto immediate_value = instructions[i].detail->x86.operands[1].imm;
-                                if (immediate_value > 1000000)
+                                if (immediate_value >= VELOCITY_ID_MINIMUM)
                                 {
                                     ecx = immediate_value;
                                 }

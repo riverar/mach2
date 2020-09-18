@@ -93,7 +93,7 @@ namespace mach2
         };
 
         static const std::vector<FeatureStage> FeatureStages;
-        typedef std::function<void(std::wstring const&, std::wstring const&)> Callback;
+        typedef std::function<void(std::wstring const&)> Callback;
 
         Features GetFeaturesFromSymbolsAtPath(std::wstring const &path);
         void SetCallback(Callback const& callback);
@@ -101,7 +101,7 @@ namespace mach2
     private:
         Callback _callback;
 
-        void ExecuteCallback(std::wstring const& prefix, std::wstring const& path);
+        void ExecuteCallback(std::wstring const& path);
         std::wstring GetFeatureNameFromSymbolName(std::wstring const &symbolName);
         void GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::Features &features);
         void InternalGetMissingFeatureIdsFromImagesAtPath(mach2::Scanner::Features& features, std::wstring const& image_path);
