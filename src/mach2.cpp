@@ -23,7 +23,7 @@
 #include "feature_config.h"
 #include "feature_manager.h"
 #include "scanner.h"
-#include "cli11.h"
+#include "CLI/CLI.hpp"
 
 // CLI11 doesn't support wide-character sets yet
 // https://github.com/CLIUtils/CLI11/issues/14
@@ -31,7 +31,7 @@
 int main(int argc, char *argv[], char *)
 {
     std::wcout
-        << L"mach2 0.5 - Feature Control Multi-tool" << std::endl
+        << L"mach2 0.6 - Feature Control Multi-tool" << std::endl
         << L"Copyright (c) Rafael Rivera" << std::endl
         << std::endl
         << L"This program comes with ABSOLUTELY NO WARRANTY." << std::endl
@@ -47,19 +47,24 @@ int main(int argc, char *argv[], char *)
 
         std::string symbol_path;
         std::string output_path;
+        std::string image_path;
         auto scan = app.add_subcommand("scan", "Scan the provided path for symbols (*.pdb) and print any features found")
             ->group("Feature Discovery");
         scan->add_option("path", symbol_path, "Path to symbols")
             ->required()
             ->check(CLI::ExistingDirectory);
+        scan->add_option("-i,--image-path", image_path, "Path to executable images")
+            ->check(CLI::ExistingDirectory);
         scan->add_option("-o,--output", output_path, "Output results to file at <path>");
         scan->add_flag("-s,--strip-paths", "Strip symbol paths from output (makes diffing easier)")
-            ->requires("-o");
-        scan->set_callback([&]() { ScanSubcommand(symbol_path, output_path, scan->count("-s") > 0); });
+            ->needs("-o");
+        scan->add_flag("-u,--use-capstone")
+            ->needs("-i");
+        scan->callback([&]() { ScanSubcommand(symbol_path, output_path, image_path, scan->count("-s") > 0, scan->count("--use-capstone") > 0); });
 
         app.add_subcommand("display", "Display configured features on the local machine")
             ->group("Feature Management")
-            ->set_callback([&]() { DisplaySubcommand(); });
+            ->callback([&]() { DisplaySubcommand(); });
 
         std::uint32_t feature_ids;
         std::uint32_t variants;
@@ -68,20 +73,20 @@ int main(int argc, char *argv[], char *)
         enable->add_option("featureId", feature_ids)
             ->required();
         enable->add_option("-v,--variant", variants, "Set feature variant(s)")
-            ->set_default_val("0");
-        enable->set_callback([&]() { SetSubcommand(feature_ids, mach2::wil_FeatureStage::EnabledByDefault, variants, true); });
+            ->default_val("0");
+        enable->callback([&]() { SetSubcommand(feature_ids, mach2::wil_FeatureStage::EnabledByDefault, variants, true); });
 
         auto disable = app.add_subcommand("disable", "Disable feature on the local machine")
             ->group("Feature Management");
         disable->add_option("featureId", feature_ids)
             ->required();
-        disable->set_callback([&]() { SetSubcommand(feature_ids, mach2::wil_FeatureStage::DisabledByDefault, variants, true); });
+        disable->callback([&]() { SetSubcommand(feature_ids, mach2::wil_FeatureStage::DisabledByDefault, variants, true); });
 
         auto revert = app.add_subcommand("revert", "Revert feature to default configuration on the local machine")
             ->group("Feature Management");
         revert->add_option("featureId", feature_ids)
             ->required();
-        revert->set_callback([&]() { SetSubcommand(feature_ids, mach2::wil_FeatureStage::AlwaysDisabled /* ignored */, variants, false); });
+        revert->callback([&]() { SetSubcommand(feature_ids, mach2::wil_FeatureStage::AlwaysDisabled /* ignored */, variants, false); });
 
         CLI11_PARSE(app, argc, argv);
     }

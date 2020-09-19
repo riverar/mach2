@@ -18,8 +18,13 @@
 
 #include "common.h"
 #include "scanner.h"
+#include "pdb.h"
+#include "pe.h"
 #include <dia2.h>
+#include "dia2_internal.h"
 #include <diacreate.h>
+#include <capstone/capstone.h>
+#include <DbgHelp.h>
 
 const std::vector<mach2::Scanner::FeatureStage> mach2::Scanner::FeatureStages
 {
@@ -35,11 +40,11 @@ void mach2::Scanner::SetCallback(Callback const &callback)
     _callback = callback;
 }
 
-void mach2::Scanner::ExecuteCallback(std::wstring const &pdb_path)
+void mach2::Scanner::ExecuteCallback(std::wstring const& path)
 {
     if (_callback)
     {
-        _callback(pdb_path);
+        _callback(path);
     }
 }
 
@@ -59,11 +64,12 @@ void mach2::Scanner::InternalGetFeaturesFromSymbolsAtPath(std::wstring const &sy
                     std::filesystem::path symbols_path(symbol_path_root);
                     symbols_path /= find_data.cFileName;
 
+                    ExecuteCallback(symbols_path);
                     InternalGetFeaturesFromSymbolsAtPath(symbols_path, features);
                 }
                 else
                 {
-                    if (current_file.extension() == L".pdb")
+                    if (_wcsnicmp(current_file.extension().c_str(), L".pdb", 4) == 0)
                     {
                         std::filesystem::path pdb_path(symbol_path_root);
                         pdb_path /= find_data.cFileName;
@@ -88,6 +94,15 @@ mach2::Scanner::SymbolHitType mach2::Scanner::GetSymbolHitTypeFromSymbolName(std
     else if (symbolName.find(L"::stage") != std::wstring::npos)
     {
         return mach2::Scanner::SymbolHitType::Stage;
+    }
+    else if (
+        symbolName.find(L"GetCurrentFeatureEnabledState") != std::wstring::npos ||
+        symbolName.find(L"GetCachedFeatureEnabledState") != std::wstring::npos ||
+        symbolName.find(L"GetCurrentVariantState") != std::wstring::npos ||
+        symbolName.find(L"GetCachedVariantState") != std::wstring::npos ||
+        symbolName.find(L"ReportUsage") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::FeatureGetter;
     }
     else
     {
@@ -119,12 +134,18 @@ std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &sy
 
 void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::Features &features)
 {
-    CComPtr<IDiaDataSource> data_source;
+    CComPtr<IDiaDataSource10> data_source;
     ThrowIfFailed(NoRegCoCreate(L"msdia140.dll", CLSID_DiaSource, IID_PPV_ARGS(&data_source)));
     ThrowIfFailed(data_source->loadDataFromPdb(path.c_str()));
 
     CComPtr<IDiaSession> session;
     ThrowIfFailed(data_source->openSession(&session));
+    
+    PDB1* raw_pdb;
+    ThrowIfFailed(data_source->getRawPDBPtr(reinterpret_cast<void**>(&raw_pdb)));
+    
+    GUID signature;
+    ThrowIf(raw_pdb->QuerySignature2(&signature) == FALSE);
 
     CComPtr<IDiaSymbol> root_symbol;
     ThrowIfFailed(session->get_globalScope(&root_symbol));
@@ -190,7 +211,32 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
             }
         }
 
-        feature.SymbolPaths.insert(path);
+        feature.Symbols.emplace(path, signature);
+
+        if (hit_type == Scanner::SymbolHitType::FeatureGetter) 
+        {
+            DWORD location_type;
+            ThrowIfFailed(feature_symbol_hit->get_locationType(&location_type));
+            if (location_type == LocationType::LocIsStatic)
+            {
+                DWORD rva;
+                auto hr = feature_symbol_hit->get_relativeVirtualAddress(&rva);
+                ThrowIfFailed(hr);
+                if (hr == S_OK)
+                {
+                    feature.GetterRvasBySignature[signature].insert(rva);
+                }
+            }
+        }
+    }
+
+    for (auto unresolved_feature_entry : features.FeaturesByStage[FeatureStage::Unknown])
+    {
+        auto unresolved_feature = unresolved_feature_entry.second;
+        for (auto const& getter : unresolved_feature->GetterRvasBySignature)
+        {
+            features.FeaturesByGetterSymbolSignature[getter.first].insert(unresolved_feature);
+        }
     }
 
     assert(features.FeaturesByName.size() == (
@@ -199,4 +245,140 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
         features.FeaturesByStage[FeatureStage::AlwaysEnabled].size() +
         features.FeaturesByStage[FeatureStage::DisabledByDefault].size() +
         features.FeaturesByStage[FeatureStage::EnabledByDefault].size()));
+}
+
+void mach2::Scanner::GetMissingFeatureIdsFromImagesAtPath(mach2::Scanner::Features& features, std::wstring const& symbol_path_root, std::wstring const& image_path_root)
+{
+    return InternalGetMissingFeatureIdsFromImagesAtPath(features, image_path_root);
+}
+
+void mach2::Scanner::InternalGetMissingFeatureIdsFromImagesAtPath(mach2::Scanner::Features& features, std::wstring const& image_path_root)
+{
+    WIN32_FIND_DATA find_data = {};
+    auto find_handle = FindFirstFileEx((image_path_root + L"\\*.*").c_str(), FindExInfoBasic, &find_data, FindExSearchNameMatch, nullptr, FIND_FIRST_EX_LARGE_FETCH);
+    if (find_handle != INVALID_HANDLE_VALUE)
+    {
+        do
+        {
+            std::filesystem::path current_file(find_data.cFileName);
+            if (current_file != L"." && current_file != L"..")
+            {
+                if (find_data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+                {
+                    std::filesystem::path image_subpath(image_path_root);
+                    image_subpath /= find_data.cFileName;
+                    
+                    ExecuteCallback(image_subpath);
+                    InternalGetMissingFeatureIdsFromImagesAtPath(features, image_subpath);
+                }
+                else
+                {
+                    if ((_wcsnicmp(current_file.extension().c_str(), L".dll", 4) == 0) || 
+                        (_wcsnicmp(current_file.extension().c_str(), L".exe", 4) == 0) ||
+                        (_wcsnicmp(current_file.extension().c_str(), L".cpl", 4) == 0) ||
+                        (_wcsnicmp(current_file.extension().c_str(), L".scr", 4) == 0))
+                    {
+                        std::filesystem::path image_path(image_path_root);
+                        image_path /= find_data.cFileName;
+
+                        ExecuteCallback(image_path);
+                        GetMissingFeatureIdsFromImageAtPath(image_path, features);
+                    }
+                }
+            }
+        } while (FindNextFile(find_handle, &find_data));
+
+        FindClose(find_handle);
+    }
+}
+
+void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& image_path, mach2::Scanner::Features& features)
+{
+    auto file_handle = CreateFile(image_path.c_str(), GENERIC_READ, FILE_SHARE_READ, nullptr, OPEN_EXISTING, 0, nullptr);
+    ThrowIfInvalidHandle(file_handle);
+
+    auto file_mapping = CreateFileMapping(file_handle, nullptr, PAGE_READONLY, 0, 0, nullptr);
+    ThrowIfInvalidHandle(file_mapping);
+
+    auto file_view = MapViewOfFile(file_mapping, FILE_MAP_READ, 0, 0, 0);
+    ThrowIf(file_view == nullptr);
+
+    auto headers = ImageNtHeader(file_view);
+    if (headers != nullptr)
+    {
+        if (headers->OptionalHeader.Magic == IMAGE_NT_OPTIONAL_HDR64_MAGIC)
+        {
+            GUID signature{};
+            auto debug_entry = headers->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_DEBUG];
+            if (debug_entry.Size > 0)
+            {
+                auto debug_directory = static_cast<PIMAGE_DEBUG_DIRECTORY>(ImageRvaToVa(headers, file_view, debug_entry.VirtualAddress, nullptr));
+                if (debug_directory->Type == IMAGE_DEBUG_TYPE_CODEVIEW)
+                {
+                    auto pdb_file_info = static_cast<PdbFileInfo*>(ImageRvaToVa(headers, file_view, debug_directory->AddressOfRawData, nullptr));
+                    if (pdb_file_info->magic == PDB_FILE_INFO_MAGIC)
+                    {
+                        signature = pdb_file_info->signature;
+                    }
+                }
+            }
+
+            if (!IsEqualGUID(signature, GUID{}))
+            {
+                csh handle;
+                ThrowIf(cs_open(CS_ARCH_X86, CS_MODE_64, &handle) != CS_ERR_OK);
+                ThrowIf(cs_option(handle, CS_OPT_DETAIL, CS_OPT_ON) != CS_ERR_OK);
+
+                for (auto feature : features.FeaturesByGetterSymbolSignature[signature])
+                {
+                    for (auto const& getter_relative_address : feature->GetterRvasBySignature[signature])
+                    {
+                        auto function_ptr = ImageRvaToVa(headers, file_view, getter_relative_address, nullptr);
+                        const auto CODE_SAMPLE_SIZE = 512;
+                        const auto VELOCITY_ID_MINIMUM = 10000;
+                        if (function_ptr == nullptr || IsBadReadPtr(function_ptr, CODE_SAMPLE_SIZE))
+                        {
+                            continue;
+                        }
+                        cs_insn* instructions;
+                        auto instruction_count = cs_disasm(handle, static_cast<uint8_t*>(function_ptr), CODE_SAMPLE_SIZE, 0, 0, &instructions);
+
+                        int64_t ecx = 0;
+                        for (int i = 0; i < instruction_count; i++)
+                        {
+                            auto x86 = instructions[i].detail->x86;
+                            if (std::string(instructions[i].mnemonic) == "mov" && x86.operands[0].reg == X86_REG_ECX && x86.operands[1].type == X86_OP_IMM)
+                            {
+                                auto immediate_value = instructions[i].detail->x86.operands[1].imm;
+                                if (immediate_value >= VELOCITY_ID_MINIMUM)
+                                {
+                                    ecx = immediate_value;
+                                }
+                            }
+                            if (std::string(instructions[i].mnemonic) == "call" && ecx != 0)
+                            {
+                                break;
+                            }
+                            if (std::string(instructions[i].mnemonic) == "ret")
+                            {
+                                break;
+                            }
+                        }
+                        cs_free(instructions, instruction_count);
+                        if (ecx)
+                        {
+                            feature->Id = ecx;
+                            break;
+                        }
+                    }
+                }
+
+                ThrowIf(cs_close(&handle) != CS_ERR_OK);
+            }
+        }
+    }
+
+    UnmapViewOfFile(file_view);    
+    CloseHandle(file_mapping);
+    CloseHandle(file_handle);
 }

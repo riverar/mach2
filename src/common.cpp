@@ -42,6 +42,14 @@ void ThrowIfInvalidHandle(HANDLE h)
     }
 }
 
+void ThrowIf(bool b)
+{
+    if (b)
+    {
+        throw std::system_error{ false, std::system_category() };
+    }
+}
+
 std::wstring StringToWideString(const std::string& string)
 {
     std::wstring wideString;
@@ -56,4 +64,19 @@ std::wstring StringToWideString(const std::string& string)
     }
 
     return wideString;
+}
+
+std::wstring GetLongAbsolutePath(const std::wstring& path)
+{
+    auto chars_required = GetFullPathName(path.c_str(), 0, nullptr, nullptr);
+    ThrowIf(chars_required == 0);
+    
+    std::wstring buffer;
+    buffer.resize(chars_required);
+    auto chars_copied = GetFullPathName(path.c_str(), chars_required, buffer.data(), nullptr);
+    ThrowIf(chars_copied == 0);
+
+    buffer.resize(chars_copied);
+    buffer.insert(0, L"\\\\?\\");
+    return buffer;
 }

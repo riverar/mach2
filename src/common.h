@@ -47,10 +47,12 @@
 
 #define NT_ERROR(Status) ((((ULONG)(Status)) >> 30) == 3)
 
+void ThrowIf(bool b);
 void ThrowIfFailed(HRESULT hr);
 void ThrowIfNtFailed(NTSTATUS ntstatus);
 void ThrowIfInvalidHandle(HANDLE h);
 std::wstring StringToWideString(const std::string& string);
+std::wstring GetLongAbsolutePath(const std::wstring& path);
 
 class CCoInitialize
 {
