@@ -104,6 +104,8 @@ namespace mach2
         void ExecuteCallback(std::wstring const& path);
         std::wstring GetFeatureNameFromSymbolName(std::wstring const &symbolName);
         void GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::Features &features);
+        bool HasDuplicateFeatureWithId(std::int64_t featureId, std::wstring& featureName, mach2::Scanner::Features& features);
+        std::wstring GetUniqueNameForDuplicateFeature(mach2::Scanner::Feature& feature, mach2::Scanner::Features& features);
         void InternalGetMissingFeatureIdsFromImagesAtPath(mach2::Scanner::Features& features, std::wstring const& image_path);
         void GetMissingFeatureIdsFromImageAtPath(std::wstring const& path, mach2::Scanner::Features& features);
         void InternalGetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path, mach2::Scanner::Features &features);

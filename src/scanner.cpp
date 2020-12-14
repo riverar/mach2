@@ -176,6 +176,14 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
         {
             CComVariant id_value;
             ThrowIfFailed(feature_symbol_hit->get_value(&id_value));
+
+            if (feature.Id != id_value.lVal && feature.Id != 0)
+            {
+                auto unique_name = GetUniqueNameForDuplicateFeature(feature, features);
+                feature = features.FeaturesByName[unique_name];
+                feature.Name = unique_name;
+                features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
+            }
             feature.Id = id_value.lVal;
         }
 
@@ -230,7 +238,7 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
         }
     }
 
-    for (auto unresolved_feature_entry : features.FeaturesByStage[FeatureStage::Unknown])
+    for (auto& unresolved_feature_entry : features.FeaturesByStage[FeatureStage::Unknown])
     {
         auto unresolved_feature = unresolved_feature_entry.second;
         for (auto const& getter : unresolved_feature->GetterRvasBySignature)
@@ -245,6 +253,32 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
         features.FeaturesByStage[FeatureStage::AlwaysEnabled].size() +
         features.FeaturesByStage[FeatureStage::DisabledByDefault].size() +
         features.FeaturesByStage[FeatureStage::EnabledByDefault].size()));
+}
+
+bool mach2::Scanner::HasDuplicateFeatureWithId(std::int64_t featureId, std::wstring& featureName, mach2::Scanner::Features& features)
+{
+    for (int i = 0; i < 10; i++)
+    {
+        auto candidate = (featureName + L"|mach2.warning.duplicate") + std::to_wstring(i);
+        if (features.FeaturesByName.find(candidate) != features.FeaturesByName.end())
+        {
+            return features.FeaturesByName[candidate].Id == featureId;
+        }
+    }
+    return false;
+}
+
+std::wstring mach2::Scanner::GetUniqueNameForDuplicateFeature(mach2::Scanner::Feature& feature, mach2::Scanner::Features& features)
+{
+    for (int i = 0; i < 10; i++)
+    {
+        auto candidate = (feature.Name + L"|mach2.warning.duplicate") + std::to_wstring(i);
+        if (features.FeaturesByName.find(candidate) == features.FeaturesByName.end())
+        {
+            return candidate;
+        }
+    }
+    return nullptr;
 }
 
 void mach2::Scanner::GetMissingFeatureIdsFromImagesAtPath(mach2::Scanner::Features& features, std::wstring const& symbol_path_root, std::wstring const& image_path_root)
@@ -342,8 +376,7 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                         }
                         cs_insn* instructions;
                         auto instruction_count = cs_disasm(handle, static_cast<uint8_t*>(function_ptr), CODE_SAMPLE_SIZE, 0, 0, &instructions);
-
-                        int64_t ecx = 0;
+                        std::int64_t ecx = 0;
                         for (int i = 0; i < instruction_count; i++)
                         {
                             auto x86 = instructions[i].detail->x86;
@@ -365,10 +398,26 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                             }
                         }
                         cs_free(instructions, instruction_count);
-                        if (ecx)
+
+                        if (ecx >= VELOCITY_ID_MINIMUM)
                         {
-                            feature->Id = ecx;
-                            break;
+                            if (feature->Id != 0 && feature->Id != ecx)
+                            {
+                                if (HasDuplicateFeatureWithId(ecx, feature->Name, features))
+                                    continue;
+
+                                auto unique_name = GetUniqueNameForDuplicateFeature(*feature, features);
+                                auto& new_feature = features.FeaturesByName[unique_name];
+                                features.FeaturesByStage[FeatureStage::Unknown][unique_name] = &new_feature;
+                                new_feature.Name = unique_name;
+                                new_feature.Id = ecx;
+                                new_feature.Symbols = feature->Symbols;
+                            }
+                            else
+                            {
+                                feature->Id = ecx;
+                                break;
+                            }
                         }
                     }
                 }
