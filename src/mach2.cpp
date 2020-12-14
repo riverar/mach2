@@ -31,7 +31,7 @@
 int main(int argc, char *argv[], char *)
 {
     std::wcout
-        << L"mach2 0.6 - Feature Control Multi-tool" << std::endl
+        << L"mach2 0.7 - Feature Control Multi-tool" << std::endl
         << L"Copyright (c) Rafael Rivera" << std::endl
         << std::endl
         << L"This program comes with ABSOLUTELY NO WARRANTY." << std::endl

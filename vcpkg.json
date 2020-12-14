@@ -8,7 +8,7 @@
     {
       "name": "capstone",
       "default-features": false,
-      "features": [ "x86" ]
+      "features": [ "x86", "arm64" ]
     },
     {
       "name": "cli11",

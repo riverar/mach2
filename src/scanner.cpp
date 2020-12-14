@@ -24,6 +24,7 @@
 #include "dia2_internal.h"
 #include <diacreate.h>
 #include <capstone/capstone.h>
+#include "capstone_helpers.h"
 #include <DbgHelp.h>
 
 const std::vector<mach2::Scanner::FeatureStage> mach2::Scanner::FeatureStages
@@ -141,7 +142,7 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
     CComPtr<IDiaSession> session;
     ThrowIfFailed(data_source->openSession(&session));
     
-    PDB1* raw_pdb;
+    PDB1* raw_pdb = nullptr;
     ThrowIfFailed(data_source->getRawPDBPtr(reinterpret_cast<void**>(&raw_pdb)));
     
     GUID signature;
@@ -360,7 +361,10 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
             if (!IsEqualGUID(signature, GUID{}))
             {
                 csh handle;
-                ThrowIf(cs_open(CS_ARCH_X86, CS_MODE_64, &handle) != CS_ERR_OK);
+                SYSTEM_INFO system_info{};
+                GetNativeSystemInfo(&system_info);
+
+                ThrowIf(cs_open(CapstoneHelpers::GetArchitectureForSystemArchitecture(system_info.wProcessorArchitecture), CapstoneHelpers::GetModeForSystemArchitecture(system_info.wProcessorArchitecture), &handle) != CS_ERR_OK);
                 ThrowIf(cs_option(handle, CS_OPT_DETAIL, CS_OPT_ON) != CS_ERR_OK);
 
                 for (auto feature : features.FeaturesByGetterSymbolSignature[signature])
@@ -369,29 +373,50 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                     {
                         auto function_ptr = ImageRvaToVa(headers, file_view, getter_relative_address, nullptr);
                         const auto CODE_SAMPLE_SIZE = 512;
-                        const auto VELOCITY_ID_MINIMUM = 10000;
                         if (function_ptr == nullptr || IsBadReadPtr(function_ptr, CODE_SAMPLE_SIZE))
                         {
                             continue;
                         }
                         cs_insn* instructions;
                         auto instruction_count = cs_disasm(handle, static_cast<uint8_t*>(function_ptr), CODE_SAMPLE_SIZE, 0, 0, &instructions);
-                        std::int64_t ecx = 0;
+                        std::int64_t probable_id = 0;
                         for (int i = 0; i < instruction_count; i++)
                         {
+#if X64
                             auto x86 = instructions[i].detail->x86;
                             if (std::string(instructions[i].mnemonic) == "mov" && x86.operands[0].reg == X86_REG_ECX && x86.operands[1].type == X86_OP_IMM)
                             {
-                                auto immediate_value = instructions[i].detail->x86.operands[1].imm;
-                                if (immediate_value >= VELOCITY_ID_MINIMUM)
-                                {
-                                    ecx = immediate_value;
-                                }
+                                probable_id = instructions[i].detail->x86.operands[1].imm;
                             }
-                            if (std::string(instructions[i].mnemonic) == "call" && ecx != 0)
+                            if (std::string(instructions[i].mnemonic) == "call" && probable_id != 0)
                             {
                                 break;
                             }
+#elif ARM64
+                            auto arm64 = instructions[i].detail->arm64;
+                            auto reg = arm64.operands[0].reg;
+                            if (std::string(instructions[i].mnemonic) == "ldr" && reg == std::clamp(reg, ARM64_REG_W0, ARM64_REG_W30) && arm64.operands[1].type == ARM64_OP_IMM)
+                            {
+                                auto effective_addr = static_cast<std::uint8_t*>(function_ptr) + instructions[i].detail->arm64.operands[1].imm;
+                                probable_id = *(reinterpret_cast<std::uint32_t*>(effective_addr));
+                            }
+                            if (std::string(instructions[i].mnemonic) == "movz" && reg == std::clamp(reg, ARM64_REG_W0, ARM64_REG_W30) && arm64.operands[1].type == ARM64_OP_IMM)
+                            {
+                                auto working_value = instructions[i].detail->arm64.operands[1].imm;
+                                auto working_register = reg;
+
+                                arm64 = instructions[i+1].detail->arm64;
+                                reg = arm64.operands[0].reg;
+                                if (std::string(instructions[i+1].mnemonic) == "movk" && reg == working_register && arm64.operands[1].type == ARM64_OP_IMM)
+                                {
+                                    probable_id = working_value | (arm64.operands[1].imm << arm64.operands[1].shift.value);
+                                }
+                            }
+                            if (std::string(instructions[i].mnemonic) == "bl" && probable_id != 0)
+                            {
+                                break;
+                            }
+#endif
                             if (std::string(instructions[i].mnemonic) == "ret")
                             {
                                 break;
@@ -399,23 +424,24 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                         }
                         cs_free(instructions, instruction_count);
 
-                        if (ecx >= VELOCITY_ID_MINIMUM)
+                        const auto VELOCITY_ID_MINIMUM = 10000;
+                        if (probable_id >= VELOCITY_ID_MINIMUM)
                         {
-                            if (feature->Id != 0 && feature->Id != ecx)
+                            if (feature->Id != 0 && feature->Id != probable_id)
                             {
-                                if (HasDuplicateFeatureWithId(ecx, feature->Name, features))
+                                if (HasDuplicateFeatureWithId(probable_id, feature->Name, features))
                                     continue;
 
                                 auto unique_name = GetUniqueNameForDuplicateFeature(*feature, features);
                                 auto& new_feature = features.FeaturesByName[unique_name];
                                 features.FeaturesByStage[FeatureStage::Unknown][unique_name] = &new_feature;
                                 new_feature.Name = unique_name;
-                                new_feature.Id = ecx;
+                                new_feature.Id = probable_id;
                                 new_feature.Symbols = feature->Symbols;
                             }
                             else
                             {
-                                feature->Id = ecx;
+                                feature->Id = probable_id;
                                 break;
                             }
                         }
