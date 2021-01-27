@@ -1,0 +1,160 @@
+--- V:/21292/features_capstone_nosymbols.txt	Wed Jan 13 10:52:22 2021
++++ V:/21296/features_capstone_nosymbols.txt	Sat Jan 23 12:59:52 2021
+@@ -277,6 +277,7 @@
+   D3DXboxOnPC: 12862046
+   DESEnableBrightnessHotkeysWithoutPowerGuids: 21706588
+   DHPNTPExperiment: 7720492
++  DPSWSettingsUI: 29747151
+   DTraceDiagTrack: 23567567
+   DXCore_SystemFileMappings: 22765950
+   DXCore_SystemFileMappings_LegacyDriverSupport: 23577914
+@@ -318,7 +319,6 @@
+   DesktopLocationTriggering: 13909636
+   DesktopToastViewAlwaysShowDismiss: 23447524
+   DesktopToastViewWithAttribution: 23454425
+-  DetailedAppInv: 24645733
+   DevEnableValueBannerForMSFTInternal: 18863954
+   DevModeInternal: 7631201
+   DeviceBasedLicensing: 28179707
+@@ -361,6 +361,8 @@
+   DualEngine_AllowF12: 23071760
+   DualEngine_PaintPriorityHangDetection: 26521648
+   DualEngine_ReliableClose: 21879352
++  DualEngine_SuppressUnneededZoomEvents: 29059948
++  DualEngine_SynchronousZoom: 29078494
+   DuiTicImprovements: 9043033
+   DynamicClipboard: 2102523
+   DynamicExperiencePolicyEnforcement: 11705370
+@@ -736,6 +738,7 @@
+   Prelaunch: 10164291
+   PrereleaseVmVersions: 12518852
+   PreserveSecureAssessmentApp: 18212771
++  PreviewPaneUseDefaultFont: 30972178
+   PreviousWordCorrection: 15763760
+   Print: 13944184
+   PrintSupportApp: 23550552
+@@ -1017,7 +1020,6 @@
+   UseWinML: 23040247
+   UserActivityGroupSync: 13540135
+   UserManagerUserPicture: 21459675
+-  UserMgrBasedWlidsvcProcessLogon: 26244665
+   UserSwitchTokenSwap: 19390280
+   UtcHostAgentTransportControl: 18949795
+   VMComputeBrokerProcess: 19328095
+@@ -1538,7 +1540,6 @@
+   MSRC56881_25370303: 25370303
+   MSRC56896_26193673: 26193673
+   MSRC56933_26340645: 26340645
+-  MSRC56947_25418077: 25418077
+   MSRC56951_26340639: 26340639
+   MSRC56967_25429303: 25429303
+   MSRC57029_25534926: 25534926
+@@ -1640,7 +1641,6 @@
+   MSRC60556_29245303: 29245303
+   MSRC60561_28445703: 28445703
+   MSRC60611_28521788: 28521788
+-  MSRC60664_28581840: 28581840
+   MSRC60699_29882706: 29882706
+   MSRC60715_29882705: 29882705
+   MSRC60724_29147484: 29147484
+@@ -1648,7 +1648,6 @@
+   MSRC60879_29245516: 29245516
+   MSRC60880_29246065: 29246065
+   MSRC60884_29411782: 29411782
+-  MSRC60885_29245171: 29245171
+   MSRC60901_29245319: 29245319
+   MSRC61009_29245786: 29245786
+   MSRC61012_29245815: 29245815
+@@ -1670,7 +1669,6 @@
+   MSRC61175_29882663: 29882663
+   MSRC61208_29882661: 29882661
+   MSRC61271_29882660: 29882660
+-  MSRC61285_29882668: 29882668
+   MSRC61294_29882658: 29882658
+   MSRC61320_29647293: 29647293
+   MSRC61370_29882434: 29882434
+@@ -1684,6 +1682,7 @@
+   MSRC61445_29729845: 29729845
+   MSRC61492_29783339: 29783339
+   MSRC61650_29896056: 29896056
++  MSRC61652_29896246: 29896246
+   MSRC61665_29898393: 29898393
+   MSRC61700_29926750: 29926750
+   MSRC61798_29999861: 29999861
+@@ -2051,12 +2050,14 @@
+ ## Enabled By Default:
+ 
+   Adaptive_Color_Clamping: 27303008
++  Adaptive_Color_Night_Light_Fusion: 27742379
+   AllowScoobeDeferralByUser: 18973123
+   Bucketed_Autobrightness: 29811987
+   BugFixSyncInputStatesForDUIKeyboard: 24228595
+   CoalesceAACAudioSamples: 20457348
+   CobaltInputAppActivationImprovement: 26575666
+   CollapseSingleTileAppListSuites: 27656058
++  Color_Transition_V2: 27484647
+   CustomActionsForMSIX: 19797523
+   DesktopStartDefaultWebView: 21302095
+   Distinct_Percent_Nits_Mapping: 30607842
+@@ -2079,6 +2080,7 @@
+   ImproveTaskFlowLogonPerf: 27074523
+   KeyboardButtonAlwaysInvoke: 26094656
+   KeyboardOcclusionMitigationImprovement: 29560817
++  Lux_Based_Adaptive_Color_Strength: 27563062
+   MSRC46856_19163095: 19163095
+   MSRC50819_21542341: 21542341
+   MSRC55644_24486065: 24486065
+@@ -2100,6 +2102,7 @@
+   MSRC61728_29942047: 29942047
+   MSRC61779_29989881: 29989881
+   MSRC62052_30311015: 30311015
++  MSRC62081_30533401: 30533401
+   MeetNow_CreateButtonText: 28758888
+   MeetNow_Description: 28622680
+   MeetNow_SkypeLaunchPolicyCheck: 28622690
+@@ -2136,7 +2139,7 @@
+ 
+ ## Disabled By Default:
+ 
+-  Adaptive_Color_Night_Light_Fusion: 27742379
++  ALRCurve_Surface_Devices: 30786922
+   AddUndockedXamlExtensionsMetadataProvider: 30188590
+   AllowFullTrustUWP: 19123720
+   AlwaysFailFastOnXamlFailure: 6487760
+@@ -2290,6 +2293,7 @@
+   AeroShakeEnabled: 29983356
+   AllowAutoInstallOnAnyDiskSize: 17430650
+   AllowNullUserAppServices: 18656672
++  AlternateHomeExperience: 28261277
+   AltimeterThresholding: 22967847
+   AlwaysFailFastOnCoreAppLocalizeView: 6669906
+   AlwaysLaunchExplorerInSeparateProcess: 18780676
+@@ -2329,7 +2333,6 @@
+   CloudStoreBackupRestoreForAAD: 29796575
+   CloudStoreBackupRestoreForLargeBlob: 29898970
+   CloudStoreBackupRestoreOnWcos: 29795560
+-  Color_Transition_V2: 27484647
+   ColorizedBar: 18602099
+   CommandingImprovements: 13557380
+   CompositionForShapewriting: 13622748
+@@ -2507,7 +2510,6 @@
+   LowAnimationsOnBatterySaver: 8027970
+   LowConfPWILOSoftLanding: 17059189
+   LowPriorityVAILPrelaunch: 25318022
+-  Lux_Based_Adaptive_Color_Strength: 27563062
+   MSRC54682_23916411: 23916411
+   MSRC54683_23916406: 23916406
+   MSRC54892_24002009: 24002009
+@@ -2520,11 +2522,11 @@
+   MSRC61482_29882621: 29882621
+   MSRC61498_29882397: 29882397
+   MSRC61618_29882594: 29882594
+-  MSRC61652_29896246: 29896246
+   MSRC61678_29900894: 29900894
+   MSRC61750_29883219: 29883219
+   MSRC61821_30013941: 30013941
+   MSRC61895_30100519: 30100519
++  MSRC62094_30543580: 30543580
+   MSZ: 27924028
+   MaterialPropertiesAPI: 15826297
+   MockShellHardwareStateWithRegistryValues: 24668664
