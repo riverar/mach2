@@ -1,0 +1,136 @@
+--- V:/21318/features_capstone_nosymbols.txt	Wed Feb 24 10:11:59 2021
++++ V:/21322/features_capstone_nosymbols.txt	Wed Feb 24 11:03:13 2021
+@@ -119,6 +119,7 @@
+   BatteryCapacity: 28386598
+   BatteryNotificationsApplyAll: 27883184
+   BingSearchLockscreen: 17917466
++  BioFeedbackOnXamlIsland: 31517562
+   BitLocker_Encrypt_All_Drives: 13686439
+   BitLocker_RP_AAD_Backup_Check: 21341508
+   BlackForestShellSupport: 10960001
+@@ -190,7 +191,6 @@
+   ButtonInjection: 18809265
+   CAMETWLogging: 21043497
+   CAMNotification: 21718014
+-  CBR: 27245847
+   CBRS: 29855943
+   CDMLiteCache: 29861382
+   CDPAFSProdDomainUri: 7776321
+@@ -211,8 +211,6 @@
+   CShellOnWindowManagerIDK: 22855141
+   CShellSettingsSearchbox: 19920047
+   CUICOORD: 28330126
+-  CUIDFS: 29634226
+-  CUIPN: 29913204
+   CallbackForItemValidation: 24803656
+   CameraDevicesSettings: 25374378
+   CameraEffectsSettings: 29970100
+@@ -255,6 +253,7 @@
+   ConsoleLogonUXUseDisplayLangCodePage: 27866248
+   ConsumerASR: 15399735
+   ContainerCrash_UseInternalBranchPolicy: 20529819
++  ContainerManagerAgent: 30081036
+   ContainerOSDisable: 21184109
+   ContainerOSPlus: 28853893
+   Containers_DynamicDeviceSupport: 19113216
+@@ -357,7 +356,6 @@
+   DefaultUser: 14861475
+   DeferViewStateChangedEvent: 31086597
+   DelayFadeInAnimationForViewResize: 29975786
+-  DeliveryOptimization_Vibranium_UISettings: 21425853
+   DeprecateRX: 6478855
+   DeprecatedBatteryUsageUX: 28919845
+   DeprecatingEraseAllClicked: 9657363
+@@ -484,6 +482,7 @@
+   ExcludeDevFolders: 21445372
+   ExcludeFromCaptureAPI: 23097642
+   ExpandICCCalibrationDataToFullRange: 24656274
++  ExplorerIcons_2021: 29758728
+   ExpressiveInput_FlagsFontPackage: 15380572
+   ExpressiveInput_OnlineSticker: 12994636
+   ExpressiveInput_Sticker: 12994626
+@@ -682,6 +681,7 @@
+   Input_Heat_EnclosureApi: 25390104
+   InsiderPreviewBranding: 14096858
+   InstallAttribution: 3222455
++  InstantQueuedLaunch: 28072593
+   IntegrateWhiteboardApp: 8164264
+   InteractiveCarry: 11276798
+   InternalSelfhostHooks: 8625295
+@@ -1277,6 +1277,7 @@
+   UseUILanguageForVES: 19372390
+   UseWinML: 23040247
+   UserActivityGroupSync: 13540135
++  UserIntentSessionContext: 31029676
+   UserManagerUserPicture: 21459675
+   UserSwitchTokenSwap: 19390280
+   UtcAllowCdn: 29144591
+@@ -1392,7 +1393,6 @@
+   WpnAdaptiveCards: 13709532
+   WpnAdaptiveCardsConverter: 19643255
+   WpnDEHReplacement: 8249692
+-  WriteCacheLines: 23607466
+   WsbDafWfdDiscovery: 11478806
+   XAMLCandidateListPerfImprovements: 16281572
+   XAMLFileExplorerDragAndDrop: 12022907
+@@ -2377,12 +2377,14 @@
+   MSRC61710_29928883: 29928883
+   MSRC61750_29883219: 29883219
+   MSRC61816_30012157: 30012157
++  MSRC61817_30012712: 30012712
+   MSRC61823_30015604: 30015604
+   MSRC61895_30100519: 30100519
+   MSRC61980_30177949: 30177949
+   MSRC61991_30190627: 30190627
+   MSRC62029_30258071: 30258071
+   MSRC62032_30258581: 30258581
++  MSRC62058_30314881: 30314881
+   MSRC62062_30315720: 30315720
+   MSRC62074_30377023: 30377023
+   MSRC62081_30533401: 30533401
+@@ -2414,6 +2416,11 @@
+   MSRC62942_31254234: 31254234
+   MSRC62946_31236997: 31236997
+   MSRC63042_31335087: 31335087
++  MSRC63159_31399106: 31399106
++  MSRC63459_31559664: 31559664
++  MSRC63567_31613541: 31613541
++  MSRC63675_31649970: 31649970
++  MSRC63676_31650030: 31650030
+   NoSpeechProcessorDeactivationOnModKey: 31055084
+   OBoxing: 31072764
+   OSetupTest: 31072775
+@@ -2431,6 +2438,7 @@
+   SVR_PresentAt_Async_Presentation: 28826436
+   SVR_PresentAt_PresentationHandler_Instrumentation: 27540970
+   Servicing_BrowserReplacement_SpartanDeprecation: 31626602
++  Servicing_DeletedDesktopItemReappearance_26916465: 26916465
+   Servicing_ExplorerComputingFilters_30093909: 30093909
+   Servicing_FileExplorerAccessibility_13531170: 13531170
+   Servicing_IFELangApiPerformance_30273102: 30273102
+@@ -2484,6 +2492,9 @@
+   BugFixDeleteAppIdFallback: 27678640
+   BugcheckOnRpcssCorruption: 14382154
+   CACTest: 31071662
++  CBR: 27245847
++  CUIDFS: 29634226
++  CUIPN: 29913204
+   CaptureExplorerHydrationCallStacks: 14166282
+   CloudExperienceHostRedirection: 25357983
+   CloudStoreDiagnostics: 6624442
+@@ -2641,6 +2652,7 @@
+   STest03: 29713388
+   STest04: 29790967
+   SVR_DX12_Rendering: 11537650
++  SVR_PresentAt_Flighting: 31664591
+   SVR_PresentAt_PresentationHandler: 24671765
+   ScoobeBrowserSettingsPermanentNode: 29973024
+   ScribblePPI: 26881888
+@@ -2674,6 +2686,7 @@
+   Test63: 31072802
+   TestPeopleAppUpsellWithShareCollection: 12722143
+   TestPresentationRequested: 20819543
++  ThumbnailCache_SemaphoreUpdate_19173096: 19173096
+   UDTHD: 29521844
+   UTTV: 28778095
+   UndockDesktopSearchIntegrations: 23516137
