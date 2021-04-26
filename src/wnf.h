@@ -201,4 +201,38 @@ namespace mach2
         unsigned __int32 variant : 6;
         unsigned __int32 unused : 19;
     };
+
+    union wil_details_FeatureStateCache
+    {
+        struct {
+            unsigned int exchange;
+            unsigned int payloadId;
+        };
+        struct
+        {
+            unsigned __int32 stateCached : 1;
+            unsigned __int32 hasNotificationCached : 1;
+            unsigned __int32 variantCached : 1;
+            unsigned __int32 effectiveState : 1;
+            unsigned __int32 desiredState : 1;
+            unsigned __int32 configuredState : 2;
+            unsigned __int32 needsRefresh : 1;
+            unsigned __int32 hasNotification : 1;
+            unsigned __int32 isVariant : 1;
+            unsigned __int32 variant : 6;
+            unsigned __int32 unused : 16;
+        };
+        unsigned __int64 exchange64;
+    };
+
+    struct wil_details_FeatureDescriptor
+    {
+        wil_details_FeatureStateCache* featureStateCache;
+        unsigned int featureId;
+        char changeTime;
+        char isAlwaysDisabled;
+        char isAlwaysEnabled;
+        char isEnabledByDefault;
+        wil_details_FeatureDescriptor* const* requiresFeatures;
+    };
 }

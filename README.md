@@ -23,12 +23,13 @@ Installation is not required, however *Mach2* utilizes registration-free COM act
 
 ## Building from source
 
-Compilation requires Visual Studio 2017 or newer and a recent version of the Windows 10 SDK installed.
+Compilation requires Visual Studio 2017 or newer, a recent version of the Windows 10 SDK installed, [and vcpkg](https://docs.microsoft.com/en-us/cpp/build/install-vcpkg).
 
 ### Step-by-step
-1. Open `mach2.sln` in Visual Studio
-2. Change the target platform and configuration as needed
-3. Build
+1. `vcpkg --feature-flags=manifests install` in the mach2 root folder
+2. Open `mach2.sln` in Visual Studio
+3. Change the target platform and configuration as needed
+4. Build
 
 ## Usage
 *Mach2* relies on [CLI11](https://github.com/CLIUtils/CLI11) to provide a canonical command line argument-driven interface. It's recommended you run the tool with `--help` for details on how to use the tool.

@@ -24,7 +24,7 @@ namespace mach2
     public:
         enum class FeatureStage
         {
-            Unknown = 0,
+            Unknown = -1,
             AlwaysDisabled,
             DisabledByDefault,
             EnabledByDefault,
@@ -72,6 +72,11 @@ namespace mach2
             FeatureGetter,
             Stage,
             Id,
+            Descriptor,
+            AlwaysDisabledFlag,
+            AlwaysEnabledFlag,
+            EnabledByDefaultFlag,
+            DisabledByDefaultFlag
         };
 
         class Feature

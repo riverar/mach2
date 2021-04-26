@@ -96,6 +96,26 @@ mach2::Scanner::SymbolHitType mach2::Scanner::GetSymbolHitTypeFromSymbolName(std
     {
         return mach2::Scanner::SymbolHitType::Stage;
     }
+    else if (symbolName.find(L"::isAlwaysDisabled") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::AlwaysDisabledFlag;
+    }
+    else if (symbolName.find(L"::isAlwaysEnabled") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::AlwaysEnabledFlag;
+    }
+    else if (symbolName.find(L"::isEnabledByDefault") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::EnabledByDefaultFlag;
+    }
+    else if (symbolName.find(L"::isDisabledByDefault") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::DisabledByDefaultFlag;
+    }
+    else if (symbolName.find(L"__private_descriptor") != std::wstring::npos)
+    {
+        return mach2::Scanner::SymbolHitType::Descriptor;
+    }
     else if (
         symbolName.find(L"GetCurrentFeatureEnabledState") != std::wstring::npos ||
         symbolName.find(L"GetCachedFeatureEnabledState") != std::wstring::npos ||
@@ -126,11 +146,18 @@ std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &sy
     // e.g. ?ReportUsageToService@?$Feature@U__WilFeatureTraits_Feature_IntentInThePastLogging@@@wil@@CGX_NW4ReportingKind@2@I@Z
     // e.g. wil::Feature<__WilFeatureTraits_Feature_RadialControllerCustomFontGlyphs>
     // e.g. __WilFeatureTraits_Feature_DesktopInclusiveOOBE
+    // e.g. Feature_Servicing_2011c_28083526__private_reporting
 
-    std::wregex pattern(L"WilFeatureTraits_Feature_(\\w*)");
-    std::wsmatch match;
-    std::regex_search(symbol_name, match, pattern, std::regex_constants::match_any);
-    return match.str(1);
+    for (auto &expr : std::array<std::wstring, 3> { L"WilFeatureTraits_Feature_(\\w*)", L"Feature_(\\w*)__private", L"Feature_(\\w*)_logged_traits" })
+    {
+        std::wregex pattern(expr);
+        std::wsmatch match;
+        std::regex_search(symbol_name, match, pattern, std::regex_constants::match_any);
+        if (match.size() == 2)
+            return match.str(1);
+    }
+
+    throw std::runtime_error{ "GetFeatureNameFromSymbolName failed" };
 }
 
 void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2::Scanner::Features &features)
@@ -151,89 +178,154 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
     CComPtr<IDiaSymbol> root_symbol;
     ThrowIfFailed(session->get_globalScope(&root_symbol));
 
-    CComPtr<IDiaEnumSymbols> feature_symbols;
+    std::vector<CComPtr<IDiaEnumSymbols>> feature_symbol_search_results(4);
     ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*WilFeatureTraits_Feature_*",
-        NameSearchOptions::nsfRegularExpression, &feature_symbols));
+        NameSearchOptions::nsfRegularExpression, &feature_symbol_search_results[0]));
+
+    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_Servicing_*",
+        NameSearchOptions::nsfRegularExpression, &feature_symbol_search_results[1]));
+
+    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_*__private",
+        NameSearchOptions::nsfRegularExpression, &feature_symbol_search_results[2]));
+
+    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_*_logged_traits*",
+        NameSearchOptions::nsfRegularExpression, &feature_symbol_search_results[3]));
 
     unsigned long results_retrieved = 0;
-    CComPtr<IDiaSymbol> feature_symbol;
-    while (SUCCEEDED(feature_symbols->Next(1, &feature_symbol, &results_retrieved)) && results_retrieved == 1)
+    for each (auto feature_symbols in feature_symbol_search_results)
     {
-        CComPtr<IDiaSymbol> feature_symbol_hit;
-        feature_symbol_hit.Attach(feature_symbol.Detach());
-
-        CComBSTR raw_symbol_name;
-        ThrowIfFailed(feature_symbol_hit->get_name(&raw_symbol_name));
-        auto feature_name = GetFeatureNameFromSymbolName(raw_symbol_name.m_str);
-        auto& feature = features.FeaturesByName[feature_name];
-
-        if (feature.Name.empty())
+        CComPtr<IDiaSymbol> feature_symbol;
+        while (SUCCEEDED(feature_symbols->Next(1, &feature_symbol, &results_retrieved)) && results_retrieved == 1)
         {
-            feature.Name = feature_name;
-        }
+            CComPtr<IDiaSymbol> feature_symbol_hit;
+            feature_symbol_hit.Attach(feature_symbol.Detach());
 
-        auto hit_type = GetSymbolHitTypeFromSymbolName(raw_symbol_name.m_str);
-        if (!feature.Id && hit_type == Scanner::SymbolHitType::Id)
-        {
-            CComVariant id_value;
-            ThrowIfFailed(feature_symbol_hit->get_value(&id_value));
+            CComBSTR raw_symbol_name;
+            ThrowIfFailed(feature_symbol_hit->get_name(&raw_symbol_name));
+            auto feature_name = GetFeatureNameFromSymbolName(raw_symbol_name.m_str);
+            auto& feature = features.FeaturesByName[feature_name];
 
-            if (feature.Id != id_value.lVal && feature.Id != 0)
+            if (feature.Name.empty())
             {
-                auto unique_name = GetUniqueNameForDuplicateFeature(feature, features);
-                feature = features.FeaturesByName[unique_name];
-                feature.Name = unique_name;
-                features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
+                feature.Name = feature_name;
             }
-            feature.Id = id_value.lVal;
-        }
 
-        if (feature.Stage == FeatureStage::Unknown)
-        {
-            features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
-
-            if (hit_type == Scanner::SymbolHitType::Stage)
+            auto hit_type = GetSymbolHitTypeFromSymbolName(raw_symbol_name.m_str);
+            if (!feature.Id && hit_type == Scanner::SymbolHitType::Id)
             {
-                CComVariant feature_stage_value;
-                ThrowIfFailed(feature_symbol_hit->get_value(&feature_stage_value));
+                CComVariant id_value;
+                ThrowIfFailed(feature_symbol_hit->get_value(&id_value));
 
-                if (feature_stage_value.iVal >= 0 && feature_stage_value.iVal <= 4)
+                if (feature.Id != id_value.lVal && feature.Id != 0)
                 {
-                    feature.Stage = static_cast<FeatureStage>(feature_stage_value.iVal + 1);
-
-                    auto & unknown_features = features.FeaturesByStage[FeatureStage::Unknown];
-                    if (unknown_features.count(feature.Name) > 0)
-                    {
-                        auto feature_to_move = unknown_features.at(feature.Name);
-                        unknown_features.erase(feature.Name);
-                        features.FeaturesByStage[feature.Stage][feature_to_move->Name] = feature_to_move;
-                    }
-                    else // First time FeaturesByStage has seen this feature
-                    {
-                        features.FeaturesByStage[feature.Stage][feature.Name] = &feature;
-                    }
-                }
-                else // Stage value is out of range or new to the ByStage map
-                {
+                    auto unique_name = GetUniqueNameForDuplicateFeature(feature, features);
+                    feature = features.FeaturesByName[unique_name];
+                    feature.Name = unique_name;
                     features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
                 }
+                feature.Id = id_value.lVal;
             }
-        }
 
-        feature.Symbols.emplace(path, signature);
-
-        if (hit_type == Scanner::SymbolHitType::FeatureGetter) 
-        {
-            DWORD location_type;
-            ThrowIfFailed(feature_symbol_hit->get_locationType(&location_type));
-            if (location_type == LocationType::LocIsStatic)
+            if (hit_type == Scanner::SymbolHitType::AlwaysDisabledFlag)
             {
-                DWORD rva;
-                auto hr = feature_symbol_hit->get_relativeVirtualAddress(&rva);
-                ThrowIfFailed(hr);
-                if (hr == S_OK)
+                CComVariant flag_value;
+                ThrowIfFailed(feature_symbol_hit->get_value(&flag_value));
+
+                if (flag_value.bVal == 1 && feature.Stage != FeatureStage::AlwaysDisabled)
                 {
-                    feature.GetterRvasBySignature[signature].insert(rva);
+                    features.FeaturesByStage[feature.Stage].erase(feature.Name);
+
+                    feature.Stage = FeatureStage::AlwaysDisabled;
+                    features.FeaturesByStage[FeatureStage::AlwaysDisabled][feature.Name] = &feature;
+                }
+            }
+            else if (hit_type == Scanner::SymbolHitType::AlwaysEnabledFlag)
+            {
+                CComVariant flag_value;
+                ThrowIfFailed(feature_symbol_hit->get_value(&flag_value));
+
+                if (flag_value.bVal == 1 && feature.Stage != FeatureStage::AlwaysEnabled)
+                {
+                    features.FeaturesByStage[feature.Stage].erase(feature.Name);
+
+                    feature.Stage = FeatureStage::AlwaysEnabled;
+                    features.FeaturesByStage[FeatureStage::AlwaysEnabled][feature.Name] = &feature;
+                }
+            }
+            else if (hit_type == Scanner::SymbolHitType::EnabledByDefaultFlag)
+            {
+                CComVariant flag_value;
+                ThrowIfFailed(feature_symbol_hit->get_value(&flag_value));
+
+                if (flag_value.bVal == 1 && feature.Stage < FeatureStage::EnabledByDefault)
+                {
+                    features.FeaturesByStage[feature.Stage].erase(feature.Name);
+
+                    feature.Stage = FeatureStage::EnabledByDefault;
+                    features.FeaturesByStage[FeatureStage::EnabledByDefault][feature.Name] = &feature;
+                }
+            }
+            else if (hit_type == Scanner::SymbolHitType::DisabledByDefaultFlag)
+            {
+                CComVariant flag_value;
+                ThrowIfFailed(feature_symbol_hit->get_value(&flag_value));
+
+                if (flag_value.bVal == 1 && feature.Stage < FeatureStage::DisabledByDefault)
+                {
+                    features.FeaturesByStage[feature.Stage].erase(feature.Name);
+
+                    feature.Stage = FeatureStage::DisabledByDefault;
+                    features.FeaturesByStage[FeatureStage::DisabledByDefault][feature.Name] = &feature;
+                }
+            }
+
+            if (feature.Stage == FeatureStage::Unknown)
+            {
+                features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
+
+                if (hit_type == Scanner::SymbolHitType::Stage)
+                {
+                    CComVariant feature_stage_value;
+                    ThrowIfFailed(feature_symbol_hit->get_value(&feature_stage_value));
+
+                    if (feature_stage_value.iVal >= 0 && feature_stage_value.iVal <= 4)
+                    {
+                        feature.Stage = static_cast<FeatureStage>(feature_stage_value.iVal);
+
+                        auto& unknown_features = features.FeaturesByStage[FeatureStage::Unknown];
+                        if (unknown_features.count(feature.Name) > 0)
+                        {
+                            auto feature_to_move = unknown_features.at(feature.Name);
+                            unknown_features.erase(feature.Name);
+                            features.FeaturesByStage[feature.Stage][feature_to_move->Name] = feature_to_move;
+                        }
+                        else // First time FeaturesByStage has seen this feature
+                        {
+                            features.FeaturesByStage[feature.Stage][feature.Name] = &feature;
+                        }
+                    }
+                    else // Stage value is out of range or new to the ByStage map
+                    {
+                        features.FeaturesByStage[FeatureStage::Unknown][feature.Name] = &feature;
+                    }
+                }
+            }
+
+            feature.Symbols.emplace(path, signature);
+
+            if (hit_type == Scanner::SymbolHitType::FeatureGetter)
+            {
+                DWORD location_type;
+                ThrowIfFailed(feature_symbol_hit->get_locationType(&location_type));
+                if (location_type == LocationType::LocIsStatic)
+                {
+                    DWORD rva;
+                    auto hr = feature_symbol_hit->get_relativeVirtualAddress(&rva);
+                    ThrowIfFailed(hr);
+                    if (hr == S_OK)
+                    {
+                        feature.GetterRvasBySignature[signature].insert(rva);
+                    }
                 }
             }
         }
@@ -295,6 +387,9 @@ void mach2::Scanner::InternalGetMissingFeatureIdsFromImagesAtPath(mach2::Scanner
     {
         do
         {
+            if (find_data.dwReserved0 == IO_REPARSE_TAG_SYMLINK)
+                continue;
+
             std::filesystem::path current_file(find_data.cFileName);
             if (current_file != L"." && current_file != L"..")
             {

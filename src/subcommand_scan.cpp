@@ -83,7 +83,7 @@ void WriteFeatureMapToFile(const mach2::Scanner::Features& features, const std::
     std::wofstream wide_output_stream(output_path);
     for (const auto & stage : mach2::Scanner::FeatureStages)
     {
-        wide_output_stream << L"## " << stage_strings[static_cast<int>(stage)] << L":" << std::endl << std::endl;
+        wide_output_stream << L"## " << stage_strings[static_cast<int>(stage) + 1] << L":" << std::endl << std::endl;
 
         if (features.FeaturesByStage.count(stage) > 0)
         {
