@@ -26,42 +26,50 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\scanner_tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="nuget.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6279929A-C965-460A-B53A-8388D2BE47A0}</ProjectGuid>
+    <ProjectGuid>{96BA449E-7572-4EB4-97C0-FBD441F94825}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>mach2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
     <SpectreMitigation>false</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
     <SpectreMitigation>false</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -69,7 +77,7 @@
     <SpectreMitigation>false</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -104,46 +112,52 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VSInstallDir)DIA SDK\lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(VSInstallDir)DIA SDK\lib\;$(LibraryPath);$(ProjectDir)bin\$(PlatformTarget)</LibraryPath>
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\$(ProjectName)\int\</IntDir>
+    <TargetName>mach2-test</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath);$(ProjectDir)bin\$(PlatformTarget)</LibraryPath>
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\$(ProjectName)\int\</IntDir>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <TargetName>mach2-test</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VSInstallDir)DIA SDK\lib\arm64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(VSInstallDir)DIA SDK\lib\arm64;$(LibraryPath);$(ProjectDir)bin\$(PlatformTarget)</LibraryPath>
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\$(ProjectName)\int\</IntDir>
+    <TargetName>mach2-test</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VSInstallDir)DIA SDK\lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(VSInstallDir)DIA SDK\lib\;$(LibraryPath);$(ProjectDir)bin\$(PlatformTarget)</LibraryPath>
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\$(ProjectName)\int\</IntDir>
+    <TargetName>mach2-test</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath);$(ProjectDir)bin\$(PlatformTarget)</LibraryPath>
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\$(ProjectName)\int\</IntDir>
+    <TargetName>mach2-test</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VSInstallDir)DIA SDK\include;$(ProjectDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VSInstallDir)DIA SDK\lib\arm64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(VSInstallDir)DIA SDK\lib\arm64;$(LibraryPath);$(ProjectDir)bin\$(PlatformTarget)</LibraryPath>
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\</OutDir>
-    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\int\</IntDir>
+    <IntDir>$(ProjectDir)bin\$(PlatformTarget)\$(ProjectName)\int\</IntDir>
+    <TargetName>mach2-test</TargetName>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <VcpkgEnableManifest>true</VcpkgEnableManifest>
@@ -184,11 +198,12 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mach2-core.lib;capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /y "$(ProjectDir)features.txt" "$(OutDir)"
-copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\msdia140.dll" "$(OutDir)"</Command>
+copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\msdia140.dll" "$(OutDir)"
+xcopy /Y /S "$(ProjectDir)test\cases" "$(OutDir)\cases\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -206,11 +221,12 @@ copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\msdia140.dll" "$(OutDir)"</Command>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mach2-core.lib;capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /y "$(ProjectDir)features.txt" "$(OutDir)"
-copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\amd64\msdia140.dll" "$(OutDir)"</Command>
+copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\amd64\msdia140.dll" "$(OutDir)"
+xcopy /y /s "$(ProjectDir)test\cases\" "$(OutDir)cases\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
@@ -228,11 +244,12 @@ copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\amd64\msdia140.dll" "$(OutDir)"</Co
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mach2-core.lib;capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /y "$(ProjectDir)features.txt" "$(OutDir)"
-copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\arm64\msdia140.dll" "$(OutDir)"</Command>
+copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\arm64\msdia140.dll" "$(OutDir)"
+xcopy /Y /S "$(ProjectDir)test\cases" "$(OutDir)\cases\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -254,11 +271,12 @@ copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\arm64\msdia140.dll" "$(OutDir)"</Co
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mach2-core.lib;capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /y "$(ProjectDir)features.txt" "$(OutDir)"
-copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\msdia140.dll" "$(OutDir)"</Command>
+copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\msdia140.dll" "$(OutDir)"
+xcopy /Y /S "$(ProjectDir)test\cases" "$(OutDir)\cases\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -280,11 +298,12 @@ copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\msdia140.dll" "$(OutDir)"</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mach2-core.lib;capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /y "$(ProjectDir)features.txt" "$(OutDir)"
-copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\amd64\msdia140.dll" "$(OutDir)"</Command>
+copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\amd64\msdia140.dll" "$(OutDir)"
+xcopy /y /s "$(ProjectDir)test\cases\" "$(OutDir)cases\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
@@ -306,49 +325,17 @@ copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\amd64\msdia140.dll" "$(OutDir)"</Co
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mach2-core.lib;capstone.lib;rpcrt4.lib;dbghelp.lib;comsuppw.lib;pathcch.lib;diaguids.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /y "$(ProjectDir)features.txt" "$(OutDir)"
-copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\arm64\msdia140.dll" "$(OutDir)"</Command>
+copy /y "$(CurrentVsInstallRoot)\DIA SDK\bin\arm64\msdia140.dll" "$(OutDir)"
+xcopy /Y /S "$(ProjectDir)test\cases" "$(OutDir)\cases\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="src\capstone_helpers.h" />
-    <ClInclude Include="src\dia2_internal.h" />
-    <ClInclude Include="src\pdb.h" />
-    <ClInclude Include="src\mach2.h" />
-    <ClInclude Include="src\feature.h" />
-    <ClInclude Include="src\pe.h" />
-    <ClInclude Include="src\scanner.h" />
-    <ClInclude Include="src\feature_manager.h" />
-    <ClInclude Include="src\feature_config.h" />
-    <ClInclude Include="src\common.h" />
-    <ClInclude Include="src\resource.h" />
-    <ClInclude Include="src\wnf.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\common.cpp" />
-    <ClCompile Include="src\scanner.cpp" />
-    <ClCompile Include="src\mach2.cpp" />
-    <ClCompile Include="src\feature_manager.cpp" />
-    <ClCompile Include="src\feature_config.cpp" />
-    <ClCompile Include="src\feature.cpp" />
-    <ClCompile Include="src\subcommand_display.cpp" />
-    <ClCompile Include="src\subcommand_scan.cpp" />
-    <ClCompile Include="src\subcommand_set.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="src\mach2.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="features.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="vcpkg.json" />
-  </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
     <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+    <Import Project="$(ProjectDir)\packages\Microsoft.Taef.10.58.210222006-develop\build\Microsoft.Taef.targets" />
   </ImportGroup>
 </Project>
