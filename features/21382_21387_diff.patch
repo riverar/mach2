@@ -1,0 +1,100 @@
+--- V:/21382/features_capstone_nosymbols.txt	Fri May 14 10:59:25 2021
++++ V:/21387/features_capstone_nosymbols.txt	Fri May 21 16:03:59 2021
+@@ -215,6 +215,7 @@
+   CAMNotification: 21718014
+   CBRS: 29855943
+   CDMLiteCache: 29861382
++  CET_Kernel_Shadow_Stacks: 19770572
+   CET_User_Audit_Livedump: 0
+   CFD_CreateTestFile: 25493466
+   COINCampaignCopyPasteAcrossMultipApps: 17325299
+@@ -850,7 +851,7 @@
+   MsaaProxyIAccessible2: 13083922
+   MultiLayerDHD: 11428947
+   MultiLingualInput: 11114053
+-  MultiSpectrumAntiSpoofingModel: 0
++  MultiSpectrumAntiSpoofingModel: 32081961
+   MultilingualExperiment: 19552709
+   NamespaceEnumerationRestrictions: 6391443
+   NamespaceNavigationRestrictions: 6391456
+@@ -1411,7 +1412,6 @@
+   UART_4_Ports: 21938063
+   UIAutomationEnabled: 9186859
+   UPExperimentation: 15546617
+-  UPExperimentation|mach2.warning.duplicate0: 29898434
+   USNBackoffDetection: 23596697
+   USNStreamModify: 24792806
+   UUS: 20603363
+@@ -2006,7 +2006,6 @@
+   MSRC62794_31158679: 31158679
+   MSRC62942_31254234: 31254234
+   MSRC62946_31236997: 31236997
+-  MSRC62982_32291822: 32291822
+   MSRC63042_31335087: 31335087
+   MSRC63125_31367483: 31367483
+   MSRC63154_31397731: 31397731
+@@ -2027,6 +2026,7 @@
+   MSRC63823_31753986: 31753986
+   MSRC64090_31966490: 31966490
+   MSRC64092_31966791: 31966791
++  MSRC64205_32072023: 32072023
+   MSRC64435_32767078: 32767078
+   MSRC64893_32521242: 32521242
+   MakePowershellTheDefaultConsole: 6527944
+@@ -2240,9 +2240,11 @@
+ 
+ ## Enabled By Default:
+ 
++  PresentationAPIWithIFlip: 26888364
+ 
+ ## Disabled By Default:
+ 
++  SVR_PresentAt_PresentationHandler: 24671765
+ 
+ ## Always Disabled:
+ 
+@@ -2496,6 +2498,7 @@
+   MSRC62981_31273995: 31273995
+   MSRC63361_32291786: 32291786
+   MSRC63368_32291794: 32291794
++  MSRC63412_31512155: 31512155
+   MSRC63449_31534184: 31534184
+   MSRC63460_32291783: 32291783
+   MSRC63572_31624009: 31624009
+@@ -2504,15 +2507,19 @@
+   MSRC63770_31707689: 31707689
+   MSRC63821_31753551: 31753551
+   MSRC63845_31768335: 31768335
++  MSRC63868_31808102: 31808102
+   MSRC63913_31860193: 31860193
+   MSRC64044_31934337: 31934337
++  MSRC64186_32057820: 32057820
+   MSRC64273_32106102: 32106102
+   MSRC64371_32291671: 32291671
+   MSRC64413_32193132: 32193132
+   MSRC64721_32391376: 32391376
++  MSRC64825_32472453: 32472453
+   MSRC64842_32484196: 32484196
+   MSRC64898_32537371: 32537371
+   MSRC64899_32537439: 32537439
++  MSRC64960_32657825: 32657825
+   MStartupTests: 31073410
+   MTCATest: 29248010
+   MTests: 31073511
+@@ -2557,7 +2564,7 @@
+   PointerDeviceType_Touchpad: 18796013
+   PostureChangeFluidAnimations: 26841798
+   PreReleaseBackstopAndSuspensionCurtain: 6429916
+-  PresentationAPIWithIFlip: 26888364
++  PresentationAPIOverlayWithoutIFlip: 32672985
+   PresentationRequestedOnDesktop: 20819528
+   Private_AnimationDebugging: 8278107
+   PublicAPI_WAM_Package_FindRelatedPackages: 26006651
+@@ -2599,7 +2606,6 @@
+   SVR_DX12_Rendering: 11537650
+   SVR_GetPresentStats_Rotation: 17716364
+   SVR_PresentAt_Flighting: 31664591
+-  SVR_PresentAt_PresentationHandler: 24671765
+   SecureCamera: 31101960
+   SetEnableExposeXUidRegKey: 14969026
+   SetLockScreenImageAsDesktopBackground: 5458669
