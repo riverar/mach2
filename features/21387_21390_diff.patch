@@ -1,0 +1,74 @@
+--- V:/21387/features_capstone_nosymbols.txt	Fri May 21 16:03:59 2021
++++ V:/21390/features_capstone_nosymbols.txt	Wed May 26 12:23:47 2021
+@@ -906,6 +906,7 @@
+   OmaDmClientTestingHook: 31743990
+   OnDemandFolderPopulation: 10647694
+   OnScreenKeyboardHandling: 29813098
++  OneDownloadSlotForLowPerf: 33061463
+   OneDriveKFMBackupSetting: 19632002
+   OneSettingsClientRefreshCacheTask: 16860457
+   OneSettingsClient_UseCommonHttpLibrary: 28992483
+@@ -1160,6 +1161,7 @@
+   ServiceUIContentExperimentA: 19272907
+   ServiceUIContentExperimentB: 19272967
+   ServicingPriority: 28453982
++  Servicing_33194026: 0
+   Servicing_AAR_DIRECTPOLICYCHECKS_24924568: 24924568
+   Servicing_Allow_SwitchToDesktop_25561487: 25561487
+   Servicing_BackgroundTaskDeferralLeakFix_29685610: 29685610
+@@ -1179,6 +1181,7 @@
+   Servicing_ExplorerCompositionHostAddVisual_32109678: 32109678
+   Servicing_ExplorerCrashCreateDrawingSurface_32219994: 32219994
+   Servicing_ExplorerIntDarkMode_31144776: 31144776
++  Servicing_FeedsBlurryTextFix_31810205: 31810205
+   Servicing_FeedsButtonHoverFix_32307680: 32307680
+   Servicing_FeedsButtonModeChangeTelemetry_32306872: 32306872
+   Servicing_FeedsDisableBgtaskOnEmergencyShutdown_31681533: 31681533
+@@ -1190,6 +1193,7 @@
+   Servicing_FeedsJSONParsingExceptionFix_32102257: 32102257
+   Servicing_FeedsNewsRotatingWithOpenFix_32377695: 32377695
+   Servicing_FeedsRetryTimer_32240580: 32240580
++  Servicing_FeedsTaskbarRenderingRQVFix_33066034: 33066034
+   Servicing_FeedsWebviewVisibilityMessageToServer_32214317: 32214317
+   Servicing_FileExplorerAccessibility_13531170: 13531170
+   Servicing_FingerprintSensorOnKeyboardGlyphs_25587932: 25587932
+@@ -2021,14 +2025,12 @@
+   MSRC63672_31648931: 31648931
+   MSRC63675_31649970: 31649970
+   MSRC63676_31650030: 31650030
+-  MSRC63772_31708335: 31708335
+   MSRC63783_31710090: 31710090
+   MSRC63823_31753986: 31753986
+   MSRC64090_31966490: 31966490
+   MSRC64092_31966791: 31966791
+   MSRC64205_32072023: 32072023
+   MSRC64435_32767078: 32767078
+-  MSRC64893_32521242: 32521242
+   MakePowershellTheDefaultConsole: 6527944
+   MarshalByValue: 5195825
+   MarshalRestrictedErrorFromRpcss: 17468649
+@@ -2511,11 +2513,16 @@
+   MSRC63913_31860193: 31860193
+   MSRC64044_31934337: 31934337
+   MSRC64186_32057820: 32057820
++  MSRC64226_32094340: 32094340
+   MSRC64273_32106102: 32106102
++  MSRC64287_32291720: 32291720
+   MSRC64371_32291671: 32291671
++  MSRC64400_32191236: 32191236
+   MSRC64413_32193132: 32193132
+   MSRC64721_32391376: 32391376
++  MSRC64746_32425728: 32425728
+   MSRC64825_32472453: 32472453
++  MSRC64834_32474822: 32474822
+   MSRC64842_32484196: 32484196
+   MSRC64898_32537371: 32537371
+   MSRC64899_32537439: 32537439
+@@ -2691,6 +2698,7 @@
+   VAIL_Fake_Monitor_Projection: 21415082
+   VATest: 23445657
+   VTFrame: 29718541
++  VTRRCC: 29674145
+   VTest: 31070505
+   VailUnifiedDpi: 24171364
+   VelocityBasedPressureAlwaysOn: 21203989
