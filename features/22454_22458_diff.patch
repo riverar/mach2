@@ -1,0 +1,205 @@
+--- V:/22454/features_capstone_nosymbols.txt	Fri Sep 10 11:51:25 2021
++++ V:/22458/features_capstone_nosymbols.txt	Fri Sep 17 00:43:02 2021
+@@ -23,7 +23,6 @@
+   AccountsGroup_FirstPartySilentEnumSecondarySSO: 12509893
+   AccountsServiceUdk: 28237372
+   ActionCenterNotification: 8598334
+-  ActiveDumpDefault: 0
+   AddPhoneButton: 11618552
+   AddSourceWindowFromViewNavigationRequested: 9205753
+   AddSwitchAsyncContextToPositionerActivations: 9582236
+@@ -58,6 +57,7 @@
+   AppWindowProjection: 26212670
+   ApplicationFrameTitleFromWindowManager: 26290763
+   ApplicationGuardDownloadToHost: 13740217
++  AppraiserSVChecks: 32064666
+   AppsForWebsitesRejuv: 31788477
+   ArrowKeysUnselect: 17685567
+   ArticulatedHand2DInteraction: 18127454
+@@ -105,7 +105,7 @@
+   BluetoothQualification: 15502027
+   BluetoothUnifiedAudioEndpoint: 20624938
+   Brokered_Win32_File_APIs: 0
+-  BthA2dpAbsoluteVolume: 0
++  BthA2dpAbsoluteVolume: 153764
+   BufferCommands: 7471763
+   Bug29990543_SizingFixes: 29990543
+   Bug32177364_FixKeyboardGridAfterDictationOverlay: 32177364
+@@ -284,9 +284,9 @@
+   D3D9_GameConfigStore_Override: 11420000
+   D3D9_WindowAndDisplayMismatchShim: 11576687
+   DESEnableBrightnessHotkeysWithoutPowerGuids: 21706588
++  DHDefaultUpgrade: 31561196
+   DLOMETRIC: 31299253
+   DPLOnPushAPI: 29848869
+-  DXCore_SystemFileMappings: 22765950
+   DXGI_2DListQueries: 16273325
+   DXGI_BufferUpgrades: 25957903
+   DXGI_BufferUpgrades_Notifications: 28817166
+@@ -328,7 +328,6 @@
+   DeviceBasedLicensing: 28179707
+   DeviceFormatShimForVSS: 21650929
+   DeviceMetadata_CombinedQuery: 21151430
+-  DeviceResetContext: 21140357
+   DigitsSubstitutionSetting: 20516266
+   DirectManipulationEvents: 14687480
+   DirectedFx: 0
+@@ -363,7 +362,6 @@
+   EmaillessMSA: 31390298
+   EmbeddedFetch: 12274531
+   EmbeddedPrint: 13876261
+-  EnableAADNgcKeysInWebAuthn: 21830305
+   EnableBackgroundTasks: 21008641
+   EnableDefaultFolderIconFallback: 23394095
+   EnableHostResourceSharing: 0
+@@ -397,7 +395,6 @@
+   FeedsDynamicSearchBox: 27371092
+   Fido2_1: 27870272
+   FidoBleAddressRotation: 21326400
+-  FidoPrivacyUI: 21325834
+   Fido_WebAuthn_RDP: 33101665
+   FileExplorerDarkTheme: 10397285
+   FileExplorerPolicy_2021: 31782608
+@@ -518,6 +515,7 @@
+   KerbAsRepCredsHybrid: 21331590
+   KerbAsRepCredsHybridCache: 21393348
+   KerbCloudTicketSupport: 25459565
++  KerbEncryptionModeDisable: 31371414
+   KerbSHA2: 31496153
+   KerbSupportKeyListReq: 20495629
+   KernelSharedUserDataAslr: 0
+@@ -672,7 +670,6 @@
+   PinWebsiteActionV2: 16419964
+   PointerCaptureLock: 0
+   PowerAndBatteryPage: 30997927
+-  PowerButtonBugcheck: 0
+   PowerButtonLiveDump: 0
+   PowerEventProcessorSystemIdle: 0
+   PredictionEngine: 11418271
+@@ -738,7 +735,6 @@
+   RelatedQueries: 14338410
+   ReliableRfcomm: 12719183
+   ReloadAddressBarVisualsOnThemeChange: 25637243
+-  ReloadTpmKtkHandle: 24263944
+   ReminderCloudUx: 11639875
+   ReminderNotificationTemplate: 13790818
+   ReminderPhoto: 6178093
+@@ -814,6 +810,8 @@
+   SearchSuggestionsFallback: 24652212
+   SecureBio: 11198543
+   SecureBiometrics: 25221901
++  SecureChannelRpcWithKerberos: 0
++  SecureEOF: 34882261
+   SecureFingerprint: 24262804
+   SecureStart: 27656178
+   SecureUSBSecurityChecks: 11564842
+@@ -845,6 +843,7 @@
+   Servicing_FileExplorerAccessibility_13531170: 13531170
+   Servicing_FingerprintSensorOnKeyboardGlyphs_25587932: 25587932
+   Servicing_FixGlitchWallpaperSlideShowAnimation_33149564: 33149564
++  Servicing_HaileyOEMPolicyRemoval_35054742: 35054742
+   Servicing_HoverSelection_34281868: 34281868
+   Servicing_IContextMenuGDILeak_35118824: 35118824
+   Servicing_JpnEisuKeyBehavior_31282821: 31282821
+@@ -1344,10 +1343,7 @@
+   EnableExclusiveAppTransportOnHoloLens: 18263814
+   EnablePersonalizationLink: 8324675
+   EnhancedPalette: 30915588
+-  EnumDisplayDevices_UseSharedLock: 31048924
+-  EnumDisplayDevices_UseSharedLock_DontCheck: 31051196
+   EnumDisplayMonitors_UseSharedLock: 31059856
+-  EnumDisplaySettings_UseSharedLockWhenPossible: 31058687
+   Erpsrbspi: 30784717
+   ExpandedEIC: 18675136
+   ExperimentalHidSensors: 15950370
+@@ -1520,7 +1516,6 @@
+   MSRC56454_24922760: 24922760
+   MSRC56582_25185823: 25185823
+   MSRC56583_25185841: 25185841
+-  MSRC56623_25201347: 25201347
+   MSRC56839_25338013: 25338013
+   MSRC56874_25360497: 25360497
+   MSRC56933_26340645: 26340645
+@@ -1566,12 +1561,12 @@
+   MSRC61699_29922275: 29922275
+   MSRC61979_30166763: 30166763
+   MSRC61991_30190627: 30190627
+-  MSRC62177_30782480: 30782480
+   MSRC62190_30829971: 30829971
+   MSRC62359_30915667: 30915667
+   MSRC62360_30915721: 30915721
+   MSRC62553_31027277: 31027277
+   MSRC62685_27631800: 27631800
++  MSRC62686_32291828: 32291828
+   MSRC62828_31190098: 31190098
+   MSRC62942_31254234: 31254234
+   MSRC62946_31236997: 31236997
+@@ -1637,10 +1632,10 @@
+   MSRC64746_32425728: 32425728
+   MSRC64746_32425730: 32425730
+   MSRC64763_32434971: 32434971
++  MSRC64825_32472455: 32472455
+   MSRC64832_32474491: 32474491
+   MSRC64834_32474822: 32474822
+   MSRC64834_32474824: 32474824
+-  MSRC64853_32488163: 32488163
+   MSRC64892_32519672: 32519672
+   MSRC64907_32540543: 32540543
+   MSRC64963_32698962: 32698962
+@@ -1650,17 +1645,46 @@
+   MSRC65042_32805760: 32805760
+   MSRC65056_32865215: 32865215
+   MSRC65064_32872568: 32872568
++  MSRC65159_33045122: 33045122
+   MSRC65188_33102138: 33102138
++  MSRC65193_33108752: 33108752
++  MSRC65194_33108855: 33108855
++  MSRC65288_33256830: 33256830
++  MSRC65289_33256947: 33256947
++  MSRC65290_33257011: 33257011
++  MSRC65291_33257186: 33257186
+   MSRC65305_33279484: 33279484
+   MSRC65330_33282138: 33282138
++  MSRC65359_33317886: 33317886
+   MSRC65389_33341811: 33341811
+   MSRC65401_33357069: 33357069
+-  MSRC65454_33279943: 33279943
++  MSRC65415_34854640: 34854640
++  MSRC65449_33449376: 33449376
++  MSRC65454_33451446: 33451446
++  MSRC65465_33462387: 33462387
++  MSRC65499_33495811: 33495811
++  MSRC65504_33496456: 33496456
++  MSRC65523_33525496: 33525496
+   MSRC65535_33532345: 33532345
++  MSRC65573_33575024: 33575024
++  MSRC65587_33588537: 33588537
++  MSRC65627_33622376: 33622376
+   MSRC65638_33650181: 33650181
++  MSRC65651_33658370: 33658370
++  MSRC65664_33668741: 33668741
+   MSRC65824_33830200: 33830200
++  MSRC65948_33968375: 33968375
++  MSRC66071_34131098: 34131098
++  MSRC66213_34464455: 34464455
+   MSRC66407_34784904: 34784904
+-  MSRC66417_34804392: 34804392
++  MSRC66577_34956299: 34956299
++  MSRC66578_34956333: 34956333
++  MSRC66600_35030474: 35030474
++  MSRC66858_35380716: 35380716
++  MSRC66887_35409314: 35409314
++  MSRC67071_35591924: 35591924
++  MSRC67073_35592620: 35592620
++  MSRC67156_35686021: 35686021
+   MTCATest: 29248010
+   MTests: 31073511
+   MWTest: 27923976
+@@ -1848,7 +1872,6 @@
+   VAIL_Vsync_Projection: 21742760
+   VDSLTest: 32266484
+   VTCC: 31682123
+-  VTFrame: 29718541
+   VTest: 31070505
+   VblankInkPrediction: 20455341
+   ViewAffinity: 7983929
