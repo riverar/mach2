@@ -1,0 +1,172 @@
+--- B:/22523/features_capstone_nosymbols.txt	Thu Jan 06 22:07:31 2022
++++ B:/22526/features_capstone_nosymbols.txt	Thu Jan 06 22:07:54 2022
+@@ -84,11 +84,13 @@
+   BIPATimers: 35741749
+   BIPATimersValidation: 35741764
+   BSTAImmersiveShell: 37077905
++  BackupUsoStore: 36845438
+   BamQosGrouping: 0
+   BannerOpportunity: 13686160
+   BannersCanTargetKnownFolders: 17202054
+   BannersKFMTemplate: 14105151
+   BatteryNotificationsApplyAll: 27883184
++  BiGlobalLockWatchdog: 37256214
+   BioFeedbackOnXamlIsland: 31517562
+   BitLocker_Encrypt_All_Drives: 13686439
+   BitLocker_RP_AAD_Backup_Check: 21341508
+@@ -261,6 +263,7 @@
+   DarkMode: 28765927
+   DataCollection: 21253247
+   DebounceDeviceConnectSound: 34734680
++  DeclaredConfiguration_Desktop: 32303130
+   Decoder_MediaUsage: 0
+   DecreaseTabSuspensionDelay: 14184448
+   DeepInferno: 11038064
+@@ -327,13 +330,16 @@
+   EnableBackgroundTasks: 21008641
+   EnableDefaultFolderIconFallback: 23394095
+   EnableHostResourceSharing: 0
++  EnableMPR: 28997116
+   EnableNSkuAutoInstallWebExpPolicyChecks: 34897283
+   EnableSessionTerminateNotification: 24006437
+   EnableStartOnAFCOnWCOS: 16430322
+   EnforceWIPForTokenBroker: 9720665
++  EnhancedAutopilotFeature: 37048941
+   EnhancedBarriers: 32751694
+   EnhancedClipboard: 28554347
+   EnlightenmentDialogForSModeBrowser: 27486798
++  EnrichThirdPartyIrisContent: 36777462
+   ErrorFeedback: 14557998
+   ExcludeDevFolders: 21445372
+   ExitAppOnClose: 23402699
+@@ -547,7 +553,6 @@
+   MouthNoseOcclusionModel: 27446000
+   MpeConnectionMonitor: 31758802
+   MsaaPipe: 1464722
+-  MsaaProxyIAccessible2: 13083922
+   MtcLockRejuv: 35674037
+   MultiCoreClasses: 0
+   MultiLayerDHD: 11428947
+@@ -605,12 +610,15 @@
+   OobeEsimBootstrap: 23787264
+   OobeEsimDiscoveryTask: 21312859
+   OobeExperienceManageQueueWnfCallback: 26243368
++  OobeMMXPage: 32789062
+   OobeNetworkLogging: 35413044
+   OobeRequiredServiceEvent: 35545996
+   OpenCLOn12: 22145371
+   OpenFileDialogDFS: 27291829
+   OpenGLOn12: 0
+   OptimizePositionAndSizeUpdate: 30134375
++  OsConfigurationGetConfigurationDocument: 35115136
++  OsConfigurationParseJSONToDCDoc: 35038075
+   OutOfProcIContextMenu: 23323390
+   OverflowPanel: 35620394
+   PCAccessSetting: 6171364
+@@ -956,6 +964,7 @@
+   TaskviewCleanupDropShadows: 28210564
+   TestAlertBannerIrisCampaign: 32292267
+   TestCustomIrisDelay: 36755593
++  TestFamilyValuePropBannerIrisCampaign: 36921329
+   TestIdealStateControlIrisCampaign: 32436187
+   TestIrisCampaignActions: 36611102
+   TestWXHIrisCampaign: 37065168
+@@ -992,18 +1001,11 @@
+   UUS_WaasMedic_Worker: 36612845
+   UWPGameBar: 13602588
+   UiaCacheRuntimeIdOnReturnedElements: 29277490
+-  UiaCrossMachineWinEventPruning: 23263127
+-  UiaCustomAnnotationRegistration: 26603073
+-  UiaGenericCrossMachine: 20506114
+   UiaGetUiaNodeOptimization: 24023736
+   UiaHandleLargePipeMessages: 31469056
+-  UiaInProcMsaaEventHandling: 26124463
+   UiaNewWindowRegisterEventsAsGroup: 29277678
+-  UiaNonBlockingRequests: 24023386
+-  UiaOptimizedEventRegistration: 24023428
+   UiaOptimizedPatternsBulkFetch: 31743520
+   UiaRemoteOperationExtension: 27226363
+-  UiaSendVersionNumber: 3623713
+   UiaTreeViewItemProperties: 36640000
+   UiaWindowManager: 23311586
+   UnattendedMSPowerRequests: 0
+@@ -1055,6 +1057,7 @@
+   UserIntentSessionContext: 31029676
+   UserManager_AADC: 32407602
+   UserSwitchTokenSwap: 19390280
++  UserTokenVerification: 37198862
+   VDSkipFullRes: 33812524
+   VP9_DX12_VideoDecode: 0
+   VPNReliability: 32771196
+@@ -1091,6 +1094,7 @@
+   WUEventsReconfigurationAndSampling: 29743028
+   WVDFileContentIndexing: 22441124
+   WVD_MultiSession_User_Configuration: 23685071
++  WVD_UserSession_DeviceCSP_Filtering: 36738211
+   WXHBackgroundTask: 36803259
+   WarpEnableJITCacheOptimizations: 7837283
+   WbsUsbAltSetting6: 0
+@@ -1101,6 +1105,7 @@
+   WdagDynamicVgpuDisable: 33155902
+   WdagIronAPIs: 26912196
+   WdagManganeseAPIs: 26988922
++  WdagStandbyPlatformContainers: 31544377
+   Wddm30CpuVisible: 0
+   WebThreatDefenseComponents: 34032856
+   WebThreatDefenseToggle: 33755739
+@@ -1543,7 +1548,6 @@
+   MSRC66247_34508175: 34508175
+   MSRC66266_34576809: 34576809
+   MSRC66363_34744120: 34744120
+-  MSRC66387_34759121: 34759121
+   MSRC66407_34784904: 34784904
+   MSRC66418_34805222: 34805222
+   MSRC66437_34859461: 34859461
+@@ -1560,7 +1564,6 @@
+   MSRC66723_35210337: 35210337
+   MSRC66727_35211842: 35211842
+   MSRC66761_35258926: 35258926
+-  MSRC66808_35291341: 35291341
+   MSRC66845_35367229: 35367229
+   MSRC66869_35383959: 35383959
+   MSRC66887_35409314: 35409314
+@@ -1587,6 +1590,7 @@
+   MSRC67580_36327531: 36327531
+   MSRC68318_36893589: 36893589
+   MSRC68659_37131550: 37131550
++  MSRC68856_37082688: 37082688
+   MTests: 31073511
+   MWTest: 27923976
+   MakePowershellTheDefaultConsole: 6527944
+@@ -1881,6 +1885,7 @@
+   Servicing_ChatUriTelemetry_35118464: 35118464
+   Servicing_CommandBarRTL_36733599: 36733599
+   Servicing_ContextMenuAppExtensionIcons_34862854: 34862854
++  Servicing_CtaManagerDelay_36947018: 36947018
+   Servicing_DirectoryBackgroundMiniMenu_34927130: 34927130
+   Servicing_DisableWheaResumedFromHibernate_36438331: 36438331
+   Servicing_ExplorerCmdBarPerf_34731179: 34731179
+@@ -1908,6 +1913,7 @@
+   Servicing_PenMenuCrash_32853045: 32853045
+   Servicing_ProjectModeFocusFix_34762648: 34762648
+   Servicing_RTBShellLibraryUpdate_34800334: 34800334
++  Servicing_RemoveAppFrame_36910487: 36910487
+   Servicing_RemovedFodMarkers_36414665: 36414665
+   Servicing_RenameFocus_37028243: 37028243
+   Servicing_RestrictAgeForNotificationsInCourtesyEngine_33048438: 33048438
+@@ -1941,6 +1947,7 @@
+   Servicing_WldpConsistency_33595474: 33595474
+   Servicing_WslApiComFix_35521080: 35521080
+   Servicing_XblAuthUserlessTokens_37076634: 37076634
++  Servicing_XblAuthXasdWinVer_37293418: 37293418
+   SpeechProcessorStabilization: 34718342
+   TSF1Fallback: 35590812
+   TabSvcAutoStart: 35590717
+@@ -1985,6 +1992,7 @@
+   MonitorIoctlTesting: 20125790
+   NoUserProfileSystemBackup: 36814489
+   PriorityBoostBeforeWindowReady: 36808198
++  RemoveSihostDependencyFromAppxsvc: 24401252
+   RestrictXpdm_Block3rdPartyDrivers: 31654398
+   RestrictXpdm_RemoveRdpdd: 35706077
+   SAWTest: 27501428
