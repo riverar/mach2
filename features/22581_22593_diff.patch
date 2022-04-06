@@ -1,0 +1,223 @@
+--- B:/22581/features_capstone_nosymbols.txt	Wed Mar 23 11:45:31 2022
++++ B:/22593/features_capstone_nosymbols.txt	Wed Apr 06 12:20:11 2022
+@@ -8,6 +8,7 @@
+   36435131: 36435131
+   36571082: 36571082
+   37023586: 37023586
++  37141740: 37141740
+   3FingerAnimationSwitchApps: 36221438
+   AADAclCertificateForNetworkService: 37014609
+   AADBindingTokenLogonForRDP: 25585329
+@@ -63,6 +64,7 @@
+   ApplicationFrameTitleFromWindowManager: 26290763
+   ApplicationGuardDownloadToHost: 13740217
+   AppraiserSVChecks: 32064666
++  ArbiterMetadataContainer: 38339672
+   ArrowKeysUnselect: 17685567
+   ArticulatedHand2DInteraction: 18127454
+   ArticulatedHandData: 17781907
+@@ -108,7 +110,6 @@
+   BluetoothConvergedHfp: 7639556
+   BluetoothEnhancedRadioDiagnostics: 0
+   BluetoothFlyout_WCOSCDG: 19919111
+-  BluetoothGattRobustCaching: 16540499
+   BluetoothHfpHF: 4854405
+   BluetoothL2: 29881313
+   BluetoothProximityPlatform: 17815254
+@@ -337,6 +338,7 @@
+   DynamicSearchBox: 37595921
+   DynamicSearchBoxAPIs: 36933099
+   EPUB_HostExtension: 15477137
++  ESSGP: 37649933
+   ETUpdate: 34308080
+   EapTeap: 20577243
+   EapTls13: 25326323
+@@ -437,6 +439,7 @@
+   HardwareMicMuteButton: 36689271
+   HardwareMicMuteConfirmator: 35232539
+   HardwareMicMuteHotkey: 36756578
++  Hcl: 13312437
+   HcsRelaxRpcAccess: 37715110
+   HcsSecurityMitigation: 11741813
+   HelloFaceDriverDowngradeCapability: 34933858
+@@ -978,7 +981,6 @@
+   TaskbarHideSearchButton: 36494306
+   TaskbarHideTaskViewButton: 36434422
+   TaskbarSuggestions: 6258161
+-  TerminalAsDefault: 32867655
+   TestAlertBannerIrisCampaign: 32292267
+   TestCustomIrisDelay: 36755593
+   TestFamilyValuePropBannerIrisCampaign: 36921329
+@@ -1008,7 +1010,6 @@
+   UPExperimentation: 15546617
+   UPExperimentation|mach2.warning.duplicate0: 29898434
+   UPLargePrintPayload: 36898932
+-  UPSovereignCloud: 34953438
+   URO: 0
+   UUS: 20603363
+   UUS_MoNotificationUx_SxS: 36325875
+@@ -1175,7 +1176,7 @@
+   XamlIslandsInputViewHosting: 35802524
+   XblAuthGamerAccountCleared: 17728688
+   XblAuthGamerAccountSet: 17512732
+-  XboxServerFlows: 0
++  XboxServerFlows: 21144178
+   ipmiErrorSource: 0
+   vaDownloadHWAcceleratedSpeechModel: 37739154
+ 
+@@ -1215,7 +1216,6 @@
+   AutoBrightnessService: 7203497
+   AutoColorManagementEnabled: 24316826
+   AutomaticSignOnLockSetting: 11124079
+-  BlackScreenHotkeyFullLkd: 36128273
+   BonusBarServiceContent: 8240687
+   BrowserReplacement: 21167812
+   BugFixVoiceTypingDuplicateComposition: 35590379
+@@ -1521,18 +1521,13 @@
+   MSRC64273_32106102: 32106102
+   MSRC64290_32291721: 32291721
+   MSRC64294_36566870: 36566870
+-  MSRC64297_32291725: 32291725
+-  MSRC64305_32291723: 32291723
+-  MSRC64306_32291710: 32291710
+   MSRC64310_32291719: 32291719
+   MSRC64331_32291714: 32291714
+   MSRC64333_32291691: 32291691
+-  MSRC64349_32291697: 32291697
+   MSRC64351_32291699: 32291699
+   MSRC64371_32291671: 32291671
+   MSRC64374_32291704: 32291704
+   MSRC64435_32767078: 32767078
+-  MSRC64437_32291705: 32291705
+   MSRC64582_32292762: 32292762
+   MSRC64594_32300957: 32300957
+   MSRC64603_32304823: 32304823
+@@ -1551,9 +1546,7 @@
+   MSRC64907_32540543: 32540543
+   MSRC65001_32765658: 32765658
+   MSRC65024_32796115: 32796115
+-  MSRC65089_32900241: 32900241
+   MSRC65305_33279484: 33279484
+-  MSRC65415_34854640: 34854640
+   MSRC65449_33449376: 33449376
+   MSRC65465_33462387: 33462387
+   MSRC65473_33470314: 33470314
+@@ -1562,7 +1555,6 @@
+   MSRC65574_33575080: 33575080
+   MSRC65587_33588537: 33588537
+   MSRC65660_33666197: 33666197
+-  MSRC65688_33698297: 33698297
+   MSRC65767_33788777: 33788777
+   MSRC65785_33792954: 33792954
+   MSRC65787_33793529: 33793529
+@@ -1583,7 +1575,6 @@
+   MSRC66600_35030474: 35030474
+   MSRC66603_35031671: 35031671
+   MSRC66604_35031745: 35031745
+-  MSRC66713_35204597: 35204597
+   MSRC66714_35204835: 35204835
+   MSRC66727_35211842: 35211842
+   MSRC66746_35240787: 35240787
+@@ -1631,35 +1622,21 @@
+   MSRC68064_36720144: 36720144
+   MSRC68116_36762209: 36762209
+   MSRC68117_36768249: 36768249
+-  MSRC68118_36762447: 36762447
+   MSRC68119_36762871: 36762871
+-  MSRC68122_36763415: 36763415
+   MSRC68213_36814406: 36814406
+   MSRC68228_36828225: 36828225
+-  MSRC68246_36838434: 36838434
+-  MSRC68251_36839588: 36839588
+   MSRC68266_36856359: 36856359
+-  MSRC68291_36867736: 36867736
+   MSRC68311_36891282: 36891282
+   MSRC68318_36893589: 36893589
+   MSRC68336_36906667: 36906667
+-  MSRC68350_36912450: 36912450
+   MSRC68388_36937770: 36937770
+   MSRC68423_36971391: 36971391
+-  MSRC68440_36985638: 36985638
+-  MSRC68449_36987434: 36987434
+   MSRC68531_37047866: 37047866
+-  MSRC68558_37064233: 37064233
+   MSRC68568_37068761: 37068761
+-  MSRC68587_37082940: 37082940
+   MSRC68589_37083693: 37083693
+-  MSRC68610_37094979: 37094979
+   MSRC68647_37110088: 37110088
+-  MSRC68651_37110883: 37110883
+-  MSRC68691_37156027: 37156027
+   MSRC68698_37157231: 37157231
+   MSRC68772_37219378: 37219378
+-  MSRC68801_37235610: 37235610
+   MSRC68856_37082688: 37082688
+   MSRC69135_37427454: 37427454
+   MSRC69722_37812153: 37812153
+@@ -1765,6 +1742,7 @@
+   SaveStrokeRenderingInfoInISF: 8134511
+   Scheduler_VSync_Smoothing: 26888404
+   ScriptingEngines_MSXML_GroupPolicyJScriptReplacement: 32640845
++  SecureCamera: 31101960
+   SensorReserved: 7983914
+   SensorReserved_Api: 10665299
+   SensorThresholding: 22066884
+@@ -1793,6 +1771,7 @@
+   Servicing_DateAndTimeSettingsUACPrompt_36703523: 36703523
+   Servicing_DeviceOnLost_32463455: 32463455
+   Servicing_DisableWheaResumedFromHibernate_36438331: 36438331
++  Servicing_DisableWhiteboardAppPrelaunchOnPenMenu_38462519: 38462519
+   Servicing_ExplorerCompositionHostAddVisual_32109678: 32109678
+   Servicing_ExplorerCrashCreateDrawingSurface_32219994: 32219994
+   Servicing_ExplorerIntDarkMode_31144776: 31144776
+@@ -1818,6 +1797,7 @@
+   Servicing_FixGlitchWallpaperSlideShowAnimation_33149564: 33149564
+   Servicing_GSKUSearchHeaderException_32224631: 32224631
+   Servicing_GetPhysicallyInstalledSystemMemoryRegistryWorkaround_37294887: 37294887
++  Servicing_IntelLockFile_38353730: 38353730
+   Servicing_IsFeedsAvailableExpectedErrorHandling_32238316: 32238316
+   Servicing_JpnEisuKeyBehavior_31282821: 31282821
+   Servicing_JpnReconversionEndWrongReading_29791812: 29791812
+@@ -1859,6 +1839,7 @@
+   Servicing_WheelPageCrash_36927220: 36927220
+   Servicing_WidgetsAEPOnStartPayload_37699704: 37699704
+   Servicing_WidgetsFixEarlyDismissOnHover_38194053: 38194053
++  Servicing_WidgetsReportAppVisibility_32622488: 32622488
+   Servicing_WinXReplaceTerminalWithPowerShell_37536857: 37536857
+   Servicing_Wintrust_Pathrules_Check_After_Set_36761978: 36761978
+   Servicing_WldpConsistency_33595474: 33595474
+@@ -1984,32 +1965,20 @@
+ 
+ ## Enabled By Default:
+ 
++  AdditionalBrightnessBuckets: 37834701
+   BamoWMOnDesktop: 35538206
+-  DxgkrnlPrereleaseDiagnostic: 9011807
+-  ExperimentalRefreshRates: 21320188
+   HVSUSSHTest: 32135017
+   MoveUWLMForDesktop: 32091812
+   ParentBamoMoveUwlm: 38032249
+-  SSPTest: 37667575
+-  SecureCamera: 31101960
+   Servicing_UserManagerPSID_37410562: 37410562
+-  Servicing_VirtualDesktopSwitcher_Preview_Hover_Behavior_33927328: 33927328
+ 
+ ## Disabled By Default:
+ 
+-  DESACDCOffset: 26883134
+-  DESPersonalizedBrightness: 26088835
+-  DES_Monitor_Groups: 23577149
+   DisableDXVA_AV1: 36499710
+   DisableDXVA_HEVC: 36500243
+   DisableDXVA_VP9: 36500244
+-  Dwm_Ownership_Leak_Bugchek: 11029914
+-  External_Adaptive_Color: 26085257
+-  ForceEnhancedMultiSessionRemoteVsyncEmulation: 29521070
+   LockBugFix_ReentrantLockAndUnlockActivityNotSerialized: 33711970
+-  MonitorIoctlTesting: 20125790
+-  Servicing_IntelLockFile_38106439: 38106439
+-  VAIL_Fake_Monitor_Projection: 21415082
++  SSODTest: 34618575
+ 
+ ## Always Disabled:
+ 
