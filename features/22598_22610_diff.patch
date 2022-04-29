@@ -1,0 +1,371 @@
+--- B:/22598/features_capstone_nosymbols.txt	Wed Apr 13 11:32:11 2022
++++ B:/22610/features_capstone_nosymbols.txt	Fri Apr 29 11:56:17 2022
+@@ -3,3 +3,2 @@
+   33823951: 33823951
+-  35238072: 35238072
+   35409324: 35409324
+@@ -45,3 +44,2 @@
+   AllowRenameOfExtensionOnlyFiles: 20240189
+-  AllowSecondaryMsa: 36221535
+   AltTabModal: 36226836
+@@ -56,3 +54,2 @@
+   AppDefaultsBrowserButton: 36648580
+-  AppDefaultsWebSearch: 23999489
+   AppInstallBatching: 6867405
+@@ -119,2 +116,3 @@
+   Brain_BinaryFileValidation: 34806659
++  Brain_DisableStateUpdateInAppContainer: 38726312
+   Brain_SkipSelfIfSxSNotVersioned: 38762750
+@@ -154,3 +152,3 @@
+   CShellOnWindowManagerIDK: 22855141
+-  CShellSettingsSearchbox: 0
++  CShellSettingsSearchbox: 19920047
+   CUICOORD: 28330126
+@@ -183,3 +181,2 @@
+   ChineseSimplifiedImeTheming_OSClient: 35746557
+-  Chs12KeyKeyboard: 36963894
+   ChsNarrowKeyboard: 36963879
+@@ -217,3 +214,2 @@
+   ConfigLock_DMClientCSP: 23806551
+-  ConfigureHitBoxForFolderOperations: 37081370
+   ConnectedFilesCache: 20169383
+@@ -225,3 +221,2 @@
+   ControlIndexingOnBattery: 13610405
+-  ControllerMotionPredictionModel: 29209419
+   ConvergedEapTlsStack: 25326317
+@@ -242,7 +237,6 @@
+   CurfewAllowanceCalculation: 33207570
++  CurrentVmVersionIsDefault: 11906105
+   CustomXamlUIDialog: 34037864
+-  D3D11MaxFrameLatencyOverride: 21084512
+   D3D12ContentProtection: 11067548
+   D3D12ExperimentalShaderModels: 8482022
+-  D3D12Force11on12: 12862045
+   D3D12HeapPriorities: 8187072
+@@ -259,3 +253,2 @@
+   D3D9_GameConfigStore_Override: 11420000
+-  D3D9_WindowAndDisplayMismatchShim: 11576687
+   DESEnableBrightnessHotkeysWithoutPowerGuids: 21706588
+@@ -269,5 +262,5 @@
+   DXGI_CrossAdapterScanOut: 24599531
++  DXGI_ExpandedPresentErrors: 37303151
+   DXGI_Hybrid_DList_Support_Update: 24640165
+   DXGI_VailMPO: 23425898
+-  DXGI_WindowAndDisplayMismatchShim: 11576689
+   DXGI_WindowedSwapEffectUpgrade: 23990563
+@@ -276,3 +269,2 @@
+   DamUserSessionDelay: 0
+-  DataCollection: 21253247
+   DebounceDeviceConnectSound: 34734680
+@@ -285,3 +277,2 @@
+   DefaultUser: 14861475
+-  DelayHandlingClipboardContent: 38095063
+   DelayedForceEviction: 0
+@@ -295,3 +286,2 @@
+   DesktopSpotlight: 26008405
+-  DesktopSpotlightStartEnabled: 37292357
+   DesktopSpotlightSystemSettingsPageTrigger: 38179238
+@@ -308,3 +298,2 @@
+   DisableAutoUserShutdownTimeout: 0
+-  DisableCRC32: 21092406
+   DisableContextMenus: 36435038
+@@ -321,3 +310,2 @@
+   DisplayRejuvPage: 31010280
+-  DisplaySleepPowerSettings: 31026792
+   DmaRemapping: 0
+@@ -330,3 +318,2 @@
+   DtsxHdmiEnabled: 23517231
+-  DtsxHdmiPromotion: 27141167
+   DualEngine_AllowF12: 23071760
+@@ -365,3 +352,2 @@
+   EnforceWIPForTokenBroker: 9720665
+-  EnhancedClipboard: 28554347
+   EnrichThirdPartyIrisContent: 37623514
+@@ -370,3 +356,2 @@
+   ExcludeDevFolders: 21445372
+-  ExitAppOnClose: 23402699
+   ExperienceExtensionsCanHidePages: 36150872
+@@ -385,3 +370,2 @@
+   FeatureConfigurationChannel: 5244441
+-  FeedsDynamicSearchBox: 27371092
+   FetchConcurrentInstallsFromOneSettings: 33337770
+@@ -412,5 +396,3 @@
+   GPM_LightWeightDxgKrnlETWKeyword: 24338497
+-  GPM_LostPresentsFastFail: 29733546
+   GPM_MLSD: 25222305
+-  GPM_MemUsageFastFail: 31324347
+   GameConfigStoreGameListEntries: 11973136
+@@ -438,3 +420,2 @@
+   HamDependencyGraph: 11801082
+-  HangDetectionThresholdTweaking: 16046125
+   HardwareMicMuteButton: 36689271
+@@ -442,4 +423,6 @@
+   HardwareMicMuteHotkey: 36756578
++  Hcl: 13312437
++  HcsRelaxRpcAccess: 37715110
++  HcsSecurityMitigation: 11741813
+   HelloFaceDriverDowngradeCapability: 34933858
+-  HelloFaceExperimentCameraTimeout: 36541473
+   HgsPlusParkingSupportRequired: 0
+@@ -450,2 +433,6 @@
+   HkuMonitor: 38198463
++  HnsEnableLWNICsForDrVNICs: 30100782
++  HnsFlowSteeringEngineNetworking: 30266022
++  HnsMirroredRoutingMultiple: 36991632
++  HnsWcosLoopback: 23636350
+   HoloImmersiveShellExtensionPointOptional: 36499053
+@@ -464,3 +451,2 @@
+   HvciCancelScan: 20815078
+-  HvciEverywhereInsiderOptIn: 14778232
+   HvciIncompatibleApps: 20887957
+@@ -485,2 +471,3 @@
+   ImeOnOffOnNarrow: 36588279
++  ImmersiveShellComponentsInitializationBudget: 27075521
+   IncrementalRecycleBinEnumeration: 24087738
+@@ -494,3 +481,2 @@
+   InputDrivenGTGAnimations: 33668320
+-  InputHubExperiment: 35500835
+   InputPanelPageSuspensionDeferralRelease: 36425940
+@@ -525,8 +511,6 @@
+   KeyGuard_Telemetry_30123167: 0
+-  KeyRectForSpaceAndOthers: 28555587
+   KeyboardInputVirtualization: 18837801
+-  KeyboardSettingLinkString: 35249129
+   KioskPositioner: 18518788
++  KryptonSoftLargePages: 21026262
+   LSA_SynchronousProfileLoaded: 23534517
+-  LcUseAppLocalSpeechRuntimes: 36641324
+   LegacyFolders: 31776450
+@@ -536,3 +520,3 @@
+   LockOnLogon: 32979348
+-  LogonUINoAcrylicOnSoftwareRender: 27017356
++  LogonTaskDurationsTIP: 37482934
+   LogonUINoUpdateUserInput: 30723191
+@@ -549,3 +533,2 @@
+   MSAAADSplit: 33061411
+-  MSEdgeJumpListItems: 33936741
+   MSGraphIntegration: 29990827
+@@ -557,7 +540,3 @@
+   MdmSupportForEdu: 9608605
+-  MeetNow_CreateButtonText: 28758888
+-  MeetNow_Description: 28622680
+-  MeetNow_SkypeLaunchPolicyCheck: 28622690
+   MicaBackdropInApplicationFrameHostTitlebar: 35681203
+-  MicrocodeAbTesting: 16667730
+   MinuteZeroExperiences: 8497738
+@@ -571,3 +550,2 @@
+   MopriaDiscovery: 13261424
+-  MoreTracelogging: 28555900
+   MouseInputVirtualization: 18793214
+@@ -581,3 +559,2 @@
+   MultiTaskingSettingsRestore: 37536520
+-  MultilingualExperiment: 19552709
+   MultitaskingSettingsSimplification: 37603987
+@@ -599,3 +576,2 @@
+   NightsWatchInferMotw: 24356642
+-  NoCandidateUISupport: 34750743
+   NoChangeStart: 36435051
+@@ -619,3 +595,3 @@
+   OnlineEFS: 8167107
+-  OnnxColorFaceDetector: 35780056
++  OnnxColorFaceDetector: 0
+   OobeAppsScanAfterUpdate: 33232335
+@@ -639,3 +615,2 @@
+   OutOfProcIContextMenu: 23323390
+-  OverflowPanel: 35620394
+   OverrideInspect: 37085408
+@@ -658,2 +633,3 @@
+   PerUserThumbnailCache_WCOS: 28349409
++  PersistenceDiskRemoval: 35550341
+   Personalization_StartRejuv: 31754019
+@@ -671,3 +647,2 @@
+   PowerAndBatteryPage: 30997927
+-  PowerButtonLiveDump: 0
+   PowerEventProcessorSystemIdle: 0
+@@ -713,3 +688,2 @@
+   RealtimeEnticement: 9982909
+-  RealtimeMode: 37786189
+   RebootDowntimeEstimateEvaluation: 25704917
+@@ -746,2 +720,3 @@
+   RemoveUserTileMRU: 24621400
++  ReportImpersonationStatus: 38765994
+   ReportLoggedOnCompleted: 20469805
+@@ -749,3 +724,2 @@
+   ReportScriptErrors: 13853803
+-  ReportShellPreferenceMisuse: 29538764
+   RequestExtensionErrorMessage: 35384833
+@@ -754,5 +728,2 @@
+   ResilientToCloudFileCalculatedProperties: 20681302
+-  ResourceManagerLcdCommitSave: 16669694
+-  ResourceManagerLimits: 31261443
+-  RespectMakeTextBigger: 24245154
+   ResponsiveScreenRotationAnimation: 35001794
+@@ -778,8 +749,2 @@
+   SchedulerAggressiveForegroundBoost: 0
+-  SchedulerAssistAllowRealTime: 0
+-  SchedulerAssistEnableBAM: 0
+-  SchedulerAssistLongSpinWait: 0
+-  SchedulerAssistPreemptionPriorityKick: 0
+-  SchedulerAssistSystemIrql: 0
+-  SchedulerAssistThreadFlag: 0
+   SchedulerFavoredCoreRotation: 0
+@@ -879,2 +844,3 @@
+   Settings_Rejuv_StorageSpaces: 36974906
++  SevSnp: 23356523
+   ShaderModel66Release: 28725761
+@@ -885,4 +851,2 @@
+   ShellWindowingLimitSnappedWindows: 30991329
+-  ShowBrowserOnValueBanner: 23531064
+-  ShowConsentUXForTesting: 30940593
+   ShowFamilyToNonAdmins: 36466220
+@@ -897,5 +861,2 @@
+   SkipCloakedWindowsWhenFallingBackToLastActiveWindow: 36556458
+-  SmartClipboardBackoffProfile: 37929070
+-  SmartClipboardBackoffThreshold: 38105777
+-  SmartClipboardUX: 37337255
+   SmartPrint: 13476978
+@@ -911,3 +872,2 @@
+   SoftParkingElections: 0
+-  SpellerScoreExperiments: 25352389
+   SplitTransactionHSIIWorkaround: 36695841
+@@ -916,3 +876,3 @@
+   SpotlightPersonalizationRequest: 9835896
+-  SsUseAppLocalSpeechRuntimes: 36669383
++  StableMacForInternalNICs: 24333588
+   StackedPriorityToasts: 26338990
+@@ -920,3 +880,2 @@
+   StartProvidesWebUrlToPH: 36840874
+-  StartSearchSuggestions: 18741303
+   StateRepository_DynamicDependencies: 23398575
+@@ -936,3 +895,2 @@
+   StubsBypassQueue: 25699808
+-  SuggestedSearchQueries: 37272181
+   SupportCDMInDefaultUser: 9300179
+@@ -942,5 +900,5 @@
+   SurfaceHub_RemoveSidebars: 10169763
+-  SuspensionFix: 37224490
+   SustainabilityInstallDeferral: 37631761
+   SvchostSplit: 8644228
++  SwitchExtensionResetInjection: 0
+   SwitchItemTitleDrag: 36421775
+@@ -963,3 +921,2 @@
+   TargetingSessionContextV6: 8049662
+-  Task34111152_ImageBackgroundBottomCorners: 34111152
+   Task34937368_LogonStyle: 34937368
+@@ -975,8 +932,2 @@
+   TaskbarSuggestions: 6258161
+-  TestAlertBannerIrisCampaign: 32292267
+-  TestCustomIrisDelay: 36755593
+-  TestFamilyValuePropBannerIrisCampaign: 36921329
+-  TestIdealStateControlIrisCampaign: 32436187
+-  TestIrisCampaignActions: 36611102
+-  TestWXHIrisCampaign: 37065168
+   ThemeAwareSplashScreens: 25936164
+@@ -999,2 +950,3 @@
+   TurboCorePC: 36841274
++  TurboMergePending: 38800333
+   TurboStaging: 36396252
+@@ -1031,5 +983,3 @@
+   UndockedMixedWorld: 37955970
+-  UndockedSCOOBENetworkDropoffHandler: 31896588
+   UndockedScoobeBrowserPermanentNode: 36748367
+-  UndockedScoobeEligibilityBasedOnML: 31333224
+   UndockedScoobeOnCleanInstallNoNetwork: 31333241
+@@ -1052,3 +1002,2 @@
+   UniversalFileId: 9673591
+-  UnpinFolderVerbInContextMenu: 35701664
+   UnsupportedHardwareNotification: 33122876
+@@ -1067,2 +1016,3 @@
+   UseNewSearchAndCortanaApps: 19263623
++  UseNtCopyFileChunk: 0
+   UseProductionEndpoint: 28663185
+@@ -1085,3 +1035,2 @@
+   VaUnsupportedLanguageExperience: 36863320
+-  VaUseAppLocalSpeechRuntimes: 36645868
+   VacOcclusion: 8118562
+@@ -1092,3 +1041,2 @@
+   ValueBannerCDMLiteV2: 30785790
+-  ValueBannerShowOneItemTemplate: 21969097
+   VelocityEligibilityUsingFlightingApi: 8776276
+@@ -1101,3 +1049,2 @@
+   VoiceTypingMicrophoneSetting: 37041514
+-  VpmUpdates: 27923675
+   VwSotUpdates: 34146562
+@@ -1109,3 +1056,2 @@
+   WISE_EnergyBatteryProviders: 25932784
+-  WPTest: 34538730
+   WSL_Install_Lifted_By_Default: 36717103
+@@ -1124,2 +1070,10 @@
+   WdagAsIsolationPlatform: 22756199
++  WdagCreateProgressUpdates: 31295704
++  WdagDynamicVgpuDisable: 33155902
++  WdagIronAPIs: 26912196
++  WdagManganeseAPIs: 26988922
++  WdagMultiPlatformContainerSupport: 23783295
++  WdagNickelClipboardEnhancements: 30094361
++  WdagNickelInvalidContainerCleanup: 36891988
++  WdagStandbyPlatformContainers: 31544377
+   Wddm30CpuVisible: 0
+@@ -1133,3 +1087,2 @@
+   WinSEFileExperiences: 34545233
+-  WindowHelloWinBioServiceCustomInterval: 28919707
+   WindowTabHostBackgroundInit: 33340028
+@@ -1147,4 +1100,2 @@
+   WorkFilesAsPersonalToUsb: 8117523
+-  WsxPacksRevoke: 37885429
+-  WsxSelfHealing: 35359296
+   XAMLFileExplorerCloudFiles: 21154437
+@@ -1584,3 +1535,2 @@
+   MSRC66905_35434471: 35434471
+-  MSRC66908_35434756: 35434756
+   MSRC66919_35453408: 35453408
+@@ -1647,3 +1597,2 @@
+   MSRC68266_36856359: 36856359
+-  MSRC68311_36891282: 36891282
+   MSRC68318_36893589: 36893589
+@@ -1651,5 +1600,5 @@
+   MSRC68351_36912516: 36912516
+-  MSRC68388_36937770: 36937770
+   MSRC68423_36971391: 36971391
+   MSRC68531_37047866: 37047866
++  MSRC68545_39161167: 39161167
+   MSRC68558_37064233: 37064233
+@@ -1695,3 +1644,2 @@
+   MSRC69836_37884901: 37884901
+-  MSRC69924_37976439: 37976439
+   MSRC70021_38043368: 38043368
+@@ -1822,2 +1770,3 @@
+   Servicing_CMtPtRemoteCrash_37067216: 37067216
++  Servicing_CiComputeHashesOnEveryOfficeLaunch_38194156: 38194156
+   Servicing_CleanUpWindowsClassesBeforeUnregister_32335491: 32335491
+@@ -2028,2 +1977,3 @@
+   ParentBamoMoveUwlm: 38032249
++  Servicing_HyperVFirewall_38632244: 38632244
+   Servicing_RemoteEfsWebDav12BRegression_37747912: 37747912
+@@ -2038,3 +1988,2 @@
+   LockBugFix_ReentrantLockAndUnlockActivityNotSerialized: 33711970
+-  SSODTest: 34618575
+ 
+@@ -2042,22 +1991,3 @@
+ 
+-  BiGlobalLockWatchdog: 37256214
+-  EICForJapanese: 17063631
+-  EICForKorean: 17261077
+-  FaceClientEnrollmentExperience: 14218496
+-  FeedsTaskbarHeadline: 27371152
+-  InPlaceUpdateForMediumPackages: 11665695
+-  InPlaceUpdateForSmallPackages: 9899069
+-  LockReliability_PerformanceBoost: 9073709
+   MeetNow: 28170999
+-  SASTest: 27923942
+-  SetLockScreenImageAsDesktopBackground: 5458669
+-  SetNumberOfDaysDisplayedInTimeline: 18917037
+-  ShellSuggestionsInTimeline: 18546370
+-  SingleTabVisuals: 17608042
+-  TabShellAutoTabbingPreference: 17057765
+-  TabShellVisibility: 13849566
+-  TabsInSnapAssist: 27753272
+-  UseDDisplayForDWM: 35985717
+-  UserIntentionPrediction: 24766054
+-  WebTimeline: 18824324
+ 
