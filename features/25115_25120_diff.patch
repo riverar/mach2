@@ -1,0 +1,136 @@
+--- B:/25115/features_capstone_nosymbols.txt	Wed May 11 11:14:31 2022
++++ B:/25120/features_capstone_nosymbols.txt	Wed May 18 21:35:06 2022
+@@ -132,2 +132,3 @@
+   BufferCommands: 7471763
++  BugFix23115857: 23115857
+   BugFix31829865: 31829865
+@@ -202,3 +203,2 @@
+   ClipboardRetries: 25277690
+-  CloudBMRSingleDownload: 37065183
+   CloudDownloadAndGo: 7007735
+@@ -256,2 +256,4 @@
+   CustomXamlUIDialog: 34037864
++  CxToWinRTLayoutData: 38750602
++  CxToWinRTTextInput: 38455947
+   D3D12ContentProtection: 11067548
+@@ -303,2 +305,3 @@
+   DesktopIconLayoutRefactor: 3261926
++  DesktopSearchBox: 37969115
+   DesktopSpotlight: 26008405
+@@ -316,3 +319,2 @@
+   DisableAddAccountForFamilyNonOrg: 36660568
+-  DisableAutoUserShutdownTimeout: 0
+   DisableContextMenus: 36435038
+@@ -379,2 +381,3 @@
+   ExcludeDevFolders: 21445372
++  ExitAppOnClose: 23402699
+   ExperienceExtensionsCanHidePages: 36150872
+@@ -453,5 +456,2 @@
+   HardwareMicMuteHotkey: 36756578
+-  Hcl: 13312437
+-  HcsRelaxRpcAccess: 37715110
+-  HcsSecurityMitigation: 11741813
+   HealthPillarUIRevamp: 19448595
+@@ -464,6 +464,2 @@
+   HkuMonitor: 38198463
+-  HnsEnableLWNICsForDrVNICs: 30100782
+-  HnsFlowSteeringEngineNetworking: 30266022
+-  HnsMirroredRoutingMultiple: 36991632
+-  HnsWcosLoopback: 23636350
+   HoloImmersiveShellExtensionPointOptional: 36499053
+@@ -519,2 +515,3 @@
+   InputPanelPageSuspensionDeferralRelease: 36425940
++  InputThemingCompletion_OSClient: 38437771
+   InputViewCoordinating: 35260686
+@@ -554,3 +551,2 @@
+   KioskPositioner: 18518788
+-  KryptonSoftLargePages: 21026262
+   LSA_SynchronousProfileLoaded: 23534517
+@@ -589,4 +585,2 @@
+   MixedRealityShellAsShellExperience: 37956022
+-  MkTme: 31444823
+-  MkTmeRegKey: 32316632
+   MmHardwareAccelerators: 0
+@@ -599,2 +593,3 @@
+   MoreProgrammableSlotsInStart: 39177456
++  MoreTracelogging: 28555900
+   MouseInputVirtualization: 18793214
+@@ -627,2 +622,3 @@
+   NightsWatchRevertAllowed: 0
++  NoCandidateUISupport: 34750743
+   NoChangeStart: 36435051
+@@ -677,3 +673,2 @@
+   PerUserThumbnailCache_WCOS: 28349409
+-  PersistenceDiskRemoval: 35550341
+   Personalization_StartRejuv: 31754019
+@@ -696,3 +691,2 @@
+   PreinstalledAppSupport: 35286366
+-  PrereleaseVmVersions: 12518852
+   PreserveSecureAssessmentApp: 18212771
+@@ -774,2 +768,3 @@
+   ReportScriptErrors: 13853803
++  ReportShellPreferenceMisuse: 29538764
+   RequestExtensionErrorMessage: 35384833
+@@ -795,2 +790,3 @@
+   SMEIntegration: 17149389
++  STMTest: 38168511
+   SUIWUTest: 30939958
+@@ -833,2 +829,3 @@
+   Servicing_MiniSearchViewAppearingEmpty_36138022: 36138022
++  Servicing_PreventBugcheckWhenFileSizeLessThanResourceSize_36101939: 0
+   Servicing_TaskbarShiftClick_36479996: 36479996
+@@ -897,3 +894,2 @@
+   Settings_Rejuv_StorageSpaces: 36974906
+-  SevSnp: 23356523
+   ShareAnyWindow_VisualIndication: 35232263
+@@ -903,3 +899,2 @@
+   ShellWindowingLimitSnappedWindows: 30991329
+-  ShowConsentUXForTesting: 30940593
+   ShowFamilyToNonAdmins: 36466220
+@@ -932,3 +927,2 @@
+   SpotlightPersonalizationRequest: 9835896
+-  StableMacForInternalNICs: 24333588
+   StackedPriorityToasts: 26338990
+@@ -957,2 +951,3 @@
+   SurfaceHub_RemoveSidebars: 10169763
++  SuspendableTasks: 39076571
+   SustainabilityInstallDeferral: 37631761
+@@ -960,3 +955,2 @@
+   SvchostSplit: 8644228
+-  SwitchExtensionResetInjection: 0
+   SwitchItemTitleDrag: 36421775
+@@ -1003,2 +997,3 @@
+   TouchKeyboardPixelGapAtRight: 36964436
++  TouchKeyboardPostSv2BugFixes: 39266205
+   TouchPadController: 8377349
+@@ -1134,10 +1129,2 @@
+   WdagAsIsolationPlatform: 22756199
+-  WdagCreateProgressUpdates: 31295704
+-  WdagDynamicVgpuDisable: 33155902
+-  WdagIronAPIs: 26912196
+-  WdagManganeseAPIs: 26988922
+-  WdagMultiPlatformContainerSupport: 23783295
+-  WdagNickelClipboardEnhancements: 30094361
+-  WdagNickelInvalidContainerCleanup: 36891988
+-  WdagStandbyPlatformContainers: 31544377
+   Wddm30CpuVisible: 0
+@@ -1575,3 +1562,2 @@
+   MSRC66101_34221844: 34221844
+-  MSRC66213_34464455: 34464455
+   MSRC66363_34744120: 34744120
+@@ -1591,3 +1577,2 @@
+   MSRC66869_35383959: 35383959
+-  MSRC66883_35406322: 35406322
+   MSRC66905_35434471: 35434471
+@@ -1603,3 +1588,2 @@
+   MSRC66971_35518840: 35518840
+-  MSRC67043_35576979: 35576979
+   MSRC67044_35577074: 35577074
+@@ -1920,2 +1904,3 @@
+   Servicing_LongSystemUptimePrediction_26864350: 26864350
++  Servicing_MSIScript_38616121: 38616121
+   Servicing_MicrosoftEdgeFilter_36720766: 36720766
+@@ -1928,3 +1913,2 @@
+   Servicing_PolicyManagerFreeGetPolicyDataCrash_32812950: 32812950
+-  Servicing_PreventBugcheckWhenFileSizeLessThanResourceSize_36101939: 36101939
+   Servicing_RegisterDeviceWithManagementUsingAADDeviceCredentials_27687908: 27168760
