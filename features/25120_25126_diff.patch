@@ -1,0 +1,137 @@
+--- B:/25120/features_capstone_nosymbols.txt	Wed May 18 21:35:06 2022
++++ B:/25126/features_capstone_nosymbols.txt	Wed May 25 11:44:51 2022
+@@ -72,2 +72,3 @@
+   AttributeManagerSingleton: 37586555
++  AttributeProvidersConcurrentRefresh: 39379499
+   AudioEndpointBuilderTopoPerfImp: 27511625
+@@ -231,2 +232,3 @@
+   CompatMenuGetHelp: 37319559
++  Compattelrunner_EcoQoS: 38634037
+   ConfigLock_DMClientCSP: 23806551
+@@ -456,2 +458,5 @@
+   HardwareMicMuteHotkey: 36756578
++  Hcl: 13312437
++  HcsRelaxRpcAccess: 37715110
++  HcsSecurityMitigation: 11741813
+   HealthPillarUIRevamp: 19448595
+@@ -464,2 +469,6 @@
+   HkuMonitor: 38198463
++  HnsEnableLWNICsForDrVNICs: 30100782
++  HnsFlowSteeringEngineNetworking: 30266022
++  HnsMirroredRoutingMultiple: 36991632
++  HnsWcosLoopback: 23636350
+   HoloImmersiveShellExtensionPointOptional: 36499053
+@@ -495,3 +504,3 @@
+   IE_SETTINGSYNCMIGRATION_FAVORITES: 26601480
+-  IMDSLicensingIntegration: 31129112
++  IMDSLicensingIntegration: 0
+   IMET: 35418257
+@@ -551,2 +560,3 @@
+   KioskPositioner: 18518788
++  KryptonSoftLargePages: 21026262
+   LSA_SynchronousProfileLoaded: 23534517
+@@ -554,2 +564,3 @@
+   LightingWhenLidClosed: 16487091
++  LiteWhiteNTH: 33355279
+   LockBugFix_CheckUwpLockAppRequirements: 16605524
+@@ -585,2 +596,4 @@
+   MixedRealityShellAsShellExperience: 37956022
++  MkTme: 31444823
++  MkTmeRegKey: 32316632
+   MmHardwareAccelerators: 0
+@@ -602,3 +615,2 @@
+   MultiCoreClasses: 0
+-  MultiLayerDHD: 11428947
+   MultiTaskingSettingsRestore: 37536520
+@@ -673,2 +685,3 @@
+   PerUserThumbnailCache_WCOS: 28349409
++  PersistenceDiskRemoval: 35550341
+   Personalization_StartRejuv: 31754019
+@@ -691,2 +704,3 @@
+   PreinstalledAppSupport: 35286366
++  PrereleaseVmVersions: 12518852
+   PreserveSecureAssessmentApp: 18212771
+@@ -782,3 +796,2 @@
+   RnR_PnPDisableEnable: 17363926
+-  RollingShutterCorrection: 11949150
+   RotateFrameToDetectFace: 26514007
+@@ -809,8 +822,7 @@
+   ScriptingEngines_GroupPolicyJScriptReplacement: 31916716
+-  SearchDeleteHistorySuggestions: 24139787
++  SearchDeleteHistorySuggestions: 0
+   SearchInAllMarkets: 17937263
+-  SearchNamespaceExtensionCrash: 26584528
++  SearchNamespaceExtensionCrash: 0
+   SearchPluginIsolation: 26222238
+   SearchSuggestions: 18755234
+-  SecondaryClock: 35909549
+   SecureBio: 11198543
+@@ -829,3 +841,2 @@
+   Servicing_MiniSearchViewAppearingEmpty_36138022: 36138022
+-  Servicing_PreventBugcheckWhenFileSizeLessThanResourceSize_36101939: 0
+   Servicing_TaskbarShiftClick_36479996: 36479996
+@@ -894,2 +905,3 @@
+   Settings_Rejuv_StorageSpaces: 36974906
++  SevSnp: 23356523
+   ShareAnyWindow_VisualIndication: 35232263
+@@ -927,2 +939,3 @@
+   SpotlightPersonalizationRequest: 9835896
++  StableMacForInternalNICs: 24333588
+   StackedPriorityToasts: 26338990
+@@ -955,2 +968,3 @@
+   SvchostSplit: 8644228
++  SwitchExtensionResetInjection: 0
+   SwitchItemTitleDrag: 36421775
+@@ -981,4 +995,2 @@
+   TaskbarFlashing: 35764467
+-  TaskbarHideSearchButton: 36494306
+-  TaskbarHideTaskViewButton: 36434422
+   TaskbarSuggestions: 6258161
+@@ -1004,3 +1016,3 @@
+   TryShellActivateApplicationFallback: 23674478
+-  TurbineAttestationUI: 34102635
++  TurbineAttestationUI: 0
+   TurboCorePC: 36841274
+@@ -1129,2 +1141,10 @@
+   WdagAsIsolationPlatform: 22756199
++  WdagCreateProgressUpdates: 31295704
++  WdagDynamicVgpuDisable: 33155902
++  WdagIronAPIs: 26912196
++  WdagManganeseAPIs: 26988922
++  WdagMultiPlatformContainerSupport: 23783295
++  WdagNickelClipboardEnhancements: 30094361
++  WdagNickelInvalidContainerCleanup: 36891988
++  WdagStandbyPlatformContainers: 31544377
+   Wddm30CpuVisible: 0
+@@ -1593,3 +1613,2 @@
+   MSRC67155_35685934: 35685934
+-  MSRC67158_35686412: 35686412
+   MSRC67159_35686496: 35686496
+@@ -1604,4 +1623,2 @@
+   MSRC67343_35913685: 35913685
+-  MSRC67379_35985086: 35985086
+-  MSRC67385_35988213: 35988213
+   MSRC67391_35994145: 35994145
+@@ -1651,6 +1668,4 @@
+   MSRC68589_37083693: 37083693
+-  MSRC68647_37110088: 37110088
+   MSRC68701_37160027: 37160027
+   MSRC68706_37194615: 37194615
+-  MSRC68728_37199556: 37199556
+   MSRC68772_37219378: 37219378
+@@ -1662,3 +1677,2 @@
+   MSRC68878_37295019: 37295019
+-  MSRC68935_37341538: 37341538
+   MSRC68947_37345500: 37345500
+@@ -1670,3 +1684,2 @@
+   MSRC69147_37433711: 37433711
+-  MSRC69156_37436451: 37436451
+   MSRC69194_37455882: 37455882
+@@ -1736,2 +1749,3 @@
+   MSRC70935_38614235: 38614235
++  MSRC71340_39040068: 39040068
+   MSRC71340_39266628: 39266628
+@@ -2073,2 +2087,3 @@
+   QueryDisplayConfig_DropUserCrit: 33065830
++  Servicing_39396457: 39396457
+   Servicing_ErrorHandling_38681043: 38681043
