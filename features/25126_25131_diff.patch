@@ -1,0 +1,96 @@
+--- B:/25126/features_capstone_nosymbols.txt	Wed May 25 11:44:51 2022
++++ B:/25131/features_capstone_nosymbols.txt	Thu Jun  2 22:13:50 2022
+@@ -79,2 +79,3 @@
+   AugmentedEntryPoint: 36226054
++  AugmentedEntryPointBadging: 36718398
+   AuthorityChangesForAGC: 25884645
+@@ -197,3 +198,2 @@
+   ChineseSimplifiedImeTheming_OSClient: 35746557
+-  ChipcSensorEnabled: 0
+   ChsNarrowKeyboard: 36963879
+@@ -334,3 +334,2 @@
+   DisplaySleepPowerSettings: 31026792
+-  DisplayableSurfaceForcedOn: 31626029
+   DmaRemapping: 0
+@@ -379,2 +378,3 @@
+   EngagedAndAuto: 38671435
++  EnhancedBarriers: 32751694
+   EnrichThirdPartyIrisContent: 37623514
+@@ -393,4 +393,7 @@
+   FHL2021SpringInputScopeOnRunDialog: 32215163
++  FailFastOnCompositionSurfaceRenderingErrors: 23075380
++  FailFastOnMissedRouting: 31348721
+   FamilySafetyRemoteLock: 32425780
+   FamilySettingsAwareness: 23057458
++  FastPassExpression: 33774016
+   FconWritesToRTL: 21392164
+@@ -405,2 +408,3 @@
+   Fido_WebAuthn_RDP: 33101665
++  FileExplorerCOFE: 39448251
+   FileExplorerDarkTheme: 10397285
+@@ -586,2 +590,4 @@
+   MSIXPackageFiltering: 38666472
++  MSRC68013_36701337: 36701337
++  MSRC68350_36912450: 36912450
+   MagnifierCaretUseFastTransition: 20496243
+@@ -605,2 +611,3 @@
+   MopriaDiscovery: 13261424
++  MoreGraphItems: 38667620
+   MoreProgrammableSlotsInStart: 39177456
+@@ -612,2 +619,3 @@
+   MsaaPipe: 1464722
++  MsalJsWamBridge: 35412656
+   MsiHashMismatchFix: 33280101
+@@ -615,2 +623,3 @@
+   MultiCoreClasses: 0
++  MultiLayerDHD: 11428947
+   MultiTaskingSettingsRestore: 37536520
+@@ -618,2 +627,3 @@
+   MutlipleAssessments: 37269723
++  NarratorDisableNaturalVoicesInWinPE: 39382673
+   NarratorHotKeyVoiceSwitch: 35924515
+@@ -796,2 +806,3 @@
+   RnR_PnPDisableEnable: 17363926
++  RollingShutterCorrection: 11949150
+   RotateFrameToDetectFace: 26514007
+@@ -822,7 +833,8 @@
+   ScriptingEngines_GroupPolicyJScriptReplacement: 31916716
+-  SearchDeleteHistorySuggestions: 0
++  SearchDeleteHistorySuggestions: 24139787
+   SearchInAllMarkets: 17937263
+-  SearchNamespaceExtensionCrash: 0
++  SearchNamespaceExtensionCrash: 26584528
+   SearchPluginIsolation: 26222238
+   SearchSuggestions: 18755234
++  SecondaryClock: 35909549
+   SecureBio: 11198543
+@@ -841,2 +853,4 @@
+   Servicing_MiniSearchViewAppearingEmpty_36138022: 36138022
++  Servicing_ReadInstallDelayPropertyFromIrisPayload: 39632162
++  Servicing_SovereignEndpointsGraph_37960847: 37960847
+   Servicing_TaskbarShiftClick_36479996: 36479996
+@@ -995,2 +1009,4 @@
+   TaskbarFlashing: 35764467
++  TaskbarHideSearchButton: 36494306
++  TaskbarHideTaskViewButton: 36434422
+   TaskbarSuggestions: 6258161
+@@ -1660,4 +1676,2 @@
+   MSRC68438_36985154: 36985154
+-  MSRC68453_36987847: 36987847
+-  MSRC68454_36987926: 36987926
+   MSRC68531_37047866: 37047866
+@@ -1667,3 +1681,2 @@
+   MSRC68568_37068761: 37068761
+-  MSRC68589_37083693: 37083693
+   MSRC68701_37160027: 37160027
+@@ -2071,3 +2084,2 @@
+   YourPhoneDesktopShortcut: 15932089
+-  YourPhonePinnedSecondaryTilesUnplated: 26087922
+   YourPhoneTaskbarIcon: 16257538
+@@ -2087,3 +2099,6 @@
+   QueryDisplayConfig_DropUserCrit: 33065830
++  Servicing_39344860: 39344860
++  Servicing_39382998: 39382998
+   Servicing_39396457: 39396457
++  Servicing_CInternetFolderPropertyStoreNoIEFallback_39296469: 39296469
+   Servicing_ErrorHandling_38681043: 38681043
