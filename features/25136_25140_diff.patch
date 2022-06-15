@@ -1,0 +1,259 @@
+--- B:/25136/features_capstone_nosymbols.txt	Thu Jun  9 15:21:06 2022
++++ B:/25140/features_capstone_nosymbols.txt	Wed Jun 15 11:47:20 2022
+@@ -167,7 +167,7 @@
+   CHSTeachingTipAndSearchSuggestion: 36862824
+   CPSSHostImplementation: 27385849
+   CShellOnWindowManagerIDK: 22855141
+-  CShellSettingsSearchbox: 19920047
++  CShellSettingsSearchbox: 0
+   CUICOORD: 28330126
+   CacheCleanup: 37066007
+   CallScenarioCenterAlignNotifications: 35595222
+@@ -329,7 +329,6 @@
+   DisableHologramPersistence: 8317718
+   DisableHomeGroupIdentityProvider: 31465552
+   DisableReadyBoost: 35744813
+-  DisableSearchPolicy: 37095904
+   DisableSearchViaPolicy: 36137438
+   DisableUniqueServiceDisplayNameValidation: 10036267
+   DisplayAdapterProperties: 25806621
+@@ -341,6 +340,7 @@
+   DoNotDisturb: 33212737
+   DoNotDisturbSystray: 36183526
+   DockedFamilySettingsPageSV2: 35899634
++  DontAllowUpdateActionsDuringRevert: 39043106
+   DownloadAcceleratorMovesForegroundPermissions: 23415849
+   DragAndDropGlyphUpdates: 35688218
+   DriveBasedNamespaceRestrictions: 24750601
+@@ -352,7 +352,6 @@
+   DuiTicImprovements: 9043033
+   DxDb_ExpandedFeatureSupport: 36371330
+   DxDb_ExpandedPublishing: 36371251
+-  DynamicSearchBox: 37595921
+   DynamicSearchBoxAPIs: 36933099
+   DynamicSearchBoxInStart: 38651681
+   EPUB_HostExtension: 15477137
+@@ -459,6 +458,7 @@
+   HMDPresenceSensorSetting: 18907866
+   HWCHostDedicatedThread: 37028263
+   HaadjDelegationTokenLogon: 31797978
++  HaltOnAddress_Barrier_Dispatch: 0
+   HaltOnAddress_QueuedSpinLock: 0
+   HamDependencyGraph: 11801082
+   HardwareMicMuteButton: 36689271
+@@ -467,7 +467,6 @@
+   Hcl: 13312437
+   HcsRelaxRpcAccess: 37715110
+   HcsSecurityMitigation: 11741813
+-  HealthPillarUIRevamp: 19448595
+   HelloFaceDriverDowngradeCapability: 34933858
+   HgsPlusParkingSupportRequired: 0
+   HgsPlusSupportRequired: 0
+@@ -492,11 +491,8 @@
+   Hub_Win32Vtc_Converged_SC: 33464486
+   HungTabNotificationDelay: 11518489
+   HvciAutoEnableOnSV: 0
+-  HvciCancelScan: 20815078
+   HvciEverywhereSysprepEnableOnFreshInstall: 0
+   HvciEverywhereSysprepEnableOnUpgrade: 0
+-  HvciIncompatibleApps: 20887957
+-  HvciIncompatibleDrivers: 20224600
+   HvciLimitedAutodisablementLogic: 0
+   HvciRemoveBlockAutoenablementRegkey: 0
+   HvciRemoveCETRequirement: 0
+@@ -510,7 +506,7 @@
+   IE_OneTimeSSFDownload: 29150691
+   IE_SBE: 32050367
+   IE_SETTINGSYNCMIGRATION_FAVORITES: 26601480
+-  IMDSLicensingIntegration: 31129112
++  IMDSLicensingIntegration: 0
+   IMET: 35418257
+   IPMIGenerateMsrDump: 0
+   IPMILogOSEvent: 0
+@@ -552,7 +548,6 @@
+   JapaneseImeOnModernUXTouchKeyboard: 30074835
+   JitProcessInServiceWorkerHost: 11921348
+   JointResizeIcons: 35206184
+-  JournalingDisabled: 0
+   JunctionRedirectionTrust: 0
+   KSOD: 34912776
+   KeepWin8SearchPane: 35032763
+@@ -597,6 +592,7 @@
+   MSIXPackageFiltering: 38666472
+   MSRC68013_36701337: 36701337
+   MSRC68350_36912450: 36912450
++  MachineHiveCache: 0
+   MagnifierCaretUseFastTransition: 20496243
+   MagnifierWithinEdgesNoJitter: 20334694
+   ManagedUserLogonCBA: 36893181
+@@ -633,6 +629,7 @@
+   MultiTaskingSettingsRestore: 37536520
+   MultitaskingSettingsSimplification: 37603987
+   MutlipleAssessments: 37269723
++  NarratorBrailleFilterDriver: 36433675
+   NarratorDisableNaturalVoicesInWinPE: 39382673
+   NarratorHotKeyVoiceSwitch: 35924515
+   NarratorIntroduceHighQualityVoicesDialog: 35752263
+@@ -698,6 +695,7 @@
+   PasteAsPlainText: 15221520
+   PasteToastPromotion: 39256336
+   PauseUntilRework: 35379785
++  PdcClientPnpActionQueue: 0
+   PdfTileCache: 12976578
+   PenDetachIWS: 20430744
+   PenInputVirtualization: 19316803
+@@ -739,7 +737,6 @@
+   PromptOnOpenWorkFiles: 7699712
+   ProtectUserDictionaries: 29674961
+   ProtectedDatabasePerUserForCDPL: 16372493
+-  ProtectionHistoryPillar: 24652141
+   PsaDynamic: 31746345
+   PsaForUPOnAvd: 32615832
+   PsaInEnterprise: 30259475
+@@ -982,6 +979,7 @@
+   StorageServiceFolderSuggestionsWriteRegistry: 10079424
+   Stubification: 28384772
+   StubsBypassQueue: 25699808
++  SuggestedActionsOnCopy: 34592303
+   SuggestedSearchQueries: 37272181
+   SupervisorAddressSpaceSvm: 0
+   SupportCDMInDefaultUser: 9300179
+@@ -1044,7 +1042,7 @@
+   TreatDosDevicePathsAsNormalFiles: 0
+   TriggerManager: 8642183
+   TryShellActivateApplicationFallback: 23674478
+-  TurbineAttestationUI: 34102635
++  TurbineAttestationUI: 0
+   TurboCorePC: 36841274
+   TurboMergePending: 38800333
+   TurboStaging: 36396252
+@@ -1132,6 +1130,7 @@
+   ValueBannerCDMLiteV2: 30785790
+   VelocityEligibilityUsingFlightingApi: 8776276
+   VerifyAccountInSendRequestFlow: 36624728
++  VkOn12_SV3: 38046047
+   VoiceAccess: 23445657
+   VoiceAccessVoiceTypingViewOrchestration: 34718548
+   VoiceAssistantPositioner: 20484887
+@@ -1520,7 +1519,6 @@
+   MSRC59279_26844027: 26844027
+   MSRC59313_26884496: 26884496
+   MSRC59635_27285389: 27285389
+-  MSRC59810_27476162: 27476162
+   MSRC59936_31011409: 31011409
+   MSRC59963_27690723: 27690723
+   MSRC60011_27746974: 27746974
+@@ -1629,7 +1627,6 @@
+   MSRC66945_35466752: 35466752
+   MSRC66947_35466823: 35466823
+   MSRC66954_35510462: 35510462
+-  MSRC66971_35518840: 35518840
+   MSRC67044_35577074: 35577074
+   MSRC67146_35674897: 35674897
+   MSRC67150_35678152: 35678152
+@@ -1647,6 +1644,7 @@
+   MSRC67343_35913685: 35913685
+   MSRC67391_35994145: 35994145
+   MSRC67477_36163990: 36163990
++  MSRC67479_36166281: 36166281
+   MSRC67511_36192878: 36192878
+   MSRC67582_36327760: 36327760
+   MSRC67640_36389456: 36389456
+@@ -1669,7 +1667,6 @@
+   MSRC68018_36704105: 36704105
+   MSRC68042_36838657: 36838657
+   MSRC68043_36715792: 36715792
+-  MSRC68059_36719015: 36719015
+   MSRC68063_36720048: 36720048
+   MSRC68064_36720144: 36720144
+   MSRC68116_36762209: 36762209
+@@ -1681,21 +1678,17 @@
+   MSRC68336_36906667: 36906667
+   MSRC68351_36912516: 36912516
+   MSRC68423_36971391: 36971391
+-  MSRC68438_36985154: 36985154
+   MSRC68531_37047866: 37047866
+-  MSRC68558_37064233: 37064233
+   MSRC68568_37068761: 37068761
+   MSRC68701_37160027: 37160027
+   MSRC68706_37194615: 37194615
+   MSRC68772_37219378: 37219378
+   MSRC68790_37231782: 37231782
+   MSRC68810_37947475: 37947475
+-  MSRC68851_37290630: 37290630
+   MSRC68854_37291143: 37291143
+   MSRC68856_37082688: 37082688
+   MSRC68878_37295019: 37295019
+   MSRC68947_37345500: 37345500
+-  MSRC69004_37379146: 37379146
+   MSRC69039_37384091: 37384091
+   MSRC69055_37393748: 37393748
+   MSRC69135_37427454: 37427454
+@@ -1744,28 +1737,51 @@
+   MSRC69832_37880875: 37880875
+   MSRC69836_37884901: 37884901
+   MSRC69846_37920800: 37920800
++  MSRC69920_37971314: 37971314
+   MSRC69924_37976439: 37976439
++  MSRC69931_37991499: 37991499
++  MSRC69968_39260087: 39260087
+   MSRC70016_38042933: 38042933
+   MSRC70018_38042981: 38042981
+   MSRC70021_38043368: 38043368
++  MSRC70031_38873148: 38873148
++  MSRC70067_38076752: 38076752
+   MSRC70071_38076907: 38076907
+   MSRC70071_39021850: 39021850
+   MSRC70120_38092965: 38092965
++  MSRC70158_38108480: 38108480
+   MSRC70172_38121601: 38121601
+   MSRC70173_38122200: 38122200
+   MSRC70185_38343517: 38343517
++  MSRC70213_38180424: 38180424
++  MSRC70251_38180455: 38180455
++  MSRC70252_38180484: 38180484
+   MSRC70303_38197810: 38197810
++  MSRC70353_38224898: 38224898
++  MSRC70355_38873226: 38873226
++  MSRC70380_38254160: 38254160
++  MSRC70449_39260071: 39260071
++  MSRC70460_39260070: 39260070
+   MSRC70466_38283909: 38283909
+   MSRC70478_38294096: 38294096
++  MSRC70486_38296561: 38296561
++  MSRC70513_38309934: 38309934
+   MSRC70520_38311597: 38311597
+   MSRC70529_38313567: 38313567
+   MSRC70531_38313650: 38313650
+   MSRC70540_38315328: 38315328
+   MSRC70561_38339872: 38339872
+   MSRC70582_38401725: 38401725
++  MSRC70653_39259437: 39259437
++  MSRC70752_39246741: 39246741
++  MSRC70775_38481884: 38481884
+   MSRC70935_38614235: 38614235
++  MSRC71004_38653650: 38653650
++  MSRC71207_38852441: 38852441
+   MSRC71340_39040068: 39040068
+   MSRC71340_39266628: 39266628
++  MSRC71843_39503344: 39503344
++  MSRC72125_39796228: 39796228
+   MTests: 31073511
+   MWTest: 27923976
+   MakePowershellTheDefaultConsole: 6527944
+@@ -2102,6 +2118,7 @@
+   ParentBamoMoveUwlm: 38032249
+   QueryDisplayConfig_DropUserCrit: 33065830
+   SEUTest: 38453973
++  Servicing_39067824: 39067824
+   Servicing_39344860: 39344860
+   Servicing_39382998: 39382998
+   Servicing_39396457: 39396457
+@@ -2142,6 +2159,7 @@
+   UndockedSettingsExtensions_ConditionsOverride: 33359362
+   UxTest12: 39146010
+   VAIL_Fake_Monitor_Projection: 21415082
++  uDWM_CreateCompositorOnLPCThread: 39515504
+ 
+ ## Always Disabled:
+ 
