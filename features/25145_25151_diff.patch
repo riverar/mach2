@@ -1,0 +1,174 @@
+--- B:/25145/features_capstone_nosymbols.txt	Wed Jun 22 11:10:09 2022
++++ B:/25151/features_capstone_nosymbols.txt	Wed Jun 29 19:23:58 2022
+@@ -23,6 +23,7 @@
+   AADWAMUniversalID: 22516394
+   ADFSKDFContextV2: 31335338
+   AMPPLToast: 33129880
++  ASFWWokenHotKeyFix: 0
+   ASRTest: 38888144
+   AccessRegistryLockAcquireCount: 0
+   AccessibilityFlyoutRejuvenation: 0
+@@ -60,6 +61,7 @@
+   AppInstallBatching: 6867405
+   AppIsolationSeparateSublayer: 6268226
+   AppLaunchDb: 37347557
++  AppPicker: 36302090
+   AppUriHandlerWildcardSupport: 11539576
+   AppVContainer: 8295088
+   AppWindowProjection: 26212670
+@@ -266,7 +268,6 @@
+   D3D12ContentProtection: 11067548
+   D3D12ExperimentalShaderModels: 8482022
+   D3D12LegacyAPICompatibility: 23543104
+-  D3D12MetaCommand: 14291127
+   D3D12PeerToPeerAtomics: 12944950
+   D3D12PinResources: 22965649
+   D3D12SRVOnlyTiledResourceTier3: 14611894
+@@ -441,6 +442,7 @@
+   GamingOverlayControllerBarLaunchSignals: 36361313
+   GamingOverlayExperienceManagerOptional: 36798523
+   GamingOverlayMultiWindowSupport: 30380406
++  GatedFeatureTest: 39770445
+   GdiEnableLiveKernelDump: 0
+   GeneralDb: 37891354
+   GenerateAndCompareAlternates: 14302430
+@@ -513,7 +515,7 @@
+   IE_OneTimeSSFDownload: 29150691
+   IE_SBE: 32050367
+   IE_SETTINGSYNCMIGRATION_FAVORITES: 26601480
+-  IMDSLicensingIntegration: 31129112
++  IMDSLicensingIntegration: 0
+   IMET: 35418257
+   IPMIGenerateMsrDump: 0
+   IPMILogOSEvent: 0
+@@ -608,6 +610,7 @@
+   MicrocodeAbTesting: 16667730
+   MicrocodeV2: 0
+   MinuteZeroExperiences: 8497738
++  MipVirtualizedHimetricPointsForWindow: 0
+   MiracastListenerAutoStart: 5419836
+   MixedRealityShellAsShellExperience: 37956022
+   MkTme: 31444823
+@@ -684,6 +687,7 @@
+   OpenCLOn12: 22145371
+   OpenFileDialogDFS: 27291829
+   OpenGLOn12: 0
++  OpenWith: 39405837
+   OptimizeRetinaSearchArea: 37347795
+   OriginalImageFeaturesEnablement: 0
+   OsConfigurationGetConfigurationDocument: 35115136
+@@ -691,6 +695,7 @@
+   OutOfProcIContextMenu: 23323390
+   OverflowPanel: 35620394
+   OverrideInspect: 37085408
++  PATKTI: 37007953
+   PCAccessSetting: 6171364
+   PCH_USTEST: 33462698
+   PGStartRenderOptimizations: 33726028
+@@ -1014,11 +1019,11 @@
+   TIFE: 37634385
+   TKPOSR: 34562805
+   TPMDrvSchedPriority: 0
+-  TabTipAdapterConstMemberInitialization: 36500812
+   TablePaginationCraftsmanship: 36928256
+   TabletModeImprovements: 28032790
+   TabletPostureWindowingShowMaximized: 35206086
+   TabletPostureWnfNotification: 35215389
++  TajTest: 39269328
+   TargetedContentAPI: 8299381
+   TargetedContentCacheExpiration: 11946054
+   TargetedContentTamperDetection: 9766529
+@@ -1036,6 +1041,7 @@
+   TaskbarHideTaskViewButton: 36434422
+   TaskbarSuggestions: 6258161
+   TaskviewCleanupDropShadows: 28210564
++  TestInProduction_RemoveFailFastInRegistry: 38907643
+   ThemeAwareSplashScreens: 25936164
+   ThreatExperienceOverlay: 38164957
+   ThumbnailCache_SemaphoreUpdate_19173096: 19173096
+@@ -1046,7 +1052,6 @@
+   ToolBarForEmbeddedPdf: 16264639
+   TouchGestureEducation: 35385524
+   TouchInputVirtualization: 18789657
+-  TouchKeyboardDeviceConvertibility: 32910101
+   TouchKeyboardNotShownOnPasswordResetBugFix: 35903096
+   TouchKeyboardPixelGapAtRight: 36964436
+   TouchKeyboardPostSv2BugFixes: 39266205
+@@ -1056,7 +1061,7 @@
+   TreatDosDevicePathsAsNormalFiles: 0
+   TriggerManager: 8642183
+   TryShellActivateApplicationFallback: 23674478
+-  TurbineAttestationUI: 34102635
++  TurbineAttestationUI: 0
+   TurboCorePC: 36841274
+   TurboMergePending: 38800333
+   TurboStaging: 36396252
+@@ -1215,7 +1220,7 @@
+   XamlHostedDialogHyperlinks: 34037898
+   XamlIslandViewAdapterRefactor: 35352690
+   XamlIslandsInputViewHosting: 35802524
+-  XamlPopupFlyoutSupport: 39451609
++  XamlPopupFlyoutSupport: 39626793
+   XblAuthGamerAccountCleared: 17728688
+   XblAuthGamerAccountSet: 17512732
+   XboxServerFlows: 21144178
+@@ -1670,7 +1675,6 @@
+   MSRC68116_36762209: 36762209
+   MSRC68117_36768249: 36768249
+   MSRC68119_36762871: 36762871
+-  MSRC68213_36814406: 36814406
+   MSRC68266_36856359: 36856359
+   MSRC68336_36906667: 36906667
+   MSRC68351_36912516: 36912516
+@@ -1678,7 +1682,6 @@
+   MSRC68531_37047866: 37047866
+   MSRC68568_37068761: 37068761
+   MSRC68701_37160027: 37160027
+-  MSRC68706_37194615: 37194615
+   MSRC68772_37219378: 37219378
+   MSRC68810_37947475: 37947475
+   MSRC68854_37291143: 37291143
+@@ -1692,7 +1695,6 @@
+   MSRC69194_37455882: 37455882
+   MSRC69196_37456034: 37456034
+   MSRC69230_37471551: 37471551
+-  MSRC69261_37483488: 37483488
+   MSRC69268_37494577: 37494577
+   MSRC69280_37521531: 37521531
+   MSRC69283_37522153: 37522153
+@@ -1708,7 +1710,6 @@
+   MSRC69470_37633972: 37633972
+   MSRC69471_37633999: 37633999
+   MSRC69483_37633529: 37633529
+-  MSRC69484_37633739: 37633739
+   MSRC69488_37645311: 37645311
+   MSRC69489_37645371: 37645371
+   MSRC69497_37647972: 37647972
+@@ -2116,6 +2117,7 @@
+   Servicing_39361638: 39361638
+   Servicing_39382998: 39382998
+   Servicing_39396457: 39396457
++  Servicing_39548491: 39548491
+   Servicing_CInternetFolderPropertyStoreNoIEFallback_39296469: 39296469
+   Servicing_ErrorHandling_38681043: 38681043
+   Servicing_HSPResendIrqState_37894584: 37894584
+@@ -2136,6 +2138,7 @@
+ ## Disabled By Default:
+ 
+   Audio_Drivers_Apx: 30813804
++  CDPNearShareUDPDiscoveryFixup: 39410888
+   DESACDCOffset: 26883134
+   DESPersonalizedBrightness: 26088835
+   DES_Monitor_Groups: 23577149
+@@ -2149,9 +2152,11 @@
+   ForceEnhancedMultiSessionRemoteVsyncEmulation: 29521070
+   GraphicsCardInAbout: 27974039
+   LockBugFix_ReentrantLockAndUnlockActivityNotSerialized: 33711970
++  MEPProfileEx: 39184632
+   MTestUx13: 39281392
+   MeetNow_Selfhost: 28582629
+   MonitorIoctlTesting: 20125790
++  SDSFixesTest: 39247197
+   SEUTest: 38453973
+   SSODTest: 34618575
+   SVR_DX12_Rendering: 11537650
