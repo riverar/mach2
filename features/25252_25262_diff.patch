@@ -1,0 +1,312 @@
+--- B:/25252/features_capstone_nosymbols.txt	Mon Nov 28 16:00:48 2022
++++ B:/25262/features_capstone_nosymbols.txt	Fri Dec  9 10:54:36 2022
+@@ -77,6 +77,7 @@
+   AppIsolationSeparateSublayer: 6268226
+   AppLaunchDb: 37347557
+   AppPicker: 36302090
++  AppSiloBrokerShellObjects: 41312981
+   AppUriHandlerWildcardSupport: 11539576
+   AppVContainer: 8295088
+   AppWindowProjection: 26212670
+@@ -111,9 +112,9 @@
+   BIETSCWTest: 41255619
+   BIETSTest: 39269951
+   BSFUPP: 38758896
++  BTPanUI: 41540195
+   BackgroundInstalls: 37746346
+   BackupUsoStore: 36845438
+-  BamQosGrouping: 0
+   BaseImageUsingServicingStack: 41024749
+   BatteryNotificationsApplyAll: 27883184
+   BioFeedbackOnXamlIsland: 31517562
+@@ -212,6 +213,7 @@
+   CbsSessionFilePerformance: 40113980
+   CdplProtectKnownUserFolders: 21852964
+   CertInUse_Telemetry: 0
++  ChainSignatureVerify_Telemetry: 41646436
+   ChangeDumpTypeByTelemetryLevel: 37733775
+   ChangeSignatureTrustAnchor: 23882506
+   ChangeStartLayout: 35907865
+@@ -219,6 +221,7 @@
+   CheckBoxImageListHandleLeak_36884240: 36884240
+   ChineseSimplifiedImeTheming_OSClient: 35746557
+   ChsNarrowKeyboard: 36963879
++  CimBoot: 31577186
+   CldFltBlockSession0Hydration: 0
+   CldFltDiagMode: 0
+   ClientRecoveryPasswordRotation: 18157663
+@@ -369,7 +372,6 @@
+   DownloadAcceleratorMovesForegroundPermissions: 23415849
+   DpswOneSettingsControl: 37682118
+   DragAndDropGlyphUpdates: 35688218
+-  DragDropWithComponentUI|mach2.warning.duplicate0: 3321890008
+   DropPowerReferenceOnLPE: 0
+   DualEngine_AllowF12: 23071760
+   DualEngine_ClearCacheWhenRestoreStatusText: 41090981
+@@ -399,6 +401,7 @@
+   EdgeTcpConfig: 11800907
+   EdgeUpdate: 32165251
+   EditionBasedDefaultPolicyValues: 31840299
++  ElamNotificationFreeRegistryPath: 0
+   EmaillessMSA: 31390298
+   EmbeddedFetch: 12274531
+   EmbeddedPrint: 13876261
+@@ -413,6 +416,7 @@
+   EnablePublisherIntentTMI: 29882130
+   EnableSessionTerminateNotification: 24006437
+   EnableStartOnAFCOnWCOS: 16430322
++  EnableUSQAlerts: 41540372
+   EnforceWIPForTokenBroker: 9720665
+   EngagedAndAuto: 38671435
+   EnhancedBarriers: 32751694
+@@ -650,13 +654,13 @@
+   MicaBackdropInApplicationFrameHostTitlebar: 35681203
+   MicrocodeAbTesting: 16667730
+   MicrocodeV2: 0
++  MinifilterContextsLocklessCache: 0
+   MinuteZeroExperiences: 8497738
+   MipVirtualizedHimetricPointsForWindow: 0
+   MiracastListenerAutoStart: 5419836
+   MixedRealityShellAsShellExperience: 37956022
+   MkTme: 31444823
+   MkTmeRegKey: 32316632
+-  MmHardwareAccelerators: 0
+   MobilityExperience: 11824828
+   ModerateStartupApps: 41477006
+   ModernEapOverLanUx: 31480468
+@@ -693,6 +697,7 @@
+   NcsiConnectivityInDs: 26124864
+   NdisDatapathVerifier: 0
+   NegoexPassesStructuredExceptions: 29204454
++  NetPowerExperiment1: 0
+   NetworkIcon_VPNOverlay: 38113452
+   NewBatteryLandingPageUX: 27296756
+   NewRailEncoder: 38544641
+@@ -789,6 +794,7 @@
+   PowerEventProcessorSystemIdle: 0
+   PowerTriageDumpData: 0
+   PreEmptiveMoveSizeDpiChanges: 0
++  PrefetchPolicy_PostHarm: 0
+   PreinstalledAppSupport: 35286366
+   PrelaunchACExperiences: 33352205
+   PreloadViewModelContext: 40112993
+@@ -814,7 +820,6 @@
+   PsaForUPOnAvd: 32615832
+   PsaInEnterprise: 30259475
+   QAIFailureLKD: 0
+-  QuickActionsRetryGetSettingsDatabase: 41312074
+   QuickSettingsCommercial: 36610908
+   QuietHours: 10896550
+   QuietMomentPostOOBE: 32619713
+@@ -869,6 +874,7 @@
+   RemoveUserTileMRU: 24621400
+   RemoveWindowBehaviorBackCompat: 0
+   RepairWebExperiencePackage: 39696085
++  ReplaceCustomRdpScheduler: 41786049
+   ReportImpersonationStatus: 38765994
+   ReportLoggedOnCompleted: 20469805
+   ReportOneSettingsUsage: 36722739
+@@ -908,12 +914,9 @@
+   SamplerSupportADLN: 0
+   SanderoOnPro: 24027798
+   SavePasswordSoftlandingEvent: 12261764
+-  SchedulerAggressiveForegroundBoost: 0
+-  SchedulerFavoredCoreRotation: 0
+-  SchedulerQosPreemption: 0
+-  SchedulerRemoveForegroundBoostDecay: 0
+   ScoobeEligibilityRedirection: 27336672
+   ScoobeGetStartedLaunchNode: 40967016
++  Screenshot: 40009386
+   ScriptingEngines_AMSI: 24742553
+   ScriptingEngines_CollectJS9LegacyTelemetryData_ScriptStateStarted: 31697992
+   ScriptingEngines_CollectLegacyTelemetryData_Multithreading: 31935990
+@@ -922,6 +925,7 @@
+   ScriptingEngines_DisableLegacyJScript_ProcessLevel: 27806502
+   ScriptingEngines_DisableLegacyJScript_SystemLevel: 26092979
+   ScriptingEngines_GroupPolicyJScriptReplacement: 31916716
++  SearchBoxActivationHangFix: 32193412
+   SearchBoxEarlyFileSearch: 41150162
+   SearchBoxImprovedSuspensionFix: 32174744
+   SearchBoxOnTaskbar: 40887771
+@@ -943,7 +947,6 @@
+   ServiceUIContentExperimentB: 19272967
+   Servicing_AVI32bitVariableInitialization: 0
+   Servicing_AddAepToSupportedDeviceObjectTypes: 40327213
+-  Servicing_AddWiGigDockAndMsUsbDock: 38395191
+   Servicing_AppCacheLambaCaptureFix_41517218: 41517218
+   Servicing_ApplySafeguardsFeatures: 40614503
+   Servicing_AvoidWamNonExplorerProcess: 40896540
+@@ -989,6 +992,7 @@
+   Servicing_NonExistentKnownFolder: 42039255
+   Servicing_NotifyTaskbarDashboardSettingChanged: 40891679
+   Servicing_PinnedListHeight_40762513: 40762513
++  Servicing_PreventDisplayTopologySelection: 41397799
+   Servicing_PreventExcessiveTriggeringOfMitigationClientForTheSameWNF: 41172010
+   Servicing_RecentActivity: 39126376
+   Servicing_SearchPillButtonFormCodeFix_41927741: 41927741
+@@ -1166,6 +1170,7 @@
+   SwitchExtensionResetInjection: 0
+   SwitchItemTitleDrag: 36421775
+   SyncDpapiCredKeyToUserProfile: 26005139
++  SynchronizeInboundSecFilterProcessing: 41786629
+   SystemDiskInfo: 36713042
+   SystemModalDialogRounding: 35984665
+   TIPInPhoton: 40359116
+@@ -1347,6 +1352,7 @@
+   WifiAdapter_MCPositioning: 10978839
+   WifiAdapter_ScanCache: 33578378
+   WinREServicingUsingAI: 39415330
++  WinREServicing_AggressiveStaging: 42138192
+   WindowTabHostBackgroundInit: 33340028
+   WindowsAndAppServices: 41736838
+   WindowsAutopilotAgility: 31566716
+@@ -1880,22 +1886,14 @@
+   MSRC70945_39260018: 39260018
+   MSRC70980_39260016: 39260016
+   MSRC71004_38653650: 38653650
+-  MSRC71014_39697730: 39697730
+   MSRC71018_39260022: 39260022
+-  MSRC71039_39084984: 39084984
+   MSRC71042_38720229: 38720229
+-  MSRC71043_39260008: 39260008
+-  MSRC71065_39260004: 39260004
+-  MSRC71071_39505617: 39505617
+   MSRC71161_39259969: 39259969
+   MSRC71185_39259972: 39259972
+   MSRC71201_39259964: 39259964
+   MSRC71203_38887517: 38887517
+   MSRC71207_38852441: 38852441
+-  MSRC71211_39259965: 39259965
+-  MSRC71214_39259968: 39259968
+   MSRC71231_39259966: 39259966
+-  MSRC71238_39259949: 39259949
+   MSRC71245_39259953: 39259953
+   MSRC71266_39259955: 39259955
+   MSRC71269_39259950: 39259950
+@@ -1932,7 +1930,6 @@
+   MSRC71750_39414900: 39414900
+   MSRC71783_39434318: 39434318
+   MSRC71806_38916217: 38916217
+-  MSRC71808_39452347: 39452347
+   MSRC71812_39478379: 39478379
+   MSRC71875_39522173: 39522173
+   MSRC71879_39533241: 39533241
+@@ -1942,8 +1939,6 @@
+   MSRC71911_39557118: 39557118
+   MSRC71922_39586023: 39586023
+   MSRC71924_39590254: 39590254
+-  MSRC71929_39592504: 39592504
+-  MSRC71935_39604186: 39604186
+   MSRC71981_39633715: 39633715
+   MSRC72016_39663169: 39663169
+   MSRC72019_39665240: 39665240
+@@ -1964,7 +1959,6 @@
+   MSRC72170_39817596: 39817596
+   MSRC72172_40446102: 40446102
+   MSRC72327_39840274: 39840274
+-  MSRC72358_39842403: 39842403
+   MSRC72397_39888334: 39888334
+   MSRC72399_39888802: 39888802
+   MSRC72465_39928434: 39928434
+@@ -1980,7 +1974,6 @@
+   MSRC72622_40046869: 40046869
+   MSRC72639_40059672: 40059672
+   MSRC72648_40168556: 40168556
+-  MSRC72721_40126948: 40126948
+   MSRC72724_40129706: 40129706
+   MSRC72737_40135031: 40135031
+   MSRC72739_40144059: 40144059
+@@ -1998,14 +1991,12 @@
+   MSRC72967_40409221: 40409221
+   MSRC72982_40422998: 40422998
+   MSRC72985_40423999: 40423999
+-  MSRC72989_40426160: 40426160
+   MSRC73087_40464965: 40464965
+   MSRC73183_40506390: 40506390
+   MSRC73186_40506557: 40506557
+   MSRC73187_40506586: 40506586
+   MSRC73188_40507177: 40507177
+   MSRC73189_40507299: 40507299
+-  MSRC73190_40507695: 40507695
+   MSRC73196_40509626: 40509626
+   MSRC73254_40543121: 40543121
+   MSRC73279_40558423: 40558423
+@@ -2013,7 +2004,6 @@
+   MSRC73288_40564447: 40564447
+   MSRC73298_40577316: 40577316
+   MSRC73362_40631060: 40631060
+-  MSRC73458_40687200: 40687200
+   MSRC73475_40692496: 40692496
+   MSRC73477_40693043: 40693043
+   MSRC73478_40693078: 40693078
+@@ -2023,17 +2013,13 @@
+   MSRC73550_40770301: 40770301
+   MSRC73570_40783056: 40783056
+   MSRC73571_40783094: 40783094
+-  MSRC73604_40800695: 40800695
+   MSRC73620_40828625: 40828625
+-  MSRC73660_40847062: 40847062
+   MSRC73695_40866618: 40866618
+   MSRC73729_40879237: 40879237
+   MSRC73737_40881814: 40881814
+-  MSRC73928_41027967: 41027967
+   MSRC74013_41075911: 41075911
+   MSRC74096_41117764: 41117764
+   MSRC74158_41154979: 41154979
+-  MSRC74468_41355606: 41355606
+   MSRC74635_41536406: 41536406
+   MSRC75010_41712560: 41712560
+   MSRC75253_41780808: 41780808
+@@ -2406,6 +2392,8 @@
+   LogonWebHostAdditionalMenus: 39130896
+   MEPProfileEx: 39532883
+   MTestUx13: 39281392
++  MTestUx14: 41655236
++  MTestUx15: 42105254
+   MoreGraphItems: 38667620
+   NWMTest1: 39145991
+   NetsvcsgroupRedirectionTrustMitigation: 34932121
+@@ -2459,6 +2447,7 @@
+   Servicing_RemoveSyncRootManagerGlobalMutex_38462519: 38651202
+   Servicing_RenderNetworkSettings_33948030: 33948030
+   Servicing_SACExplicitBlockToast_39554317: 39554317
++  Servicing_SACMotwLNK_42205568: 42205568
+   Servicing_SACToastText_39449907: 39449907
+   Servicing_SAC_Telemetry_Rework_40616880: 40616880
+   Servicing_SetEduDefaultTheme_38785739: 38785739
+@@ -2499,6 +2488,8 @@
+ ## Disabled By Default:
+ 
+   AccessibilityXAMLContextMenu: 39696859
++  AutoColorManagement_WideRollout: 36371531
++  AutoColorManagement_WideRollout_OnByDefault: 41740192
+   BannersKFM_Logo: 2641295
+   DESACDCOffset: 26883134
+   DESPersonalizedBrightness: 26088835
+@@ -2520,16 +2511,16 @@
+   ExplorerLogonTasksBlackBox: 19400436
+   External_Adaptive_Color: 26085257
+   FSCoreSupport: 40725400
++  FaceDetectionMFT_AdaptiveRate: 40777692
+   ForceEnhancedMultiSessionRemoteVsyncEmulation: 29521070
+   GraphicsCardInAbout: 27974039
+   HumanPresenceForExternalMonitors: 38612934
++  HumanPresenceOemSettings: 41701671
+   KSOD: 34912776
+   LockControllerD3DDeviceReduction: 40229575
+   LogTimelineActivities: 40725752
+   LogonTaskDurationsTIP: 37482934
+   LogonTaskHangAutomaticWatson: 23489040
+-  MTestUx14: 41655236
+-  MTestUx15: 42105254
+   MeetNow_Selfhost: 28582629
+   MonitorIoctlTesting: 20125790
+   NestedSystemCoreMessagingDispatch: 40724120
+@@ -2549,6 +2540,7 @@
+   UseDDisplayForDWM: 35985717
+   VAIL_Fake_Monitor_Projection: 21415082
+   VTCUXD: 41167600
++  WNS_2FactorAuth: 42133512
+ 
+ ## Always Disabled:
+ 
