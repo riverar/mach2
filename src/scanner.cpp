@@ -350,7 +350,7 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
 
 bool mach2::Scanner::HasDuplicateFeatureWithId(std::int64_t featureId, std::wstring& featureName, mach2::Scanner::Features& features)
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 100; i++)
     {
         auto candidate = (featureName + L"|mach2.warning.duplicate") + std::to_wstring(i);
         if (features.FeaturesByName.find(candidate) != features.FeaturesByName.end())
@@ -363,7 +363,7 @@ bool mach2::Scanner::HasDuplicateFeatureWithId(std::int64_t featureId, std::wstr
 
 std::wstring mach2::Scanner::GetUniqueNameForDuplicateFeature(mach2::Scanner::Feature& feature, mach2::Scanner::Features& features)
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 100; i++)
     {
         auto candidate = (feature.Name + L"|mach2.warning.duplicate") + std::to_wstring(i);
         if (features.FeaturesByName.find(candidate) == features.FeaturesByName.end())
