@@ -147,8 +147,28 @@ std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &sy
     // e.g. wil::Feature<__WilFeatureTraits_Feature_RadialControllerCustomFontGlyphs>
     // e.g. __WilFeatureTraits_Feature_DesktopInclusiveOOBE
     // e.g. Feature_Servicing_2011c_28083526__private_reporting
+    // e.g. `GlobalSettings::Feature::Is_Feature_Servicing_31766357_Enabled'::`1'::dtor$0
+    // e.g. EmptyCVariant_FeatureStaging_Feature_Servicing_BluetoothBthport9F
+    // e.g. ?IsFeature_Servicing_addDeviceAuthForFederatedAccountEnabled@Feature@GlobalSettings@@SA_NXZ
+    // e.g. _Feature_Servicing_ConvertDIBIconDBZ_isAlwaysDisabled
+    // e.g. _Feature_Servicing_ConvertDIBIconDBZ_id
+    // e.g. Microsoft.Internal.FeatureStaging.Servicing.Feature_Servicing_Allow_SwitchToDesktop_25561487
 
-    for (auto &expr : std::array<std::wstring, 3> { L"WilFeatureTraits_Feature_(\\w*)", L"Feature_(\\w*)__private", L"Feature_(\\w*)_logged_traits" })
+    auto expressions = std::array<std::wstring, 11> {
+        L"WilFeatureTraits_Feature_(\\w*)",
+        L"Feature_(\\w*)__private",
+        L"Feature_(\\w*)_logged_traits",
+        L"Is_Feature_(\\w*)_Enabled",
+        L"EmptyCVariant_FeatureStaging_Feature_(\\w*)",
+        L"Feature_(\\w*)_IsEnabled",
+        L"GlobalSettings::Feature::IsFeature_(\\w*)",
+        L"IsFeature_(\\w*)@",
+        L"Feature_(\\w*)_is",
+        L"Feature_(\\w*)_id",
+        L"Microsoft.Internal.FeatureStaging.Servicing.Feature_(\\w*)",
+    };
+
+    for (auto &expr : expressions)
     {
         std::wregex pattern(expr);
         std::wsmatch match;
@@ -185,7 +205,7 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
     ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_Servicing_*",
         NameSearchOptions::nsfRegularExpression, &feature_symbol_search_results[1]));
 
-    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_*__private",
+    ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_*__private*",
         NameSearchOptions::nsfRegularExpression, &feature_symbol_search_results[2]));
 
     ThrowIfFailed(session->findChildren(root_symbol, SymTagEnum::SymTagNull, L"*Feature_*_logged_traits*",

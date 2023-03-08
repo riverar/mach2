@@ -93,6 +93,14 @@ class ScannerTests
 	{
 		mach2::Scanner scanner{};
 		auto features = scanner.GetFeaturesFromSymbolsAtPath(_deploymentDirectory + L"cases\\basic\\dxgkrnl.pdb");
-		VERIFY_ARE_EQUAL(features.FeaturesByName.size(), 58);
+		VERIFY_ARE_EQUAL(features.FeaturesByName.size(), 53);
+	}
+
+	TEST_METHOD(GetMissingFeatureIdsFromImagesAtPath_ntkrnlmp_FeatureIdInImageFound)
+	{
+		mach2::Scanner scanner{};
+		auto features = scanner.GetFeaturesFromSymbolsAtPath(_deploymentDirectory + L"cases\\staging\\ntkrnlmp.pdb");
+		scanner.GetMissingFeatureIdsFromImagesAtPath(features, _deploymentDirectory + L"cases\\staging\\ntkrnlmp.pdb", _deploymentDirectory + L"cases\\staging\\ntkrnlmp.pdb");
+		VERIFY_ARE_EQUAL(features.FeaturesByName[L"SmtIsolationScheduling"].Id, 0);
 	}
 };
