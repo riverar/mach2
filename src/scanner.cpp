@@ -480,9 +480,20 @@ void mach2::Scanner::GetMissingFeatureIdsFromImageAtPath(std::wstring const& ima
                         {
 #if X64
                             auto x86 = instructions[i].detail->x86;
-                            if (std::string(instructions[i].mnemonic) == "mov" && x86.operands[0].reg == X86_REG_ECX && x86.operands[1].type == X86_OP_IMM)
+                            if (std::string(instructions[i].mnemonic) == "mov")
                             {
-                                probable_id = instructions[i].detail->x86.operands[1].imm;
+                                if (x86.operands[0].reg == X86_REG_ECX || x86.operands[0].reg == X86_REG_EDX ||
+                                    x86.operands[0].reg == X86_REG_RCX || x86.operands[0].reg == X86_REG_RDX)
+                                {
+                                    if (x86.operands[1].type == X86_OP_IMM)
+                                    {
+                                        if (instructions[i].detail->x86.operands[1].imm == 1)
+                                        {
+                                            continue;
+                                        }
+                                        probable_id = instructions[i].detail->x86.operands[1].imm;
+                                    }
+                                }
                             }
                             if (std::string(instructions[i].mnemonic) == "call" && probable_id != 0)
                             {
