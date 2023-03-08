@@ -1,6 +1,6 @@
 /*
     mach2 - feature control multi-tool
-    Copyright (c) Rafael Rivera
+    Copyright (c) Rafael Rivera and Contributors
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

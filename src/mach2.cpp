@@ -1,6 +1,6 @@
-﻿/*
+/*
     mach2 - feature control multi-tool
-    Copyright (c) Rafael Rivera
+    Copyright (c) Rafael Rivera and Contributors
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ int main(int argc, char *argv[], char *)
 {
     std::wcout
         << L"mach2 0.8 - Feature Control Multi-tool" << std::endl
-        << L"Copyright (c) Rafael Rivera" << std::endl
+        << L"Copyright (c) Rafael Rivera and Contributors" << std::endl
         << std::endl
         << L"This program comes with ABSOLUTELY NO WARRANTY." << std::endl
         << L"This is free software, and you are welcome to redistribute it under certain conditions." << std::endl
