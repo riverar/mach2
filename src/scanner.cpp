@@ -406,7 +406,8 @@ void mach2::Scanner::InternalGetMissingFeatureIdsFromImagesAtPath(mach2::Scanner
                     if ((_wcsnicmp(current_file.extension().c_str(), L".dll", 4) == 0) || 
                         (_wcsnicmp(current_file.extension().c_str(), L".exe", 4) == 0) ||
                         (_wcsnicmp(current_file.extension().c_str(), L".cpl", 4) == 0) ||
-                        (_wcsnicmp(current_file.extension().c_str(), L".scr", 4) == 0))
+                        (_wcsnicmp(current_file.extension().c_str(), L".scr", 4) == 0) ||
+                        (_wcsnicmp(current_file.extension().c_str(), L".sys", 4) == 0))
                     {
                         std::filesystem::path image_path(image_path_root);
                         image_path /= find_data.cFileName;
