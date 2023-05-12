@@ -7,6 +7,7 @@ Invoke-WebRequest -UseBasicParsing "https://msdl.microsoft.com/download/symbols/
 Invoke-WebRequest -UseBasicParsing "https://msdl.microsoft.com/download/symbols/explorer.exe/8886051B4d9000/explorer.exe" -OutFile explorer.exe
 Invoke-WebRequest -UseBasicParsing "https://msdl.microsoft.com/download/symbols/dxgkrnl.sys/807E58BC48e000/dxgkrnl.sys" -OutFile dxgkrnl.sys
 Invoke-WebRequest -UseBasicParsing "https://msdl.microsoft.com/download/symbols/authbroker.dll/26CA9F7A39000/authbroker.dll" -OutFile AuthBroker.dll
+Invoke-WebRequest -UseBasicParsing "https://msdl.microsoft.com/download/symbols/System.Runtime.CompilerServices.Unsafe.pdb/0E8DB93D1CE04371BA54A45B8AE6A714ffffffff/System.Runtime.CompilerServices.Unsafe.pdb" -OutFile System.Runtime.CompilerServices.Unsafe.pdb/0E8DB93D1CE04371BA54A45B8AE6A714ffffffff/System.Runtime.CompilerServices.Unsafe.pdb
 Pop-Location
 
 New-Item -ItemType Directory "reporting"

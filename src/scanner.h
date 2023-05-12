@@ -115,5 +115,6 @@ namespace mach2
         void GetMissingFeatureIdsFromImageAtPath(std::wstring const& path, mach2::Scanner::Features& features);
         void InternalGetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path, mach2::Scanner::Features &features);
         SymbolHitType GetSymbolHitTypeFromSymbolName(std::wstring const &symbolName);
+        bool InternalIsPortablePdb(std::wstring const& path);
     };
 }

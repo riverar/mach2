@@ -103,4 +103,10 @@ class ScannerTests
 		scanner.GetMissingFeatureIdsFromImagesAtPath(features, _deploymentDirectory + L"cases\\staging\\ntkrnlmp.pdb", _deploymentDirectory + L"cases\\staging\\ntkrnlmp.pdb");
 		VERIFY_ARE_EQUAL(features.FeaturesByName[L"SmtIsolationScheduling"].Id, 0);
 	}
+
+	TEST_METHOD(GetFeaturesFromSymbolsAtPath_portablepdb_DoesNotFail)
+	{
+		mach2::Scanner scanner{};
+		VERIFY_NO_THROW(scanner.GetFeaturesFromSymbolsAtPath(_deploymentDirectory + L"cases\\basic\\System.Runtime.CompilerServices.Unsafe.pdb"));
+	}
 };

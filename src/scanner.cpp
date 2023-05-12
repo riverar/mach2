@@ -131,6 +131,14 @@ mach2::Scanner::SymbolHitType mach2::Scanner::GetSymbolHitTypeFromSymbolName(std
     }
 }
 
+bool mach2::Scanner::InternalIsPortablePdb(std::wstring const& path)
+{
+    std::ifstream file(path, std::ios::binary);
+    std::uint32_t value = 0;
+    file.read(reinterpret_cast<char*>(&value), sizeof(value));
+    return value == 0x424a5342; // BSJB
+}
+
 mach2::Scanner::Features mach2::Scanner::GetFeaturesFromSymbolsAtPath(std::wstring const &symbols_path)
 {
     Features features;
@@ -186,7 +194,15 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
 {
     CComPtr<IDiaDataSource10> data_source;
     ThrowIfFailed(NoRegCoCreate(L"msdia140.dll", CLSID_DiaSource, IID_PPV_ARGS(&data_source)));
-    ThrowIfFailed(data_source->loadDataFromPdb(path.c_str()));
+    auto hr = data_source->loadDataFromPdb(path.c_str());
+    if (FAILED(hr) && !InternalIsPortablePdb(path.c_str()))
+    {
+        ThrowIfFailed(hr);
+    }
+    else
+    {
+        return;
+    }
 
     CComPtr<IDiaSession> session;
     ThrowIfFailed(data_source->openSession(&session));
@@ -342,7 +358,7 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
                 if (location_type == LocationType::LocIsStatic)
                 {
                     DWORD rva;
-                    auto hr = feature_symbol_hit->get_relativeVirtualAddress(&rva);
+                    hr = feature_symbol_hit->get_relativeVirtualAddress(&rva);
                     ThrowIfFailed(hr);
                     if (hr == S_OK)
                     {
