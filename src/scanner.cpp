@@ -163,7 +163,7 @@ std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &sy
     // e.g. Microsoft.Internal.FeatureStaging.Servicing.Feature_Servicing_Allow_SwitchToDesktop_25561487
     // e.g. Enable_Feature_Servicing_FatStuckThreadFix
 
-    auto expressions = std::array<std::wstring, 12> {
+    auto expressions = std::array<std::wstring, 13> {
         L"WilFeatureTraits_Feature_(\\w*)",
         L"Feature_(\\w*)__private",
         L"Feature_(\\w*)_logged_traits",
@@ -176,6 +176,7 @@ std::wstring mach2::Scanner::GetFeatureNameFromSymbolName(std::wstring const &sy
         L"Feature_(\\w*)_id",
         L"Microsoft.Internal.FeatureStaging.Servicing.Feature_(\\w*)",
         L"Enable_Feature_(\\w*)",
+        L"Feature_Servicing_(\\w*)"
     };
 
     for (auto &expr : expressions)
