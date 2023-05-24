@@ -196,13 +196,16 @@ void mach2::Scanner::GetFeaturesFromSymbolAtPath(std::wstring const &path, mach2
     CComPtr<IDiaDataSource10> data_source;
     ThrowIfFailed(NoRegCoCreate(L"msdia140.dll", CLSID_DiaSource, IID_PPV_ARGS(&data_source)));
     auto hr = data_source->loadDataFromPdb(path.c_str());
-    if (FAILED(hr) && !InternalIsPortablePdb(path.c_str()))
+    if (FAILED(hr))
     {
-        ThrowIfFailed(hr);
-    }
-    else
-    {
-        return;
+        if (!InternalIsPortablePdb(path.c_str()))
+        {
+            ThrowIfFailed(hr);
+        }
+        else
+        {
+            return;
+        }
     }
 
     CComPtr<IDiaSession> session;
