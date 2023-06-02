@@ -1,0 +1,58 @@
+--- B:/25375/features_capstone_nosymbols.txt	Thu May 25 10:45:54 2023
++++ B:/25382/features_capstone_nosymbols.txt	Fri Jun  2 12:44:51 2023
+@@ -24,7 +24,6 @@
+   AADAclCertificateForNetworkService: 37014609
+   AADBindingTokenLogonForRDP: 25585329
+   AADClientIDForPRTHeader: 36670474
+-  AADCrossCloudB2BWAMSupport: 25510753
+   AADKDFContextV2: 28991043
+   AADRecoveryPasswordDeletion: 26987393
+   AADShowErrorInUI: 19235072
+@@ -62,7 +61,6 @@
+   AllowOemToForceNightLightUsingDES: 34718006
+   AllowUseUIAToFindSelectedText: 39554671
+   AltTabModal: 36226836
+-  AmbientDeviceLighting: 35262205
+   AnaheimEdgeDetailedView: 30031104
+   Annotations: 12221178
+   ApiLogging: 22006889
+@@ -306,6 +304,7 @@
+   DebounceDeviceConnectSound: 34734680
+   DeclaredConfiguration_Desktop: 32303130
+   DeclaredConfiguration_MultipleAuthority: 42075907
++  DeclaredConfiguration_MultipleAuthority_NotConflictForSameValue: 44626014
+   DeclaredConfiguration_MultipleAuthority_WithDeletion: 43114276
+   DeclaredConfiguration_SupportNotConfigured: 42236871
+   DecreaseTabSuspensionDelay: 14184448
+@@ -951,7 +950,6 @@
+   Servicing_PreventExcessiveTriggeringOfMitigationClientForTheSameWNF: 41172010
+   Servicing_RootDesktopTranslation: 41799498
+   Servicing_SQLSmsLaunch: 41285845
+-  Servicing_SearchHighlightsOnStart_42298575: 42298575
+   Servicing_SearchPillButtonFormCodeFix_41927741: 41927741
+   Servicing_SearchPillButtonTaskbarOverflowFix_41927608: 41927608
+   Servicing_SenseDynamicOsVersion: 44545669
+@@ -1152,7 +1150,6 @@
+   ThrottleBackgroundRawMouseInput: 0
+   ThrottlePostRebootReporting: 38605791
+   TicketDeduplication: 41313006
+-  TimerRebasingThreshold: 0
+   Tls13InEapTtls: 31308504
+   Tls13InPeap: 31308502
+   TokenCachedLogon: 27485386
+@@ -1300,7 +1297,6 @@
+   WlanNloOptimizations: 42966370
+   WlanRoamingConsortiumSupport: 38312347
+   Wlan_SecondaryStaSupport: 31042985
+-  WriteCacheLines: 0
+   WriteFlightInfoInQU: 40680682
+   WritePackageStateUsingTransactions: 23232883
+   WsxPacksRevoke: 38009604
+@@ -2486,7 +2482,6 @@
+   SEUTest: 38453973
+   SearchSuggestions: 18755234
+   SenClServSt: 42348548
+-  Servicing_ActivityCoordinatorPolicyConversion_39307908: 39307908
+   Servicing_CI_Hash_Incorrect_Section_Headers_42992071: 42992071
+   Servicing_FirmwareGreaterThank512KB_42071686: 42071686
+   Servicing_IEModeInProc_39176241: 39176241
