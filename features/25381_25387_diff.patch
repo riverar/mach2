@@ -1,0 +1,32 @@
+--- B:/25381/features_capstone_nosymbols.txt	Fri Jun  2 12:44:51 2023
++++ B:/25387/features_capstone_nosymbols.txt	Thu Jun  8 10:46:15 2023
+@@ -720,7 +720,6 @@
+   PackagedCreateProcess: 0
+   PasswordAutofill: 13944250
+   PasteAsPlainText: 15221520
+-  PasteToastPromotion: 39256336
+   PdcClientPnpActionQueue: 0
+   PdfTileCache: 12976578
+   PenDetachIWS: 20430744
+@@ -1100,13 +1099,10 @@
+   StorageServiceFolderSuggestionsWriteRegistry: 10079424
+   StrictHshellKnownToIam: 0
+   StubsBypassQueue: 25699808
+-  SuggestedActionsAddressAnnotations: 41058795
+   SuggestedActionsDiagnosisShortcut: 39256236
+   SuggestedActionsLocalization: 41556056
+   SuggestedActionsOnCopy: 34592303
+   SuggestedActionsOnCopy_EntityActionWISEModel: 41292604
+-  SuggestedActionsSearchAnnotations: 41539325
+-  SuggestedActionsUpdatedSettings: 42623125
+   SuggestedMaxAgeForRecentlyInstalledApps: 42533246
+   SupervisorAddressSpaceSvm: 0
+   SupportCDMInDefaultUser: 9300179
+@@ -2014,7 +2010,6 @@
+   MSRC76073_42623994: 42623994
+   MSRC76087_42342968: 42342968
+   MSRC76139_42400018: 42400018
+-  MSRC76146_42400550: 42400550
+   MSRC76149_42403047: 42403047
+   MSRC76202_42442585: 42442585
+   MSRC76241_42508819: 42508819

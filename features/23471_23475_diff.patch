@@ -1,0 +1,174 @@
+--- B:/23471/features_capstone_nosymbols.txt	Thu Jun  1 12:36:45 2023
++++ B:/23475/features_capstone_nosymbols.txt	Thu Jun  8 10:46:14 2023
+@@ -150,7 +150,6 @@
+   BluetoothHfpHF: 4854405
+   BluetoothL2: 29881313
+   BluetoothLEAudioMediaControlServer: 23710927
+-  BluetoothLEConnectedIsochronousStreams: 23538000
+   BluetoothLECoordinatedSetIdentitificationProfile: 25155868
+   BluetoothManifestServiceLEAudio: 40047135
+   BluetoothProximityPlatform: 17815254
+@@ -361,7 +360,6 @@
+   DesktopSpotlightUdkRefreshOnUpgrade: 40522394
+   DesktopSpotlightUndocked: 39710659
+   DesktopStickerEditor: 36165846
+-  DesktopVisualVMOptionalAccessExceptionFix: 42154339
+   DevPropKeyFromMSOSDescriptor: 0
+   DeviceBasedLicensing: 28179707
+   DeviceIntegrationPolicy: 44532601
+@@ -450,6 +448,7 @@
+   ExtendDozeS4: 15574004
+   ExtendPoseQueueLength: 0
+   ExtendSuspendTimeout: 16924527
++  ExtendedPlaceholders: 42403856
+   FETV: 35352817
+   FHL2021SpringInputScopeOnRunDialog: 32215163
+   FSIAPurchaseAppUpdate: 43393662
+@@ -620,6 +619,7 @@
+   LaunchUriAsyncInCloudExperienceHost: 43775808
+   LcGlobalLanguages: 38811930
+   LegacyFolders: 31776450
++  LightingSettings: 42933752
+   LightingWhenLidClosed: 16487091
+   LiveKernelDump: 40430431
+   LivedumpProcessFiltering: 34924843
+@@ -680,7 +680,6 @@
+   ManagedUserLogonCBA: 36893181
+   ManifestBasedBackupRestore: 41560556
+   MdmSupportForEdu: 9608605
+-  MeasureUserCustomizedSpeller: 40789169
+   Mercury_App_Backup: 41031223
+   Mercury_App_Restore: 42341753
+   MicaBackdropInApplicationFrameHostTitlebar: 35681203
+@@ -762,7 +761,6 @@
+   OSetupSCTest: 32798798
+   OTPGTB: 38653309
+   OTPGTBIPID: 34301521
+-  ObfuscateDataFile: 31031347
+   OctagonBrokerEtw: 15724492
+   OctagonClientBase: 14263527
+   OctagonProdAttestationUrl: 17722981
+@@ -793,7 +791,6 @@
+   OpenCLOn12: 22145371
+   OpenGLOn12: 0
+   OptimizeRetinaSearchArea: 37347795
+-  OptimizeVDBarInvokePerf: 40329997
+   OrgMessagesPolicy: 41315359
+   OrgMsgAuthBeacons: 43077409
+   OrgMsgPolicy: 41315359
+@@ -818,7 +815,6 @@
+   PTPInputVirtualization: 0
+   PackagedAppLaunchBlock: 0
+   PackagedCreateProcess: 0
+-  ParallaxMode: 42189901
+   ParallelizeLCU: 36610991
+   PasswordAutofill: 13944250
+   PasteAsPlainText: 15221520
+@@ -937,7 +933,9 @@
+   ResilientToCloudFileCalculatedProperties: 20681302
+   ResourceManagerRpcBypass: 39841886
+   ResponsiveScreenRotationAnimation: 35001794
++  RestoreExtendedPlaceholders: 43521128
+   RestorePlaceholderApi: 42607511
++  RestoreSparkPlaceholders: 43521103
+   RestoreStartPinnedLayout: 39892922
+   RetrieveEkCertRefactor: 31367822
+   Rn2305: 42562020
+@@ -1129,6 +1127,7 @@
+   Servicing_FocusSessionRaceFix: 43682929
+   Servicing_FolderShortcutCrash: 40052018
+   Servicing_FseDoubleFreeHns: 0
++  Servicing_GB18030_2022: 43843169
+   Servicing_GameInputAvoidDoubleRemapping: 43415797
+   Servicing_GameInputIdleDetection: 42106150
+   Servicing_GamingServicesCheckForArm64: 42269690
+@@ -1281,6 +1280,7 @@
+   Servicing_SharedPCCleanupProfile: 42055354
+   Servicing_ShiftEnterIME: 43876134
+   Servicing_SiloCrashFixinAFD: 0
++  Servicing_SkipViewEventUnsubscriptionDuringInputAppActivation: 41351910
+   Servicing_SmartCardPin: 43265375
+   Servicing_SmartFeatureRollout: 42298043
+   Servicing_SoftReset_41219147: 41219147
+@@ -1461,6 +1461,7 @@
+   SnapOnShow: 35435264
+   SnapToSnapAnimation: 35385316
+   SoftParkingElections: 0
++  SparkPlaceholders: 44573682
+   SpinnerButtonIssue: 25632394
+   SplitTransactionHSIIWorkaround: 36695841
+   SpotlightHotspotExtensions: 13867745
+@@ -1539,6 +1540,7 @@
+   TaskbarHideTaskViewButton: 36434422
+   TaskbarRestorePlaceholders: 43591660
+   TaskbarSuggestions: 6258161
++  TaskbarWin32RestorePlaceholders: 44532023
+   ThemeAwareSplashScreens: 25936164
+   ThreatExperienceOverlay: 38164957
+   ThrottleBackgroundRawMouseInput: 0
+@@ -1569,6 +1571,7 @@
+   URO: 0
+   USB4PowerImprovements: 0
+   USB4SettingsDomainsViewer: 43366022
++  USB4_Sept23: 0
+   UUS: 20603363
+   UUS_MoNotificationUx_SxS: 36325875
+   UUS_MoUsoCoreWorker: 26752348
+@@ -1739,7 +1742,6 @@
+   XamlHostedDialogGeneric: 35985309
+   XamlHostedDialogHyperlinks: 34037898
+   XamlIslandsInputViewHosting: 35802524
+-  XamlPopupFlyoutSupport: 39626793
+   XblAuthGamerAccountCleared: 17728688
+   XblAuthGamerAccountSet: 17512732
+   XboxServerFlows: 21144178
+@@ -2581,6 +2583,7 @@
+ 
+ ## Enabled By Default:
+ 
++  38922789: 38922789
+   42133512: 42133512
+   AccessibilityXAMLContextMenu: 39696859
+   AdditionalBrightnessBuckets: 37834701
+@@ -2597,6 +2600,7 @@
+   D3DDeviceReductionBackport: 39751166
+   DataUsage_UX_Enhancements: 39181904
+   DestinationListPerformanceFixes: 39533850
++  EIC_SurrogatePair: 44083712
+   EIMFileExplorerAsyncDelete: 44469705
+   EnableFedSignInProForEdu: 39275950
+   FEODW: 42052883
+@@ -2615,6 +2619,7 @@
+   IncreaseSpatialAudioDynamicObjectCountV1: 41671148
+   InstantHotspot_Updates: 39300467
+   MRTCoreSystemShimForWASDK: 41969252
++  MTestAbShCh: 44799918
+   MTestAbShGs2: 44299428
+   MTestUx14: 41655236
+   May23_WinSEPerf_AADJoin_RestartAndSignInScenario: 40076961
+@@ -2721,6 +2726,8 @@
+ 
+ ## Disabled By Default:
+ 
++  44238588: 44238588
++  CPSCTest: 43899327
+   Crumbs: 40950262
+   DeploymentPerformanceOptimizations: 43983893
+   DisableDXVA_AV1: 36499710
+@@ -2742,12 +2749,16 @@
+   MTestUx15: 42105254
+   MainKey_ChatCompliance: 44520430
+   MercuryADEPTUserIntentBackup: 44140851
++  NPFTCFixesTest: 43012731
+   ReFS_Mock_TxF_Support: 42458085
++  SDATest: 41067842
+   SESTest22: 41424794
++  SPTPTest: 38890980
+   SSODTest: 34618575
+   STTWM_Test: 40268859
+   Servicing_41643025: 41643025
+   Servicing_SearchHighlightsOnStart_42298575: 42298575
++  Servicing_StartMenuFixJapaneseSorting: 44143798
+   SettingsHomepage_PermanentId: 42269957
+   StorageProviderPropertyCallbackSupport: 42551522
+   TF4A_Test: 42267107
