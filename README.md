@@ -42,6 +42,10 @@ Compilation requires Visual Studio 2017 or newer, a recent version of the Window
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">You can cite me saying this. Hacking around in internal system state you don’t understand is very risky, and creates an inconsistent state that shouldn’t normally be possible. Plus mucks up data and wastes people’s time.</p>&mdash; Brandon Paddock (@BrandonLive) <a href="https://twitter.com/BrandonLive/status/1012163763204583425?ref_src=twsrc%5Etfw">June 28, 2018</a> <a href="https://web.archive.org/web/20180628051527/https://twitter.com/BrandonLive/status/1012163763204583425">(archived)</a></blockquote>
 
+<blockquote><p>[...] Sharing this information is a severe offense and a direct violation of the Windows Insider MVP program and our Windows product [...]</p>
+  
+&mdash;Windows Insider MVP representative, ~October 14, 2023</blockquote>
+
 ## Contributions
 Contributions are greatly appreciated. Keep the license in mind (GPLv3).
 
