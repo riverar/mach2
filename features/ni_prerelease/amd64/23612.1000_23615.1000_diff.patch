@@ -1,0 +1,354 @@
+--- D:/23612.1000/features_capstone_nosymbols.txt	Thu Jan  4 12:56:11 2024
++++ D:/23615.1000/features_capstone_nosymbols.txt	Thu Jan 11 10:50:46 2024
+@@ -3,33 +3,37 @@
+   1023135039: 0
+   1095748927: 45026702
+   1150790974: 0
++  11509055: 0
+   1171241279: 0
++  1177256253: 0
+   1217646910: 44595916
+   1264481598: 46238156
+   1397483839: 0
+   146786620: 0
+   146786623: 0
+   1523991870: 0
+-  1670107454: 44612806
+   1731440957: 0
+   1775978813: 0
+   2110494013: 45689857
++  232759615: 45361565
+   2399643964: 45522813
+   2441061693: 0
+   2456006974: 45139706
+   2489056572: 0
+   2500059453: 0
+   257946941: 0
++  2602535231: 46045624
++  2606204221: 45976376
++  2696386879: 45773750
+   29785186: 29785186
++  2997087551: 0
+   3020632383: 43015347
+   302228798: 45473498
+   3032467775: 0
+   3039530302: 46077171
+   3054483774: 0
+-  3112171836: 44171632
+   32112219: 32112219
+-  3292264766: 44191983
+-  3362417980: 46613612
++  3217980732: 46378353
+   3501181245: 0
+   35409324: 35409324
+   3566457150: 0
+@@ -94,9 +98,11 @@
+   46962109: 46962109
+   47251916: 47251916
+   47505206: 47505206
++  500400445: 45885977
+   519019837: 45868313
+   579051836: 0
+   588409151: 0
++  661620029: 45974807
+   687852861: 0
+   73386303: 0
+   748578109: 46496021
+@@ -432,7 +438,6 @@
+   CrossDeviceStubPreference: 47148933
+   CtacSessionContext: 32137669
+   CurfewAllowanceCalculation: 33207570
+-  CurrentVmVersionIsDefault: 11906105
+   CustomDefaultFrameSizing: 43769745
+   CustomXamlUIDialog: 34037864
+   CxhWamLauncher: 43788167
+@@ -726,9 +731,6 @@
+   HardwareMicMuteButton: 36689271
+   HardwareMicMuteConfirmator: 35232539
+   HardwareMicMuteHotkey: 36756578
+-  Hcl: 13312437
+-  HcsRelaxRpcAccess: 37715110
+-  HcsSecurityMitigation: 11741813
+   HdrInRdp: 38277973
+   HeadingAnnouncementIssue: 45705436
+   HelloFaceDriverDowngradeCapability: 34933858
+@@ -741,10 +743,6 @@
+   HideSystemTrayDateTimeSetting: 41437381
+   HighPriorityFileProvider: 45075103
+   HkuMonitor: 38198463
+-  HnsEnableLWNICsForDrVNICs: 30100782
+-  HnsFlowSteeringEngineNetworking: 30266022
+-  HnsMirroredRoutingMultiple: 36991632
+-  HnsWcosLoopback: 23636350
+   HoloImmersiveShellExtensionPointOptional: 36499053
+   HolographicNotifications: 9666698
+   HomepageRecognizesAssociatedMSA: 46251949
+@@ -775,6 +773,7 @@
+   ID45690501: 45690501
+   ID45829750: 45829750
+   ID46518162: 46518162
++  ID46960527: 46960527
+   ID46973925: 46973925
+   ID47173054: 47173054
+   ID47526251: 47526251
+@@ -850,7 +849,6 @@
+   KeyboardInputVirtualization: 18837801
+   KioskPositioner: 18518788
+   KnownFolderInternalContract: 43258206
+-  KryptonSoftLargePages: 21026262
+   LCEarlyTextWrappingFix: 44717174
+   LCFixes: 44924088
+   LCKeyboardFocus: 39342818
+@@ -1079,7 +1077,6 @@
+   PenInputVirtualization: 0
+   PerClassEnergyUnsupported: 0
+   PerProcessorClockTick: 0
+-  PersistenceDiskRemoval: 35550341
+   PersonalInfoManagementComponent: 41314266
+   PersonalizationCustomThemeBackupHandler: 45733106
+   PersonalizationCustomThemeRestoreHandler: 47337060
+@@ -1307,7 +1304,6 @@
+   Servicing_ADSD_LapsPwdExpiryFix: 0
+   Servicing_ADSD_LapsSCForceOptionFix: 45932197
+   Servicing_ADSD_NetAPIETWLogger: 0
+-  Servicing_AD_NUMA_IdealCPU: 0
+   Servicing_ActivationHangFix_42341629: 42341629
+   Servicing_ActiveX_UAC_Redirection_Guard: 45481849
+   Servicing_AddingPinSource_41595838: 41595838
+@@ -1372,7 +1368,6 @@
+   Servicing_CldfltFileCompressionDeadlocks: 0
+   Servicing_CloudKerberosForCloudOnlyUsers: 46614743
+   Servicing_CloudTGTAquisitionIssue: 45825777
+-  Servicing_CmEthernetReconnect: 40108334
+   Servicing_CollectionFrozenCheckOnRepeaterItemsSource_46510628: 46510628
+   Servicing_CommandBarStealsFocusOnShiftF10: 44221343
+   Servicing_CompositionSwapchainCrossBindingScanout: 46557400
+@@ -1380,10 +1375,10 @@
+   Servicing_ConditionalAccess: 46608180
+   Servicing_ConfigRefresh: 46551074
+   Servicing_ConfigUpdateGetAction_46456972: 46456972
+-  Servicing_ContainerIPv6ConnectivityFail: 40786942
+   Servicing_ControlPanelResizeFix: 46018710
+   Servicing_CopilotDesktopIconsFix: 47069058
+   Servicing_CopilotEnabledForLocalAccounts: 47206438
++  Servicing_CopilotKeySearchFallback: 47796090
+   Servicing_CopyEABufferHandling: 0
+   Servicing_CopyFileFATFix: 0
+   Servicing_DCW_FoDInstallBlock: 46862011
+@@ -1393,7 +1388,6 @@
+   Servicing_DCW_OCMetadataOverrideRDC: 0
+   Servicing_DCW_SystemManagedOC: 46861711
+   Servicing_DDSDeadlockFix: 44137001
+-  Servicing_DHCPIntercepted: 41041570
+   Servicing_DSBSuspensionFix_41517746: 41517746
+   Servicing_DWMFixVR: 45274147
+   Servicing_DatevWPFAppbar: 44478375
+@@ -1434,7 +1428,6 @@
+   Servicing_EDAMMinorUpdate: 44265126
+   Servicing_EOW_Crash: 0
+   Servicing_ETW_XPath_Query_by_FileHash: 45115730
+-  Servicing_EXTERNAL_Bind_Regression: 44977062
+   Servicing_EdgeIndexerPerformanceFix_40127470: 40127470
+   Servicing_EidNameResolution: 45870317
+   Servicing_ElevationOfPrivilege_Code_Integrity_TOCTOU: 0
+@@ -1444,7 +1437,6 @@
+   Servicing_Evergreen_HttpBugFixCustomTlsRestrictions: 0
+   Servicing_Evergreen_WeakBindingFixNi: 0
+   Servicing_Evergreen_WinHttpBugFixes: 43264139
+-  Servicing_ExpiringLink: 0
+   Servicing_ExternalExtensionTelemetry: 41216208
+   Servicing_FCONMetadata_46874316: 46874316
+   Servicing_FEMenuExtensionCrash: 45550845
+@@ -1500,7 +1492,6 @@
+   Servicing_FolderViewBrowserNavigateMouseButton_46695836: 46695836
+   Servicing_ForwardAccountLogonFailure: 44862504
+   Servicing_Fragment_Invalid_Discard: 45372876
+-  Servicing_FseDoubleFreeHns: 0
+   Servicing_FwCspDeadlock: 46596522
+   Servicing_GB18030IMEFilter: 44977786
+   Servicing_GB18030_2022: 43843169
+@@ -1520,20 +1511,15 @@
+   Servicing_HDRWallpaperInitAV: 47051946
+   Servicing_HMAllocPreventOrphanObjects: 0
+   Servicing_HPDBX: 46897589
+-  Servicing_HandleDisconnectedPausedMirroredICSSwitch: 41153968
+   Servicing_HandleShellPolicyExceptions: 46245958
+   Servicing_HeavyHitterWatsonCrashNullPtrRead: 44777376
+   Servicing_HelpPaneChanges: 46988231
+   Servicing_HeteroIncHGS: 0
+   Servicing_HighContentionOnDirectory: 0
+-  Servicing_HnsSharedAccessFirewall: 41846345
+-  Servicing_HnsVfpStackSize: 40232813
+   Servicing_HotAddRaceFix: 0
+   Servicing_HyperVFWGpRuleCreation: 46454935
+   Servicing_IEModeFocusFix: 42443580
+   Servicing_IE_Edge_Uninstall_fixes: 45500184
+-  Servicing_IFM_CallbackColumn: 0
+-  Servicing_IIS_CloseDuplicatedHandleBeforeUlAtqStopListen: 45994852
+   Servicing_IMEPadInitialization: 43955025
+   Servicing_IPSecDeadlock: 0
+   Servicing_IPUSessionData_43169542: 43169542
+@@ -1557,7 +1543,6 @@
+   Servicing_Jet_SpaceOwned: 43044087
+   Servicing_KeepWebView2Visible_46188233: 46188233
+   Servicing_Kernel_DMA_Compliance: 0
+-  Servicing_LDAP_CBT_Audit: 44575732
+   Servicing_LEAudio_EnumeratorDeadlock: 44756340
+   Servicing_LabelsNotExpanding_46195039: 46195039
+   Servicing_LampArrayPowerPerf: 47052612
+@@ -1567,7 +1552,6 @@
+   Servicing_LegacyDisplaySwitchRegressionFix: 43202119
+   Servicing_LegacyDisplaySwitchRegressionWatsonFix: 45272003
+   Servicing_LenovoTIHLeakFix: 47129557
+-  Servicing_LoadESE: 0
+   Servicing_Logonid: 43581269
+   Servicing_MAM: 45738875
+   Servicing_MAPI_UndoC2RX: 46343574
+@@ -1599,7 +1583,7 @@
+   Servicing_MiniSearchKeyboardNavigation_35830129: 35830129
+   Servicing_MiniSearchViewAppearingEmpty_36138022: 36138022
+   Servicing_MinorImpactBeforePolicy_43839543: 43839543
+-  Servicing_MirrorPropVirtual: 40364270
++  Servicing_MirrorPropVirtual: 0
+   Servicing_Mpssvc_LoopbackExempt: 0
+   Servicing_MsaUnpinningFiles_39860114: 39860114
+   Servicing_MultiUserSkuCpuUsageFix_43471307: 43471307
+@@ -1667,7 +1651,6 @@
+   Servicing_ProfAPIUserShellFolderKey: 43039679
+   Servicing_PropertyLookupHangs: 38939507
+   Servicing_Ps2TelemetryUpdate: 45613827
+-  Servicing_RDMA_Performance: 0
+   Servicing_RDXNightLightStuckState: 45803554
+   Servicing_RDXVirtualDesktopCleanup: 45803437
+   Servicing_RDX_HelloDemoURI: 45803539
+@@ -1683,14 +1666,11 @@
+   Servicing_Reliability_39355853: 39355853
+   Servicing_Remove3rdPartyAppData: 46570552
+   Servicing_RemoveDuplicateQueueEventFix: 45606594
+-  Servicing_RemoveHnsVfpDependency: 41846434
+   Servicing_RemoveRssTimer: 0
+-  Servicing_RemoveStalevTPMNvHash: 44949994
+   Servicing_RemoveViewManagerCallInUWPDebug: 45050959
+   Servicing_Remove_Nonce: 46275983
+   Servicing_RemovingIndexerStatusCheck_46498509: 46498509
+   Servicing_RenamedGraphFiles_41601132: 41601132
+-  Servicing_Replication: 0
+   Servicing_RequestBeginTestDeadlockFix_43768221: 43768221
+   Servicing_RequestCacheFlightIds_45673798: 45673798
+   Servicing_ResetAllocatorDXGIManagerNull: 47575023
+@@ -1811,7 +1791,6 @@
+   Servicing_VBSAPI_WinRE: 0
+   Servicing_VPNCSPIpv6RouteIssue: 42127436
+   Servicing_VidMmFlushEvictQueue: 0
+-  Servicing_VmsStatusIndication: 0
+   Servicing_VolatileNotifications: 46712666
+   Servicing_WCMBlockDomainPolicyCellular: 45580799
+   Servicing_WEFCrashInNullQueryWcslen: 45831517
+@@ -1823,7 +1802,6 @@
+   Servicing_WOSCIsMicrosoftAADTenantAware: 40027498
+   Servicing_WOSC_BetterDownloadTelemetry: 46961898
+   Servicing_WSCInvokesLatestMpCmdRun: 44101449
+-  Servicing_WSLEnterprise: 45643164
+   Servicing_WUCategoryScanOptimization_46882346: 46882346
+   Servicing_WUSchremsIIDCR: 44359764
+   Servicing_WUSettingsCItoggleAccFix: 44612093
+@@ -1878,10 +1856,9 @@
+   Servicing_cantReconnectToRDSinAVDinCitrix: 46817529
+   Servicing_deadlock_in_FreeDesktop: 0
+   Servicing_fixExcelImeHangNi: 0
+-  Servicing_msDSKeyCredentialLink: 0
+-  Servicing_msds_DiskUsage: 43044276
+   Servicing_null_check_on_siloState_ETW: 0
+   Servicing_pnpFailHandling: 0
++  Servicing_tellib_upload_restriction_breaks_MDI: 47259968
+   Servicing_vTpmAttestation: 45724197
+   SetBrowserAsPDFHandlerInScoobe: 37236683
+   SetSearchBoxModeFromSearchAppActivatedArgs: 43491606
+@@ -1974,7 +1951,6 @@
+   Settings_Rejuv_DisksAndVolumes: 36925532
+   Settings_Rejuv_StorageSpaces: 36974906
+   Settings_StartupApps_SettingItemButton: 41075629
+-  SevSnp: 23356523
+   ShaderModel66Release: 28725761
+   ShareAnyWindow_VisualIndication: 35232263
+   ShareOnPdf: 14434234
+@@ -2018,7 +1994,6 @@
+   SpotlightPersonalizationRequest: 9835896
+   SpotlightUriDefaultBrowser: 46661076
+   SrumtelEventThrottling: 42834428
+-  StableMacForInternalNICs: 24333588
+   StackedPriorityToasts: 26338990
+   StartAutoShowNewDevices: 31804463
+   StartMenuAccountBadging: 36435151
+@@ -2051,7 +2026,6 @@
+   SustainabilityInstallDeferral: 37631761
+   SvcImpl_Crash: 37853420
+   SvchostSplit: 8644228
+-  SwitchExtensionResetInjection: 0
+   SyncDpapiCredKeyToUserProfile: 26005139
+   SyncSettingCrashBugFix: 41508539
+   SyncSettingCredLangDescUpdate: 46855420
+@@ -2296,14 +2270,6 @@
+   WcosIPPoverUSB: 0
+   WdagARM64Support: 30926566
+   WdagAsIsolationPlatform: 22756199
+-  WdagCreateProgressUpdates: 31295704
+-  WdagDynamicVgpuDisable: 33155902
+-  WdagIronAPIs: 26912196
+-  WdagManganeseAPIs: 26988922
+-  WdagMultiPlatformContainerSupport: 23783295
+-  WdagNickelClipboardEnhancements: 30094361
+-  WdagNickelInvalidContainerCleanup: 36891988
+-  WdagStandbyPlatformContainers: 31544377
+   Wddm30CpuVisible: 0
+   WebAuthnInWAMPrompts: 35233288
+   WebViewSupport: 43729363
+@@ -2370,7 +2336,6 @@
+   XblAuthGamerAccountSet: 17512732
+   XboxServerFlows: 21144178
+   YieldToHAM: 0
+-  hyperv_ux_fix: 0
+   ipmiErrorSource: 0
+   vaDownloadHWAcceleratedSpeechModel: 37739154
+ 
+@@ -3298,6 +3263,7 @@
+   MTestAbShCh: 44799918
+   MTestAbShCle: 43456625
+   MTestAbShDTS: 45978602
++  MTestAbShES: 44494340
+   MTestAbShESFR: 46497309
+   MTestAbShET: 45091739
+   MTestAbShFSC: 46096237
+@@ -3339,6 +3305,7 @@
+   NetworkSettings_WifiPasswordDialog: 44271056
+   ORMMAP: 39591667
+   OSTTest: 44209656
++  OTR_OnlyAsNeeded: 46898183
+   OemPfn: 41704788
+   OemsCanMigrate: 39591297
+   OutlookInstall: 44697583
+@@ -3393,7 +3360,7 @@
+   Servicing_Cleanup_Framework_DependencyGraphs: 45600155
+   Servicing_ClosedCaptionRenderClipTopFix: 41305823
+   Servicing_ComTaskPoolRace: 47295674
+-  Servicing_F001: 1760499437
++  Servicing_F001: 769136365
+   Servicing_FileExplorer_GetListPerfImprovements: 46084709
+   Servicing_FirmwareGreaterThank512KB_42071686: 42071686
+   Servicing_FsePortPolicy_39523525: 39523525
+@@ -3478,6 +3445,7 @@
+   WinUI_LogonUI_Network_Flyout: 33090389
+   WindowsBackupRestrictedBackupExperience23H2Parent: 44790548
+   WingetQueryOptimizationsInApplistBackup: 46972953
++  WingetUpdateInApplistBackup: 47693004
+   XAMLFEHome: 41076133
+   XAMLFolderViewSupport: 42295138
+   XamlWebView2UiaEventSupport: 44216372
+@@ -3507,7 +3475,6 @@
+   LockBugFix_ReentrantLockAndUnlockActivityNotSerialized: 33711970
+   LockStatusWeatherDeepLink: 47526873
+   LockStatusWeatherDeepLinkReplaceCalendar: 48082515
+-  MTestAbShES: 44494340
+   MTestAbShLangExpChs: 45952823
+   MTestAbShLangExpDe: 45952594
+   MTestAbShLangExpEn: 45994554
