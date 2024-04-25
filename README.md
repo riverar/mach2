@@ -1,8 +1,8 @@
 # Mach2
 
 > [!CAUTION]
-> The Mach2 software has been retired and is not supported on Windows 10 version 2004 or newer versions of Windows.
-> As an alternative, use https://github.com/thebookisclosed/ViVe.
+> The Mach2 software has been retired and is not supported on Windows 10 version 2004 or newer.
+> As an alternative, please use https://github.com/thebookisclosed/ViVe.
 >
 > Feature dumps will continue to be provided on a best-effort basis.
 ---
