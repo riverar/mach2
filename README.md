@@ -1,9 +1,10 @@
 # Mach2
 
-| :exclamation: Retirement notice (04/25/2024) |
-|:--------------------------------|
-| The Mach2 software has been retired and is not supported on Windows 10 version 2004, Windows 11, or newer versions of Windows. As an alternative, use https://github.com/thebookisclosed/ViVe.<br><br>Feature dumps will continue to be provided on a best-effort basis. |
-
+> [!CAUTION]
+> The Mach2 software has been retired and is not supported on Windows 10 version 2004 or newer versions of Windows.
+> As an alternative, use https://github.com/thebookisclosed/ViVe.
+>
+> Feature dumps will continue to be provided on a best-effort basis.
 ---
 
 ![](./gfx/usage.png)
