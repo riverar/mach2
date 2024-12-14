@@ -4,7 +4,7 @@
 > The Mach2 software has been retired and is not supported on Windows 10 version 2004 or newer.
 > As an alternative, please use https://github.com/thebookisclosed/ViVe.
 >
-> Feature dumps will continue to be provided on a best-effort basis.
+> After years of maintaining Windows feature dumps and diffs in this repository as a strenuous volunteer effort, I've decided to discontinue the practice as of December 14, 2024. While the tool has enabled early feature discovery and discussion, it has unfortunately led to an unhealthy 'race to post' dynamic on social and traditional media platforms. Compounded by ongoing weekly maintenance, lack of meaningful community contributions, and the frequent uncompensated use of this work in commercial content creation, I believe it's time to focus my efforts elsewhere.
 ---
 
 ![](./gfx/usage.png)
